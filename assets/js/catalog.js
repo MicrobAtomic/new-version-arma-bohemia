@@ -73,7 +73,9 @@
     cards.forEach(function (card) {
       var visible = matchesSearch(card, query) && matchesFilters(card);
       card.hidden = !visible;
-      if (visible) visibleCount++;
+      // On compte des PRODUITS, pas des lignes : une ligne groupée
+      // (plusieurs articles sur une même photo) porte data-count="N".
+      if (visible) visibleCount += parseInt(card.dataset.count, 10) || 1;
     });
 
     if (countEl) {

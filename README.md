@@ -104,6 +104,43 @@ pensez à modifier le chiffre à l'intérieur de
 `<span class="photo-count-badge">...<span>N</span></span>` pour qu'il
 reste juste.
 
+### Cas particulier : plusieurs articles sur une seule photo
+
+Certaines photos montrent **plusieurs articles à la fois** (trois bourses
+côte à côte, un couteau avec son fourreau, une paire de haches...). Ces
+articles ne sont pas séparés en plusieurs lignes : ils restent **sur une
+seule ligne partageant la photo**, et chacun garde sa référence, son
+époque, sa description et son prix. Le bloc ressemble à ceci :
+
+```html
+<!-- GROUP E11 -->
+<article class="catalog-row catalog-row--group" data-count="3" ...>
+  <a class="catalog-row__media"> ... la photo commune ... </a>
+  <div class="catalog-row__main">
+    <p class="group-note">The three purses are shown on the same photograph.</p>
+    <ul class="variant-list">
+      <li class="variant"> ... E11 : titre, époque, description, prix ... </li>
+      <li class="variant"> ... E12 ... </li>
+      <li class="variant"> ... E13 ... </li>
+    </ul>
+  </div>
+</article>
+<!-- /GROUP E11 -->
+```
+
+**Pour ajouter un article dans un groupe existant :** copiez un bloc
+`<li class="variant">…</li>` entier à l'intérieur du `<ul class="variant-list">`,
+modifiez sa référence, son titre, son époque, sa description et son prix.
+
+**Important :** l'attribut `data-count="3"` indique le nombre réel de
+produits de la ligne — c'est lui qui alimente le compteur « N pièces
+affichées » en haut de page. Si vous ajoutez ou retirez une variante,
+mettez ce chiffre à jour. (Une référence qui en couvre plusieurs, comme
+`A11, A12, A13`, compte pour 3.)
+
+Une ligne normale (un seul article) n'a pas besoin de `data-count` :
+elle compte automatiquement pour 1.
+
 ---
 
 ## 5. Ajouter ou remplacer une photo
@@ -210,7 +247,11 @@ Le catalogue anglais est maintenant **complet** : les 9 catégories
 vie de camp, vaisselle) reprennent la **totalité** des références encore
 listées sur le site actuel — **305 produits réels**, chacun avec sa
 référence, son prix, sa description et ses vraies photos (souvent
-plusieurs par pièce, avec zoom et galerie) :
+plusieurs par pièce, avec zoom et galerie).
+
+Ces 305 produits sont présentés sur **279 lignes** : 20 lignes regroupent
+plusieurs articles qui partagent une même photo (voir section 4). Le
+détail par catégorie :
 
 | Catégorie | Produits migrés |
 |---|---|
@@ -247,6 +288,14 @@ plusieurs par pièce, avec zoom et galerie) :
   serveur) — une poignée de cas isolés, sans impact sur le nombre de
   produits migrés : le badge photo de chaque fiche affiche uniquement les
   images réellement récupérées.
+- **Deux catégories de l'ancien site n'ont pas encore été migrées** et
+  représentent de vrais produits, dont les plus chers du catalogue :
+  les **rapières** (série RE, ~14 pièces, 500–990 €) et les **armes à
+  feu** (série GN, ~16 pièces, 399–1 390 € — arquebuses à main, « pistala »
+  hussite, bandoulière de mousquetaire, avec certification du banc
+  d'épreuve tchèque). S'y ajoute l'**habillement** (série SN/BT :
+  boutons d'étain, enseignes de pèlerin, aiguillettes, ~14 réfs).
+  Ce sont les prochains chantiers prioritaires.
 
 **À propos du logo :** le logo historique (`assets/images/branding/logo.jpg`,
 style gothique doré sur fond noir) a été conservé dans le dossier comme
