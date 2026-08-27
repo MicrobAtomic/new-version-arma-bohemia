@@ -11,12 +11,22 @@ html {
   html { scroll-behavior: auto; }
 }
 
+html {
+  /* Filet de sécurité : si un élément déborde par erreur de la largeur
+     de l'écran (barre de filtres, menu mobile...), on le découpe plutôt
+     que de laisser le navigateur ajouter une barre de défilement
+     horizontale qui décale toute la page vers la gauche. */
+  overflow-x: hidden;
+}
+
 body {
   background: var(--color-ivory-100);
   color: var(--color-ink-900);
   font-family: var(--font-body);
   font-size: var(--fs-body);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 .container {

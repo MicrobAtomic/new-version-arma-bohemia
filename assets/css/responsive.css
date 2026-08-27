@@ -33,6 +33,8 @@
   .catalog-filters {
     flex-wrap: nowrap;
     overflow-x: auto;
+    min-width: 0;
+    max-width: 100%;
     margin-inline: calc(var(--space-sm) * -1);
     padding-inline: var(--space-sm);
     padding-bottom: 0.2rem;
