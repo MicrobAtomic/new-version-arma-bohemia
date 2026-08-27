@@ -2,10 +2,12 @@
 ============================================================
 ARMA BOHEMIA — CAMP LIFE CATALOGUE (English)
 ============================================================
-HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
-to "END PRODUCT"), paste it, change reference/title/period/
-text/price, and put the photo in /assets/images/products/camp-life/
-(update the "src" and "href" to match its filename).
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->"), paste it,
+change reference/title/period/text/price, and put the photo in
+/assets/images/products/camp-life/ (update the "href" and "src").
+Several photos: list them all in data-lightbox-images and update
+the number in the camera badge.
 
 HOW TO REMOVE A PRODUCT: delete its whole block.
 HOW TO CHANGE A PRICE: find the reference, edit its
@@ -120,133 +122,385 @@ HOW TO CHANGE A PRICE: find the reference, edit its
         <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
       </p>
 
-      <div class="product-grid product-grid--wide">
+      <div class="catalog-list">
 
-        <!-- PRODUCT C43 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c43.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c43.jpg"]' data-lightbox-caption="C43 — Lantern">
-            <img src="../assets/images/products/camp-life/c43.jpg" alt="Iron lantern with hand-formed glass door, reference C43" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- C42 -->
+        <article class="catalog-row" data-tags="furniture" data-search="c42 wooden bench xvth century length approx. 102 cm. hardwood oak, beech, ash, easily demountable for transport.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c42m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c42v.jpg"]' data-lightbox-caption="C42 — Wooden bench">
+            <img src="../assets/images/products/camp-life/c42m.jpg" alt="Wooden bench, reference C42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">C43</span>
-            <h2 class="product-title">Lantern</h2>
-            <p class="product-period">XVth century</p>
-            <p class="product-description">Iron, glass door formed by hand. Height approx. 25 cm.</p>
-            <div class="product-footer"><p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C43 -->
-
-        <!-- PRODUCT C46A -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c46a.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c46a.jpg"]' data-lightbox-caption="C46a — Lantern">
-            <img src="../assets/images/products/camp-life/c46a.jpg" alt="Iron lantern, reference C46a" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">C46a</span>
-            <h2 class="product-title">Lantern</h2>
-            <p class="product-period">XVth century</p>
-            <p class="product-description">Iron, handle on the back side. Height approx. 33 cm.</p>
-            <div class="product-footer"><p class="product-price">116 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C46A -->
-
-        <!-- PRODUCT C30 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c30.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c30.jpg"]' data-lightbox-caption="C30 — Surgical set">
-            <img src="../assets/images/products/camp-life/c30.jpg" alt="Surgical set, reference C30" loading="lazy" width="100" height="153">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">C30</span>
-            <h2 class="product-title">Surgical set</h2>
-            <p class="product-period">XVth century</p>
-            <p class="product-description">8 pieces, steel, based on a period chronicle.</p>
-            <div class="product-footer"><p class="product-price">340 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C30 -->
-
-        <!-- PRODUCT C35 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c35.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c35.jpg"]' data-lightbox-caption="C35 — Basic stirrups">
-            <img src="../assets/images/products/camp-life/c35.jpg" alt="Basic stirrups, reference C35" loading="lazy" width="127" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">C35</span>
-            <h2 class="product-title">Basic stirrups</h2>
-            <p class="product-period">Bohemia &amp; Germany · XVth century</p>
-            <p class="product-description">4 handmade iron buckles included.</p>
-            <div class="product-footer"><p class="product-price">137 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C35 -->
-
-        <!-- PRODUCT DV01 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/dv01.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/dv01.jpg"]' data-lightbox-caption="DV01 — Wax tablet">
-            <img src="../assets/images/products/camp-life/dv01.jpg" alt="Wax tablet, reference DV01" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">DV01</span>
-            <h2 class="product-title">Wax tablet</h2>
-            <p class="product-description">17 × 10.5 × 2 cm, wooden frame filled with beeswax. Includes brass stylus.</p>
-            <div class="product-footer"><p class="product-price">30 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT DV01 -->
-
-        <!-- PRODUCT C32 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c32.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c32.jpg"]' data-lightbox-caption="C32 — Iron igniter">
-            <img src="../assets/images/products/camp-life/c32.jpg" alt="Iron igniter, reference C32" loading="lazy" width="100" height="126">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">C32</span>
-            <h2 class="product-title">Iron igniter</h2>
-            <p class="product-period">XII–XVIth century</p>
-            <p class="product-description">Length approx. 6.5 cm.</p>
-            <div class="product-footer"><p class="product-price">15 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C32 -->
-
-        <!-- PRODUCT C15 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c15.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c15.jpg"]' data-lightbox-caption="C15 — Pair of beeswax candles">
-            <img src="../assets/images/products/camp-life/c15.jpg" alt="Pair of beeswax candles, reference C15" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">C15</span>
-            <h2 class="product-title">Pair of candles</h2>
-            <p class="product-description">Beeswax. Height approx. 20 cm, sold per pair.</p>
-            <div class="product-footer"><p class="product-price">6 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT C15 -->
-
-        <!-- PRODUCT C42 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/camp-life/c42.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c42.jpg"]' data-lightbox-caption="C42 — Wooden bench">
-            <img src="../assets/images/products/camp-life/c42.jpg" alt="Wooden bench, reference C42" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">C42</span>
             <h2 class="product-title">Wooden bench</h2>
             <p class="product-period">XVth century</p>
             <p class="product-description">Length approx. 102 cm. Hardwood (oak, beech, ash), easily demountable for transport.</p>
-            <div class="product-footer"><p class="product-price">139 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">139 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT C42 -->
+        <!-- /C42 -->
+
+        <!-- C43m -->
+        <article class="catalog-row" data-tags="lantern" data-search="c43m lantern mini xvth century brass, glass door formed by hand. height approx. 16 cm. mini version of c43.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c43nm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c43nv.JPG","../assets/images/products/camp-life/c43nv2.JPG"]' data-lightbox-caption="C43m — Lantern (mini)">
+            <img src="../assets/images/products/camp-life/c43nm.jpg" alt="Lantern (mini), reference C43m" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C43m</span>
+            <h2 class="product-title">Lantern (mini)</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass, glass door formed by hand. Height approx. 16 cm. Mini version of C43.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C43m -->
+
+        <!-- C37m -->
+        <article class="catalog-row" data-tags="lantern" data-search="c37m lantern mini xvth century brass. height approx. 16 cm. mini version of c37.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c37bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c37b.JPG","../assets/images/products/camp-life/c37bv2.JPG"]' data-lightbox-caption="C37m — Lantern (mini)">
+            <img src="../assets/images/products/camp-life/c37bm.jpg" alt="Lantern (mini), reference C37m" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C37m</span>
+            <h2 class="product-title">Lantern (mini)</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass. Height approx. 16 cm. Mini version of C37.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C37m -->
+
+        <!-- C46m -->
+        <article class="catalog-row" data-tags="lantern" data-search="c46m lantern mini xvth century brass or copper with a brass door. height approx. 15 cm. mini version of c46.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c46mm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c46mv.jpg","../assets/images/products/camp-life/c46mv2.jpg","../assets/images/products/camp-life/c46mv3.jpg"]' data-lightbox-caption="C46m — Lantern (mini)">
+            <img src="../assets/images/products/camp-life/c46mm.jpg" alt="Lantern (mini), reference C46m" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C46m</span>
+            <h2 class="product-title">Lantern (mini)</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass or copper with a brass door. Height approx. 15 cm. Mini version of C46.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C46m -->
+
+        <!-- C44a -->
+        <article class="catalog-row" data-tags="lantern" data-search="c44a lantern xvth century iron, handle on the back side. height approx. 33 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c44ma.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c44v2.jpg"]' data-lightbox-caption="C44a — Lantern">
+            <img src="../assets/images/products/camp-life/c44ma.jpg" alt="Lantern, reference C44a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C44a</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Iron, handle on the back side. Height approx. 33 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">116 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C44a -->
+
+        <!-- C46a -->
+        <article class="catalog-row" data-tags="lantern" data-search="c46a lantern xvth century iron. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c46am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c46av.jpg"]' data-lightbox-caption="C46a — Lantern">
+            <img src="../assets/images/products/camp-life/c46am.jpg" alt="Lantern, reference C46a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C46a</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Iron. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C46a -->
+
+        <!-- C46b -->
+        <article class="catalog-row" data-tags="lantern" data-search="c46b lantern xvth century brass. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c46bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c46bv.jpg"]' data-lightbox-caption="C46b — Lantern">
+            <img src="../assets/images/products/camp-life/c46bm.jpg" alt="Lantern, reference C46b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C46b</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">99 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C46b -->
+
+        <!-- C43 -->
+        <article class="catalog-row" data-tags="lantern" data-search="c43 lantern xvth century iron, glass door formed by hand. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c43m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c43v.jpg"]' data-lightbox-caption="C43 — Lantern">
+            <img src="../assets/images/products/camp-life/c43m.jpg" alt="Lantern, reference C43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C43</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Iron, glass door formed by hand. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C43 -->
+
+        <!-- C43b -->
+        <article class="catalog-row" data-tags="lantern" data-search="c43b lantern xvth century brass, glass door formed by hand. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c43bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c43bv.jpg"]' data-lightbox-caption="C43b — Lantern">
+            <img src="../assets/images/products/camp-life/c43bm.jpg" alt="Lantern, reference C43b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C43b</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass, glass door formed by hand. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">99 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C43b -->
+
+        <!-- C37 -->
+        <article class="catalog-row" data-tags="lantern" data-search="c37 lantern xvth century brass. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c37m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c37v.jpg"]' data-lightbox-caption="C37 — Lantern">
+            <img src="../assets/images/products/camp-life/c37m.jpg" alt="Lantern, reference C37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C37</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">99 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C37 -->
+
+        <!-- C38 -->
+        <article class="catalog-row" data-tags="lantern" data-search="c38 lantern xvth century iron. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c38m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c38v.jpg"]' data-lightbox-caption="C38 — Lantern">
+            <img src="../assets/images/products/camp-life/c38m.jpg" alt="Lantern, reference C38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C38</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Iron. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C38 -->
+
+        <!-- C39 -->
+        <article class="catalog-row" data-tags="lantern" data-search="c39 lantern xvth century iron. height approx. 25 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c39m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c39v.jpg","../assets/images/products/camp-life/c39v2.jpg","../assets/images/products/camp-life/c39v3.jpg"]' data-lightbox-caption="C39 — Lantern">
+            <img src="../assets/images/products/camp-life/c39m.jpg" alt="Lantern, reference C39" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C39</span>
+            <h2 class="product-title">Lantern</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Iron. Height approx. 25 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C39 -->
+
+        <!-- DV01 -->
+        <article class="catalog-row" data-tags="other" data-search="dv01 wax tablet — 17 × 10.5 × 2 cm, wooden frame filled with beeswax. includes brass stylus.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/dv01m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/dv01v.jpg","../assets/images/products/camp-life/dv01v2.jpg","../assets/images/products/camp-life/dv01v3.jpg"]' data-lightbox-caption="DV01 — Wax tablet">
+            <img src="../assets/images/products/camp-life/dv01m.jpg" alt="Wax tablet, reference DV01" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DV01</span>
+            <h2 class="product-title">Wax tablet</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">17 × 10.5 × 2 cm, wooden frame filled with beeswax. Includes brass stylus.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">30 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DV01 -->
+
+        <!-- C32 -->
+        <article class="catalog-row" data-tags="tool" data-search="c32 iron igniter xii-xvith century length approx. 6.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/C32m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/C32v.jpg"]' data-lightbox-caption="C32 — Iron igniter">
+            <img src="../assets/images/products/camp-life/C32m.jpg" alt="Iron igniter, reference C32" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C32</span>
+            <h2 class="product-title">Iron igniter</h2>
+            <p class="product-period">XII-XVIth century</p>
+            <p class="product-description">Length approx. 6.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">15 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C32 -->
+
+        <!-- C33 -->
+        <article class="catalog-row" data-tags="tool" data-search="c33 iron igniter xii-xvith century length approx. 6.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/C33m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/C33v.jpg"]' data-lightbox-caption="C33 — Iron igniter">
+            <img src="../assets/images/products/camp-life/C33m.jpg" alt="Iron igniter, reference C33" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C33</span>
+            <h2 class="product-title">Iron igniter</h2>
+            <p class="product-period">XII-XVIth century</p>
+            <p class="product-description">Length approx. 6.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">15 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C33 -->
+
+        <!-- C34 -->
+        <article class="catalog-row" data-tags="tool" data-search="c34 iron igniter xv-xviith century length approx. 8 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/C34m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/C34v.jpg"]' data-lightbox-caption="C34 — Iron igniter">
+            <img src="../assets/images/products/camp-life/C34m.jpg" alt="Iron igniter, reference C34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C34</span>
+            <h2 class="product-title">Iron igniter</h2>
+            <p class="product-period">XV-XVIIth century</p>
+            <p class="product-description">Length approx. 8 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">15 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C34 -->
+
+        <!-- C15 -->
+        <article class="catalog-row" data-tags="other" data-search="c15 pair of candles — beeswax. height approx. 20 cm, sold per pair.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/c15m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/c15v.jpg"]' data-lightbox-caption="C15 — Pair of candles">
+            <img src="../assets/images/products/camp-life/c15m.jpg" alt="Pair of candles, reference C15" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C15</span>
+            <h2 class="product-title">Pair of candles</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Beeswax. Height approx. 20 cm, sold per pair.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">6 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C15 -->
+
+        <!-- C17 -->
+        <article class="catalog-row" data-tags="tool" data-search="c17 candlestick — iron.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/svicen2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/piton.jpg"]' data-lightbox-caption="C17 — Candlestick">
+            <img src="../assets/images/products/camp-life/svicen2.jpg" alt="Candlestick, reference C17" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C17</span>
+            <h2 class="product-title">Candlestick</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Iron.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">10 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C17 -->
+
+        <!-- C30 -->
+        <article class="catalog-row" data-tags="tool" data-search="c30 surgical set xvth century 8 pieces, steel, based on a period chronicle.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/Mdecin2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/Mdecin.jpg"]' data-lightbox-caption="C30 — Surgical set">
+            <img src="../assets/images/products/camp-life/Mdecin2.jpg" alt="Surgical set, reference C30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C30</span>
+            <h2 class="product-title">Surgical set</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">8 pieces, steel, based on a period chronicle.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">340 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C30 -->
+
+        <!-- C35 -->
+        <article class="catalog-row" data-tags="tool" data-search="c35 basic stirrups bohemia &amp; germany · xvth century 4 handmade iron buckles included.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/trmenm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/trmenv1.jpg","../assets/images/products/camp-life/trmenv2.jpg","../assets/images/products/camp-life/trmenv3.jpg"]' data-lightbox-caption="C35 — Basic stirrups">
+            <img src="../assets/images/products/camp-life/trmenm.jpg" alt="Basic stirrups, reference C35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C35</span>
+            <h2 class="product-title">Basic stirrups</h2>
+            <p class="product-period">Bohemia &amp; Germany · XVth century</p>
+            <p class="product-description">4 handmade iron buckles included.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">137 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C35 -->
+
+        <!-- C36 -->
+        <article class="catalog-row" data-tags="tool" data-search="c36 iron hooks for kitchen — standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/camp-life/hakm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/camp-life/hakv.jpg"]' data-lightbox-caption="C36 — Iron hooks for kitchen">
+            <img src="../assets/images/products/camp-life/hakm.jpg" alt="Iron hooks for kitchen, reference C36" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C36</span>
+            <h2 class="product-title">Iron hooks for kitchen</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /C36 -->
 
       </div>
 

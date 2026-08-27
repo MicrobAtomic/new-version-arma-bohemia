@@ -2,10 +2,12 @@
 ============================================================
 ARMA BOHEMIA — TABLEWARE & CUTLERY CATALOGUE (English)
 ============================================================
-HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
-to "END PRODUCT"), paste it, change reference/title/period/
-text/price, and put the photo in /assets/images/products/tableware/
-(update the "src" and "href" to match its filename).
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->"), paste it,
+change reference/title/period/text/price, and put the photo in
+/assets/images/products/tableware/ (update the "href" and "src").
+Several photos: list them all in data-lightbox-images and update
+the number in the camera badge.
 
 HOW TO REMOVE A PRODUCT: delete its whole block.
 HOW TO CHANGE A PRICE: find the reference, edit its
@@ -108,7 +110,7 @@ HOW TO CHANGE A PRICE: find the reference, edit its
     <div class="container">
       <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Tableware &amp; Cutlery</p>
       <h1>Tableware &amp; Cutlery</h1>
-      <p class="lead">Medieval table knives, forks and ladles — XIIIth to XVIth century.</p>
+      <p class="lead">Medieval table knives, forks and ladles — XIIIth to XVIth century. The full range offered by the workshop over the years — 44 pieces.</p>
     </div>
   </div>
 
@@ -120,135 +122,819 @@ HOW TO CHANGE A PRICE: find the reference, edit its
         <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
       </p>
 
-      <div class="product-grid product-grid--wide">
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="tableware-search">Search tableware</label>
+          <input type="search" id="tableware-search" data-catalog-search placeholder="Search by reference, name or century…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filter by type">
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all" aria-pressed="true">All types</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="knife">Knives</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="cutlery">Forks</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="kitchenware">Kitchenware</button>
+        </div>
+      </div>
 
-        <!-- PRODUCT A25 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a25.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a25.jpg"]' data-lightbox-caption="A25 — Kitchen knife">
-            <img src="../assets/images/products/tableware/a25.jpg" alt="Kitchen knife, reference A25" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">A25</span>
-            <h2 class="product-title">Kitchen knife</h2>
-            <p class="product-period">Slovakia · circa 1460–1470</p>
-            <p class="product-description">Exact copy, from the Arma Bohemia collection.</p>
-            <div class="product-footer"><p class="product-price">68 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT A25 -->
+      <p class="catalog-count" data-catalog-count data-template="{n} pieces shown">44 pieces shown</p>
 
-        <!-- PRODUCT A42 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a42.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a42.jpg"]' data-lightbox-caption="A42 — Fork">
-            <img src="../assets/images/products/tableware/a42.jpg" alt="Medieval fork, reference A42" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">A42</span>
-            <h2 class="product-title">Fork</h2>
-            <p class="product-period">XVth century</p>
-            <p class="product-description">Exact copy, iron, approx. 33 cm. Wooden handle not included.</p>
-            <div class="product-footer"><p class="product-price">69 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT A42 -->
+      <div class="catalog-list" data-catalog-grid>
 
-        <!-- PRODUCT A50 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a50.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a50.jpg"]' data-lightbox-caption="A50 — Knife, folded steel">
-            <img src="../assets/images/products/tableware/a50.jpg" alt="Table knife with folded steel blade, reference A50" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- A68 -->
+        <article class="catalog-row" data-tags="knife" data-search="a68 knife netherlands · late xiii-early xivth century bone handle. length approx. 22.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a68m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a68v.jpg","../assets/images/products/tableware/a68v2.jpg","../assets/images/products/tableware/a68v3.jpg"]' data-lightbox-caption="A68 — Knife">
+            <img src="../assets/images/products/tableware/a68m.jpg" alt="Knife, reference A68" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">A50</span>
-            <h2 class="product-title">Knife</h2>
-            <p class="product-period">Germany or Flanders · circa 1500</p>
-            <p class="product-description">Folded steel blade, horn grip. Length approx. 18 cm.</p>
-            <div class="product-footer"><p class="product-price">83 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT A50 -->
-
-        <!-- PRODUCT A29 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a29.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a29.jpg"]' data-lightbox-caption="A29 — Knife &amp; pricker set">
-            <img src="../assets/images/products/tableware/a29.jpg" alt="Knife and pricker set, reference A29" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">A29</span>
-            <h2 class="product-title">Knife &amp; pricker set</h2>
-            <p class="product-period">Late XV–early XVIth century</p>
-            <p class="product-description">Exact copy, bone grip, approx. 14.5 cm each.</p>
-            <div class="product-footer"><p class="product-price">58 € each<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT A29 -->
-
-        <!-- PRODUCT A68 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a68.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a68.jpg"]' data-lightbox-caption="A68 — Knife">
-            <img src="../assets/images/products/tableware/a68.jpg" alt="Table knife, reference A68" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">A68</span>
             <h2 class="product-title">Knife</h2>
-            <p class="product-period">Netherlands · late XIII–early XIVth century</p>
-            <p class="product-description">Bone handle, approx. 22.5 cm.</p>
-            <div class="product-footer"><p class="product-price">115 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Netherlands · late XIII-early XIVth century</p>
+            <p class="product-description">Bone handle. Length approx. 22.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">115 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT A68 -->
+        <!-- /A68 -->
 
-        <!-- PRODUCT A18 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a18.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a18.jpg"]' data-lightbox-caption="A18 — Kitchen knife">
-            <img src="../assets/images/products/tableware/a18.jpg" alt="Kitchen knife, reference A18" loading="lazy" width="100" height="149">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- A69 -->
+        <article class="catalog-row" data-tags="knife" data-search="a69 knife netherlands or germany · xiv-xvth century bone handle. length approx. 19 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a69m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a69v.jpg","../assets/images/products/tableware/a69v2.jpg"]' data-lightbox-caption="A69 — Knife">
+            <img src="../assets/images/products/tableware/a69m.jpg" alt="Knife, reference A69" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">A69</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Netherlands or Germany · XIV-XVth century</p>
+            <p class="product-description">Bone handle. Length approx. 19 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">119 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A69 -->
+
+        <!-- A70 -->
+        <article class="catalog-row" data-tags="knife" data-search="a70 knife netherlands · xivth century wooden handle. length approx. 21 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a70m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a70v.jpg","../assets/images/products/tableware/a70v2.jpg"]' data-lightbox-caption="A70 — Knife">
+            <img src="../assets/images/products/tableware/a70m.jpg" alt="Knife, reference A70" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A70</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Netherlands · XIVth century</p>
+            <p class="product-description">Wooden handle. Length approx. 21 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">73 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A70 -->
+
+        <!-- A11 -->
+        <article class="catalog-row" data-tags="knife" data-search="a11 small knife xvth century length approx. 20 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/noze01.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/noze02.jpg"]' data-lightbox-caption="A11 — Small knife">
+            <img src="../assets/images/products/tableware/noze01.jpg" alt="Small knife, reference A11" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A11</span>
+            <h2 class="product-title">Small knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length approx. 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A11 -->
+
+        <!-- A12 -->
+        <article class="catalog-row" data-tags="knife" data-search="a12 small knife xvth century length approx. 20 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/noze01.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/noze02.jpg"]' data-lightbox-caption="A12 — Small knife">
+            <img src="../assets/images/products/tableware/noze01.jpg" alt="Small knife, reference A12" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A12</span>
+            <h2 class="product-title">Small knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length approx. 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A12 -->
+
+        <!-- A13 -->
+        <article class="catalog-row" data-tags="knife" data-search="a13 small knife xvth century length approx. 20 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/noze01.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/noze02.jpg"]' data-lightbox-caption="A13 — Small knife">
+            <img src="../assets/images/products/tableware/noze01.jpg" alt="Small knife, reference A13" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A13</span>
+            <h2 class="product-title">Small knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length approx. 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A13 -->
+
+        <!-- A14 -->
+        <article class="catalog-row" data-tags="other" data-search="a14 leather scabbard — accompanies the small knives a11-a13.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/noze01.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/noze02.jpg"]' data-lightbox-caption="A14 — Leather scabbard">
+            <img src="../assets/images/products/tableware/noze01.jpg" alt="Leather scabbard, reference A14" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A14</span>
+            <h2 class="product-title">Leather scabbard</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Accompanies the small knives A11-A13.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">17 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A14 -->
+
+        <!-- A11b -->
+        <article class="catalog-row" data-tags="knife" data-search="a11b personal knife late xvth century horn or bone grip. length approx. 21 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a11bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a11bv.jpg"]' data-lightbox-caption="A11b — Personal knife">
+            <img src="../assets/images/products/tableware/a11bm.jpg" alt="Personal knife, reference A11b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A11b</span>
+            <h2 class="product-title">Personal knife</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Horn or bone grip. Length approx. 21 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">50 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A11b -->
+
+        <!-- A18 -->
+        <article class="catalog-row" data-tags="knife" data-search="a18 kitchen knife xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/kuchyn.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/kuchyn2.jpg"]' data-lightbox-caption="A18 — Kitchen knife">
+            <img src="../assets/images/products/tableware/kuchyn.jpg" alt="Kitchen knife, reference A18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">A18</span>
             <h2 class="product-title">Kitchen knife</h2>
             <p class="product-period">XVth century</p>
-            <div class="product-footer"><p class="product-price">119 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">119 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT A18 -->
+        <!-- /A18 -->
 
-        <!-- PRODUCT A20 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a20.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a20.jpg"]' data-lightbox-caption="A20 — Wooden ladle">
-            <img src="../assets/images/products/tableware/a20.jpg" alt="Wooden ladle, reference A20" loading="lazy" width="100" height="149">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- A19 -->
+        <article class="catalog-row" data-tags="knife" data-search="a19 kitchen knife xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/kuchyn.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/kuchyn2.jpg"]' data-lightbox-caption="A19 — Kitchen knife">
+            <img src="../assets/images/products/tableware/kuchyn.jpg" alt="Kitchen knife, reference A19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">A19</span>
+            <h2 class="product-title">Kitchen knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A19 -->
+
+        <!-- A20 -->
+        <article class="catalog-row" data-tags="kitchenware" data-search="a20 wooden ladle xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/kuchyn.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/kuchyn2.jpg"]' data-lightbox-caption="A20 — Wooden ladle">
+            <img src="../assets/images/products/tableware/kuchyn.jpg" alt="Wooden ladle, reference A20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">A20</span>
             <h2 class="product-title">Wooden ladle</h2>
             <p class="product-period">XVth century</p>
-            <div class="product-footer"><p class="product-price">20 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">20 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT A20 -->
+        <!-- /A20 -->
 
-        <!-- PRODUCT A56 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/tableware/a56.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a56.jpg"]' data-lightbox-caption="A56 — Italian knife">
-            <img src="../assets/images/products/tableware/a56.jpg" alt="Italian knife, reference A56" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- A21 -->
+        <article class="catalog-row" data-tags="kitchenware" data-search="a21 wooden strainer xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/kuchyn.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/kuchyn2.jpg"]' data-lightbox-caption="A21 — Wooden strainer">
+            <img src="../assets/images/products/tableware/kuchyn.jpg" alt="Wooden strainer, reference A21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">A56</span>
-            <h2 class="product-title">Italian knife</h2>
-            <p class="product-period">Northern Italy (Trentino) · circa 1450</p>
-            <p class="product-description">Exact copy, length 40 cm.</p>
-            <div class="product-footer"><p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p></div>
+          <div class="catalog-row__main">
+            <span class="product-reference">A21</span>
+            <h2 class="product-title">Wooden strainer</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">22 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT A56 -->
+        <!-- /A21 -->
+
+        <!-- A25 -->
+        <article class="catalog-row" data-tags="knife" data-search="a25 kitchen knife slovakia · circa 1460-1470 exact copy, from the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/nuz1M.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/nuz1V.jpg"]' data-lightbox-caption="A25 — Kitchen knife">
+            <img src="../assets/images/products/tableware/nuz1M.jpg" alt="Kitchen knife, reference A25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A25</span>
+            <h2 class="product-title">Kitchen knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, from the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">68 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A25 -->
+
+        <!-- A26 -->
+        <article class="catalog-row" data-tags="knife" data-search="a26 knife england · 2nd half xth century exact copy, xvth century style.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/nuz2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/nuz2V.jpg"]' data-lightbox-caption="A26 — Knife">
+            <img src="../assets/images/products/tableware/nuz2m.jpg" alt="Knife, reference A26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A26</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">England · 2nd half Xth century</p>
+            <p class="product-description">Exact copy, XVth century style.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">46 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A26 -->
+
+        <!-- A27 -->
+        <article class="catalog-row" data-tags="knife" data-search="a27 knife slovakia · circa 1460-1470 exact copy, from the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/nuz3m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/nuz3v.jpg"]' data-lightbox-caption="A27 — Knife">
+            <img src="../assets/images/products/tableware/nuz3m.jpg" alt="Knife, reference A27" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A27</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, from the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">46 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A27 -->
+
+        <!-- A28 -->
+        <article class="catalog-row" data-tags="knife" data-search="a28 personal knife xvth century horn or bone grip. length approx. 23 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/nozikrohm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/nozikrohV.jpg"]' data-lightbox-caption="A28 — Personal knife">
+            <img src="../assets/images/products/tableware/nozikrohm.jpg" alt="Personal knife, reference A28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A28</span>
+            <h2 class="product-title">Personal knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Horn or bone grip. Length approx. 23 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">48 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A28 -->
+
+        <!-- A14b -->
+        <article class="catalog-row" data-tags="other" data-search="a14b decorated leather scabbard — for a28.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/nozikrohm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/nozikrohV.jpg"]' data-lightbox-caption="A14b — Decorated leather scabbard">
+            <img src="../assets/images/products/tableware/nozikrohm.jpg" alt="Decorated leather scabbard, reference A14b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A14b</span>
+            <h2 class="product-title">Decorated leather scabbard</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">For A28.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">25 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A14b -->
+
+        <!-- A29 -->
+        <article class="catalog-row" data-tags="knife" data-search="a29 knife late xv-early xvith century exact copy, bone grip. length approx. 14.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/body1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/body1v.jpg","../assets/images/products/tableware/body3v.jpg"]' data-lightbox-caption="A29 — Knife">
+            <img src="../assets/images/products/tableware/body1m.jpg" alt="Knife, reference A29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A29</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Late XV-early XVIth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 14.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">58 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A29 -->
+
+        <!-- A30 -->
+        <article class="catalog-row" data-tags="other" data-search="a30 pricker late xv-early xvith century exact copy, bone grip. length approx. 13.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/body1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/body1v.jpg","../assets/images/products/tableware/body3v.jpg"]' data-lightbox-caption="A30 — Pricker">
+            <img src="../assets/images/products/tableware/body1m.jpg" alt="Pricker, reference A30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A30</span>
+            <h2 class="product-title">Pricker</h2>
+            <p class="product-period">Late XV-early XVIth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 13.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">58 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A30 -->
+
+        <!-- A29b -->
+        <article class="catalog-row" data-tags="knife" data-search="a29b knife late xv-early xvith century exact copy, horn grip. length approx. 14.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/n10m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/n10v.jpg"]' data-lightbox-caption="A29b — Knife">
+            <img src="../assets/images/products/tableware/n10m.jpg" alt="Knife, reference A29b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A29b</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Late XV-early XVIth century</p>
+            <p class="product-description">Exact copy, horn grip. Length approx. 14.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">58 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A29b -->
+
+        <!-- A30b -->
+        <article class="catalog-row" data-tags="other" data-search="a30b pricker late xv-early xvith century exact copy, horn grip. length approx. 13.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/n10m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/n10v.jpg"]' data-lightbox-caption="A30b — Pricker">
+            <img src="../assets/images/products/tableware/n10m.jpg" alt="Pricker, reference A30b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A30b</span>
+            <h2 class="product-title">Pricker</h2>
+            <p class="product-period">Late XV-early XVIth century</p>
+            <p class="product-description">Exact copy, horn grip. Length approx. 13.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">58 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A30b -->
+
+        <!-- A31 -->
+        <article class="catalog-row" data-tags="knife" data-search="a31 knife slovakia · circa 1460-1470 exact copy, bone grip. length approx. 19 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout1o.jpg","../assets/images/products/tableware/cout1v.jpg","../assets/images/products/tableware/cout1vv.jpg","../assets/images/products/tableware/cout1vvv.jpg"]' data-lightbox-caption="A31 — Knife">
+            <img src="../assets/images/products/tableware/cout1m.jpg" alt="Knife, reference A31" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A31</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 19 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">69 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A31 -->
+
+        <!-- A32 -->
+        <article class="catalog-row" data-tags="knife" data-search="a32 knife slovakia · circa 1460-1470 exact copy, bone grip. length approx. 18.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout1o.jpg","../assets/images/products/tableware/cout1v.jpg","../assets/images/products/tableware/cout1vv.jpg","../assets/images/products/tableware/cout1vvv.jpg"]' data-lightbox-caption="A32 — Knife">
+            <img src="../assets/images/products/tableware/cout1m.jpg" alt="Knife, reference A32" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A32</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 18.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">69 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A32 -->
+
+        <!-- A33 -->
+        <article class="catalog-row" data-tags="knife" data-search="a33 knife slovakia · circa 1460-1470 exact copy, from the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout2v.jpg"]' data-lightbox-caption="A33 — Knife">
+            <img src="../assets/images/products/tableware/cout2m.jpg" alt="Knife, reference A33" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A33</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, from the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A33 -->
+
+        <!-- A34 -->
+        <article class="catalog-row" data-tags="knife" data-search="a34 knife slovakia · circa 1460-1470 exact copy, from the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout3m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout3v.jpg","../assets/images/products/tableware/cout3vv.jpg"]' data-lightbox-caption="A34 — Knife">
+            <img src="../assets/images/products/tableware/cout3m.jpg" alt="Knife, reference A34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A34</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Slovakia · circa 1460-1470</p>
+            <p class="product-description">Exact copy, from the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A34 -->
+
+        <!-- A35 -->
+        <article class="catalog-row" data-tags="other" data-search="a35 collective leather scabbard — for knife a29 or a31, a32 and pricker a30.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/pochvicky1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/pochvicky.jpg"]' data-lightbox-caption="A35 — Collective leather scabbard">
+            <img src="../assets/images/products/tableware/pochvicky1.jpg" alt="Collective leather scabbard, reference A35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A35</span>
+            <h2 class="product-title">Collective leather scabbard</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">For knife A29 (or A31, A32) and pricker A30.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">22 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A35 -->
+
+        <!-- A37 -->
+        <article class="catalog-row" data-tags="knife" data-search="a37 knife xvth century exact copy, bone grip. length approx. 20.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout37m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout37v.jpg"]' data-lightbox-caption="A37 — Knife">
+            <img src="../assets/images/products/tableware/cout37m.jpg" alt="Knife, reference A37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A37</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 20.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A37 -->
+
+        <!-- A38 -->
+        <article class="catalog-row" data-tags="knife" data-search="a38 knife xvth century exact copy, bone grip. length approx. 15.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/cout38m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/cout38v.jpg","../assets/images/products/tableware/cout38v2.jpg","../assets/images/products/tableware/cout38v3.jpg","../assets/images/products/tableware/cout38v4.jpg"]' data-lightbox-caption="A38 — Knife">
+            <img src="../assets/images/products/tableware/cout38m.jpg" alt="Knife, reference A38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A38</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 15.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A38 -->
+
+        <!-- A39 -->
+        <article class="catalog-row" data-tags="knife" data-search="a39 knife late xvth century exact copy, bone grip. length approx. 14.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a39m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a39m.jpg"]' data-lightbox-caption="A39 — Knife">
+            <img src="../assets/images/products/tableware/a39m.jpg" alt="Knife, reference A39" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A39</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 14.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">53 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A39 -->
+
+        <!-- A40 -->
+        <article class="catalog-row" data-tags="knife" data-search="a40 knife xvth century exact copy, bone grip. length approx. 19 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a40m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a40v.jpg","../assets/images/products/tableware/a40v2.jpg"]' data-lightbox-caption="A40 — Knife">
+            <img src="../assets/images/products/tableware/a40m.jpg" alt="Knife, reference A40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A40</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Exact copy, bone grip. Length approx. 19 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A40 -->
+
+        <!-- A42 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a42 fork xv-xvith century exact copy, iron, approx. 33 cm. wooden handle not included.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a42m2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a42v.jpg","../assets/images/products/tableware/a42v2.jpg","../assets/images/products/tableware/a42v3.JPG"]' data-lightbox-caption="A42 — Fork">
+            <img src="../assets/images/products/tableware/a42m2.jpg" alt="Fork, reference A42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A42</span>
+            <h2 class="product-title">Fork</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Exact copy, iron, approx. 33 cm. Wooden handle not included.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">69 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A42 -->
+
+        <!-- A43 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a43 fork xv-xvith century exact copy, iron, approx. 14.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a43m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a43v.jpg","../assets/images/products/tableware/a43v2.jpg"]' data-lightbox-caption="A43 — Fork">
+            <img src="../assets/images/products/tableware/a43m.jpg" alt="Fork, reference A43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A43</span>
+            <h2 class="product-title">Fork</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Exact copy, iron, approx. 14.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A43 -->
+
+        <!-- A45 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a45 fork xvth century exact copy, iron, approx. 15.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a45v.jpg","../assets/images/products/tableware/a45v2.jpg"]' data-lightbox-caption="A45 — Fork">
+            <img src="../assets/images/products/tableware/a45m.jpg" alt="Fork, reference A45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A45</span>
+            <h2 class="product-title">Fork</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Exact copy, iron, approx. 15.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A45 -->
+
+        <!-- A46 -->
+        <article class="catalog-row" data-tags="knife" data-search="a46 personal knife probably netherlands · xvth century exact copy, steel, approx. 20 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a46m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a46v.jpg","../assets/images/products/tableware/a46v2.jpg"]' data-lightbox-caption="A46 — Personal knife">
+            <img src="../assets/images/products/tableware/a46m.jpg" alt="Personal knife, reference A46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A46</span>
+            <h2 class="product-title">Personal knife</h2>
+            <p class="product-period">Probably Netherlands · XVth century</p>
+            <p class="product-description">Exact copy, steel, approx. 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">40 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A46 -->
+
+        <!-- A47 -->
+        <article class="catalog-row" data-tags="knife" data-search="a47 personal knife southern germany · xv-xvith century exact copy, steel, approx. 20 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a47m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a47v.jpg","../assets/images/products/tableware/a47v2.jpg"]' data-lightbox-caption="A47 — Personal knife">
+            <img src="../assets/images/products/tableware/a47m.jpg" alt="Personal knife, reference A47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A47</span>
+            <h2 class="product-title">Personal knife</h2>
+            <p class="product-period">Southern Germany · XV-XVIth century</p>
+            <p class="product-description">Exact copy, steel, approx. 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">43 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A47 -->
+
+        <!-- A48 -->
+        <article class="catalog-row" data-tags="knife" data-search="a48 knife netherlands · xiv-xvth century exact copy, approx. 16 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a48m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a48v.jpg","../assets/images/products/tableware/a48v2.jpg"]' data-lightbox-caption="A48 — Knife">
+            <img src="../assets/images/products/tableware/a48m.jpg" alt="Knife, reference A48" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A48</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Netherlands · XIV-XVth century</p>
+            <p class="product-description">Exact copy, approx. 16 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A48 -->
+
+        <!-- A49 -->
+        <article class="catalog-row" data-tags="knife" data-search="a49 knife netherlands · xvth century exact copy, approx. 17 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a49m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a49v.jpg","../assets/images/products/tableware/a49v2.jpg"]' data-lightbox-caption="A49 — Knife">
+            <img src="../assets/images/products/tableware/a49m.jpg" alt="Knife, reference A49" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A49</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Netherlands · XVth century</p>
+            <p class="product-description">Exact copy, approx. 17 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A49 -->
+
+        <!-- A50 -->
+        <article class="catalog-row" data-tags="knife" data-search="a50 knife germany or flanders · circa 1500 exact copy. folded steel blade, horn grip. length approx. 18 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a50m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a50v.jpg","../assets/images/products/tableware/a50v2.jpg","../assets/images/products/tableware/a50v3.jpg"]' data-lightbox-caption="A50 — Knife">
+            <img src="../assets/images/products/tableware/a50m.jpg" alt="Knife, reference A50" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A50</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Germany or Flanders · circa 1500</p>
+            <p class="product-description">Exact copy. Folded steel blade, horn grip. Length approx. 18 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">83 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A50 -->
+
+        <!-- A51 -->
+        <article class="catalog-row" data-tags="knife" data-search="a51 knife bohemia · xvth century exact copy, horn grip, approx. 19 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a51m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a51v.jpg","../assets/images/products/tableware/a51v2.jpg"]' data-lightbox-caption="A51 — Knife">
+            <img src="../assets/images/products/tableware/a51m.jpg" alt="Knife, reference A51" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A51</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">Bohemia · XVth century</p>
+            <p class="product-description">Exact copy, horn grip, approx. 19 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A51 -->
+
+        <!-- A54 -->
+        <article class="catalog-row" data-tags="knife" data-search="a54 knife england ? · xv-xvith century exact copy, approx. 21.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a54m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a54v.jpg","../assets/images/products/tableware/a54v2.jpg"]' data-lightbox-caption="A54 — Knife">
+            <img src="../assets/images/products/tableware/a54m.jpg" alt="Knife, reference A54" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A54</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">England (?) · XV-XVIth century</p>
+            <p class="product-description">Exact copy, approx. 21.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A54 -->
+
+        <!-- A55 -->
+        <article class="catalog-row" data-tags="knife" data-search="a55 knife xvith century exact copy, approx. 27.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a55m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a55v.jpg","../assets/images/products/tableware/a55v2.jpg"]' data-lightbox-caption="A55 — Knife">
+            <img src="../assets/images/products/tableware/a55m.jpg" alt="Knife, reference A55" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A55</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">XVIth century</p>
+            <p class="product-description">Exact copy, approx. 27.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">59 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A55 -->
+
+        <!-- A63 -->
+        <article class="catalog-row" data-tags="knife" data-search="a63 knife england · xivth century exact copy, approx. 16 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a63m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a63v.jpg","../assets/images/products/tableware/a63v2.jpg","../assets/images/products/tableware/a63v3.jpg"]' data-lightbox-caption="A63 — Knife">
+            <img src="../assets/images/products/tableware/a63m.jpg" alt="Knife, reference A63" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A63</span>
+            <h2 class="product-title">Knife</h2>
+            <p class="product-period">England · XIVth century</p>
+            <p class="product-description">Exact copy, approx. 16 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A63 -->
+
+        <!-- A64 -->
+        <article class="catalog-row" data-tags="knife" data-search="a64 kitchen knife england · xivth century copy, larger version of a63. approx. 26.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a64m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a63v.jpg","../assets/images/products/tableware/a63v2.jpg","../assets/images/products/tableware/a63v3.jpg"]' data-lightbox-caption="A64 — Kitchen knife">
+            <img src="../assets/images/products/tableware/a64m.jpg" alt="Kitchen knife, reference A64" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A64</span>
+            <h2 class="product-title">Kitchen knife</h2>
+            <p class="product-period">England · XIVth century</p>
+            <p class="product-description">Copy, larger version of A63. Approx. 26.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">76 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A64 -->
+
+        <!-- A67 -->
+        <article class="catalog-row" data-tags="knife" data-search="a67 medieval razor / clasp knife germany · xiv-xvth century copy, approx. 22.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/tableware/a67m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/tableware/a67v.jpg","../assets/images/products/tableware/a67v2.jpg","../assets/images/products/tableware/a67v3.jpg","../assets/images/products/tableware/a67v4.jpg"]' data-lightbox-caption="A67 — Medieval razor / clasp knife">
+            <img src="../assets/images/products/tableware/a67m.jpg" alt="Medieval razor / clasp knife, reference A67" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A67</span>
+            <h2 class="product-title">Medieval razor / clasp knife</h2>
+            <p class="product-period">Germany · XIV-XVth century</p>
+            <p class="product-description">Copy, approx. 22.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A67 -->
 
       </div>
+
+      <p class="catalog-empty" data-catalog-empty>No item matches your search. Try another reference or name, or <a href="../contact.html">contact the workshop</a> directly.</p>
 
     </div>
   </section>
@@ -298,6 +984,7 @@ HOW TO CHANGE A PRICE: find the reference, edit its
 </div>
 
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/catalog.js"></script>
 <script src="../assets/js/gallery.js"></script>
 </body>
 </html>
