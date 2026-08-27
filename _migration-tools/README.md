@@ -21,6 +21,7 @@ que le travail puisse reprendre sur une autre machine sans tout refaire.
 | `gen_rows_translated.sh` | Idem, avec préfixe de chemin paramétrable (pour `fr/` et `de/`, en `../../assets/...`) |
 | `regroup.pl` | Fusionne des lignes existantes en une ligne groupée (photo partagée) |
 | `addcount.pl` | Recalcule `data-count` sur les lignes groupées (compteur « N pièces ») |
+| `addnav.pl` | Insère un lien de catégorie dans le menu (desktop + mobile) de toutes les pages du site, en respectant la profondeur de chemin et la langue |
 
 ## Format des fichiers `.psv`
 
@@ -55,10 +56,15 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
 
 ## Ce qui reste à migrer avec ces outils
 
-1. **Rapières** (série RE, ~14 pièces) — source : `Novestr/rapierswin.htm`
-2. **Armes à feu** (série GN, ~16 pièces) — source : `Novestr/firewin.htm`
-3. **Habillement** (série SN/BT, ~14 réfs) — source : `Novestr/dresswin.htm`
+1. ~~**Rapières** (série RE, ~14 pièces) — source : `Novestr/rapierswin.htm`~~ ✅
+   fait : `catalogue/rapiers.html` (9 fiches + le groupe RE3/DR1, `data/rapiers.psv`).
+2. ~~**Armes à feu** (série GN, ~16 pièces) — source : `Novestr/firewin.htm`~~ ✅
+   fait : `catalogue/firearms.html` (16 fiches, `data/firearms.psv`).
+3. ~~**Habillement** (série SN/BT, ~14 réfs) — source : `Novestr/dresswin.htm`~~ ✅
+   fait : `catalogue/dress-accessories.html` (14 fiches, `data/dress-accessories.psv`).
 4. **Parité FR/DE** : porter les sous-ensembles au niveau du catalogue anglais
+   — reste à faire pour toutes les catégories (les 3 ci-dessus incluses :
+   elles n'existent qu'en anglais, avec un lien « (EN) » dans les menus FR/DE).
 
 La méthode complète (découpage des pages d'origine, extraction des
 photos, vérification) est décrite dans la partie développeur du

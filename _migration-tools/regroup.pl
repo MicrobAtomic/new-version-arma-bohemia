@@ -15,6 +15,7 @@ my %page_for = (
   'polearms'          => 'catalogue/polearms.html',
   'leather-scabbards' => 'catalogue/leather-goods.html',
   'tableware'         => 'catalogue/tableware.html',
+  'rapiers'           => 'catalogue/rapiers.html',
 );
 
 sub esc_attr { my $s = shift; $s =~ s/"/&quot;/g; return $s; }
