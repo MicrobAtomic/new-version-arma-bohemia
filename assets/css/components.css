@@ -441,6 +441,15 @@ h3 { font-size: var(--fs-h3); }
   border-bottom: 1px solid var(--color-line);
   transition: background-color var(--transition-fast);
 }
+/* Le JS de recherche/filtre (catalog.js) cache une fiche en posant
+   l'attribut natif "hidden". Comme .catalog-row et .product-card fixent
+   déjà leur propre "display", il faut le redire explicitement ici avec
+   une spécificité plus forte — sinon "hidden" est ignoré et la fiche
+   reste visible malgré le filtre. */
+.catalog-row[hidden],
+.product-card[hidden] {
+  display: none;
+}
 .catalog-row:hover {
   background: var(--color-ivory-200);
 }
