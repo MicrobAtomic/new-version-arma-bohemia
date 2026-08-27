@@ -3,14 +3,13 @@
 ARMA BOHEMIA — ARMOUR CATALOGUE (English)
 ============================================================
 This page has two sections: "Full suits" and "Armour pieces".
-HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
-to "END PRODUCT") in the right section, paste it, change
-reference/title/period/text/price, and put the photo in
-/assets/images/products/armour/ (full suits) or
-/assets/images/products/armour-pieces/ (separate pieces).
-Update the "src" and "href" attributes to match its filename.
-A product can have several photos: list every file inside
-data-lightbox-images, e.g. '["a.jpg","b.jpg","c.jpg"]'.
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->") in the right
+section, paste it, change reference/title/period/text/price, and
+put the photo in /assets/images/products/armour/ (full suits) or
+/assets/images/products/armour-pieces/ (separate pieces). Update
+BOTH the "href" and the "src". Several photos: list them all in
+data-lightbox-images and update the number in the camera badge.
 
 HOW TO REMOVE A PRODUCT: delete its whole block.
 HOW TO CHANGE A PRICE: find the reference, edit its
@@ -129,184 +128,444 @@ you are doing — the CSS in /assets/css/ depends on them.
       </p>
 
       <h2 style="margin-bottom:0.75rem;">Full suits</h2>
-      <div class="product-grid" style="margin-bottom:var(--space-2xl);">
+      <div class="catalog-list" style="margin-bottom:var(--space-2xl);">
 
-        <!-- PRODUCT ZB6 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour/zb6-zb6a.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb6-zb6a.jpg","../assets/images/products/armour/zb6-zb6b.jpg","../assets/images/products/armour/zb6-zb6c.jpg","../assets/images/products/armour/zb6-zb6d.jpg"]' data-lightbox-caption="ZB6 — Late medieval full plate armour">
-            <img src="../assets/images/products/armour/zb6.jpg" alt="Late medieval full plate armour, reference ZB6" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB6 -->
+        <article class="catalog-row" data-tags="full" data-search="zb6 late medieval full plate armour late xvth century highly decorated, mirror polish.">
+          <a class="catalog-row__media" href="../assets/images/products/armour/ZB6am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/ZB6a.jpg","../assets/images/products/armour/ZB6b.jpg","../assets/images/products/armour/ZB6c.jpg","../assets/images/products/armour/ZB6d.jpg","../assets/images/products/armour/ZB6f.jpg","../assets/images/products/armour/ZB6h.jpg"]' data-lightbox-caption="ZB6 — Late medieval full plate armour">
+            <img src="../assets/images/products/armour/ZB6am.jpg" alt="Late medieval full plate armour, reference ZB6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>6</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">ZB6</span>
             <h2 class="product-title">Late medieval full plate armour</h2>
             <p class="product-period">Late XVth century</p>
-            <p class="product-description">Highly decorated, mirror polish. 4 photos available.</p>
-            <div class="product-footer"><p class="product-price">9 900 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Highly decorated, mirror polish.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">9900 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT ZB6 -->
+        <!-- /ZB6 -->
 
-        <!-- PRODUCT ZB1 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour/zb1-jf1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb1-jf1.jpg","../assets/images/products/armour/zb1-jf3.jpg","../assets/images/products/armour/zb1-jf4.jpg","../assets/images/products/armour/zb1-jf5.jpg","../assets/images/products/armour/zb1-jf7.jpg","../assets/images/products/armour/zb1-jf8.jpg"]' data-lightbox-caption="ZB1 — Late medieval full plate armour">
-            <img src="../assets/images/products/armour/zb1.jpg" alt="Late medieval full plate armour, reference ZB1" loading="lazy" width="100" height="127">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB1 -->
+        <article class="catalog-row" data-tags="full" data-search="zb1 late medieval full plate armour germany · late xvth century highly decorated, mirror polish.">
+          <a class="catalog-row__media" href="../assets/images/products/armour/JF1M.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/JF1.jpg","../assets/images/products/armour/JF3.jpg","../assets/images/products/armour/JF4.jpg","../assets/images/products/armour/JF5.jpg","../assets/images/products/armour/JF7.jpg","../assets/images/products/armour/JF8.jpg"]' data-lightbox-caption="ZB1 — Late medieval full plate armour">
+            <img src="../assets/images/products/armour/JF1M.jpg" alt="Late medieval full plate armour, reference ZB1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>6</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">ZB1</span>
             <h2 class="product-title">Late medieval full plate armour</h2>
             <p class="product-period">Germany · late XVth century</p>
-            <p class="product-description">Highly decorated, mirror polish. 6 photos available.</p>
-            <div class="product-footer"><p class="product-price">approx. 11 000 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Highly decorated, mirror polish.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">approx. 11000 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT ZB1 -->
+        <!-- /ZB1 -->
 
-        <!-- PRODUCT ZB3 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour/zb3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb3.jpg"]' data-lightbox-caption="ZB3 — Simple officer's armour">
-            <img src="../assets/images/products/armour/zb3.jpg" alt="Simple officer's armour, reference ZB3" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB3 -->
+        <article class="catalog-row" data-tags="full" data-search="zb3 simple officer's armour late xvth century sallet, body protection, upper arms, upper legs and articulated gauntlets, slightly fluted.">
+          <a class="catalog-row__media" href="../assets/images/products/armour/Soldat.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/Rose.jpg","../assets/images/products/armour/SoldatV.jpg"]' data-lightbox-caption="ZB3 — Simple officer's armour">
+            <img src="../assets/images/products/armour/Soldat.jpg" alt="Simple officer's armour, reference ZB3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">ZB3</span>
             <h2 class="product-title">Simple officer's armour</h2>
             <p class="product-period">Late XVth century</p>
             <p class="product-description">Sallet, body protection, upper arms, upper legs and articulated gauntlets, slightly fluted.</p>
-            <div class="product-footer"><p class="product-price">3 500 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">3500 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT ZB3 -->
+        <!-- /ZB3 -->
 
-        <!-- PRODUCT ZB4 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour/zb4.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb4.jpg"]' data-lightbox-caption="ZB4 — Officer's armour">
-            <img src="../assets/images/products/armour/zb4.jpg" alt="Officer's armour, reference ZB4" loading="lazy" width="100" height="223">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB4 -->
+        <article class="catalog-row" data-tags="full" data-search="zb4 officer's armour late xvth century helmet, body protection, full arms, legs and mitten gauntlets, slightly fluted.">
+          <a class="catalog-row__media" href="../assets/images/products/armour/vincm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/102a.jpg","../assets/images/products/armour/vincv.jpg","../assets/images/products/armour/vincv2.jpg"]' data-lightbox-caption="ZB4 — Officer's armour">
+            <img src="../assets/images/products/armour/vincm.jpg" alt="Officer's armour, reference ZB4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">ZB4</span>
             <h2 class="product-title">Officer's armour</h2>
             <p class="product-period">Late XVth century</p>
             <p class="product-description">Helmet, body protection, full arms, legs and mitten gauntlets, slightly fluted.</p>
-            <div class="product-footer"><p class="product-price">5 900 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">5900 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT ZB4 -->
+        <!-- /ZB4 -->
 
-        <!-- PRODUCT ZB5 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour/zb5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb5.jpg"]' data-lightbox-caption="ZB5 — Cavalry armour">
-            <img src="../assets/images/products/armour/zb5.jpg" alt="Cavalry armour, reference ZB5" loading="lazy" width="100" height="139">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB5 -->
+        <article class="catalog-row" data-tags="full" data-search="zb5 cavalry armour early xvith century armet, collar, full body protection, full arms, full legs incl. boots and articulated gauntlets, mirror polish.">
+          <a class="catalog-row__media" href="../assets/images/products/armour/Armurejm2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/Armurejv.jpg","../assets/images/products/armour/Armurejv2.jpg","../assets/images/products/armour/Armurejv3.jpg"]' data-lightbox-caption="ZB5 — Cavalry armour">
+            <img src="../assets/images/products/armour/Armurejm2.jpg" alt="Cavalry armour, reference ZB5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">ZB5</span>
             <h2 class="product-title">Cavalry armour</h2>
             <p class="product-period">Early XVIth century</p>
             <p class="product-description">Armet, collar, full body protection, full arms, full legs incl. boots and articulated gauntlets, mirror polish.</p>
-            <div class="product-footer"><p class="product-price">8 400 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">8400 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT ZB5 -->
+        <!-- /ZB5 -->
 
       </div>
 
       <h2 style="margin-bottom:0.75rem;">Armour pieces</h2>
-      <div class="product-grid">
+      <div class="catalog-list">
 
-        <!-- PRODUCT AR5 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/ar5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar5.jpg"]' data-lightbox-caption="AR5 — Cuirass">
-            <img src="../assets/images/products/armour-pieces/ar5.jpg" alt="Cuirass, reference AR5" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- ZB4 -->
+        <article class="catalog-row" data-tags="other" data-search="zb4 riveted chainmail collar xiv-xvith century 18g Ø 6mm riveted rings alternate with Ø 6mm flat solid rings.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/zb4m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/zb4v.JPG","../assets/images/products/armour-pieces/zb4v2.JPG"]' data-lightbox-caption="ZB4 — Riveted chainmail collar">
+            <img src="../assets/images/products/armour-pieces/zb4m.jpg" alt="Riveted chainmail collar, reference ZB4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB4</span>
+            <h2 class="product-title">Riveted chainmail collar</h2>
+            <p class="product-period">XIV-XVIth century</p>
+            <p class="product-description">18g Ø 6mm riveted rings alternate with Ø 6mm flat solid rings.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">155 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /ZB4 -->
+
+        <!-- GA1 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga1 simple mitten gauntlets xiv-xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/rukavice.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/palcv.jpg"]' data-lightbox-caption="GA1 — Simple mitten gauntlets">
+            <img src="../assets/images/products/armour-pieces/rukavice.jpg" alt="Simple mitten gauntlets, reference GA1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA1</span>
+            <h2 class="product-title">Simple mitten gauntlets</h2>
+            <p class="product-period">XIV-XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">253 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA1 -->
+
+        <!-- GA2 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga2 late medieval articulated gauntlets 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/rukavice2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/rukavice2_v.jpg"]' data-lightbox-caption="GA2 — Late medieval articulated gauntlets">
+            <img src="../assets/images/products/armour-pieces/rukavice2.jpg" alt="Late medieval articulated gauntlets, reference GA2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA2</span>
+            <h2 class="product-title">Late medieval articulated gauntlets</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">440 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA2 -->
+
+        <!-- GA4 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga4 late medieval articulated gauntlets italian 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/gantelet4m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/gantelet4v.jpg","../assets/images/products/armour-pieces/gantelet4v2.jpg"]' data-lightbox-caption="GA4 — Late medieval articulated gauntlets (Italian)">
+            <img src="../assets/images/products/armour-pieces/gantelet4m.jpg" alt="Late medieval articulated gauntlets (Italian), reference GA4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA4</span>
+            <h2 class="product-title">Late medieval articulated gauntlets (Italian)</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">485 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA4 -->
+
+        <!-- GA6 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga6 highly decorated articulated gauntlets 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/gantelet6m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/gantelet6v.jpg","../assets/images/products/armour-pieces/gantelet6va.jpg","../assets/images/products/armour-pieces/gantelet6vb.jpg","../assets/images/products/armour-pieces/gantelet6vc.jpg"]' data-lightbox-caption="GA6 — Highly decorated articulated gauntlets">
+            <img src="../assets/images/products/armour-pieces/gantelet6m.jpg" alt="Highly decorated articulated gauntlets, reference GA6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA6</span>
+            <h2 class="product-title">Highly decorated articulated gauntlets</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1090 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA6 -->
+
+        <!-- GA7 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga7 decorated mitten gauntlets german 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ga7m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga7.jpg","../assets/images/products/armour-pieces/ga7v1.jpg","../assets/images/products/armour-pieces/ga7v2.jpg","../assets/images/products/armour-pieces/ga7v4.jpg"]' data-lightbox-caption="GA7 — Decorated mitten gauntlets (German)">
+            <img src="../assets/images/products/armour-pieces/ga7m.jpg" alt="Decorated mitten gauntlets (German), reference GA7" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA7</span>
+            <h2 class="product-title">Decorated mitten gauntlets (German)</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1045 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA7 -->
+
+        <!-- GA8 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga8 simple mitten gauntlets xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/GA8m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/GA8v.jpg"]' data-lightbox-caption="GA8 — Simple mitten gauntlets">
+            <img src="../assets/images/products/armour-pieces/GA8m.jpg" alt="Simple mitten gauntlets, reference GA8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA8</span>
+            <h2 class="product-title">Simple mitten gauntlets</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA8 -->
+
+        <!-- GA9 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga9 articulated mitten gauntlets xvth century hardened spring steel.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ga9m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga9v.jpg","../assets/images/products/armour-pieces/ga9v2.jpg"]' data-lightbox-caption="GA9 — Articulated mitten gauntlets">
+            <img src="../assets/images/products/armour-pieces/ga9m.jpg" alt="Articulated mitten gauntlets, reference GA9" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA9</span>
+            <h2 class="product-title">Articulated mitten gauntlets</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Hardened spring steel.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">649 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA9 -->
+
+        <!-- GA10 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga10 simple gauntlets xivth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ga10m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga10v.jpg"]' data-lightbox-caption="GA10 — Simple gauntlets">
+            <img src="../assets/images/products/armour-pieces/ga10m.jpg" alt="Simple gauntlets, reference GA10" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA10</span>
+            <h2 class="product-title">Simple gauntlets</h2>
+            <p class="product-period">XIVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">220 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA10 -->
+
+        <!-- GA11 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga11 articulated mitten gauntlets german 2nd half xvth century exact copy.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ga11m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga11v.JPG","../assets/images/products/armour-pieces/ga11v2.JPG","../assets/images/products/armour-pieces/ga11v3.jpg"]' data-lightbox-caption="GA11 — Articulated mitten gauntlets (German)">
+            <img src="../assets/images/products/armour-pieces/ga11m.jpg" alt="Articulated mitten gauntlets (German), reference GA11" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA11</span>
+            <h2 class="product-title">Articulated mitten gauntlets (German)</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Exact copy.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">420 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /GA11 -->
+
+        <!-- AR5 -->
+        <article class="catalog-row" data-tags="body" data-search="ar5 cuirass breast and back plate germany · 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar5m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar5v.jpg","../assets/images/products/armour-pieces/ar5v2.jpg","../assets/images/products/armour-pieces/ar5v3.jpg","../assets/images/products/armour-pieces/ar5v4.jpg","../assets/images/products/armour-pieces/ar5v5.jpg"]' data-lightbox-caption="AR5 — Cuirass (breast and back plate)">
+            <img src="../assets/images/products/armour-pieces/ar5m.jpg" alt="Cuirass (breast and back plate), reference AR5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">AR5</span>
             <h2 class="product-title">Cuirass (breast and back plate)</h2>
             <p class="product-period">Germany · 2nd half XVth century</p>
-            <div class="product-footer"><p class="product-price">2 285 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">2285 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT AR5 -->
+        <!-- /AR5 -->
 
-        <!-- PRODUCT AR1 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/ar1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar1.jpg"]' data-lightbox-caption="AR1 — Shoulders with elbows">
-            <img src="../assets/images/products/armour-pieces/ar1.jpg" alt="Shoulder and arm harness, reference AR1" loading="lazy" width="126" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- AR6 -->
+        <article class="catalog-row" data-tags="body" data-search="ar6 breast plate xvth century mild steel, 1.5 mm.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar6m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar6v.jpg","../assets/images/products/armour-pieces/ar6v2.jpg","../assets/images/products/armour-pieces/ar6v3a.jpg","../assets/images/products/armour-pieces/ar6v4.jpg"]' data-lightbox-caption="AR6 — Breast plate">
+            <img src="../assets/images/products/armour-pieces/ar6m.jpg" alt="Breast plate, reference AR6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">AR6</span>
+            <h2 class="product-title">Breast plate</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Mild steel, 1.5 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">499 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR6 -->
+
+        <!-- AR7 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar7 shoulders with elbows and forearms late xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar7m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar7v.jpg","../assets/images/products/armour-pieces/ar7v2.jpg"]' data-lightbox-caption="AR7 — Shoulders with elbows and forearms">
+            <img src="../assets/images/products/armour-pieces/ar7m.jpg" alt="Shoulders with elbows and forearms, reference AR7" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR7</span>
+            <h2 class="product-title">Shoulders with elbows and forearms</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">530 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR7 -->
+
+        <!-- AR8 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar8 shoulders and arms late xiv-early xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar8m.JPG" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar8v.JPG","../assets/images/products/armour-pieces/ar8v2.jpg"]' data-lightbox-caption="AR8 — Shoulders and arms">
+            <img src="../assets/images/products/armour-pieces/ar8m.JPG" alt="Shoulders and arms, reference AR8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR8</span>
+            <h2 class="product-title">Shoulders and arms</h2>
+            <p class="product-period">Late XIV-early XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">530 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR8 -->
+
+        <!-- AR9 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar9 cuisses thigh armour late xiv-early xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar9m.JPG" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar9v.JPG","../assets/images/products/armour-pieces/ar9v2.JPG"]' data-lightbox-caption="AR9 — Cuisses (thigh armour)">
+            <img src="../assets/images/products/armour-pieces/ar9m.JPG" alt="Cuisses (thigh armour), reference AR9" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR9</span>
+            <h2 class="product-title">Cuisses (thigh armour)</h2>
+            <p class="product-period">Late XIV-early XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">520 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR9 -->
+
+        <!-- AR1 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar1 shoulders with elbows late xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/Bras.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/BrasV.jpg","../assets/images/products/armour-pieces/bras2.jpg"]' data-lightbox-caption="AR1 — Shoulders with elbows">
+            <img src="../assets/images/products/armour-pieces/Bras.jpg" alt="Shoulders with elbows, reference AR1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">AR1</span>
             <h2 class="product-title">Shoulders with elbows</h2>
             <p class="product-period">Late XVth century</p>
-            <div class="product-footer"><p class="product-price">462 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">462 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT AR1 -->
+        <!-- /AR1 -->
 
-        <!-- PRODUCT AR3 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/ar3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar3.jpg"]' data-lightbox-caption="AR3 — Iron legs">
-            <img src="../assets/images/products/armour-pieces/ar3.jpg" alt="Leg harness, reference AR3" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- AR2 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar2 shoulders without elbows late xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ramena2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ramena2_v.jpg"]' data-lightbox-caption="AR2 — Shoulders without elbows">
+            <img src="../assets/images/products/armour-pieces/ramena2.jpg" alt="Shoulders without elbows, reference AR2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">AR2</span>
+            <h2 class="product-title">Shoulders without elbows</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">363 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR2 -->
+
+        <!-- AR4 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar4 cuisses thigh armour 2nd half xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/ar4m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar4v.jpg","../assets/images/products/armour-pieces/ar4v2.jpg","../assets/images/products/armour-pieces/ar4v3.jpg","../assets/images/products/armour-pieces/ar4v4.jpg"]' data-lightbox-caption="AR4 — Cuisses (thigh armour)">
+            <img src="../assets/images/products/armour-pieces/ar4m.jpg" alt="Cuisses (thigh armour), reference AR4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR4</span>
+            <h2 class="product-title">Cuisses (thigh armour)</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1289 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /AR4 -->
+
+        <!-- AR3 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar3 iron legs late xvth century includes shin protection.">
+          <a class="catalog-row__media" href="../assets/images/products/armour-pieces/Jambem.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/Jambe.jpg"]' data-lightbox-caption="AR3 — Iron legs">
+            <img src="../assets/images/products/armour-pieces/Jambem.jpg" alt="Iron legs, reference AR3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">AR3</span>
             <h2 class="product-title">Iron legs</h2>
             <p class="product-period">Late XVth century</p>
             <p class="product-description">Includes shin protection.</p>
-            <div class="product-footer"><p class="product-price">913 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">913 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT AR3 -->
-
-        <!-- PRODUCT GA2 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/ga2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga2.jpg"]' data-lightbox-caption="GA2 — Articulated gauntlets">
-            <img src="../assets/images/products/armour-pieces/ga2.jpg" alt="Articulated gauntlets, reference GA2" loading="lazy" width="100" height="119">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">GA2</span>
-            <h2 class="product-title">Late medieval articulated gauntlets</h2>
-            <p class="product-period">2nd half XVth century</p>
-            <div class="product-footer"><p class="product-price">440 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT GA2 -->
-
-        <!-- PRODUCT GA6 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/ga6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga6.jpg"]' data-lightbox-caption="GA6 — Highly decorated articulated gauntlets">
-            <img src="../assets/images/products/armour-pieces/ga6.jpg" alt="Highly decorated articulated gauntlets, reference GA6" loading="lazy" width="127" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">GA6</span>
-            <h2 class="product-title">Highly decorated articulated gauntlets</h2>
-            <p class="product-period">2nd half XVth century</p>
-            <div class="product-footer"><p class="product-price">1 090 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT GA6 -->
-
-        <!-- PRODUCT ZB4-COIF (chainmail collar; reference ZB4 reused from the source catalogue's "accessories" page — different item from the ZB4 suit above) -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/armour-pieces/coif.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/coif.jpg"]' data-lightbox-caption="ZB4 — Riveted chainmail collar">
-            <img src="../assets/images/products/armour-pieces/coif.jpg" alt="Riveted chainmail collar, reference ZB4" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
-          </a>
-          <div class="product-content">
-            <span class="product-reference">ZB4</span>
-            <h2 class="product-title">Riveted chainmail collar</h2>
-            <p class="product-period">XIV–XVIth century</p>
-            <p class="product-description">18g Ø 6mm riveted rings alternate with Ø 6mm flat solid rings.</p>
-            <div class="product-footer"><p class="product-price">155 €<span class="price-indicative-tag">indicative</span></p></div>
-          </div>
-        </article>
-        <!-- END PRODUCT ZB4-COIF -->
+        <!-- /AR3 -->
 
       </div>
 

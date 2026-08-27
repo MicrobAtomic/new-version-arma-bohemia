@@ -2,10 +2,12 @@
 ============================================================
 ARMA BOHEMIA — SHIELDS CATALOGUE (English)
 ============================================================
-HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
-to "END PRODUCT"), paste it, change reference/title/period/
-text/price, and put the photo in /assets/images/products/shields/
-(update the "src" and "href" to match its filename).
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->"), paste it,
+change reference/title/period/text/price, and put the photo in
+/assets/images/products/shields/ (update the "href" and "src").
+Several photos: list them all in data-lightbox-images and update
+the number in the camera badge.
 
 HOW TO REMOVE A PRODUCT: delete its whole block.
 HOW TO CHANGE A PRICE: find the reference, edit its
@@ -120,55 +122,61 @@ HOW TO CHANGE A PRICE: find the reference, edit its
         <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
       </p>
 
-      <div class="product-grid">
+      <div class="catalog-list">
 
-        <!-- PRODUCT SD1 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/shields/sd1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/sd1.jpg"]' data-lightbox-caption="SD1 — Viking-type shield">
-            <img src="../assets/images/products/shields/sd1.jpg" alt="Viking-type shield, reference SD1" loading="lazy" width="114" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SD1 -->
+        <article class="catalog-row" data-tags="round" data-search="sd1 viking-type shield vii-xith century wood covered with raw leather, iron boss.">
+          <a class="catalog-row__media" href="../assets/images/products/shields/stit12.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/stit12_v.jpg","../assets/images/products/shields/stit16_v.jpg"]' data-lightbox-caption="SD1 — Viking-type shield">
+            <img src="../assets/images/products/shields/stit12.jpg" alt="Viking-type shield, reference SD1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">SD1</span>
             <h2 class="product-title">Viking-type shield</h2>
-            <p class="product-period">VII–XIth century</p>
+            <p class="product-period">VII-XIth century</p>
             <p class="product-description">Wood covered with raw leather, iron boss.</p>
-            <div class="product-footer"><p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT SD1 -->
+        <!-- /SD1 -->
 
-        <!-- PRODUCT SD2 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/shields/sd2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/sd2.jpg"]' data-lightbox-caption="SD2 — Buckler (brochiero)">
-            <img src="../assets/images/products/shields/sd2.jpg" alt="Buckler, reference SD2" loading="lazy" width="117" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SD2 -->
+        <article class="catalog-row" data-tags="round" data-search="sd2 buckler brochiero xv-xvith century diameter approx. 25 cm. back side padded and covered in leather.">
+          <a class="catalog-row__media" href="../assets/images/products/shields/ron2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/ron2v.jpg"]' data-lightbox-caption="SD2 — Buckler (&quot;brochiero&quot;)">
+            <img src="../assets/images/products/shields/ron2m.jpg" alt="Buckler (&quot;brochiero&quot;), reference SD2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">SD2</span>
             <h2 class="product-title">Buckler ("brochiero")</h2>
-            <p class="product-period">XV–XVIth century</p>
+            <p class="product-period">XV-XVIth century</p>
             <p class="product-description">Diameter approx. 25 cm. Back side padded and covered in leather.</p>
-            <div class="product-footer"><p class="product-price">168 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">168 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT SD2 -->
+        <!-- /SD2 -->
 
-        <!-- PRODUCT SD3 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/shields/sd3-paveza1v.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/sd3-paveza1v.jpg","../assets/images/products/shields/sd3-paveza2v.jpg","../assets/images/products/shields/sd3-paveza3v.jpg"]' data-lightbox-caption="SD3 — Hand-pavise">
-            <img src="../assets/images/products/shields/sd3.jpg" alt="Hand-pavise, reference SD3" loading="lazy" width="110" height="150">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SD3 -->
+        <article class="catalog-row" data-tags="pavise" data-search="sd3 hand-pavise south germany · late xvth century height 70 cm. wooden shield lined with hide, painted coat of arms of the city of schongau.">
+          <a class="catalog-row__media" href="../assets/images/products/shields/paveza1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/shields/paveza1v.jpg","../assets/images/products/shields/paveza2v.jpg","../assets/images/products/shields/paveza3v.jpg"]' data-lightbox-caption="SD3 — Hand-pavise">
+            <img src="../assets/images/products/shields/paveza1m.jpg" alt="Hand-pavise, reference SD3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">SD3</span>
             <h2 class="product-title">Hand-pavise</h2>
             <p class="product-period">South Germany · late XVth century</p>
-            <p class="product-description">Height 70 cm. Wooden shield lined with hide, painted coat of arms of the city of Schongau. 3 photos available.</p>
-            <div class="product-footer"><p class="product-price">361 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Height 70 cm. Wooden shield lined with hide, painted coat of arms of the city of Schongau.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">361 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT SD3 -->
+        <!-- /SD3 -->
 
       </div>
 
