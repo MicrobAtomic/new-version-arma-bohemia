@@ -62,7 +62,7 @@
 
 /* Impression : page de contact / conditions restent lisibles sur papier */
 @media print {
-  .site-header, .site-footer, .nav-toggle, .mobile-nav,
+  .site-header, .site-footer, .mobile-menu,
   .hero__media, .btn-row, .catalog-toolbar, .lightbox { display: none !important; }
   body { background: #fff; color: #000; }
   a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
