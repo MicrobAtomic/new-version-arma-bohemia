@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Accueil / Home / Startseite -->
+  <url>
+    <loc>https://www.armabohemia.cz/index.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/index.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/index.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/index.html"/>
+  </url>
+  <url><loc>https://www.armabohemia.cz/fr/index.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/index.html</loc></url>
+
+  <!-- Catalogue hub -->
+  <url><loc>https://www.armabohemia.cz/catalogue/index.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/catalogue/index.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/catalogue/index.html</loc></url>
+
+  <!-- Catalogue — English -->
+  <url>
+    <loc>https://www.armabohemia.cz/catalogue/swords.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/swords.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/swords.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/swords.html"/>
+  </url>
+  <url>
+    <loc>https://www.armabohemia.cz/catalogue/daggers.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/daggers.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/daggers.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/daggers.html"/>
+  </url>
+  <url>
+    <loc>https://www.armabohemia.cz/catalogue/helmets.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/helmets.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/helmets.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/helmets.html"/>
+  </url>
+  <url><loc>https://www.armabohemia.cz/catalogue/armour.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/catalogue/shields.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/catalogue/polearms.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/catalogue/leather-goods.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/catalogue/camp-life.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/catalogue/tableware.html</loc></url>
+
+  <!-- Catalogue — French -->
+  <url><loc>https://www.armabohemia.cz/fr/catalogue/swords.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/catalogue/daggers.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/catalogue/helmets.html</loc></url>
+
+  <!-- Catalogue — German -->
+  <url><loc>https://www.armabohemia.cz/de/catalogue/swords.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/catalogue/daggers.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/catalogue/helmets.html</loc></url>
+
+  <!-- Pages structurantes — English -->
+  <url><loc>https://www.armabohemia.cz/about.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/contact.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/conditions.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/events.html</loc></url>
+
+  <!-- Pages structurantes — French -->
+  <url><loc>https://www.armabohemia.cz/fr/about.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/contact.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/conditions.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/events.html</loc></url>
+
+  <!-- Pages structurantes — German -->
+  <url><loc>https://www.armabohemia.cz/de/contact.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/conditions.html</loc></url>
+
+</urlset>
