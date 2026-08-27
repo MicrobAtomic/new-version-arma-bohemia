@@ -67,33 +67,42 @@ noms `class="..."` ni aux chevrons `< >`.
 
 ## 4. Ajouter un produit
 
-Chaque produit est un bloc `<article class="product-card">...</article>`
-entouré de commentaires clairs :
+Le catalogue est présenté sous forme de **liste** (une ligne compacte par
+produit, avec une petite photo à gauche). Chaque produit est un bloc
+`<article class="catalog-row">...</article>` entouré de commentaires clairs :
 
 ```html
-<!-- PRODUCT HE27 -->
-<article class="product-card">
+<!-- HE27 -->
+<article class="catalog-row" ...>
   ...
 </article>
-<!-- END PRODUCT HE27 -->
+<!-- /HE27 -->
 ```
 
 **Pour ajouter un produit :**
 
 1. Ouvrez le fichier de la bonne catégorie dans `catalogue/`.
 2. Copiez un bloc produit existant en entier (du commentaire
-   `<!-- PRODUCT xxx -->` jusqu'à `<!-- END PRODUCT xxx -->`).
-3. Collez-le à l'endroit voulu dans la grille (entre deux autres
+   `<!-- REF -->` jusqu'à `<!-- /REF -->`).
+3. Collez-le à l'endroit voulu dans la liste (entre deux autres
    `</article>` et `<article>`).
 4. Modifiez :
-   - la référence (`EP99`, `HE30`, ...) — à deux endroits : dans le
-     commentaire et dans `<span class="product-reference">`
+   - la référence (`EP99`, `HE30`, ...) — à trois endroits : les deux
+     commentaires et `<span class="product-reference">`
    - le titre, l'époque, la description, le prix
    - le nom du fichier image (voir section 5)
+   - le nombre affiché dans le petit badge photo (voir encadré ci-dessous)
 5. Enregistrez et renvoyez le fichier.
 
 Chaque fichier catalogue commence par un commentaire qui rappelle cette
 procédure directement dans le code.
+
+**Le badge avec l'appareil photo** (coin de la vignette) affiche le nombre
+de photos disponibles pour ce produit, par exemple <code>📷 3</code>. Si
+vous ajoutez ou retirez des photos dans `data-lightbox-images` (section 5),
+pensez à modifier le chiffre à l'intérieur de
+`<span class="photo-count-badge">...<span>N</span></span>` pour qu'il
+reste juste.
 
 ---
 
@@ -109,7 +118,7 @@ procédure directement dans le code.
    nom de fichier :
 
    ```html
-   <a class="product-image" href="../assets/images/products/swords/ep99.jpg" ...>
+   <a class="catalog-row__media" href="../assets/images/products/swords/ep99.jpg" ...>
      <img src="../assets/images/products/swords/ep99.jpg" alt="..." ...>
    ```
 
@@ -117,20 +126,28 @@ procédure directement dans le code.
    correctement la photo (important pour l'accessibilité et le
    référencement).
 
-**Galerie multi-photos** (plusieurs vues d'un même produit, comme pour les
-armures complètes) : listez tous les fichiers dans l'attribut
-`data-lightbox-images`, par exemple :
+**La vignette n'agrandit jamais une petite photo.** La liste affiche
+chaque image dans un petit carré fixe et ne l'étire jamais au-delà de sa
+taille réelle — une photo d'origine plus petite que le carré s'affiche
+simplement plus petite, nette, plutôt que floue et pixellisée. Pas de
+réglage à faire de votre côté pour ça.
+
+**Galerie multi-photos** (plusieurs vues d'un même produit) : listez tous
+les fichiers dans l'attribut `data-lightbox-images`, par exemple :
 
 ```html
-data-lightbox-images='["../assets/images/products/armour/zb6-a.jpg","../assets/images/products/armour/zb6-b.jpg"]'
+data-lightbox-images='["../assets/images/products/armour/ZB6a.jpg","../assets/images/products/armour/ZB6b.jpg"]'
 ```
+
+Et mettez à jour le chiffre du badge photo (voir section 4) pour qu'il
+corresponde au nombre d'images listées.
 
 ---
 
 ## 6. Supprimer un produit
 
-Supprimez tout le bloc, du commentaire `<!-- PRODUCT xxx -->` jusqu'au
-commentaire `<!-- END PRODUCT xxx -->` inclus. Rien d'autre à faire.
+Supprimez tout le bloc, du commentaire `<!-- REF -->` jusqu'au
+commentaire `<!-- /REF -->` inclus. Rien d'autre à faire.
 
 ---
 
@@ -168,7 +185,10 @@ double (ou triple), et il faut modifier chaque version séparément.
 
 **Catégories déjà traduites dans les trois langues :** épées, dagues,
 casques (`swords.html`, `daggers.html`, `helmets.html`), ainsi que les
-pages contact et conditions.
+pages contact et conditions. Ces pages utilisent la même mise en page en
+liste, avec galeries photo, que la version anglaise — mais avec une
+sélection de produits plus courte (12 épées, 10 dagues, 10 casques,
+contre 61/43/26 en anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
 boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle. Les pages
@@ -185,28 +205,48 @@ restent identiques dans les trois langues.
 
 ## 9. Ce qu'il reste à migrer depuis l'ancien site
 
-Ce premier jet couvre **80 produits réels** répartis sur 9 catégories
+Le catalogue anglais est maintenant **complet** : les 9 catégories
 (épées, dagues, casques, armures, boucliers, armes d'hast, maroquinerie,
-vie de camp, vaisselle), avec photos et descriptions authentiques tirées
-du site actuel. C'est une sélection représentative, pas l'intégralité du
-catalogue existant (qui compte plusieurs centaines de références).
+vie de camp, vaisselle) reprennent la **totalité** des références encore
+listées sur le site actuel — **305 produits réels**, chacun avec sa
+référence, son prix, sa description et ses vraies photos (souvent
+plusieurs par pièce, avec zoom et galerie) :
 
-**À migrer dans une prochaine passe :**
+| Catégorie | Produits migrés |
+|---|---|
+| Épées | 61 / 61 |
+| Dagues & couteaux | 43 / 43 |
+| Casques | 26 / 26 |
+| Armures (suites complètes + pièces) | 24 / 24 |
+| Boucliers | 3 / 3 |
+| Armes d'hast & masses | 16 / 16 |
+| Maroquinerie & fourreaux | 67 / 67 |
+| Vie de camp | 21 / 21 |
+| Vaisselle & couverts | 44 / 44 |
+| **Total** | **305** |
 
-- Le reste du catalogue de chaque catégorie (le site actuel contient par
-  exemple ~40 dagues au total contre 10 reprises ici).
+**Ce qui reste malgré tout à faire :**
+
+- **Traduction française et allemande complète.** Le français et
+  l'allemand ont pour l'instant les mêmes catégories « vedettes » qu'avant
+  (épées, dagues, casques), avec la même sélection réduite (12/10/10
+  pièces) plutôt que les listes complètes 61/43/26 de la version anglaise.
+  Les 6 autres catégories restent uniquement en anglais. La méthode est
+  directe : le texte source existe déjà sur `armabohemia.cz/FR/` et
+  `armabohemia.cz/DE/` pour la quasi-totalité des produits — il s'agit de
+  reprendre le même procédé que pour l'anglais (voir la partie
+  développeur ci-dessous), catégorie par catégorie.
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
-  Occasion (« Secondhand »), et le détail complet de « Nouveautés ».
-- La traduction française et allemande des 6 catégories encore en anglais
-  uniquement (voir section 8).
-- Les fiches produits avec plusieurs photos : seules quelques pièces
-  (armures ZB1/ZB6, pavois SD3) ont été enrichies avec une galerie
-  complète à titre de démonstration. Le site d'origine propose souvent
-  2 à 6 photos par pièce (`_v`, `_v2`, `_v3`...) qu'il serait bon de
-  récupérer progressivement, notamment pour les armures et boucliers.
+  Occasion (« Secondhand »), et le détail complet de « Nouveautés »
+  (pièces uniques/sur mesure présentées ponctuellement).
 - Le catalogue de verres/gobelets (page « GLASS »), organisé par siècle
   avec plus de 100 références, n'a pas été repris (catégorie de niche,
-  structure très différente).
+  structure de page très différente du reste du catalogue).
+- Quelques photos indiquées comme disponibles sur l'ancien site renvoient
+  aujourd'hui vers un lien mort (fichier renommé ou supprimé côté
+  serveur) — une poignée de cas isolés, sans impact sur le nombre de
+  produits migrés : le badge photo de chaque fiche affiche uniquement les
+  images réellement récupérées.
 
 **À propos du logo :** le logo historique (`assets/images/branding/logo.jpg`,
 style gothique doré sur fond noir) a été conservé dans le dossier comme
@@ -218,10 +258,22 @@ visuelle du logo d'origine, il peut être réintégré discrètement (footer,
 page « Atelier »).
 
 **Images à remplacer si possible :** les photos d'origine sont anciennes
-et de petite résolution (souvent 100×130 px). Le site fonctionne bien
-avec ces dimensions (les cartes produit sont prévues pour), mais des
-photos plus grandes et mieux cadrées amélioreraient nettement le rendu
-si l'atelier peut en refaire.
+et de petite résolution (souvent 100×130 px pour les vignettes, jusqu'à
+environ 600×800 px pour les plus grandes vues de galerie). La mise en
+page en liste est justement pensée pour ces dimensions modestes (vignette
+compacte, jamais agrandie au-delà de sa taille réelle), mais des photos
+plus grandes et mieux cadrées amélioreraient nettement le rendu si
+l'atelier peut en refaire — en particulier pour les catégories où une
+seule photo existe par produit.
+
+**Photos du fondateur et de l'atelier :** la page d'accueil et la page
+« Atelier » utilisent maintenant un vrai portrait de Jan Fantys et une
+séquence de 3 photos retrouvées sur l'ancien site (pièce d'origine trouvée
+sur le terrain → pièce forgée à la main → copie finie), ainsi que la
+signature manuscrite numérisée de Jakub Malovany pour clore le texte de
+présentation — qui est repris intégralement (et non plus sous forme de
+citation isolée) : sur le site d'origine, c'est l'ensemble de ce texte
+qui est signé par le cofondateur, comme une lettre.
 
 ---
 
@@ -307,24 +359,62 @@ aucun framework, aucun CDN.
   visibles et le catalogue reste utilisable.
 - **Lightbox légère** (`gallery.js`, ~100 lignes, aucune dépendance) :
   chaque vignette reste un lien `<a href="...jpg">` valide même sans JS.
-- **Pas de build.** Chaque page HTML est autonome et lisible telle
-  quelle ; c'est un choix délibéré pour rester éditable par quelqu'un
-  sans outils de développement, au prix d'une duplication du header/
-  footer entre pages (assumé, cf. contrainte de simplicité de
-  maintenance).
+- **Pas de build — à l'exécution du site.** Chaque page HTML livrée est
+  autonome et lisible telle quelle ; c'est un choix délibéré pour rester
+  éditable par quelqu'un sans outils de développement, au prix d'une
+  duplication du header/footer entre pages (assumé, cf. contrainte de
+  simplicité de maintenance).
+- **Liste plutôt que grille de cartes** (`catalog-list` / `catalog-row`) :
+  avec 305 produits au total, une grille de grandes cartes aurait rendu
+  le parcours du catalogue pénible sur les catégories les plus fournies
+  (67 pièces de maroquinerie, 61 épées...). Chaque ligne reste compacte,
+  la vignette n'agrandit jamais une photo au-delà de sa taille réelle
+  (`max-width/max-height: 100%` sur une image non contrainte en largeur),
+  et un badge indique le nombre de photos disponibles pour ce produit.
 - **Typographie système** (`Georgia` pour les titres, pile système pour
   le texte) plutôt que des polices web externes : zéro requête externe,
   chargement instantané, aucune dépendance à un CDN.
 - **Images réelles** de l'ancien site, réutilisées telles quelles
   (souvent basse résolution — cf. section 9). `loading="lazy"` sur toutes
-  les images de catalogue, dimensions `width`/`height` réelles posées
-  pour limiter le layout shift.
+  les images de catalogue.
 
-### Comment reprendre le développement
+### Comment le catalogue a été migré (pour aller plus loin)
+
+Migrer 305 fiches produit à la main, une par une, n'aurait pas été
+raisonnable. La méthode utilisée — et qui reste la bonne façon de
+poursuivre la traduction FR/DE (section 9) — a été :
+
+1. **Repérer la structure HTML répétitive** de chaque page d'origine
+   (`armabohemia.cz/Novestr/xxxwin.htm`) : un tableau par produit, séparé
+   par des `<hr>`, avec une référence entre balises `<u>`, une
+   vignette (`<img border="1" src="...m.jpg">`) et des liens vers des
+   photos plus grandes (`href="...v.jpg"`, `..v2.jpg`, etc.).
+2. **Découper chaque page en blocs** avec `awk`/`csplit` sur ces `<hr>`,
+   puis extraire par bloc : la ou les références, le nom du fichier
+   vignette, et la liste des photos "grand format" associées (leur
+   nombre donne directement le chiffre du badge photo).
+3. **Transcrire le texte** (titre, époque, description, prix) à la main
+   dans un petit fichier tabulaire (un produit par ligne, champs séparés
+   par `|`) à partir du texte réel de la page — jamais généré ni inventé.
+4. **Télécharger toutes les photos** référencées (vignette + grandes
+   vues) par lot avec `curl`, dans `assets/images/products/<catégorie>/`.
+5. **Générer le HTML final** de chaque bloc produit à partir du fichier
+   tabulaire avec un petit script, puis assembler
+   en-tête + produits + pied de page dans le fichier de catégorie.
+6. **Vérifier systématiquement** qu'aucune image ni aucun lien interne du
+   fichier obtenu n'était cassé avant de le considérer terminé.
+
+Cette méthode n'est pas un outil réutilisable en un clic (elle suppose de
+relire le texte source à chaque catégorie), mais elle rend la suite du
+travail — traduire les 6 catégories encore en anglais, ou porter les
+listes FR/DE au complet — nettement plus rapide qu'une saisie manuelle
+intégrale.
+
+### Reprendre le développement
 
 - Le fichier `catalogue/swords.html` est le plus complet (recherche +
-  filtres) : partez de lui comme modèle pour enrichir une autre
-  catégorie.
+  filtres + galeries) : partez de lui comme modèle pour enrichir une
+  autre catégorie.
 - Les classes CSS sont commentées par bloc dans `components.css` —
   chercher le nom de la classe suffit à retrouver son usage.
 - Aucun outil de build n'est nécessaire pour prévisualiser : ouvrir les
