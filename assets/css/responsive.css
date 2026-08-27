@@ -19,7 +19,26 @@
   .section { padding-block: var(--space-xl); }
   .footer-bottom { flex-direction: column; align-items: flex-start; }
   .event-list__item { grid-template-columns: 1fr; gap: 0.15rem; }
-  .catalog-toolbar { flex-direction: column; align-items: stretch; }
+
+  /* Barre recherche + filtres du catalogue : plus compacte, et les
+     filtres défilent horizontalement au doigt plutôt que de former un
+     pavé de pastilles qui retournent à la ligne dans tous les sens. */
+  .catalog-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+  .catalog-search { flex-basis: auto; }
+  .catalog-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-inline: calc(var(--space-sm) * -1);
+    padding-inline: var(--space-sm);
+    padding-bottom: 0.2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
 }
 
 /* Tablettes */
