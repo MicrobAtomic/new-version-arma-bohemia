@@ -2,11 +2,12 @@
 ============================================================
 ARMA BOHEMIA — LEATHER GOODS & SCABBARDS CATALOGUE (English)
 ============================================================
-HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
-to "END PRODUCT"), paste it, change reference/title/period/
-text/price, and put the photo in
-/assets/images/products/leather-scabbards/
-(update the "src" and "href" to match its filename).
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->"), paste it,
+change reference/title/period/text/price, and put the photo in
+/assets/images/products/leather-scabbards/ (update the "href"
+and "src"). Several photos: list them all in data-lightbox-images
+and update the number in the camera badge.
 
 HOW TO REMOVE A PRODUCT: delete its whole block.
 HOW TO CHANGE A PRICE: find the reference, edit its
@@ -109,7 +110,7 @@ HOW TO CHANGE A PRICE: find the reference, edit its
     <div class="container">
       <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Leather Goods &amp; Scabbards</p>
       <h1>Leather Goods &amp; Scabbards</h1>
-      <p class="lead">Scabbards, purses, belts and brass fittings — for swords and daggers, or for everyday medieval dress.</p>
+      <p class="lead">Scabbards, purses, belts and brass fittings — for swords and daggers, or for everyday medieval dress. The full range offered by the workshop over the years — 67 pieces.</p>
     </div>
   </div>
 
@@ -121,163 +122,1234 @@ HOW TO CHANGE A PRICE: find the reference, edit its
         <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
       </p>
 
-      <div class="product-grid product-grid--wide">
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="leather-search">Search leather goods</label>
+          <input type="search" id="leather-search" data-catalog-search placeholder="Search by reference, name or century…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filter by type">
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all" aria-pressed="true">All types</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="scabbard">Scabbards</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="purse">Purses</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="belt">Belts</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="fitting">Buckles &amp; fittings</button>
+        </div>
+      </div>
 
-        <!-- PRODUCT E36 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e36.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e36.jpg"]' data-lightbox-caption="E36 — Period dagger scabbard">
-            <img src="../assets/images/products/leather-scabbards/e36.jpg" alt="Period dagger scabbard, reference E36" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+      <p class="catalog-count" data-catalog-count data-template="{n} pieces shown">67 pieces shown</p>
+
+      <div class="catalog-list" data-catalog-grid>
+
+        <!-- SR21a -->
+        <article class="catalog-row" data-tags="fitting" data-search="sr21a small scabbard chape — suitable for a dagger or a small knife. 5 cm long, 1.6 cm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sr21am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sr21av.jpg","../assets/images/products/leather-scabbards/sr21av3.jpg"]' data-lightbox-caption="SR21a — Small scabbard chape">
+            <img src="../assets/images/products/leather-scabbards/sr21am.jpg" alt="Small scabbard chape, reference SR21a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">SR21a</span>
+            <h2 class="product-title">Small scabbard chape</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Suitable for a dagger or a small knife. 5 cm long, 1.6 cm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SR21a -->
+
+        <!-- SP21b -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp21b medium scabbard chape — suitable for a thrust sword, dagger or rapier. 7 cm long, 2.3 cm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp21m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp21v2.jpg","../assets/images/products/leather-scabbards/sp21v3.jpg"]' data-lightbox-caption="SP21b — Medium scabbard chape">
+            <img src="../assets/images/products/leather-scabbards/sp21m.jpg" alt="Medium scabbard chape, reference SP21b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP21b</span>
+            <h2 class="product-title">Medium scabbard chape</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Suitable for a thrust sword, dagger or rapier. 7 cm long, 2.3 cm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP21b -->
+
+        <!-- SR21c -->
+        <article class="catalog-row" data-tags="fitting" data-search="sr21c big scabbard chape — suitable for a sword or a broad dagger. 9 cm long, 3.8 cm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sr21cm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sr21cv.jpg","../assets/images/products/leather-scabbards/sr21cv3.jpg"]' data-lightbox-caption="SR21c — Big scabbard chape">
+            <img src="../assets/images/products/leather-scabbards/sr21cm.jpg" alt="Big scabbard chape, reference SR21c" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SR21c</span>
+            <h2 class="product-title">Big scabbard chape</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Suitable for a sword or a broad dagger. 9 cm long, 3.8 cm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SR21c -->
+
+        <!-- E36 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e36 period dagger scabbard — wooden core covered with thin leather.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E36m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E36v.jpg"]' data-lightbox-caption="E36 — Period dagger scabbard">
+            <img src="../assets/images/products/leather-scabbards/E36m.jpg" alt="Period dagger scabbard, reference E36" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">E36</span>
             <h2 class="product-title">Period dagger scabbard</h2>
+            <p class="product-period">—</p>
             <p class="product-description">Wooden core covered with thin leather.</p>
-            <div class="product-footer"><p class="product-price">79 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">79 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E36 -->
+        <!-- /E36 -->
 
-        <!-- PRODUCT E45 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e45.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e45.jpg"]' data-lightbox-caption="E45 — &quot;DeLuxe&quot; decorated scabbard">
-            <img src="../assets/images/products/leather-scabbards/e45.jpg" alt="DeLuxe decorated scabbard, reference E45" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E37 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e37 complex dagger scabbard — includes a29 and a30 accessories. wooden core covered with thin leather.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E37m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E37v.jpg"]' data-lightbox-caption="E37 — Complex dagger scabbard">
+            <img src="../assets/images/products/leather-scabbards/E37m.jpg" alt="Complex dagger scabbard, reference E37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">E45</span>
-            <h2 class="product-title">"DeLuxe" decorated scabbard</h2>
-            <p class="product-description">Wooden core covered with thin leather, decorated with Latin inscriptions.</p>
-            <div class="product-footer"><p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p></div>
+          <div class="catalog-row__main">
+            <span class="product-reference">E37</span>
+            <h2 class="product-title">Complex dagger scabbard</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Includes A29 and A30 accessories. Wooden core covered with thin leather.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">180 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E45 -->
+        <!-- /E37 -->
 
-        <!-- PRODUCT E34 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e34.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e34.jpg"]' data-lightbox-caption="E34 — Period scabbard for long sword">
-            <img src="../assets/images/products/leather-scabbards/e34.jpg" alt="Period scabbard for long sword, reference E34" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E40 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e40 decorated knife scabbard xv-xvith century leather decorated with geometric or floral motifs.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e40m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e40v.jpg"]' data-lightbox-caption="E40 — Decorated knife scabbard">
+            <img src="../assets/images/products/leather-scabbards/e40m.jpg" alt="Decorated knife scabbard, reference E40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">E40</span>
+            <h2 class="product-title">Decorated knife scabbard</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Leather decorated with geometric or floral motifs.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E40 -->
+
+        <!-- E47 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e47 decorated dagger scabbard — two layers of thin leather with a wood veneer in between. for blades under 33 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e47m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e47v.JPG","../assets/images/products/leather-scabbards/e47v2.JPG","../assets/images/products/leather-scabbards/e47v3.jpg","../assets/images/products/leather-scabbards/e47v4.JPG","../assets/images/products/leather-scabbards/e47v5.JPG"]' data-lightbox-caption="E47 — Decorated dagger scabbard">
+            <img src="../assets/images/products/leather-scabbards/e47m.jpg" alt="Decorated dagger scabbard, reference E47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E47</span>
+            <h2 class="product-title">Decorated dagger scabbard</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Two layers of thin leather with a wood veneer in between. For blades under 33 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">169 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E47 -->
+
+        <!-- E41 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e41 decorated dagger / messer / degen scabbard xv-xvith century wooden core covered with thin leather.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e41m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e41v.JPG"]' data-lightbox-caption="E41 — Decorated dagger / messer / degen scabbard">
+            <img src="../assets/images/products/leather-scabbards/e41m.jpg" alt="Decorated dagger / messer / degen scabbard, reference E41" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E41</span>
+            <h2 class="product-title">Decorated dagger / messer / degen scabbard</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Wooden core covered with thin leather.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">195 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E41 -->
+
+        <!-- E42 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e42 complex decorated dagger / messer scabbard xv-xvith century includes front scabbard and suspension system.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e42m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e42v.JPG","../assets/images/products/leather-scabbards/e42v2.JPG"]' data-lightbox-caption="E42 — Complex decorated dagger / messer scabbard">
+            <img src="../assets/images/products/leather-scabbards/e42m.jpg" alt="Complex decorated dagger / messer scabbard, reference E42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E42</span>
+            <h2 class="product-title">Complex decorated dagger / messer scabbard</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Includes front scabbard and suspension system.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">275 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E42 -->
+
+        <!-- E38 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e38 period scabbard for short sword — wooden core covered with thin leather.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e38m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e38v.jpg"]' data-lightbox-caption="E38 — Period scabbard for short sword">
+            <img src="../assets/images/products/leather-scabbards/e38m.jpg" alt="Period scabbard for short sword, reference E38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E38</span>
+            <h2 class="product-title">Period scabbard for short sword</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Wooden core covered with thin leather.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">130 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E38 -->
+
+        <!-- E34 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e34 period scabbard for long sword — wooden core covered with thin leather, for blades longer than 80 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E34m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E34v.jpg"]' data-lightbox-caption="E34 — Period scabbard for long sword">
+            <img src="../assets/images/products/leather-scabbards/E34m.jpg" alt="Period scabbard for long sword, reference E34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">E34</span>
             <h2 class="product-title">Period scabbard for long sword</h2>
+            <p class="product-period">—</p>
             <p class="product-description">Wooden core covered with thin leather, for blades longer than 80 cm.</p>
-            <div class="product-footer"><p class="product-price">159 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">159 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E34 -->
+        <!-- /E34 -->
 
-        <!-- PRODUCT E35 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e35.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e35.jpg"]' data-lightbox-caption="E35 — Scabbard + suspension belt system">
-            <img src="../assets/images/products/leather-scabbards/e35.jpg" alt="Scabbard and suspension belt system, reference E35" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E35 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e35 scabbard + suspension belt system — combines the e34 scabbard with a period belt system.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E35m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E35v.jpg"]' data-lightbox-caption="E35 — Scabbard + suspension belt system">
+            <img src="../assets/images/products/leather-scabbards/E35m.jpg" alt="Scabbard + suspension belt system, reference E35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">E35</span>
             <h2 class="product-title">Scabbard + suspension belt system</h2>
+            <p class="product-period">—</p>
             <p class="product-description">Combines the E34 scabbard with a period belt system.</p>
-            <div class="product-footer"><p class="product-price">189 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">189 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E35 -->
+        <!-- /E35 -->
 
-        <!-- PRODUCT E21 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e21.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e21.jpg"]' data-lightbox-caption="E21 — Leather scabbard with iron or brass point">
-            <img src="../assets/images/products/leather-scabbards/e21.jpg" alt="Leather scabbard with iron or brass point, reference E21" loading="lazy" width="100" height="135">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E35b -->
+        <article class="catalog-row" data-tags="fitting" data-search="e35b suspension belt system — belt system only.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E35m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E35v.jpg"]' data-lightbox-caption="E35b — Suspension belt system">
+            <img src="../assets/images/products/leather-scabbards/E35m.jpg" alt="Suspension belt system, reference E35b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">E35b</span>
+            <h2 class="product-title">Suspension belt system</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Belt system only.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E35b -->
+
+        <!-- E45 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e45 deluxe decorated scabbard xv-xvith century wooden core covered with thin leather, decorated with latin inscriptions.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e45v.jpg","../assets/images/products/leather-scabbards/e45v2.jpg","../assets/images/products/leather-scabbards/mt43v3.jpg"]' data-lightbox-caption="E45 — &quot;DeLuxe&quot; decorated scabbard">
+            <img src="../assets/images/products/leather-scabbards/e45m.jpg" alt="&quot;DeLuxe&quot; decorated scabbard, reference E45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E45</span>
+            <h2 class="product-title">"DeLuxe" decorated scabbard</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Wooden core covered with thin leather, decorated with Latin inscriptions.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E45 -->
+
+        <!-- E46 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e46 deluxe decorated scabbard xv-xvith century for one-and-a-half-hand swords.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e46m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e46v.jpg","../assets/images/products/leather-scabbards/e46v2.jpg"]' data-lightbox-caption="E46 — &quot;DeLuxe&quot; decorated scabbard">
+            <img src="../assets/images/products/leather-scabbards/e46m.jpg" alt="&quot;DeLuxe&quot; decorated scabbard, reference E46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E46</span>
+            <h2 class="product-title">"DeLuxe" decorated scabbard</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">For one-and-a-half-hand swords.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E46 -->
+
+        <!-- E21 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e21 leather scabbard with iron or brass point xi-xiith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva1m.jpg"]' data-lightbox-caption="E21 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva1m.jpg" alt="Leather scabbard with iron or brass point, reference E21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">E21</span>
             <h2 class="product-title">Leather scabbard with iron or brass point</h2>
-            <p class="product-period">XI–XIIth century</p>
-            <div class="product-footer"><p class="product-price">185 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">XI-XIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">185 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E21 -->
+        <!-- /E21 -->
 
-        <!-- PRODUCT E31 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e31.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e31.jpg"]' data-lightbox-caption="E31 — Leather set for rapier &amp; dagger">
-            <img src="../assets/images/products/leather-scabbards/e31.jpg" alt="Leather set for rapier and dagger, reference E31" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E22 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e22 leather scabbard with iron or brass point xiith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva2m.jpg"]' data-lightbox-caption="E22 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva2m.jpg" alt="Leather scabbard with iron or brass point, reference E22" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">E22</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E22 -->
+
+        <!-- E23 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e23 leather scabbard with iron or brass point xiiith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva3m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva3m.jpg"]' data-lightbox-caption="E23 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva3m.jpg" alt="Leather scabbard with iron or brass point, reference E23" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E23</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XIIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E23 -->
+
+        <!-- E24 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e24 leather scabbard with iron or brass point xiiith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva4m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva4m.jpg"]' data-lightbox-caption="E24 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva4m.jpg" alt="Leather scabbard with iron or brass point, reference E24" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E24</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XIIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">265 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E24 -->
+
+        <!-- E25 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e25 leather scabbard with iron or brass point xivth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva5m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva5m.jpg"]' data-lightbox-caption="E25 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva5m.jpg" alt="Leather scabbard with iron or brass point, reference E25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E25</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XIVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">265 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E25 -->
+
+        <!-- E26 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e26 leather scabbard with iron or brass point xivth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva6m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva6m.jpg"]' data-lightbox-caption="E26 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva6m.jpg" alt="Leather scabbard with iron or brass point, reference E26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E26</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XIVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">189 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E26 -->
+
+        <!-- E28 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e28 leather scabbard with iron or brass point xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva8m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva8m.jpg"]' data-lightbox-caption="E28 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva8m.jpg" alt="Leather scabbard with iron or brass point, reference E28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E28</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">185 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E28 -->
+
+        <!-- E29 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e29 leather scabbard with iron or brass point germany · xvi-xviith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva9m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva9m.jpg"]' data-lightbox-caption="E29 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva9m.jpg" alt="Leather scabbard with iron or brass point, reference E29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E29</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">Germany · XVI-XVIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">229 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E29 -->
+
+        <!-- E30 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e30 leather scabbard with iron or brass point france · xvi-xviith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/pochva10m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/pochva10m.jpg"]' data-lightbox-caption="E30 — Leather scabbard with iron or brass point">
+            <img src="../assets/images/products/leather-scabbards/pochva10m.jpg" alt="Leather scabbard with iron or brass point, reference E30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E30</span>
+            <h2 class="product-title">Leather scabbard with iron or brass point</h2>
+            <p class="product-period">France · XVI-XVIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">175 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E30 -->
+
+        <!-- E48 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e48 leather scabbard with hanger xviith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e48m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e48v.jpg","../assets/images/products/leather-scabbards/e48v2.JPG"]' data-lightbox-caption="E48 — Leather scabbard with hanger">
+            <img src="../assets/images/products/leather-scabbards/e48m.jpg" alt="Leather scabbard with hanger, reference E48" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E48</span>
+            <h2 class="product-title">Leather scabbard with hanger</h2>
+            <p class="product-period">XVIIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E48 -->
+
+        <!-- E31 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e31 leather set for rapier &amp; dagger xvi-xviith century custom made, silver-plated handmade buckles.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/Baudrierbestm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/Baudrier.jpg","../assets/images/products/leather-scabbards/Baudrierbest.jpg","../assets/images/products/leather-scabbards/Fourreau1.jpg"]' data-lightbox-caption="E31 — Leather set for rapier &amp; dagger">
+            <img src="../assets/images/products/leather-scabbards/Baudrierbestm.jpg" alt="Leather set for rapier &amp; dagger, reference E31" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">E31</span>
             <h2 class="product-title">Leather set for rapier &amp; dagger</h2>
-            <p class="product-period">XVI–XVIIth century</p>
+            <p class="product-period">XVI-XVIIth century</p>
             <p class="product-description">Custom made, silver-plated handmade buckles.</p>
-            <div class="product-footer"><p class="product-price">679 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">679 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E31 -->
+        <!-- /E31 -->
 
-        <!-- PRODUCT E16 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e16.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e16.jpg"]' data-lightbox-caption="E16 — Brocade pilgrim purse">
-            <img src="../assets/images/products/leather-scabbards/e16.jpg" alt="Brocade pilgrim purse, reference E16" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- E32 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e32 leather scabbard for katzbalger xv-xvith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E32m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E32v.jpg"]' data-lightbox-caption="E32 — Leather scabbard for Katzbalger">
+            <img src="../assets/images/products/leather-scabbards/E32m.jpg" alt="Leather scabbard for Katzbalger, reference E32" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">E16</span>
-            <h2 class="product-title">Brocade pilgrim purse</h2>
+          <div class="catalog-row__main">
+            <span class="product-reference">E32</span>
+            <h2 class="product-title">Leather scabbard for Katzbalger</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">235 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E32 -->
+
+        <!-- E33 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e33 additional dagger scabbard xvi-xviith century for the e29 system.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/E33m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/E33v.jpg"]' data-lightbox-caption="E33 — Additional dagger scabbard">
+            <img src="../assets/images/products/leather-scabbards/E33m.jpg" alt="Additional dagger scabbard, reference E33" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E33</span>
+            <h2 class="product-title">Additional dagger scabbard</h2>
+            <p class="product-period">XVI-XVIIth century</p>
+            <p class="product-description">For the E29 system.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">80 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E33 -->
+
+        <!-- E33b -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e33b additional dagger scabbard with hanger xvi-xviith century detachable.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e33bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e33bv.jpg","../assets/images/products/leather-scabbards/e33bv2.jpg"]' data-lightbox-caption="E33b — Additional dagger scabbard with hanger">
+            <img src="../assets/images/products/leather-scabbards/e33bm.jpg" alt="Additional dagger scabbard with hanger, reference E33b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E33b</span>
+            <h2 class="product-title">Additional dagger scabbard with hanger</h2>
+            <p class="product-period">XVI-XVIIth century</p>
+            <p class="product-description">Detachable.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">105 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E33b -->
+
+        <!-- E43 -->
+        <article class="catalog-row" data-tags="fitting" data-search="e43 belt hanger for small sword xviiith century steel, 9 × 7 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e43m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e43v.JPG","../assets/images/products/leather-scabbards/e43v2.JPG","../assets/images/products/leather-scabbards/e43v3.jpg","../assets/images/products/leather-scabbards/e44v.JPG"]' data-lightbox-caption="E43 — Belt hanger for small sword">
+            <img src="../assets/images/products/leather-scabbards/e43m.jpg" alt="Belt hanger for small sword, reference E43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E43</span>
+            <h2 class="product-title">Belt hanger for small sword</h2>
+            <p class="product-period">XVIIIth century</p>
+            <p class="product-description">Steel, 9 × 7 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">19 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E43 -->
+
+        <!-- E44 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e44 small sword scabbard with belt hanger xviiith century leather scabbard with an e43 steel hanger.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e44m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e43v3.jpg","../assets/images/products/leather-scabbards/e44v.JPG","../assets/images/products/leather-scabbards/e44v2.JPG","../assets/images/products/leather-scabbards/e44v3.JPG"]' data-lightbox-caption="E44 — Small sword scabbard with belt hanger">
+            <img src="../assets/images/products/leather-scabbards/e44m.jpg" alt="Small sword scabbard with belt hanger, reference E44" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E44</span>
+            <h2 class="product-title">Small sword scabbard with belt hanger</h2>
+            <p class="product-period">XVIIIth century</p>
+            <p class="product-description">Leather scabbard with an E43 steel hanger.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">75 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E44 -->
+
+        <!-- M27a -->
+        <article class="catalog-row" data-tags="other" data-search="m27a short sword transport bag — linen, reinforced tip, for a sword 90-120 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/m27m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/m27v.jpg"]' data-lightbox-caption="M27a — Short sword transport bag">
+            <img src="../assets/images/products/leather-scabbards/m27m.jpg" alt="Short sword transport bag, reference M27a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">M27a</span>
+            <h2 class="product-title">Short sword transport bag</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Linen, reinforced tip, for a sword 90-120 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">10 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /M27a -->
+
+        <!-- M27b -->
+        <article class="catalog-row" data-tags="other" data-search="m27b long sword transport bag — linen, reinforced tip, for a sword 120-135 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/m27m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/m27v.jpg"]' data-lightbox-caption="M27b — Long sword transport bag">
+            <img src="../assets/images/products/leather-scabbards/m27m.jpg" alt="Long sword transport bag, reference M27b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">M27b</span>
+            <h2 class="product-title">Long sword transport bag</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Linen, reinforced tip, for a sword 120-135 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">15 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /M27b -->
+
+        <!-- SP63a -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp63a brass buckle xvth century 6.4 cm long, for belts 18-22 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp63am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp63av.JPG"]' data-lightbox-caption="SP63a — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp63am.jpg" alt="Brass buckle, reference SP63a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP63a</span>
+            <h2 class="product-title">Brass buckle</h2>
             <p class="product-period">XVth century</p>
-            <p class="product-description">With brass suspension bar.</p>
-            <div class="product-footer"><p class="product-price">55 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">6.4 cm long, for belts 18-22 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E16 -->
+        <!-- /SP63a -->
 
-        <!-- PRODUCT E3 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/e3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e3.jpg"]' data-lightbox-caption="E3 — Leather purse">
-            <img src="../assets/images/products/leather-scabbards/e3.jpg" alt="Leather purse, reference E3" loading="lazy" width="150" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SP63b -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp63b brass belt end xvth century 5.6 cm long, 20 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp63bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp63bv.JPG"]' data-lightbox-caption="SP63b — Brass belt end">
+            <img src="../assets/images/products/leather-scabbards/sp63bm.jpg" alt="Brass belt end, reference SP63b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
-            <span class="product-reference">E3</span>
-            <h2 class="product-title">Leather purse</h2>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP63b</span>
+            <h2 class="product-title">Brass belt end</h2>
             <p class="product-period">XVth century</p>
-            <div class="product-footer"><p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">5.6 cm long, 20 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">6 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT E3 -->
+        <!-- /SP63b -->
 
-        <!-- PRODUCT SP16 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/sp16.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp16.jpg"]' data-lightbox-caption="SP16 — Brass buckle">
-            <img src="../assets/images/products/leather-scabbards/sp16.jpg" alt="Brass buckle, reference SP16" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SP64 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp64 brass belt end xvth century 4 cm long, 12 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp64m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp64v.JPG"]' data-lightbox-caption="SP64 — Brass belt end">
+            <img src="../assets/images/products/leather-scabbards/sp64m.jpg" alt="Brass belt end, reference SP64" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">SP64</span>
+            <h2 class="product-title">Brass belt end</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">4 cm long, 12 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">5 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP64 -->
+
+        <!-- SP65 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp65 brass belt end xvth century 5.8 cm long, 21 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp65m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp65v.JPG"]' data-lightbox-caption="SP65 — Brass belt end">
+            <img src="../assets/images/products/leather-scabbards/sp65m.jpg" alt="Brass belt end, reference SP65" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP65</span>
+            <h2 class="product-title">Brass belt end</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">5.8 cm long, 21 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP65 -->
+
+        <!-- SP16 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp16 brass buckle xiv-xvith century for belts 20-29 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp16m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp16v2.jpg"]' data-lightbox-caption="SP16 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp16m.jpg" alt="Brass buckle, reference SP16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">SP16</span>
             <h2 class="product-title">Brass buckle</h2>
-            <p class="product-period">XIV–XVIth century</p>
-            <p class="product-description">For belts 20–29 mm wide.</p>
-            <div class="product-footer"><p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">XIV-XVIth century</p>
+            <p class="product-description">For belts 20-29 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT SP16 -->
+        <!-- /SP16 -->
 
-        <!-- PRODUCT BT14 -->
-        <article class="product-card">
-          <a class="product-image" href="../assets/images/products/leather-scabbards/bt14.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/bt14.jpg"]' data-lightbox-caption="BT14 — Brass purse frame (large)">
-            <img src="../assets/images/products/leather-scabbards/bt14.jpg" alt="Brass purse frame, reference BT14" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- SP18 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp18 brass buckle xiv-xvith century for belts 12-18 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp18m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp18v2.jpg"]' data-lightbox-caption="SP18 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp18m.jpg" alt="Brass buckle, reference SP18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">SP18</span>
+            <h2 class="product-title">Brass buckle</h2>
+            <p class="product-period">XIV-XVIth century</p>
+            <p class="product-description">For belts 12-18 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP18 -->
+
+        <!-- SP19 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp19 brass buckle xiv-xvith century for belts 12-17 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp19m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp19v2.jpg"]' data-lightbox-caption="SP19 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp19m.jpg" alt="Brass buckle, reference SP19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP19</span>
+            <h2 class="product-title">Brass buckle</h2>
+            <p class="product-period">XIV-XVIth century</p>
+            <p class="product-description">For belts 12-17 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP19 -->
+
+        <!-- SP59 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp59 brass buckle xiv-xvith century for belts 30-42 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp59m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp59v.JPG"]' data-lightbox-caption="SP59 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp59m.jpg" alt="Brass buckle, reference SP59" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP59</span>
+            <h2 class="product-title">Brass buckle</h2>
+            <p class="product-period">XIV-XVIth century</p>
+            <p class="product-description">For belts 30-42 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP59 -->
+
+        <!-- SP62 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp62 brass buckle xv-xvith century 17 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp62m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp62v.JPG"]' data-lightbox-caption="SP62 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp62m.jpg" alt="Brass buckle, reference SP62" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP62</span>
+            <h2 class="product-title">Brass buckle</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">17 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP62 -->
+
+        <!-- SP47 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp47 brass buckle xv-xvith century for belts 16-23 mm wide.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/sp47m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/sp47v.JPG"]' data-lightbox-caption="SP47 — Brass buckle">
+            <img src="../assets/images/products/leather-scabbards/sp47m.jpg" alt="Brass buckle, reference SP47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP47</span>
+            <h2 class="product-title">Brass buckle</h2>
+            <p class="product-period">XV-XVIth century</p>
+            <p class="product-description">For belts 16-23 mm wide.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /SP47 -->
+
+        <!-- BT14 -->
+        <article class="catalog-row" data-tags="fitting" data-search="bt14 brass purse frame large xvth century length 14 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/bt14m3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/bt14v3.jpg","../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="BT14 — Brass purse frame (large)">
+            <img src="../assets/images/products/leather-scabbards/bt14m3.jpg" alt="Brass purse frame (large), reference BT14" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">BT14</span>
             <h2 class="product-title">Brass purse frame (large)</h2>
             <p class="product-period">XVth century</p>
             <p class="product-description">Length 14 cm.</p>
-            <div class="product-footer"><p class="product-price">12 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT BT14 -->
+        <!-- /BT14 -->
+
+        <!-- BT19 -->
+        <article class="catalog-row" data-tags="fitting" data-search="bt19 brass purse frame small xvth century length 9.5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/bt19m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/bt19v.jpg","../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="BT19 — Brass purse frame (small)">
+            <img src="../assets/images/products/leather-scabbards/bt19m.jpg" alt="Brass purse frame (small), reference BT19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">BT19</span>
+            <h2 class="product-title">Brass purse frame (small)</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length 9.5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /BT19 -->
+
+        <!-- E20 -->
+        <article class="catalog-row" data-tags="purse" data-search="e20 brocade pilgrim purse xvth century with brass ring.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e20m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e20v.jpg"]' data-lightbox-caption="E20 — Brocade pilgrim purse">
+            <img src="../assets/images/products/leather-scabbards/e20m.jpg" alt="Brocade pilgrim purse, reference E20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E20</span>
+            <h2 class="product-title">Brocade pilgrim purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">With brass ring.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E20 -->
+
+        <!-- E16 -->
+        <article class="catalog-row" data-tags="purse" data-search="e16 brocade pilgrim purse xvth century with brass suspension bar.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e16m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e16v.jpg","../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="E16 — Brocade pilgrim purse">
+            <img src="../assets/images/products/leather-scabbards/e16m.jpg" alt="Brocade pilgrim purse, reference E16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E16</span>
+            <h2 class="product-title">Brocade pilgrim purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">With brass suspension bar.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">55 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E16 -->
+
+        <!-- E17 -->
+        <article class="catalog-row" data-tags="purse" data-search="e17 linen pilgrim purse xvth century brass ring and embroidery.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e17m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e17v.jpg","../assets/images/products/leather-scabbards/e17v2.jpg"]' data-lightbox-caption="E17 — Linen pilgrim purse">
+            <img src="../assets/images/products/leather-scabbards/e17m.jpg" alt="Linen pilgrim purse, reference E17" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E17</span>
+            <h2 class="product-title">Linen pilgrim purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Brass ring and embroidery.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">47 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E17 -->
+
+        <!-- E18 -->
+        <article class="catalog-row" data-tags="purse" data-search="e18 linen pilgrim purse xvth century with brass ring.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e18m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e18v.jpg","../assets/images/products/leather-scabbards/e18v2.jpg"]' data-lightbox-caption="E18 — Linen pilgrim purse">
+            <img src="../assets/images/products/leather-scabbards/e18m.jpg" alt="Linen pilgrim purse, reference E18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E18</span>
+            <h2 class="product-title">Linen pilgrim purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">With brass ring.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E18 -->
+
+        <!-- E19 -->
+        <article class="catalog-row" data-tags="purse" data-search="e19 brocade pilgrim purse xvth century with brass ring.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/e19m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/e19v.jpg"]' data-lightbox-caption="E19 — Brocade pilgrim purse">
+            <img src="../assets/images/products/leather-scabbards/e19m.jpg" alt="Brocade pilgrim purse, reference E19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E19</span>
+            <h2 class="product-title">Brocade pilgrim purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">With brass ring.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E19 -->
+
+        <!-- E11 -->
+        <article class="catalog-row" data-tags="purse" data-search="e11 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny1_v.jpg"]' data-lightbox-caption="E11 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny1.jpg" alt="Purse, reference E11" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E11</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">35 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E11 -->
+
+        <!-- E12 -->
+        <article class="catalog-row" data-tags="purse" data-search="e12 purse xiv-xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny1_v.jpg"]' data-lightbox-caption="E12 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny1.jpg" alt="Purse, reference E12" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E12</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XIV-XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">42 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E12 -->
+
+        <!-- E13 -->
+        <article class="catalog-row" data-tags="purse" data-search="e13 purse xiv-xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny1_v.jpg"]' data-lightbox-caption="E13 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny1.jpg" alt="Purse, reference E13" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E13</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XIV-XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">31 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E13 -->
+
+        <!-- E14 -->
+        <article class="catalog-row" data-tags="purse" data-search="e14 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny2_v.jpg"]' data-lightbox-caption="E14 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny2.jpg" alt="Purse, reference E14" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E14</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">35 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E14 -->
+
+        <!-- E15 -->
+        <article class="catalog-row" data-tags="belt" data-search="e15 belt xvth century period buckle, 150 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny2_v.jpg"]' data-lightbox-caption="E15 — Belt">
+            <img src="../assets/images/products/leather-scabbards/brasny2.jpg" alt="Belt, reference E15" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E15</span>
+            <h2 class="product-title">Belt</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Period buckle, 150 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">35 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E15 -->
+
+        <!-- E1 -->
+        <article class="catalog-row" data-tags="purse" data-search="e1 small leather bag — compact storage pouch.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny3_v.jpg"]' data-lightbox-caption="E1 — Small leather bag">
+            <img src="../assets/images/products/leather-scabbards/brasny3.jpg" alt="Small leather bag, reference E1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E1</span>
+            <h2 class="product-title">Small leather bag</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">Compact storage pouch.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">6 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E1 -->
+
+        <!-- E2 -->
+        <article class="catalog-row" data-tags="belt" data-search="e2 belt xvth century period buckle.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny3_v.jpg"]' data-lightbox-caption="E2 — Belt">
+            <img src="../assets/images/products/leather-scabbards/brasny3.jpg" alt="Belt, reference E2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E2</span>
+            <h2 class="product-title">Belt</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Period buckle.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E2 -->
+
+        <!-- E3 -->
+        <article class="catalog-row" data-tags="purse" data-search="e3 purse xvth century premium leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny3_v.jpg"]' data-lightbox-caption="E3 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny3.jpg" alt="Purse, reference E3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E3</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Premium leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">89 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E3 -->
+
+        <!-- E4 -->
+        <article class="catalog-row" data-tags="belt" data-search="e4 belt xvth century 150 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny4.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny4_v.jpg"]' data-lightbox-caption="E4 — Belt">
+            <img src="../assets/images/products/leather-scabbards/brasny4.jpg" alt="Belt, reference E4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E4</span>
+            <h2 class="product-title">Belt</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">150 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E4 -->
+
+        <!-- E5 -->
+        <article class="catalog-row" data-tags="purse" data-search="e5 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny4.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny4_v.jpg"]' data-lightbox-caption="E5 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny4.jpg" alt="Purse, reference E5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E5</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">79 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E5 -->
+
+        <!-- E6 -->
+        <article class="catalog-row" data-tags="belt" data-search="e6 belt xvth century leather belt.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny5_v.jpg"]' data-lightbox-caption="E6 — Belt">
+            <img src="../assets/images/products/leather-scabbards/brasny5.jpg" alt="Belt, reference E6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E6</span>
+            <h2 class="product-title">Belt</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather belt.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">36 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E6 -->
+
+        <!-- E7 -->
+        <article class="catalog-row" data-tags="purse" data-search="e7 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny5_v.jpg"]' data-lightbox-caption="E7 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny5.jpg" alt="Purse, reference E7" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E7</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">59 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E7 -->
+
+        <!-- E8 -->
+        <article class="catalog-row" data-tags="purse" data-search="e8 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny6_v.jpg"]' data-lightbox-caption="E8 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny6.jpg" alt="Purse, reference E8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E8</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">66 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E8 -->
+
+        <!-- E9 -->
+        <article class="catalog-row" data-tags="purse" data-search="e9 purse xvth century leather purse.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/brasny6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/brasny6_v.jpg"]' data-lightbox-caption="E9 — Purse">
+            <img src="../assets/images/products/leather-scabbards/brasny6.jpg" alt="Purse, reference E9" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E9</span>
+            <h2 class="product-title">Purse</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Leather purse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">29 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /E9 -->
+
+        <!-- CU1 -->
+        <article class="catalog-row" data-tags="other" data-search="cu1 banner / lance holder — for cavalry.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/chranic2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/chranic2_v.jpg"]' data-lightbox-caption="CU1 — Banner / lance holder">
+            <img src="../assets/images/products/leather-scabbards/chranic2.jpg" alt="Banner / lance holder, reference CU1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU1</span>
+            <h2 class="product-title">Banner / lance holder</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">For cavalry.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">33 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /CU1 -->
+
+        <!-- CU2 -->
+        <article class="catalog-row" data-tags="other" data-search="cu2 simple leather hand protection — for archers.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/chranic1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/chranic1_v.jpg"]' data-lightbox-caption="CU2 — Simple leather hand protection">
+            <img src="../assets/images/products/leather-scabbards/chranic1.jpg" alt="Simple leather hand protection, reference CU2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU2</span>
+            <h2 class="product-title">Simple leather hand protection</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">For archers.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /CU2 -->
+
+        <!-- CU3 -->
+        <article class="catalog-row" data-tags="other" data-search="cu3 decorated leather hand protection — for archers.">
+          <a class="catalog-row__media" href="../assets/images/products/leather-scabbards/avemaria.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/leather-scabbards/avemaria_v.jpg"]' data-lightbox-caption="CU3 — Decorated leather hand protection">
+            <img src="../assets/images/products/leather-scabbards/avemaria.jpg" alt="Decorated leather hand protection, reference CU3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU3</span>
+            <h2 class="product-title">Decorated leather hand protection</h2>
+            <p class="product-period">—</p>
+            <p class="product-description">For archers.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">52 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /CU3 -->
 
       </div>
+
+      <p class="catalog-empty" data-catalog-empty>No item matches your search. Try another reference or name, or <a href="../contact.html">contact the workshop</a> directly.</p>
 
     </div>
   </section>
@@ -327,6 +1399,7 @@ HOW TO CHANGE A PRICE: find the reference, edit its
 </div>
 
 <script src="../assets/js/main.js"></script>
+<script src="../assets/js/catalog.js"></script>
 <script src="../assets/js/gallery.js"></script>
 </body>
 </html>
