@@ -1,0 +1,457 @@
+<!--
+============================================================
+ARMA BOHEMIA — SWORDS CATALOGUE (English)
+============================================================
+
+HOW TO ADD A PRODUCT
+1. Copy one whole "PRODUCT" block below (from the opening
+   "PRODUCT xxx" comment to the matching "END PRODUCT xxx"
+   comment, <article> included).
+2. Paste it where you want it to appear.
+3. Change the reference, title, period, description and price.
+4. Put the photo in:
+   /assets/images/products/swords/
+   and update the two "src" and the "href" to match its filename.
+5. Optional: give the <article> a "data-tags" value using one of
+   the century codes used by the filter buttons above the grid
+   (xi, xii, xiv, xv, xvi, xvii-xviii) so it can be filtered.
+
+HOW TO REMOVE A PRODUCT
+Delete its whole block, from "PRODUCT xxx" to "END PRODUCT xxx".
+
+HOW TO CHANGE A PRICE
+Find the product's reference (e.g. EP34), then edit the text
+inside its <p class="product-price"> tag.
+
+DO NOT change any class="..." name unless you know exactly what
+you are doing — the CSS in /assets/css/ depends on them.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Swords — Arma Bohemia Catalogue</title>
+<meta name="description" content="Hand-made copies of historical one-hand, one-and-a-half-hand and two-handed swords, XIth to XVIIIth century, made by Arma Bohemia, Czech Republic.">
+<link rel="canonical" href="https://www.armabohemia.cz/catalogue/swords.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/swords.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/swords.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/swords.html">
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Historical workshop, est. 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Home</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html" aria-current="page">Swords</a>
+            <a href="daggers.html">Daggers &amp; Knives</a>
+            <a href="helmets.html">Helmets</a>
+            <a href="armour.html">Armour</a>
+            <a href="shields.html">Shields</a>
+            <a href="polearms.html">Polearms &amp; Blunt Weapons</a>
+            <a href="leather-goods.html">Leather Goods &amp; Scabbards</a>
+            <a href="camp-life.html">Camp Life</a>
+            <a href="tableware.html">Tableware &amp; Cutlery</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Workshop</a></li>
+        <li><a class="main-nav__link" href="../events.html">Events</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="swords.html" aria-current="true">EN</a></li>
+          <li><a class="lang-switch__link" href="../fr/catalogue/swords.html">FR</a></li>
+          <li><a class="lang-switch__link" href="../de/catalogue/swords.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Open menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Swords</a></li>
+                  <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+                  <li><a href="helmets.html">Helmets</a></li>
+                  <li><a href="armour.html">Armour</a></li>
+                  <li><a href="shields.html">Shields</a></li>
+                  <li><a href="polearms.html">Polearms &amp; Blunt Weapons</a></li>
+                  <li><a href="leather-goods.html">Leather Goods &amp; Scabbards</a></li>
+                  <li><a href="camp-life.html">Camp Life</a></li>
+                  <li><a href="tableware.html">Tableware &amp; Cutlery</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Workshop</a></li>
+            <li><a href="../events.html">Events</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="swords.html" aria-current="true">EN</a>
+            <a class="lang-switch__link" href="../fr/catalogue/swords.html">FR</a>
+            <a class="lang-switch__link" href="../de/catalogue/swords.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Swords</p>
+      <h1>Swords</h1>
+      <p class="lead">One-hand, one-and-a-half-hand and two-handed swords, XIth to XVIIIth century — sharp or blunt on request.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="sword-search">Search swords</label>
+          <input type="search" id="sword-search" data-catalog-search placeholder="Search by reference, name, century or origin…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filter by century">
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="all" aria-pressed="true">All centuries</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xi">XI c.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xii">XII c.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xiv">XIV c.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xv">XV c.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xvi">XVI c.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xvii-xviii">XVII–XVIII c.</button>
+        </div>
+      </div>
+
+      <p class="catalog-count" data-catalog-count data-template="{n} swords shown">12 swords shown</p>
+
+      <div class="product-grid product-grid--wide" data-catalog-grid>
+
+        <!-- ==================================================
+             PRODUCT EP1
+        ================================================== -->
+        <article class="product-card" data-tags="xi viking england" data-search="ep1 viking one-hand sword england hastings xi century">
+          <a class="product-image" href="../assets/images/products/swords/ep1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep1.jpg"]' data-lightbox-caption="EP1 — Viking-type one-hand sword">
+            <img src="../assets/images/products/swords/ep1.jpg" alt="Viking-type one-hand sword, reference EP1" loading="lazy" width="100" height="150">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP1</span>
+            <h2 class="product-title">Viking-type one-hand sword</h2>
+            <p class="product-period">England · XIth century</p>
+            <p class="product-description">From the battlefield of Hastings. Length: 90 cm.</p>
+            <div class="product-footer">
+              <p class="product-price">On request<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP1 -->
+
+        <!-- ==================================================
+             PRODUCT EP42
+        ================================================== -->
+        <article class="product-card" data-tags="xi viking norway" data-search="ep42 viking one-hand sword norway xi century petersen">
+          <a class="product-image" href="../assets/images/products/swords/ep42.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep42.jpg"]' data-lightbox-caption="EP42 — Viking-type one-hand sword">
+            <img src="../assets/images/products/swords/ep42.jpg" alt="Viking-type one-hand sword, reference EP42" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP42</span>
+            <h2 class="product-title">Viking-type one-hand sword</h2>
+            <p class="product-period">Norway · circa 1100</p>
+            <p class="product-description">Length: approx. 89 cm, weight approx. 1240 g. Described in Jan Petersen's "De Norske Vikingesverd".</p>
+            <div class="product-footer">
+              <p class="product-price">350 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP42 -->
+
+        <!-- ==================================================
+             PRODUCT EP62
+        ================================================== -->
+        <article class="product-card" data-tags="xi norman england" data-search="ep62 norman one-hand sword england xi century">
+          <a class="product-image" href="../assets/images/products/swords/ep62.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep62.jpg"]' data-lightbox-caption="EP62 — Norman-type one-hand sword">
+            <img src="../assets/images/products/swords/ep62.jpg" alt="Norman-type one-hand sword, reference EP62" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP62</span>
+            <h2 class="product-title">Norman-type one-hand sword</h2>
+            <p class="product-period">England · XIth century</p>
+            <p class="product-description">Length: approx. 96 cm, weight only 1120 g.</p>
+            <div class="product-footer">
+              <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP62 -->
+
+        <!-- ==================================================
+             PRODUCT EP3
+        ================================================== -->
+        <article class="product-card" data-tags="xii france" data-search="ep3 broad one-hand sword france xii century viollet le duc">
+          <a class="product-image" href="../assets/images/products/swords/ep3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep3.jpg"]' data-lightbox-caption="EP3 — Broad one-hand sword">
+            <img src="../assets/images/products/swords/ep3.jpg" alt="Broad one-hand sword, reference EP3" loading="lazy" width="100" height="154">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP3</span>
+            <h2 class="product-title">Broad one-hand sword</h2>
+            <p class="product-period">France · 2nd half XIIth century</p>
+            <p class="product-description">Length: 95 cm, very broad blade (8 cm), sharp. Described in Viollet-le-Duc's "Encyclopédie médiévale".</p>
+            <div class="product-footer">
+              <p class="product-price">460 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP3 -->
+
+        <!-- ==================================================
+             PRODUCT EP70
+        ================================================== -->
+        <article class="product-card" data-tags="xiv germany bohemia" data-search="ep70 one-hand sword germany bohemia xiii xiv century">
+          <a class="product-image" href="../assets/images/products/swords/ep70.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep70.jpg"]' data-lightbox-caption="EP70 — One-hand sword">
+            <img src="../assets/images/products/swords/ep70.jpg" alt="One-hand sword, reference EP70" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP70</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Germany / Bohemia · XIII–XIVth century</p>
+            <p class="product-description">Length: 90.5 cm, weight approx. 1485 g.</p>
+            <div class="product-footer">
+              <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP70 -->
+
+        <!-- ==================================================
+             PRODUCT EP82
+        ================================================== -->
+        <article class="product-card" data-tags="xiv germany greatsword" data-search="ep82 greatsword germany xiv century private collection">
+          <a class="product-image" href="../assets/images/products/swords/ep82.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep82.jpg"]' data-lightbox-caption="EP82 — Greatsword">
+            <img src="../assets/images/products/swords/ep82.jpg" alt="Greatsword, reference EP82" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP82</span>
+            <h2 class="product-title">Greatsword</h2>
+            <p class="product-period">Germany · XIVth century</p>
+            <p class="product-description">Length: approx. 119 cm, weight approx. 1770 g, blade width 55 mm. From a private collection.</p>
+            <div class="product-footer">
+              <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP82 -->
+
+        <!-- ==================================================
+             PRODUCT EP39
+        ================================================== -->
+        <article class="product-card" data-tags="xiv" data-search="ep39 one-and-a-half-hand sword xiv century">
+          <a class="product-image" href="../assets/images/products/swords/ep39.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep39.jpg"]' data-lightbox-caption="EP39 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep39.jpg" alt="One-and-a-half-hand sword, reference EP39" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP39</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">XIVth century</p>
+            <p class="product-description">Length: approx. 120 cm, weight approx. 1845 g.</p>
+            <div class="product-footer">
+              <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP39 -->
+
+        <!-- ==================================================
+             PRODUCT EP81
+        ================================================== -->
+        <article class="product-card" data-tags="xiv england falchion" data-search="ep81 falchion england xiv century private collection">
+          <a class="product-image" href="../assets/images/products/swords/ep81.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep81.jpg"]' data-lightbox-caption="EP81 — Falchion">
+            <img src="../assets/images/products/swords/ep81.jpg" alt="Falchion, reference EP81" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP81</span>
+            <h2 class="product-title">Falchion</h2>
+            <p class="product-period">England · XIVth century</p>
+            <p class="product-description">Length: approx. 91.5 cm, weight 1630 g. Very broad blade (6 cm) with inscription. From a private collection.</p>
+            <div class="product-footer">
+              <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP81 -->
+
+        <!-- ==================================================
+             PRODUCT EP38
+        ================================================== -->
+        <article class="product-card" data-tags="xv" data-search="ep38 one-and-a-half-hand sword xv century private collection">
+          <a class="product-image" href="../assets/images/products/swords/ep38.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep38.jpg"]' data-lightbox-caption="EP38 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep38.jpg" alt="One-and-a-half-hand sword, reference EP38" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP38</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length: 105 cm, weight approx. 1300 g. From a private collection.</p>
+            <div class="product-footer">
+              <p class="product-price">370 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP38 -->
+
+        <!-- ==================================================
+             PRODUCT EP50
+        ================================================== -->
+        <article class="product-card" data-tags="xv france england two-handed" data-search="ep50 two-handed sword france england xv century castillon dordogne">
+          <a class="product-image" href="../assets/images/products/swords/ep50.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep50.jpg"]' data-lightbox-caption="EP50 — Two-handed sword">
+            <img src="../assets/images/products/swords/ep50.jpg" alt="Two-handed sword, reference EP50" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP50</span>
+            <h2 class="product-title">Two-handed sword</h2>
+            <p class="product-period">France / England · XVth century</p>
+            <p class="product-description">Length: approx. 146 cm, weight 2150 g. Provenance: Dordogne area, Battle of Castillon 1453.</p>
+            <div class="product-footer">
+              <p class="product-price">360 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP50 -->
+
+        <!-- ==================================================
+             PRODUCT EP34
+        ================================================== -->
+        <article class="product-card" data-tags="xvi germany katzbalger" data-search="ep34 landsknecht katzbalger sword southern germany xvi century decorated">
+          <a class="product-image" href="../assets/images/products/swords/ep34.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep34.jpg"]' data-lightbox-caption="EP34 — Landsknecht &quot;Katzbalger&quot; sword">
+            <img src="../assets/images/products/swords/ep34.jpg" alt="Landsknecht Katzbalger sword, reference EP34" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP34</span>
+            <h2 class="product-title">Landsknecht "Katzbalger" sword</h2>
+            <p class="product-period">Southern Germany · early XVIth century</p>
+            <p class="product-description">Length: approx. 81 cm, weight approx. 1350 g. Sharp or blunt blade on request, decorated.</p>
+            <div class="product-footer">
+              <p class="product-price">729 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP34 -->
+
+        <!-- ==================================================
+             PRODUCT EP77
+        ================================================== -->
+        <article class="product-card" data-tags="xvii-xviii smallsword" data-search="ep77 noble smallsword xvii xviii century decorated">
+          <a class="product-image" href="../assets/images/products/swords/ep77.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep77.jpg"]' data-lightbox-caption="EP77 — Noble smallsword">
+            <img src="../assets/images/products/swords/ep77.jpg" alt="Noble smallsword, reference EP77" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP77</span>
+            <h2 class="product-title">Noble smallsword</h2>
+            <p class="product-period">XVII–XVIIIth century</p>
+            <p class="product-description">Length: approx. 100 cm, weight approx. 600 g. Slightly decorated.</p>
+            <div class="product-footer">
+              <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+            </div>
+          </div>
+        </article>
+        <!-- END PRODUCT EP77 -->
+
+      </div>
+
+      <p class="catalog-empty" data-catalog-empty>No sword matches your search. Try another reference, century or origin, or <a href="../contact.html">contact the workshop</a> directly.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Historical Living-History &amp; Reenactment workshop, founded in 1995. Handcrafted reproductions of medieval and renaissance arms, armour and everyday objects, made by a network of Czech artisans.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Swords</a></li>
+        <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+        <li><a href="helmets.html">Helmets</a></li>
+        <li><a href="armour.html">Armour</a></li>
+        <li><a href="index.html">Full catalogue →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Workshop</h3>
+      <ul>
+        <li><a href="../about.html">About Arma Bohemia</a></li>
+        <li><a href="../events.html">Events &amp; fairs</a></li>
+        <li><a href="../conditions.html">Ordering &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, Czech Republic</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged product photo">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/catalog.js"></script>
+<script src="../assets/js/gallery.js"></script>
+</body>
+</html>

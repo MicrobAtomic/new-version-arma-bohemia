@@ -1,0 +1,71 @@
+/* ==================================================
+   ARMA BOHEMIA — variables.css
+   Le design system du site : couleurs, typographies,
+   espacements. Toutes les autres feuilles de style
+   utilisent ces variables : c'est ici qu'il faut
+   modifier une couleur ou une taille de texte pour
+   qu'elle change partout sur le site.
+================================================== */
+
+:root {
+  /* ---- Couleurs — fond ---- */
+  --color-charcoal-900: #17161a;   /* fond sombre principal (footer, hero) */
+  --color-charcoal-800: #201e21;
+  --color-charcoal-700: #2b2830;
+
+  --color-ivory-100: #faf7f0;      /* fond clair principal des pages */
+  --color-ivory-200: #f2ece0;      /* fond clair légèrement plus soutenu (cartes) */
+  --color-ivory-300: #e6dcc8;      /* bordures / séparateurs sur fond clair */
+
+  /* ---- Couleurs — accent bronze / laiton ---- */
+  --color-bronze-600: #9c6b3a;
+  --color-bronze-500: #b6813f;
+  --color-bronze-400: #c99a5b;
+
+  /* ---- Couleurs — texte ---- */
+  --color-ink-900: #211f1c;        /* texte principal sur fond clair */
+  --color-ink-700: #4a453e;        /* texte secondaire sur fond clair */
+  --color-ink-500: #726b60;        /* texte tertiaire / légendes */
+
+  --color-paper-100: #f5f1e6;      /* texte principal sur fond sombre */
+  --color-paper-300: #cfc7b4;      /* texte secondaire sur fond sombre */
+
+  --color-steel-600: #565b61;
+  --color-line: rgba(33, 31, 28, 0.12);
+  --color-line-dark: rgba(245, 241, 230, 0.14);
+
+  /* ---- États ---- */
+  --color-focus: #b6813f;
+
+  /* ---- Typographie ---- */
+  --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", "URW Palladio L", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --fs-h1: clamp(2.1rem, 1.6rem + 2.2vw, 3.6rem);
+  --fs-h2: clamp(1.6rem, 1.3rem + 1.2vw, 2.4rem);
+  --fs-h3: clamp(1.2rem, 1.05rem + 0.6vw, 1.5rem);
+  --fs-lead: clamp(1.05rem, 1rem + 0.3vw, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.75rem;
+
+  /* ---- Espacements ---- */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3.25rem;
+  --space-2xl: 5rem;
+
+  /* ---- Mise en page ---- */
+  --container-max: 1240px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+
+  --shadow-card: 0 1px 2px rgba(23, 22, 26, 0.06), 0 6px 20px rgba(23, 22, 26, 0.07);
+  --shadow-card-hover: 0 2px 4px rgba(23, 22, 26, 0.08), 0 14px 32px rgba(23, 22, 26, 0.12);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}

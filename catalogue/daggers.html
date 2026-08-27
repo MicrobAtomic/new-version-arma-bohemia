@@ -1,0 +1,365 @@
+<!--
+============================================================
+ARMA BOHEMIA — DAGGERS & KNIVES CATALOGUE (English)
+============================================================
+HOW TO ADD A PRODUCT
+1. Copy one whole "PRODUCT" block (opening to "END PRODUCT").
+2. Paste it where wanted, change reference/title/period/text/price.
+3. Put the photo in /assets/images/products/daggers/ and update
+   the "src" and "href" attributes to match its filename.
+
+HOW TO REMOVE A PRODUCT
+Delete its whole block, from "PRODUCT xxx" to "END PRODUCT xxx".
+
+HOW TO CHANGE A PRICE
+Find the reference (e.g. DG45), edit its <p class="product-price">.
+
+DO NOT change any class="..." name unless you know exactly what
+you are doing — the CSS in /assets/css/ depends on them.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daggers &amp; Knives — Arma Bohemia Catalogue</title>
+<meta name="description" content="Hand-made copies of historical daggers and knives: bollock, rondel, ear-daggers and left-hand daggers, XIII to XVII century, by Arma Bohemia, Czech Republic.">
+<link rel="canonical" href="https://www.armabohemia.cz/catalogue/daggers.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/daggers.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/daggers.html">
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Historical workshop, est. 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Home</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Swords</a>
+            <a href="daggers.html" aria-current="page">Daggers &amp; Knives</a>
+            <a href="helmets.html">Helmets</a>
+            <a href="armour.html">Armour</a>
+            <a href="shields.html">Shields</a>
+            <a href="polearms.html">Polearms &amp; Blunt Weapons</a>
+            <a href="leather-goods.html">Leather Goods &amp; Scabbards</a>
+            <a href="camp-life.html">Camp Life</a>
+            <a href="tableware.html">Tableware &amp; Cutlery</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Workshop</a></li>
+        <li><a class="main-nav__link" href="../events.html">Events</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="daggers.html" aria-current="true">EN</a></li>
+          <li><a class="lang-switch__link" href="../fr/catalogue/daggers.html">FR</a></li>
+          <li><a class="lang-switch__link" href="../de/catalogue/index.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Open menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Swords</a></li>
+                  <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+                  <li><a href="helmets.html">Helmets</a></li>
+                  <li><a href="armour.html">Armour</a></li>
+                  <li><a href="shields.html">Shields</a></li>
+                  <li><a href="polearms.html">Polearms &amp; Blunt Weapons</a></li>
+                  <li><a href="leather-goods.html">Leather Goods &amp; Scabbards</a></li>
+                  <li><a href="camp-life.html">Camp Life</a></li>
+                  <li><a href="tableware.html">Tableware &amp; Cutlery</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Workshop</a></li>
+            <li><a href="../events.html">Events</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="daggers.html" aria-current="true">EN</a>
+            <a class="lang-switch__link" href="../fr/catalogue/daggers.html">FR</a>
+            <a class="lang-switch__link" href="../de/catalogue/index.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Daggers &amp; Knives</p>
+      <h1>Daggers &amp; Knives</h1>
+      <p class="lead">Bollock, rondel and ear-daggers, Spanish left-hand daggers and long knives, XIII to XVII century.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>Because raw-material costs vary, all prices are informative only and may change. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="dagger-search">Search daggers</label>
+          <input type="search" id="dagger-search" data-catalog-search placeholder="Search by reference, name, century or origin…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filter by type">
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all" aria-pressed="true">All types</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="bollock">Bollock</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="rondel">Rondel</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="ear-dagger">Ear-dagger</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="left-hand">Left-hand</button>
+        </div>
+      </div>
+
+      <p class="catalog-count" data-catalog-count data-template="{n} daggers shown">10 daggers shown</p>
+
+      <div class="product-grid product-grid--wide" data-catalog-grid>
+
+        <!-- PRODUCT DG45 -->
+        <article class="product-card" data-tags="bollock" data-search="dg45 bollock dagger flemish xv century wallace collection">
+          <a class="product-image" href="../assets/images/products/daggers/dg45.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg45.jpg"]' data-lightbox-caption="DG45 — Bollock dagger">
+            <img src="../assets/images/products/daggers/dg45.jpg" alt="Bollock dagger, reference DG45" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG45</span>
+            <h2 class="product-title">Bollock dagger</h2>
+            <p class="product-period">Flemish · XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 38.5 cm. Original in the Wallace Collection, London.</p>
+            <div class="product-footer"><p class="product-price">285 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG45 -->
+
+        <!-- PRODUCT DG46 -->
+        <article class="product-card" data-tags="rondel" data-search="dg46 rondel dagger germany xiv century">
+          <a class="product-image" href="../assets/images/products/daggers/dg46.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg46.jpg"]' data-lightbox-caption="DG46 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg46.jpg" alt="Rondel dagger, reference DG46" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG46</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Probably Germany · XIVth century</p>
+            <p class="product-description">Length: approx. 42 cm.</p>
+            <div class="product-footer"><p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG46 -->
+
+        <!-- PRODUCT DG10 -->
+        <article class="product-card" data-tags="" data-search="dg10 german dagger 1500 pilsen">
+          <a class="product-image" href="../assets/images/products/daggers/dg10.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg10.jpg"]' data-lightbox-caption="DG10 — German dagger">
+            <img src="../assets/images/products/daggers/dg10.jpg" alt="German dagger, reference DG10" loading="lazy" width="139" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG10</span>
+            <h2 class="product-title">German dagger</h2>
+            <p class="product-period">Germany · circa 1500</p>
+            <p class="product-description">Exact copy. Length: 40 cm, weight 250 g. Found near Pilsen.</p>
+            <div class="product-footer"><p class="product-price">660 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG10 -->
+
+        <!-- PRODUCT DG13 -->
+        <article class="product-card" data-tags="ear-dagger" data-search="dg13 venetian ear-dagger italy xv century">
+          <a class="product-image" href="../assets/images/products/daggers/dg13.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg13.jpg"]' data-lightbox-caption="DG13 — Venetian ear-dagger">
+            <img src="../assets/images/products/daggers/dg13.jpg" alt="Venetian ear-dagger, reference DG13" loading="lazy" width="177" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG13</span>
+            <h2 class="product-title">Venetian ear-dagger</h2>
+            <p class="product-period">Italy · late XVth century</p>
+            <p class="product-description">Bone grip. Length: approx. 38.8 cm.</p>
+            <div class="product-footer"><p class="product-price">300 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG13 -->
+
+        <!-- PRODUCT DG20 -->
+        <article class="product-card" data-tags="" data-search="dg20 german dagger 1500 1520 metropolitan museum">
+          <a class="product-image" href="../assets/images/products/daggers/dg20.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg20.jpg"]' data-lightbox-caption="DG20 — German dagger">
+            <img src="../assets/images/products/daggers/dg20.jpg" alt="German dagger, reference DG20" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG20</span>
+            <h2 class="product-title">German dagger</h2>
+            <p class="product-period">Germany · 1500–1520</p>
+            <p class="product-description">Exact copy, black horn/bone grip. Original in the Metropolitan Museum of Art, New York.</p>
+            <div class="product-footer"><p class="product-price">459 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG20 -->
+
+        <!-- PRODUCT DG24 -->
+        <article class="product-card" data-tags="" data-search="dg24 bauernwehr long knife germany bohemia">
+          <a class="product-image" href="../assets/images/products/daggers/dg24.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg24.jpg"]' data-lightbox-caption="DG24 — &quot;Bauernwehr&quot; long knife">
+            <img src="../assets/images/products/daggers/dg24.jpg" alt="Bauernwehr long knife, reference DG24" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG24</span>
+            <h2 class="product-title">"Bauernwehr" long knife</h2>
+            <p class="product-period">Germany / Bohemia · late XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 47 cm.</p>
+            <div class="product-footer"><p class="product-price">255 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG24 -->
+
+        <!-- PRODUCT DG27 -->
+        <article class="product-card" data-tags="ear-dagger" data-search="dg27 venetian ear-dagger italy decorated bone grip">
+          <a class="product-image" href="../assets/images/products/daggers/dg27.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg27.jpg"]' data-lightbox-caption="DG27 — Venetian ear-dagger">
+            <img src="../assets/images/products/daggers/dg27.jpg" alt="Decorated Venetian ear-dagger, reference DG27" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG27</span>
+            <h2 class="product-title">Venetian ear-dagger</h2>
+            <p class="product-period">Italy · late XV–early XVIth century</p>
+            <p class="product-description">Exact copy, decorated bone grip. Length: 38.8 cm.</p>
+            <div class="product-footer"><p class="product-price">455 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG27 -->
+
+        <!-- PRODUCT DG31 -->
+        <article class="product-card" data-tags="" data-search="dg31 basilard dagger germany switzerland xiv century">
+          <a class="product-image" href="../assets/images/products/daggers/dg31.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg31.jpg"]' data-lightbox-caption="DG31 — Basilard dagger">
+            <img src="../assets/images/products/daggers/dg31.jpg" alt="Basilard dagger, reference DG31" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DG31</span>
+            <h2 class="product-title">Basilard dagger</h2>
+            <p class="product-period">Germany / Switzerland · XIVth century</p>
+            <p class="product-description">Exact copy. Length: 45.5 cm.</p>
+            <div class="product-footer"><p class="product-price">298 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DG31 -->
+
+        <!-- PRODUCT DR3 -->
+        <article class="product-card" data-tags="left-hand" data-search="dr3 spanish left-hand dagger spain xvi century">
+          <a class="product-image" href="../assets/images/products/daggers/dr3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dr3.jpg"]' data-lightbox-caption="DR3 — Spanish left-hand dagger">
+            <img src="../assets/images/products/daggers/dr3.jpg" alt="Spanish left-hand dagger, reference DR3" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DR3</span>
+            <h2 class="product-title">Spanish left-hand dagger</h2>
+            <p class="product-period">Spain · XVIth century</p>
+            <p class="product-description">Copy. Length: approx. 60 cm.</p>
+            <div class="product-footer"><p class="product-price">260 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DR3 -->
+
+        <!-- PRODUCT DR5 -->
+        <article class="product-card" data-tags="left-hand" data-search="dr5 spanish left-hand dagger xvi xvii century decorated">
+          <a class="product-image" href="../assets/images/products/daggers/dr5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dr5.jpg"]' data-lightbox-caption="DR5 — Spanish left-hand dagger, highly decorated">
+            <img src="../assets/images/products/daggers/dr5.jpg" alt="Highly decorated Spanish left-hand dagger, reference DR5" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">DR5</span>
+            <h2 class="product-title">Spanish left-hand dagger</h2>
+            <p class="product-period">XVI–XVIIth century</p>
+            <p class="product-description">Highly decorated copy.</p>
+            <div class="product-footer"><p class="product-price">1 200 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT DR5 -->
+
+      </div>
+
+      <p class="catalog-empty" data-catalog-empty>No dagger matches your search. Try another reference, name or origin, or <a href="../contact.html">contact the workshop</a> directly.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Historical Living-History &amp; Reenactment workshop, founded in 1995. Handcrafted reproductions of medieval and renaissance arms, armour and everyday objects, made by a network of Czech artisans.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Swords</a></li>
+        <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+        <li><a href="helmets.html">Helmets</a></li>
+        <li><a href="armour.html">Armour</a></li>
+        <li><a href="index.html">Full catalogue →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Workshop</h3>
+      <ul>
+        <li><a href="../about.html">About Arma Bohemia</a></li>
+        <li><a href="../events.html">Events &amp; fairs</a></li>
+        <li><a href="../conditions.html">Ordering &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, Czech Republic</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged product photo">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/catalog.js"></script>
+<script src="../assets/js/gallery.js"></script>
+</body>
+</html>

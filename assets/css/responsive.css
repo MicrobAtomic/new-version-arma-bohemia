@@ -1,0 +1,48 @@
+/* ==================================================
+   ARMA BOHEMIA — responsive.css
+   Ajustements complémentaires par taille d'écran.
+   La plupart des composants adaptent déjà leur mise
+   en page dans components.css / layout.css ; ce
+   fichier affine les détails restants.
+================================================== */
+
+/* Petits mobiles (~360px) */
+@media (max-width: 380px) {
+  .container { padding-inline: 0.9rem; }
+  .hero__content { padding-block: var(--space-xl) var(--space-lg); }
+  .btn { padding: 0.7rem 1.1rem; font-size: 0.9rem; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
+}
+
+/* Mobiles standards / grands mobiles */
+@media (max-width: 639px) {
+  .section { padding-block: var(--space-xl); }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .event-list__item { grid-template-columns: 1fr; gap: 0.15rem; }
+  .catalog-toolbar { flex-direction: column; align-items: stretch; }
+}
+
+/* Tablettes */
+@media (min-width: 640px) and (max-width: 959px) {
+  .hero__content { max-width: 38rem; }
+}
+
+/* Petits laptops */
+@media (min-width: 960px) and (max-width: 1199px) {
+  .container { padding-inline: var(--space-lg); }
+}
+
+/* Grands écrans : on respire davantage sans dépasser une largeur de lecture confortable */
+@media (min-width: 1600px) {
+  :root {
+    --container-max: 1360px;
+  }
+}
+
+/* Impression : page de contact / conditions restent lisibles sur papier */
+@media print {
+  .site-header, .site-footer, .nav-toggle, .mobile-nav,
+  .hero__media, .btn-row, .catalog-toolbar, .lightbox { display: none !important; }
+  body { background: #fff; color: #000; }
+  a[href]::after { content: " (" attr(href) ")"; font-size: 0.8em; }
+}

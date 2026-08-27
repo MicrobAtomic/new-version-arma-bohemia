@@ -1,0 +1,441 @@
+/* ==================================================
+   ARMA BOHEMIA — layout.css
+   Structure générale des pages : conteneur, header,
+   navigation, pied de page, grilles principales.
+================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: var(--color-ivory-100);
+  color: var(--color-ink-900);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-md);
+}
+
+@media (min-width: 640px) {
+  .container { padding-inline: var(--space-lg); }
+}
+
+/* Lien d'évitement (accessibilité clavier) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-bronze-600);
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  z-index: 200;
+  border-radius: 0 0 var(--radius-sm) 0;
+}
+.skip-link:focus {
+  left: 0;
+}
+
+/* Focus clavier visible partout */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------
+   HEADER / NAVIGATION
+-------------------------------------------------- */
+
+/* Neutralise le triangle natif de <summary> (Firefox) partout où on
+   dessine notre propre icône (hamburger, chevrons). */
+summary { list-style: none; }
+summary::marker { content: ""; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-ivory-100);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.site-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-block: 0.9rem;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  letter-spacing: 0.02em;
+  color: var(--color-ink-900);
+  white-space: nowrap;
+}
+.brand__mark {
+  color: var(--color-bronze-600);
+  font-size: 1.1em;
+  line-height: 1;
+}
+.brand__sub {
+  display: block;
+  font-family: var(--font-body);
+  font-size: var(--fs-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-500);
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .main-nav {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.95rem;
+}
+
+.main-nav__link {
+  padding: 0.4rem 0.1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color var(--transition-fast), color var(--transition-fast);
+}
+.main-nav__link:hover,
+.main-nav__link[aria-current="page"] {
+  border-color: var(--color-bronze-600);
+  color: var(--color-bronze-600);
+}
+
+/* Dropdown catalogue (desktop) — n'utilise ni JavaScript ni <details> :
+   il s'ouvre au survol et, au clavier, via :focus-within, ce qui le
+   rend utilisable sans script. */
+.nav-dropdown {
+  position: relative;
+}
+.nav-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.1rem;
+  border-bottom: 2px solid transparent;
+}
+.nav-dropdown__toggle .chevron {
+  width: 0.6em;
+  height: 0.6em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  margin-top: -0.2em;
+  transition: transform var(--transition-fast);
+}
+.nav-dropdown:hover .nav-dropdown__toggle,
+.nav-dropdown:focus-within .nav-dropdown__toggle {
+  color: var(--color-bronze-600);
+  border-color: var(--color-bronze-600);
+}
+.nav-dropdown:hover .nav-dropdown__toggle .chevron,
+.nav-dropdown:focus-within .nav-dropdown__toggle .chevron {
+  transform: rotate(225deg);
+  margin-top: 0.15em;
+}
+
+.nav-dropdown__panel {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  gap: 0.15rem 1.5rem;
+  background: var(--color-ivory-100);
+  border: 1px solid var(--color-line);
+  box-shadow: var(--shadow-card-hover);
+  padding: 1rem 1.25rem;
+  min-width: 420px;
+  opacity: 0;
+  visibility: hidden;
+  translate: 0 6px;
+  transition: opacity var(--transition-base), translate var(--transition-base), visibility var(--transition-base);
+}
+.nav-dropdown:hover .nav-dropdown__panel,
+.nav-dropdown:focus-within .nav-dropdown__panel {
+  opacity: 1;
+  visibility: visible;
+  translate: 0 0;
+}
+.nav-dropdown__panel a {
+  display: block;
+  padding: 0.45rem 0.3rem;
+  font-size: 0.92rem;
+  border-radius: var(--radius-sm);
+}
+.nav-dropdown__panel a:hover {
+  background: var(--color-ivory-200);
+  color: var(--color-bronze-600);
+}
+
+/* Sélecteur de langue */
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.lang-switch__list {
+  display: flex;
+  gap: 0.35rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 0.2rem;
+}
+.lang-switch__link {
+  padding: 0.3rem 0.55rem;
+  font-size: var(--fs-small);
+  border-radius: var(--radius-sm);
+  color: var(--color-ink-700);
+  letter-spacing: 0.03em;
+}
+.lang-switch__link:hover {
+  background: var(--color-ivory-200);
+}
+.lang-switch__link[aria-current="true"] {
+  background: var(--color-charcoal-900);
+  color: var(--color-paper-100);
+}
+
+/* --------------------------------------------------
+   MENU MOBILE — implémenté avec <details>/<summary>.
+   Aucun JavaScript n'est nécessaire pour ouvrir ou
+   fermer le menu : c'est le navigateur qui gère l'état
+   ouvert/fermé (natif, accessible, robuste même si le
+   script ne se charge pas).
+-------------------------------------------------- */
+
+.mobile-menu {
+  border-top: 1px solid var(--color-line);
+}
+@media (min-width: 960px) {
+  .mobile-menu { display: none; }
+}
+
+.mobile-menu__summary {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  list-style: none;
+}
+.mobile-menu__summary::-webkit-details-marker { display: none; }
+.mobile-menu__summary span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-ink-900);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+.mobile-menu[open] > .mobile-menu__summary span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.mobile-menu[open] > .mobile-menu__summary span:nth-child(2) {
+  opacity: 0;
+}
+.mobile-menu[open] > .mobile-menu__summary span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu__panel {
+  border-top: 1px solid var(--color-line);
+  background: var(--color-ivory-100);
+  padding: var(--space-sm) var(--space-md) var(--space-lg);
+}
+.mobile-menu__panel > li + li {
+  border-top: 1px solid var(--color-line);
+}
+.mobile-menu__panel > li > a {
+  display: block;
+  padding: 0.85rem 0.2rem;
+  font-size: 1.02rem;
+}
+
+/* Sous-menu catalogue en mobile : <details> imbriqué */
+.mobile-submenu > summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0.2rem;
+  font-size: 1.02rem;
+  cursor: pointer;
+  list-style: none;
+}
+.mobile-submenu > summary::-webkit-details-marker { display: none; }
+.mobile-submenu > summary .chevron {
+  width: 0.55em;
+  height: 0.55em;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform var(--transition-fast);
+}
+.mobile-submenu[open] > summary .chevron {
+  transform: rotate(225deg);
+}
+.mobile-submenu__list {
+  padding-bottom: 0.5rem;
+}
+.mobile-submenu__list a {
+  display: block;
+  padding: 0.6rem 0.2rem 0.6rem 1rem;
+  font-size: 0.95rem;
+  color: var(--color-ink-700);
+}
+
+.mobile-menu__langs {
+  display: flex;
+  gap: 0.5rem;
+  padding: var(--space-md) 0.2rem 0;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.site-footer {
+  background: var(--color-charcoal-900);
+  color: var(--color-paper-300);
+  margin-top: var(--space-2xl);
+}
+.site-footer a {
+  color: var(--color-paper-100);
+}
+.site-footer a:hover {
+  color: var(--color-bronze-400);
+}
+.footer-grid {
+  display: grid;
+  gap: var(--space-lg);
+  padding-block: var(--space-2xl) var(--space-lg);
+}
+@media (min-width: 720px) {
+  .footer-grid {
+    grid-template-columns: 1.3fr 1fr 1fr;
+  }
+}
+.footer-brand__title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--color-paper-100);
+  margin-bottom: var(--space-sm);
+}
+.footer-brand p {
+  max-width: 38ch;
+  color: var(--color-paper-300);
+  font-size: 0.95rem;
+}
+.footer-col h3 {
+  font-size: var(--fs-small);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-bronze-400);
+  margin-bottom: var(--space-sm);
+}
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.footer-bottom {
+  border-top: 1px solid var(--color-line-dark);
+  padding-block: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm) var(--space-lg);
+  justify-content: space-between;
+  font-size: var(--fs-small);
+  color: var(--color-paper-300);
+}
+
+/* --------------------------------------------------
+   MAIN LAYOUT HELPERS
+-------------------------------------------------- */
+
+main {
+  display: block;
+}
+
+.section {
+  padding-block: var(--space-2xl);
+}
+.section--tight {
+  padding-block: var(--space-xl);
+}
+.section--dark {
+  background: var(--color-charcoal-900);
+  color: var(--color-paper-100);
+}
+.section--muted {
+  background: var(--color-ivory-200);
+}
+
+.section-head {
+  max-width: 68ch;
+  margin-bottom: var(--space-lg);
+}
+.section-head--center {
+  margin-inline: auto;
+  text-align: center;
+}
+.eyebrow {
+  display: inline-block;
+  font-size: var(--fs-micro);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-bronze-600);
+  margin-bottom: 0.6rem;
+}
+.section--dark .eyebrow { color: var(--color-bronze-400); }
+
+.page-intro {
+  padding-block: var(--space-xl) var(--space-lg);
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-ivory-200);
+}
+
+.breadcrumbs {
+  font-size: var(--fs-small);
+  color: var(--color-ink-500);
+  margin-bottom: var(--space-sm);
+}
+.breadcrumbs a:hover { color: var(--color-bronze-600); }
+.breadcrumbs span[aria-hidden] { margin-inline: 0.4em; }

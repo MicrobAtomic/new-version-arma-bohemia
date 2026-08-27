@@ -1,0 +1,363 @@
+<!--
+============================================================
+ARMA BOHEMIA — ARMOUR CATALOGUE (English)
+============================================================
+This page has two sections: "Full suits" and "Armour pieces".
+HOW TO ADD A PRODUCT: copy one whole "PRODUCT" block (opening
+to "END PRODUCT") in the right section, paste it, change
+reference/title/period/text/price, and put the photo in
+/assets/images/products/armour/ (full suits) or
+/assets/images/products/armour-pieces/ (separate pieces).
+Update the "src" and "href" attributes to match its filename.
+A product can have several photos: list every file inside
+data-lightbox-images, e.g. '["a.jpg","b.jpg","c.jpg"]'.
+
+HOW TO REMOVE A PRODUCT: delete its whole block.
+HOW TO CHANGE A PRICE: find the reference, edit its
+<p class="product-price">.
+
+DO NOT change any class="..." name unless you know exactly what
+you are doing — the CSS in /assets/css/ depends on them.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armour — Arma Bohemia Catalogue</title>
+<meta name="description" content="Hand-made copies of full plate armour and separate armour pieces — cuirasses, gauntlets, arm and leg harness — by Arma Bohemia, Czech Republic.">
+<link rel="canonical" href="https://www.armabohemia.cz/catalogue/armour.html">
+<link rel="stylesheet" href="../assets/css/reset.css">
+<link rel="stylesheet" href="../assets/css/variables.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Historical workshop, est. 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Home</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Swords</a>
+            <a href="daggers.html">Daggers &amp; Knives</a>
+            <a href="helmets.html">Helmets</a>
+            <a href="armour.html" aria-current="page">Armour</a>
+            <a href="shields.html">Shields</a>
+            <a href="polearms.html">Polearms &amp; Blunt Weapons</a>
+            <a href="leather-goods.html">Leather Goods &amp; Scabbards</a>
+            <a href="camp-life.html">Camp Life</a>
+            <a href="tableware.html">Tableware &amp; Cutlery</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Workshop</a></li>
+        <li><a class="main-nav__link" href="../events.html">Events</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="armour.html" aria-current="true">EN</a></li>
+          <li><a class="lang-switch__link" href="../fr/catalogue/index.html">FR</a></li>
+          <li><a class="lang-switch__link" href="../de/catalogue/index.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Open menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Mobile navigation">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Home</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Swords</a></li>
+                  <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+                  <li><a href="helmets.html">Helmets</a></li>
+                  <li><a href="armour.html">Armour</a></li>
+                  <li><a href="shields.html">Shields</a></li>
+                  <li><a href="polearms.html">Polearms &amp; Blunt Weapons</a></li>
+                  <li><a href="leather-goods.html">Leather Goods &amp; Scabbards</a></li>
+                  <li><a href="camp-life.html">Camp Life</a></li>
+                  <li><a href="tableware.html">Tableware &amp; Cutlery</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Workshop</a></li>
+            <li><a href="../events.html">Events</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="armour.html" aria-current="true">EN</a>
+            <a class="lang-switch__link" href="../fr/catalogue/index.html">FR</a>
+            <a class="lang-switch__link" href="../de/catalogue/index.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Armour</p>
+      <h1>Armour</h1>
+      <p class="lead">Full plate suits and separate armour pieces — cuirasses, gauntlets, arm and leg harness — late XIVth to early XVIth century.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>Because raw-material costs vary, all prices are informative only and may change. Full suits in particular are quoted individually. Please confirm the current price with Arma Bohemia when ordering — see <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <h2 style="margin-bottom:0.75rem;">Full suits</h2>
+      <div class="product-grid" style="margin-bottom:var(--space-2xl);">
+
+        <!-- PRODUCT ZB6 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour/zb6-zb6a.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb6-zb6a.jpg","../assets/images/products/armour/zb6-zb6b.jpg","../assets/images/products/armour/zb6-zb6c.jpg","../assets/images/products/armour/zb6-zb6d.jpg"]' data-lightbox-caption="ZB6 — Late medieval full plate armour">
+            <img src="../assets/images/products/armour/zb6.jpg" alt="Late medieval full plate armour, reference ZB6" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB6</span>
+            <h2 class="product-title">Late medieval full plate armour</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Highly decorated, mirror polish. 4 photos available.</p>
+            <div class="product-footer"><p class="product-price">9 900 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB6 -->
+
+        <!-- PRODUCT ZB1 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour/zb1-jf1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb1-jf1.jpg","../assets/images/products/armour/zb1-jf3.jpg","../assets/images/products/armour/zb1-jf4.jpg","../assets/images/products/armour/zb1-jf5.jpg","../assets/images/products/armour/zb1-jf7.jpg","../assets/images/products/armour/zb1-jf8.jpg"]' data-lightbox-caption="ZB1 — Late medieval full plate armour">
+            <img src="../assets/images/products/armour/zb1.jpg" alt="Late medieval full plate armour, reference ZB1" loading="lazy" width="100" height="127">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB1</span>
+            <h2 class="product-title">Late medieval full plate armour</h2>
+            <p class="product-period">Germany · late XVth century</p>
+            <p class="product-description">Highly decorated, mirror polish. 6 photos available.</p>
+            <div class="product-footer"><p class="product-price">approx. 11 000 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB1 -->
+
+        <!-- PRODUCT ZB3 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour/zb3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb3.jpg"]' data-lightbox-caption="ZB3 — Simple officer's armour">
+            <img src="../assets/images/products/armour/zb3.jpg" alt="Simple officer's armour, reference ZB3" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB3</span>
+            <h2 class="product-title">Simple officer's armour</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Sallet, body protection, upper arms, upper legs and articulated gauntlets, slightly fluted.</p>
+            <div class="product-footer"><p class="product-price">3 500 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB3 -->
+
+        <!-- PRODUCT ZB4 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour/zb4.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb4.jpg"]' data-lightbox-caption="ZB4 — Officer's armour">
+            <img src="../assets/images/products/armour/zb4.jpg" alt="Officer's armour, reference ZB4" loading="lazy" width="100" height="223">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB4</span>
+            <h2 class="product-title">Officer's armour</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Helmet, body protection, full arms, legs and mitten gauntlets, slightly fluted.</p>
+            <div class="product-footer"><p class="product-price">5 900 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB4 -->
+
+        <!-- PRODUCT ZB5 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour/zb5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour/zb5.jpg"]' data-lightbox-caption="ZB5 — Cavalry armour">
+            <img src="../assets/images/products/armour/zb5.jpg" alt="Cavalry armour, reference ZB5" loading="lazy" width="100" height="139">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB5</span>
+            <h2 class="product-title">Cavalry armour</h2>
+            <p class="product-period">Early XVIth century</p>
+            <p class="product-description">Armet, collar, full body protection, full arms, full legs incl. boots and articulated gauntlets, mirror polish.</p>
+            <div class="product-footer"><p class="product-price">8 400 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB5 -->
+
+      </div>
+
+      <h2 style="margin-bottom:0.75rem;">Armour pieces</h2>
+      <div class="product-grid">
+
+        <!-- PRODUCT AR5 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/ar5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar5.jpg"]' data-lightbox-caption="AR5 — Cuirass">
+            <img src="../assets/images/products/armour-pieces/ar5.jpg" alt="Cuirass, reference AR5" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">AR5</span>
+            <h2 class="product-title">Cuirass (breast and back plate)</h2>
+            <p class="product-period">Germany · 2nd half XVth century</p>
+            <div class="product-footer"><p class="product-price">2 285 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT AR5 -->
+
+        <!-- PRODUCT AR1 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/ar1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar1.jpg"]' data-lightbox-caption="AR1 — Shoulders with elbows">
+            <img src="../assets/images/products/armour-pieces/ar1.jpg" alt="Shoulder and arm harness, reference AR1" loading="lazy" width="126" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">AR1</span>
+            <h2 class="product-title">Shoulders with elbows</h2>
+            <p class="product-period">Late XVth century</p>
+            <div class="product-footer"><p class="product-price">462 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT AR1 -->
+
+        <!-- PRODUCT AR3 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/ar3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ar3.jpg"]' data-lightbox-caption="AR3 — Iron legs">
+            <img src="../assets/images/products/armour-pieces/ar3.jpg" alt="Leg harness, reference AR3" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">AR3</span>
+            <h2 class="product-title">Iron legs</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Includes shin protection.</p>
+            <div class="product-footer"><p class="product-price">913 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT AR3 -->
+
+        <!-- PRODUCT GA2 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/ga2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga2.jpg"]' data-lightbox-caption="GA2 — Articulated gauntlets">
+            <img src="../assets/images/products/armour-pieces/ga2.jpg" alt="Articulated gauntlets, reference GA2" loading="lazy" width="100" height="119">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">GA2</span>
+            <h2 class="product-title">Late medieval articulated gauntlets</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <div class="product-footer"><p class="product-price">440 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT GA2 -->
+
+        <!-- PRODUCT GA6 -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/ga6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/ga6.jpg"]' data-lightbox-caption="GA6 — Highly decorated articulated gauntlets">
+            <img src="../assets/images/products/armour-pieces/ga6.jpg" alt="Highly decorated articulated gauntlets, reference GA6" loading="lazy" width="127" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">GA6</span>
+            <h2 class="product-title">Highly decorated articulated gauntlets</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <div class="product-footer"><p class="product-price">1 090 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT GA6 -->
+
+        <!-- PRODUCT ZB4-COIF (chainmail collar; reference ZB4 reused from the source catalogue's "accessories" page — different item from the ZB4 suit above) -->
+        <article class="product-card">
+          <a class="product-image" href="../assets/images/products/armour-pieces/coif.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/armour-pieces/coif.jpg"]' data-lightbox-caption="ZB4 — Riveted chainmail collar">
+            <img src="../assets/images/products/armour-pieces/coif.jpg" alt="Riveted chainmail collar, reference ZB4" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">ZB4</span>
+            <h2 class="product-title">Riveted chainmail collar</h2>
+            <p class="product-period">XIV–XVIth century</p>
+            <p class="product-description">18g Ø 6mm riveted rings alternate with Ø 6mm flat solid rings.</p>
+            <div class="product-footer"><p class="product-price">155 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+        </article>
+        <!-- END PRODUCT ZB4-COIF -->
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Historical Living-History &amp; Reenactment workshop, founded in 1995. Handcrafted reproductions of medieval and renaissance arms, armour and everyday objects, made by a network of Czech artisans.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Swords</a></li>
+        <li><a href="daggers.html">Daggers &amp; Knives</a></li>
+        <li><a href="helmets.html">Helmets</a></li>
+        <li><a href="armour.html">Armour</a></li>
+        <li><a href="index.html">Full catalogue →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Workshop</h3>
+      <ul>
+        <li><a href="../about.html">About Arma Bohemia</a></li>
+        <li><a href="../events.html">Events &amp; fairs</a></li>
+        <li><a href="../conditions.html">Ordering &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, Czech Republic</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Enlarged product photo">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/gallery.js"></script>
+</body>
+</html>
