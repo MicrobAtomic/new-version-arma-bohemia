@@ -1,0 +1,403 @@
+<!--
+============================================================
+ARMA BOHEMIA — CATALOGUE ÉPÉES (Français)
+============================================================
+AJOUTER UN PRODUIT
+1. Copier un bloc "PRODUIT" complet (du commentaire d'ouverture
+   au commentaire "FIN PRODUIT", <article> compris).
+2. Le coller à l'endroit souhaité.
+3. Modifier référence, titre, époque, texte et prix.
+4. Ajouter l'image dans /assets/images/products/swords/
+   et mettre à jour les attributs "src" et "href".
+
+SUPPRIMER UN PRODUIT
+Supprimer tout le bloc, du commentaire "PRODUIT xxx" à "FIN
+PRODUIT xxx".
+
+MODIFIER UN PRIX
+Rechercher la référence (ex: EP34), modifier son
+<p class="product-price">.
+
+Ne pas modifier les noms "class=..." sauf en connaissance de
+cause — le CSS dans /assets/css/ en dépend.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Épées — Catalogue Arma Bohemia</title>
+<meta name="description" content="Copies fabriquées à la main d'épées historiques à une main, une main et demi et à deux mains, XIe au XVIIIe siècle, par Arma Bohemia.">
+<link rel="canonical" href="https://www.armabohemia.cz/fr/catalogue/swords.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/swords.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/swords.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/swords.html">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Atelier historique, fondé en 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Accueil</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html" aria-current="page">Épées</a>
+            <a href="daggers.html">Dagues &amp; couteaux</a>
+            <a href="helmets.html">Casques</a>
+            <a href="../../catalogue/armour.html">Armures (EN)</a>
+            <a href="../../catalogue/shields.html">Boucliers (EN)</a>
+            <a href="../../catalogue/polearms.html">Armes d'hast (EN)</a>
+            <a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a>
+            <a href="../../catalogue/camp-life.html">Vie de camp (EN)</a>
+            <a href="../../catalogue/tableware.html">Vaisselle (EN)</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Atelier</a></li>
+        <li><a class="main-nav__link" href="../events.html">Événements</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="../../catalogue/swords.html">EN</a></li>
+          <li><a class="lang-switch__link" href="swords.html" aria-current="true">FR</a></li>
+          <li><a class="lang-switch__link" href="../../de/catalogue/swords.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Ouvrir le menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Navigation mobile">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Épées</a></li>
+                  <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+                  <li><a href="helmets.html">Casques</a></li>
+                  <li><a href="../../catalogue/armour.html">Armures (EN)</a></li>
+                  <li><a href="../../catalogue/shields.html">Boucliers (EN)</a></li>
+                  <li><a href="../../catalogue/polearms.html">Armes d'hast (EN)</a></li>
+                  <li><a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a></li>
+                  <li><a href="../../catalogue/camp-life.html">Vie de camp (EN)</a></li>
+                  <li><a href="../../catalogue/tableware.html">Vaisselle (EN)</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Atelier</a></li>
+            <li><a href="../events.html">Événements</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="../../catalogue/swords.html">EN</a>
+            <a class="lang-switch__link" href="swords.html" aria-current="true">FR</a>
+            <a class="lang-switch__link" href="../../de/catalogue/swords.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Épées</p>
+      <h1>Épées</h1>
+      <p class="lead">Épées à une main, une main et demi et à deux mains, du XIe au XVIIIe siècle — tranchantes ou émoussées sur demande.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>En raison de coûts d'entrée très instables, tous les prix ont une valeur purement informative et peuvent faire l'objet de modifications mineures. Veuillez demander la situation actuelle des prix avec chaque commande — voir <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="sword-search">Rechercher une épée</label>
+          <input type="search" id="sword-search" data-catalog-search placeholder="Rechercher par référence, nom, siècle ou origine…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filtrer par siècle">
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="all" aria-pressed="true">Tous les siècles</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xi">XIe s.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xii">XIIe s.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xiv">XIVe s.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xv">XVe s.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xvi">XVIe s.</button>
+          <button class="filter-chip" type="button" data-filter-group="century" data-filter-value="xvii-xviii">XVIIe–XVIIIe s.</button>
+        </div>
+      </div>
+
+      <p class="catalog-count" data-catalog-count data-template="{n} épées affichées">12 épées affichées</p>
+
+      <div class="product-grid product-grid--wide" data-catalog-grid>
+
+        <!-- PRODUIT EP1 -->
+        <article class="product-card" data-tags="xi viking angleterre" data-search="ep1 viking une main angleterre hastings xi siecle">
+          <a class="product-image" href="../../assets/images/products/swords/ep1.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep1.jpg"]' data-lightbox-caption="EP1 — Épée à une main, type viking">
+            <img src="../../assets/images/products/swords/ep1.jpg" alt="Épée à une main de type viking, référence EP1" loading="lazy" width="100" height="150">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP1</span>
+            <h2 class="product-title">Épée à une main, type viking</h2>
+            <p class="product-period">Angleterre · XIe siècle</p>
+            <p class="product-description">Copie d'une épée à une main, type viking, du champ de bataille d'Hastings. Longueur : 90 cm.</p>
+            <div class="product-footer"><p class="product-price">Sur demande<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP1 -->
+
+        <!-- PRODUIT EP42 -->
+        <article class="product-card" data-tags="xi viking norvege" data-search="ep42 viking une main norvege xi siecle petersen">
+          <a class="product-image" href="../../assets/images/products/swords/ep42.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep42.jpg"]' data-lightbox-caption="EP42 — Épée à une main, type viking">
+            <img src="../../assets/images/products/swords/ep42.jpg" alt="Épée à une main de type viking, référence EP42" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP42</span>
+            <h2 class="product-title">Épée à une main, type viking</h2>
+            <p class="product-period">Norvège · vers 1100</p>
+            <p class="product-description">Longueur : environ 89 cm, poids : 1240 g. Décrite dans « De Norske Vikingesverd » de Jan Petersen.</p>
+            <div class="product-footer"><p class="product-price">350 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP42 -->
+
+        <!-- PRODUIT EP62 -->
+        <article class="product-card" data-tags="xi normand angleterre" data-search="ep62 normand une main angleterre xi siecle">
+          <a class="product-image" href="../../assets/images/products/swords/ep62.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep62.jpg"]' data-lightbox-caption="EP62 — Épée à une main, type normand">
+            <img src="../../assets/images/products/swords/ep62.jpg" alt="Épée à une main de type normand, référence EP62" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP62</span>
+            <h2 class="product-title">Épée à une main, type normand</h2>
+            <p class="product-period">XIe siècle</p>
+            <p class="product-description">Longueur : environ 96 cm, poids seulement 1120 g.</p>
+            <div class="product-footer"><p class="product-price">339 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP62 -->
+
+        <!-- PRODUIT EP3 -->
+        <article class="product-card" data-tags="xii france" data-search="ep3 epee large une main france xii siecle viollet le duc">
+          <a class="product-image" href="../../assets/images/products/swords/ep3.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep3.jpg"]' data-lightbox-caption="EP3 — Épée large à une main">
+            <img src="../../assets/images/products/swords/ep3.jpg" alt="Épée large à une main, référence EP3" loading="lazy" width="100" height="154">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP3</span>
+            <h2 class="product-title">Épée large à une main</h2>
+            <p class="product-period">France · 2e moitié du XIIe siècle</p>
+            <p class="product-description">Longueur : 95 cm, lame très large (8 cm), tranchante. Décrite dans l'Encyclopédie médiévale de Viollet-le-Duc.</p>
+            <div class="product-footer"><p class="product-price">460 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP3 -->
+
+        <!-- PRODUIT EP70 -->
+        <article class="product-card" data-tags="xiv allemagne boheme" data-search="ep70 une main allemagne boheme xiii xiv siecle">
+          <a class="product-image" href="../../assets/images/products/swords/ep70.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep70.jpg"]' data-lightbox-caption="EP70 — Épée à une main">
+            <img src="../../assets/images/products/swords/ep70.jpg" alt="Épée à une main, référence EP70" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP70</span>
+            <h2 class="product-title">Épée à une main</h2>
+            <p class="product-period">Allemagne / Bohême · XIIIe–XIVe siècle</p>
+            <p class="product-description">Longueur : 90,5 cm, poids : environ 1485 g.</p>
+            <div class="product-footer"><p class="product-price">269 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP70 -->
+
+        <!-- PRODUIT EP82 -->
+        <article class="product-card" data-tags="xiv allemagne" data-search="ep82 une main et demi allemagne xiv siecle collection privee">
+          <a class="product-image" href="../../assets/images/products/swords/ep82.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep82.jpg"]' data-lightbox-caption="EP82 — Épée à une main et demi">
+            <img src="../../assets/images/products/swords/ep82.jpg" alt="Épée à une main et demi, référence EP82" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP82</span>
+            <h2 class="product-title">Épée à une main et demi</h2>
+            <p class="product-period">Allemagne · XIVe siècle</p>
+            <p class="product-description">Longueur : environ 119 cm, poids : environ 1770 g, largeur de lame 55 mm. Collection privée.</p>
+            <div class="product-footer"><p class="product-price">249 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP82 -->
+
+        <!-- PRODUIT EP39 -->
+        <article class="product-card" data-tags="xiv" data-search="ep39 une main et demi xiv siecle">
+          <a class="product-image" href="../../assets/images/products/swords/ep39.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep39.jpg"]' data-lightbox-caption="EP39 — Épée à une main et demi">
+            <img src="../../assets/images/products/swords/ep39.jpg" alt="Épée à une main et demi, référence EP39" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP39</span>
+            <h2 class="product-title">Épée à une main et demi</h2>
+            <p class="product-period">XIVe siècle</p>
+            <p class="product-description">Longueur : 120 cm, poids : environ 1845 g.</p>
+            <div class="product-footer"><p class="product-price">295 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP39 -->
+
+        <!-- PRODUIT EP81 -->
+        <article class="product-card" data-tags="xiv angleterre fauchon" data-search="ep81 fauchon angleterre xiv siecle collection privee">
+          <a class="product-image" href="../../assets/images/products/swords/ep81.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep81.jpg"]' data-lightbox-caption="EP81 — Fauchon">
+            <img src="../../assets/images/products/swords/ep81.jpg" alt="Fauchon, référence EP81" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP81</span>
+            <h2 class="product-title">Fauchon</h2>
+            <p class="product-period">Angleterre · XIVe siècle</p>
+            <p class="product-description">Longueur : environ 91,5 cm, poids : 1630 g. Lame très large (6 cm) avec inscription. Collection privée.</p>
+            <div class="product-footer"><p class="product-price">395 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP81 -->
+
+        <!-- PRODUIT EP38 -->
+        <article class="product-card" data-tags="xv" data-search="ep38 une main et demi xv siecle collection privee">
+          <a class="product-image" href="../../assets/images/products/swords/ep38.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep38.jpg"]' data-lightbox-caption="EP38 — Épée à une main et demi">
+            <img src="../../assets/images/products/swords/ep38.jpg" alt="Épée à une main et demi, référence EP38" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP38</span>
+            <h2 class="product-title">Épée à une main et demi</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur : 105 cm, poids : environ 1300 g. Collection privée.</p>
+            <div class="product-footer"><p class="product-price">370 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP38 -->
+
+        <!-- PRODUIT EP50 -->
+        <article class="product-card" data-tags="xv france angleterre deux-mains" data-search="ep50 deux mains france angleterre xv siecle castillon dordogne">
+          <a class="product-image" href="../../assets/images/products/swords/ep50.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep50.jpg"]' data-lightbox-caption="EP50 — Épée à deux mains">
+            <img src="../../assets/images/products/swords/ep50.jpg" alt="Épée à deux mains, référence EP50" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP50</span>
+            <h2 class="product-title">Épée à deux mains</h2>
+            <p class="product-period">France / Angleterre · XVe siècle</p>
+            <p class="product-description">Longueur : environ 146 cm, poids : 2150 g. Provenance : région de la Dordogne, bataille de Castillon 1453.</p>
+            <div class="product-footer"><p class="product-price">360 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP50 -->
+
+        <!-- PRODUIT EP34 -->
+        <article class="product-card" data-tags="xvi allemagne katzbalger" data-search="ep34 lancknecht katzbalger allemagne du sud xvi siecle decore">
+          <a class="product-image" href="../../assets/images/products/swords/ep34.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep34.jpg"]' data-lightbox-caption="EP34 — Épée de lansquenet « Katzbalger »">
+            <img src="../../assets/images/products/swords/ep34.jpg" alt="Épée de lansquenet Katzbalger, référence EP34" loading="lazy" width="133" height="100">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP34</span>
+            <h2 class="product-title">Épée de lansquenet « Katzbalger »</h2>
+            <p class="product-period">Allemagne du sud · début du XVIe siècle</p>
+            <p class="product-description">Longueur : environ 81 cm, poids : environ 1350 g. Profil de lame spécial, tranchante ou émoussée sur demande, décorée.</p>
+            <div class="product-footer"><p class="product-price">729 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP34 -->
+
+        <!-- PRODUIT EP77 -->
+        <article class="product-card" data-tags="xvii-xviii epee-de-cour" data-search="ep77 epee de cour xvii xviii siecle decore">
+          <a class="product-image" href="../../assets/images/products/swords/ep77.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/swords/ep77.jpg"]' data-lightbox-caption="EP77 — Épée de cour">
+            <img src="../../assets/images/products/swords/ep77.jpg" alt="Épée de cour, référence EP77" loading="lazy" width="100" height="133">
+            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+          </a>
+          <div class="product-content">
+            <span class="product-reference">EP77</span>
+            <h2 class="product-title">Épée de cour</h2>
+            <p class="product-period">XVIIe–XVIIIe siècle</p>
+            <p class="product-description">Longueur : environ 100 cm, poids : environ 600 g. Légèrement décorée.</p>
+            <div class="product-footer"><p class="product-price">299 €<span class="price-indicative-tag">indicatif</span></p></div>
+          </div>
+        </article>
+        <!-- FIN PRODUIT EP77 -->
+
+      </div>
+
+      <p class="catalog-empty" data-catalog-empty>Aucune épée ne correspond à votre recherche. Essayez une autre référence, un autre siècle ou une autre origine, ou <a href="../contact.html">contactez l'atelier</a> directement.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Atelier historique de reconstitution, fondé en 1995. Reproductions artisanales d'armes, d'armures et d'objets du Moyen Âge et de la Renaissance, réalisées par un réseau d'artisans tchèques.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Épées</a></li>
+        <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+        <li><a href="helmets.html">Casques</a></li>
+        <li><a href="index.html">Catalogue complet →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Atelier</h3>
+      <ul>
+        <li><a href="../about.html">À propos d'Arma Bohemia</a></li>
+        <li><a href="../events.html">Événements</a></li>
+        <li><a href="../conditions.html">Commande &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, République tchèque</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo du produit agrandie">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/catalog.js"></script>
+<script src="../../assets/js/gallery.js"></script>
+</body>
+</html>
