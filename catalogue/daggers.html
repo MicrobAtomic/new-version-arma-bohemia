@@ -2,17 +2,16 @@
 ============================================================
 ARMA BOHEMIA — DAGGERS & KNIVES CATALOGUE (English)
 ============================================================
-HOW TO ADD A PRODUCT
-1. Copy one whole "PRODUCT" block (opening to "END PRODUCT").
-2. Paste it where wanted, change reference/title/period/text/price.
-3. Put the photo in /assets/images/products/daggers/ and update
-   the "src" and "href" attributes to match its filename.
+HOW TO ADD A PRODUCT: copy one whole product block (from the
+opening "<!-- REF -->" comment to "<!-- /REF -->"), paste it,
+change reference/title/period/text/price, and put the photo in
+/assets/images/products/daggers/ (update the "href" and "src").
+Several photos: list them all in data-lightbox-images and update
+the number in the camera badge.
 
-HOW TO REMOVE A PRODUCT
-Delete its whole block, from "PRODUCT xxx" to "END PRODUCT xxx".
-
-HOW TO CHANGE A PRICE
-Find the reference (e.g. DG45), edit its <p class="product-price">.
+HOW TO REMOVE A PRODUCT: delete its whole block.
+HOW TO CHANGE A PRICE: find the reference, edit its
+<p class="product-price">.
 
 DO NOT change any class="..." name unless you know exactly what
 you are doing — the CSS in /assets/css/ depends on them.
@@ -71,7 +70,7 @@ you are doing — the CSS in /assets/css/ depends on them.
         <ul class="lang-switch__list">
           <li><a class="lang-switch__link" href="daggers.html" aria-current="true">EN</a></li>
           <li><a class="lang-switch__link" href="../fr/catalogue/daggers.html">FR</a></li>
-          <li><a class="lang-switch__link" href="../de/catalogue/index.html">DE</a></li>
+          <li><a class="lang-switch__link" href="../de/catalogue/daggers.html">DE</a></li>
         </ul>
       </div>
       <details class="mobile-menu">
@@ -102,7 +101,7 @@ you are doing — the CSS in /assets/css/ depends on them.
           <div class="mobile-menu__langs">
             <a class="lang-switch__link" href="daggers.html" aria-current="true">EN</a>
             <a class="lang-switch__link" href="../fr/catalogue/daggers.html">FR</a>
-            <a class="lang-switch__link" href="../de/catalogue/index.html">DE</a>
+            <a class="lang-switch__link" href="../de/catalogue/daggers.html">DE</a>
           </div>
         </nav>
       </details>
@@ -116,7 +115,7 @@ you are doing — the CSS in /assets/css/ depends on them.
     <div class="container">
       <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Daggers &amp; Knives</p>
       <h1>Daggers &amp; Knives</h1>
-      <p class="lead">Bollock, rondel and ear-daggers, Spanish left-hand daggers and long knives, XIII to XVII century.</p>
+      <p class="lead">Bollock, rondel and ear-daggers, Spanish left-hand daggers and long knives, XIII to XVII century. The full range offered by the workshop over the years — 43 pieces.</p>
     </div>
   </div>
 
@@ -139,173 +138,788 @@ you are doing — the CSS in /assets/css/ depends on them.
           <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="bollock">Bollock</button>
           <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="rondel">Rondel</button>
           <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="ear-dagger">Ear-dagger</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="swiss">Swiss</button>
           <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="left-hand">Left-hand</button>
         </div>
       </div>
 
-      <p class="catalog-count" data-catalog-count data-template="{n} daggers shown">10 daggers shown</p>
+      <p class="catalog-count" data-catalog-count data-template="{n} daggers shown">43 daggers shown</p>
 
-      <div class="product-grid product-grid--wide" data-catalog-grid>
+      <div class="catalog-list" data-catalog-grid>
 
-        <!-- PRODUCT DG45 -->
-        <article class="product-card" data-tags="bollock" data-search="dg45 bollock dagger flemish xv century wallace collection">
-          <a class="product-image" href="../assets/images/products/daggers/dg45.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg45.jpg"]' data-lightbox-caption="DG45 — Bollock dagger">
-            <img src="../assets/images/products/daggers/dg45.jpg" alt="Bollock dagger, reference DG45" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG45 -->
+        <article class="catalog-row" data-tags="bollock" data-search="dg45 bollock dagger flemish · 1450-1460 exact copy. length: approx. 38.5 cm. original in the wallace collection, london, england.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg45v.JPG","../assets/images/products/daggers/dg45v2.JPG","../assets/images/products/daggers/dg45v3.jpg","../assets/images/products/daggers/dg45v5.jpg"]' data-lightbox-caption="DG45 — Bollock dagger">
+            <img src="../assets/images/products/daggers/dg45m.jpg" alt="Bollock dagger, reference DG45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">DG45</span>
             <h2 class="product-title">Bollock dagger</h2>
-            <p class="product-period">Flemish · XVth century</p>
-            <p class="product-description">Exact copy. Length: approx. 38.5 cm. Original in the Wallace Collection, London.</p>
-            <div class="product-footer"><p class="product-price">285 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Flemish · 1450-1460</p>
+            <p class="product-description">Exact copy. Length: approx. 38.5 cm. Original in the Wallace Collection, London, England.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">285 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG45 -->
+        <!-- /DG45 -->
 
-        <!-- PRODUCT DG46 -->
-        <article class="product-card" data-tags="rondel" data-search="dg46 rondel dagger germany xiv century">
-          <a class="product-image" href="../assets/images/products/daggers/dg46.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg46.jpg"]' data-lightbox-caption="DG46 — Rondel dagger">
-            <img src="../assets/images/products/daggers/dg46.jpg" alt="Rondel dagger, reference DG46" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG45b -->
+        <article class="catalog-row" data-tags="other" data-search="dg45b knife &amp; pricker set flemish · 1450-1460 companion pieces to dagger dg45. length: approx. 22 cm &amp; 19 cm. original set in the wallace collection, london, england.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg45bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg45bv.JPG","../assets/images/products/daggers/dg45v3.jpg","../assets/images/products/daggers/dg45v5.jpg"]' data-lightbox-caption="DG45b — Knife &amp; pricker set">
+            <img src="../assets/images/products/daggers/dg45bm.jpg" alt="Knife &amp; pricker set, reference DG45b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG45b</span>
+            <h2 class="product-title">Knife &amp; pricker set</h2>
+            <p class="product-period">Flemish · 1450-1460</p>
+            <p class="product-description">Companion pieces to dagger DG45. Length: approx. 22 cm &amp; 19 cm. Original set in the Wallace Collection, London, England.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">235 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG45b -->
+
+        <!-- DG46 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg46 rondel dagger probably germany · xvth century length: approx. 42 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg46m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg46v.jpg","../assets/images/products/daggers/dg46v2.JPG"]' data-lightbox-caption="DG46 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg46m.jpg" alt="Rondel dagger, reference DG46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG46</span>
             <h2 class="product-title">Rondel dagger</h2>
-            <p class="product-period">Probably Germany · XIVth century</p>
+            <p class="product-period">Probably Germany · XVth century</p>
             <p class="product-description">Length: approx. 42 cm.</p>
-            <div class="product-footer"><p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG46 -->
+        <!-- /DG46 -->
 
-        <!-- PRODUCT DG10 -->
-        <article class="product-card" data-tags="" data-search="dg10 german dagger 1500 pilsen">
-          <a class="product-image" href="../assets/images/products/daggers/dg10.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg10.jpg"]' data-lightbox-caption="DG10 — German dagger">
-            <img src="../assets/images/products/daggers/dg10.jpg" alt="German dagger, reference DG10" loading="lazy" width="139" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG42 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg42 rondel dagger germany or france · circa 1450 length: approx. 50.5 cm, weight 780 g. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg42m2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg42v.JPG","../assets/images/products/daggers/dg42v2.JPG","../assets/images/products/daggers/dg42v3.JPG","../assets/images/products/daggers/mr56v3.jpg"]' data-lightbox-caption="DG42 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg42m2.jpg" alt="Rondel dagger, reference DG42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG42</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Germany or France · circa 1450</p>
+            <p class="product-description">Length: approx. 50.5 cm, weight 780 g. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">265 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG42 -->
+
+        <!-- DG44 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg44 rondel dagger germany or italy · late xvth century length: approx. 37 cm. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg44m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg44v.JPG","../assets/images/products/daggers/dg44v2.JPG","../assets/images/products/daggers/dg44v3.JPG","../assets/images/products/daggers/dg44v4.jpg"]' data-lightbox-caption="DG44 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg44m.jpg" alt="Rondel dagger, reference DG44" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG44</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Germany or Italy · late XVth century</p>
+            <p class="product-description">Length: approx. 37 cm. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG44 -->
+
+        <!-- DG8 -->
+        <article class="catalog-row" data-tags="swiss" data-search="dg8 swiss dagger switzerland · xv-xvith century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/swiss.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/swissd.jpg"]' data-lightbox-caption="DG8 — Swiss dagger">
+            <img src="../assets/images/products/daggers/swiss.jpg" alt="Swiss dagger, reference DG8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG8</span>
+            <h2 class="product-title">Swiss dagger</h2>
+            <p class="product-period">Switzerland · XV-XVIth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG8 -->
+
+        <!-- DG10 -->
+        <article class="catalog-row" data-tags="other" data-search="dg10 german dagger germany · circa 1500 exact copy. length: approx. 40 cm, weight 250 g. original blade found near pilsen, czech republic private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/d3m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/d3v.jpg"]' data-lightbox-caption="DG10 — German dagger">
+            <img src="../assets/images/products/daggers/d3m.jpg" alt="German dagger, reference DG10" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG10</span>
             <h2 class="product-title">German dagger</h2>
             <p class="product-period">Germany · circa 1500</p>
-            <p class="product-description">Exact copy. Length: 40 cm, weight 250 g. Found near Pilsen.</p>
-            <div class="product-footer"><p class="product-price">660 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Exact copy. Length: approx. 40 cm, weight 250 g. Original blade found near Pilsen, Czech Republic (private collection).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">660 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG10 -->
+        <!-- /DG10 -->
 
-        <!-- PRODUCT DG13 -->
-        <article class="product-card" data-tags="ear-dagger" data-search="dg13 venetian ear-dagger italy xv century">
-          <a class="product-image" href="../assets/images/products/daggers/dg13.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg13.jpg"]' data-lightbox-caption="DG13 — Venetian ear-dagger">
-            <img src="../assets/images/products/daggers/dg13.jpg" alt="Venetian ear-dagger, reference DG13" loading="lazy" width="177" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG11 -->
+        <article class="catalog-row" data-tags="other" data-search="dg11 panzerstecher dagger early xvth century steel.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/flailM.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/flailV.jpg"]' data-lightbox-caption="DG11 — &quot;Panzerstecher&quot; dagger">
+            <img src="../assets/images/products/daggers/flailM.jpg" alt="&quot;Panzerstecher&quot; dagger, reference DG11" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG11</span>
+            <h2 class="product-title">"Panzerstecher" dagger</h2>
+            <p class="product-period">Early XVth century</p>
+            <p class="product-description">Steel.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">On request<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG11 -->
+
+        <!-- DG11a -->
+        <article class="catalog-row" data-tags="other" data-search="dg11a decorated leather scabbard early xvth century accompanies dg11.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/flailM.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/flailV.jpg"]' data-lightbox-caption="DG11a — Decorated leather scabbard">
+            <img src="../assets/images/products/daggers/flailM.jpg" alt="Decorated leather scabbard, reference DG11a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG11a</span>
+            <h2 class="product-title">Decorated leather scabbard</h2>
+            <p class="product-period">Early XVth century</p>
+            <p class="product-description">Accompanies DG11.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">95 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG11a -->
+
+        <!-- DG13 -->
+        <article class="catalog-row" data-tags="ear-dagger" data-search="dg13 venetian ear-dagger late xvth century bone grip.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/ear2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/ear1v.jpg"]' data-lightbox-caption="DG13 — Venetian ear-dagger">
+            <img src="../assets/images/products/daggers/ear2m.jpg" alt="Venetian ear-dagger, reference DG13" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG13</span>
             <h2 class="product-title">Venetian ear-dagger</h2>
-            <p class="product-period">Italy · late XVth century</p>
-            <p class="product-description">Bone grip. Length: approx. 38.8 cm.</p>
-            <div class="product-footer"><p class="product-price">300 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Bone grip.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">300 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG13 -->
+        <!-- /DG13 -->
 
-        <!-- PRODUCT DG20 -->
-        <article class="product-card" data-tags="" data-search="dg20 german dagger 1500 1520 metropolitan museum">
-          <a class="product-image" href="../assets/images/products/daggers/dg20.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg20.jpg"]' data-lightbox-caption="DG20 — German dagger">
-            <img src="../assets/images/products/daggers/dg20.jpg" alt="German dagger, reference DG20" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG13b -->
+        <article class="catalog-row" data-tags="other" data-search="dg13b wooden scabbard late xvth century accompanies dg13.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/ear2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/ear1v.jpg"]' data-lightbox-caption="DG13b — Wooden scabbard">
+            <img src="../assets/images/products/daggers/ear2m.jpg" alt="Wooden scabbard, reference DG13b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG13b</span>
+            <h2 class="product-title">Wooden scabbard</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Accompanies DG13.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">85 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG13b -->
+
+        <!-- DG14 -->
+        <article class="catalog-row" data-tags="swiss" data-search="dg14 swiss dagger switzerland · xvth century exact copy.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg14m2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG14v.jpg","../assets/images/products/daggers/DG14v2.jpg","../assets/images/products/daggers/dg14v3.JPG"]' data-lightbox-caption="DG14 — Swiss dagger">
+            <img src="../assets/images/products/daggers/dg14m2.jpg" alt="Swiss dagger, reference DG14" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG14</span>
+            <h2 class="product-title">Swiss dagger</h2>
+            <p class="product-period">Switzerland · XVth century</p>
+            <p class="product-description">Exact copy.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG14 -->
+
+        <!-- DG15 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg15 rondel dagger switzerland · xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG15m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG15v.jpg","../assets/images/products/daggers/DG15v2.jpg"]' data-lightbox-caption="DG15 — Rondel dagger">
+            <img src="../assets/images/products/daggers/DG15m.jpg" alt="Rondel dagger, reference DG15" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG15</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Switzerland · XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG15 -->
+
+        <!-- DG16 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg16 rondel dagger france, england · xvth century standard model.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG15m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG15v.jpg","../assets/images/products/daggers/DG15v2.jpg"]' data-lightbox-caption="DG16 — Rondel dagger">
+            <img src="../assets/images/products/daggers/DG15m.jpg" alt="Rondel dagger, reference DG16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG16</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">France, England · XVth century</p>
+            <p class="product-description">Standard model.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG16 -->
+
+        <!-- DG17 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg17 rondel dagger xvth century bone and horn grip.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG17m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG17v.jpg"]' data-lightbox-caption="DG17 — Rondel dagger">
+            <img src="../assets/images/products/daggers/DG17m.jpg" alt="Rondel dagger, reference DG17" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG17</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Bone and horn grip.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG17 -->
+
+        <!-- DG19 -->
+        <article class="catalog-row" data-tags="bollock" data-search="dg19 bollock dagger flemish · 1450-1500 exact copy.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG19m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG19v.jpg","../assets/images/products/daggers/DG19v2.jpg","../assets/images/products/daggers/DG19v3.jpg"]' data-lightbox-caption="DG19 — Bollock dagger">
+            <img src="../assets/images/products/daggers/DG19m.jpg" alt="Bollock dagger, reference DG19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG19</span>
+            <h2 class="product-title">Bollock dagger</h2>
+            <p class="product-period">Flemish · 1450-1500</p>
+            <p class="product-description">Exact copy.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG19 -->
+
+        <!-- DG20 -->
+        <article class="catalog-row" data-tags="other" data-search="dg20 german dagger germany · 1500-1520 exact copy, horn and bone grip. the metropolitan museum of art — catalogue of european daggers, new york 1929, no. 96.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG20m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG20v3.jpg","../assets/images/products/daggers/DG20va.jpg","../assets/images/products/daggers/DG20vb.jpg"]' data-lightbox-caption="DG20 — German dagger">
+            <img src="../assets/images/products/daggers/DG20m.jpg" alt="German dagger, reference DG20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG20</span>
             <h2 class="product-title">German dagger</h2>
-            <p class="product-period">Germany · 1500–1520</p>
-            <p class="product-description">Exact copy, black horn/bone grip. Original in the Metropolitan Museum of Art, New York.</p>
-            <div class="product-footer"><p class="product-price">459 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Germany · 1500-1520</p>
+            <p class="product-description">Exact copy, horn and bone grip. The Metropolitan Museum of Art — Catalogue of European Daggers, New York 1929, No. 96.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">459 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG20 -->
+        <!-- /DG20 -->
 
-        <!-- PRODUCT DG24 -->
-        <article class="product-card" data-tags="" data-search="dg24 bauernwehr long knife germany bohemia">
-          <a class="product-image" href="../assets/images/products/daggers/dg24.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg24.jpg"]' data-lightbox-caption="DG24 — &quot;Bauernwehr&quot; long knife">
-            <img src="../assets/images/products/daggers/dg24.jpg" alt="Bauernwehr long knife, reference DG24" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG21 -->
+        <article class="catalog-row" data-tags="swiss" data-search="dg21 swiss dagger switzerland · xvth century exact copy.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG21m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG21v.jpg","../assets/images/products/daggers/DG21v2.jpg"]' data-lightbox-caption="DG21 — Swiss dagger">
+            <img src="../assets/images/products/daggers/DG21m.jpg" alt="Swiss dagger, reference DG21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG21</span>
+            <h2 class="product-title">Swiss dagger</h2>
+            <p class="product-period">Switzerland · XVth century</p>
+            <p class="product-description">Exact copy.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG21 -->
+
+        <!-- DG22A -->
+        <article class="catalog-row" data-tags="other" data-search="dg22a panzerstecher dagger germany · late xvth century exact copy. original at staatliche kunstsammlungen, dresden, germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG22am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG22av.jpg","../assets/images/products/daggers/DG22av2.jpg","../assets/images/products/daggers/dg22av3.jpg"]' data-lightbox-caption="DG22A — &quot;Panzerstecher&quot; dagger">
+            <img src="../assets/images/products/daggers/DG22am.jpg" alt="&quot;Panzerstecher&quot; dagger, reference DG22A" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG22A</span>
+            <h2 class="product-title">"Panzerstecher" dagger</h2>
+            <p class="product-period">Germany · late XVth century</p>
+            <p class="product-description">Exact copy. Original at Staatliche Kunstsammlungen, Dresden, Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">319 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG22A -->
+
+        <!-- DG22B -->
+        <article class="catalog-row" data-tags="other" data-search="dg22b panzerstecher dagger germany · late xvth century exact copy. original at staatliche kunstsammlungen, dresden, germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DG22bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DG22bv.jpg","../assets/images/products/daggers/DG22bv2.jpg","../assets/images/products/daggers/dg22bv3.jpg"]' data-lightbox-caption="DG22B — &quot;Panzerstecher&quot; dagger">
+            <img src="../assets/images/products/daggers/DG22bm.jpg" alt="&quot;Panzerstecher&quot; dagger, reference DG22B" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG22B</span>
+            <h2 class="product-title">"Panzerstecher" dagger</h2>
+            <p class="product-period">Germany · late XVth century</p>
+            <p class="product-description">Exact copy. Original at Staatliche Kunstsammlungen, Dresden, Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">319 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG22B -->
+
+        <!-- DG24 -->
+        <article class="catalog-row" data-tags="other" data-search="dg24 bauernwehr knife germany, bohemia · late xv-early xvith century exact copy. length: approx. 47 cm. original in the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg24m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg24v.jpg","../assets/images/products/daggers/dg24v2.jpg","../assets/images/products/daggers/dg24v3.jpg"]' data-lightbox-caption="DG24 — &quot;Bauernwehr&quot; knife">
+            <img src="../assets/images/products/daggers/dg24m.jpg" alt="&quot;Bauernwehr&quot; knife, reference DG24" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG24</span>
-            <h2 class="product-title">"Bauernwehr" long knife</h2>
-            <p class="product-period">Germany / Bohemia · late XVth century</p>
-            <p class="product-description">Exact copy. Length: approx. 47 cm.</p>
-            <div class="product-footer"><p class="product-price">255 €<span class="price-indicative-tag">indicative</span></p></div>
+            <h2 class="product-title">"Bauernwehr" knife</h2>
+            <p class="product-period">Germany, Bohemia · late XV-early XVIth century</p>
+            <p class="product-description">Exact copy. Length: approx. 47 cm. Original in the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">255 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG24 -->
+        <!-- /DG24 -->
 
-        <!-- PRODUCT DG27 -->
-        <article class="product-card" data-tags="ear-dagger" data-search="dg27 venetian ear-dagger italy decorated bone grip">
-          <a class="product-image" href="../assets/images/products/daggers/dg27.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg27.jpg"]' data-lightbox-caption="DG27 — Venetian ear-dagger">
-            <img src="../assets/images/products/daggers/dg27.jpg" alt="Decorated Venetian ear-dagger, reference DG27" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG25 -->
+        <article class="catalog-row" data-tags="other" data-search="dg25 dagger western germany · xii-xiiith century exact copy. standard or folded-steel blade. length: approx. 45 cm. original at bayerisches armeemuseum, ingolstadt, germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg25m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg25v.jpg","../assets/images/products/daggers/dg25v2.jpg","../assets/images/products/daggers/dg25v3.jpg"]' data-lightbox-caption="DG25 — Dagger">
+            <img src="../assets/images/products/daggers/dg25m.jpg" alt="Dagger, reference DG25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG25</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">Western Germany · XII-XIIIth century</p>
+            <p class="product-description">Exact copy. Standard or folded-steel blade. Length: approx. 45 cm. Original at Bayerisches Armeemuseum, Ingolstadt, Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">225 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG25 -->
+
+        <!-- DG26 -->
+        <article class="catalog-row" data-tags="swiss" data-search="dg26 swiss dagger switzerland · 2nd half xvth century exact copy. length: approx. 33 cm. original at schweizerisches landesmuseum, zurich, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg26m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg26v.jpg","../assets/images/products/daggers/dg26v2.jpg","../assets/images/products/daggers/dg26v3.jpg"]' data-lightbox-caption="DG26 — Swiss dagger">
+            <img src="../assets/images/products/daggers/dg26m.jpg" alt="Swiss dagger, reference DG26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG26</span>
+            <h2 class="product-title">Swiss dagger</h2>
+            <p class="product-period">Switzerland · 2nd half XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 33 cm. Original at Schweizerisches Landesmuseum, Zurich, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">255 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG26 -->
+
+        <!-- DG27 -->
+        <article class="catalog-row" data-tags="ear-dagger" data-search="dg27 venetian ear-dagger italy · late xv-early xvith century exact copy. length: 38.8 cm, decorated bone grip. original at museo lázaro galdiano, madrid, spain.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg27m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg27v.jpg","../assets/images/products/daggers/dg27v2.jpg","../assets/images/products/daggers/dg27v3.jpg"]' data-lightbox-caption="DG27 — Venetian ear-dagger">
+            <img src="../assets/images/products/daggers/dg27m.jpg" alt="Venetian ear-dagger, reference DG27" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG27</span>
             <h2 class="product-title">Venetian ear-dagger</h2>
-            <p class="product-period">Italy · late XV–early XVIth century</p>
-            <p class="product-description">Exact copy, decorated bone grip. Length: 38.8 cm.</p>
-            <div class="product-footer"><p class="product-price">455 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Italy · late XV-early XVIth century</p>
+            <p class="product-description">Exact copy. Length: 38.8 cm, decorated bone grip. Original at Museo Lázaro Galdiano, Madrid, Spain.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">455 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG27 -->
+        <!-- /DG27 -->
 
-        <!-- PRODUCT DG31 -->
-        <article class="product-card" data-tags="" data-search="dg31 basilard dagger germany switzerland xiv century">
-          <a class="product-image" href="../assets/images/products/daggers/dg31.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg31.jpg"]' data-lightbox-caption="DG31 — Basilard dagger">
-            <img src="../assets/images/products/daggers/dg31.jpg" alt="Basilard dagger, reference DG31" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG28 -->
+        <article class="catalog-row" data-tags="other" data-search="dg28 dagger xiii-xivth century length: approx. 55 cm. includes wooden scabbard.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/n2m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/n2v.jpg","../assets/images/products/daggers/n2v2.jpg"]' data-lightbox-caption="DG28 — Dagger">
+            <img src="../assets/images/products/daggers/n2m.jpg" alt="Dagger, reference DG28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG28</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">XIII-XIVth century</p>
+            <p class="product-description">Length: approx. 55 cm. Includes wooden scabbard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG28 -->
+
+        <!-- DG29 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg29 rondel dagger southeast england · 2nd half xvth century exact copy. length: approx. 36 cm. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg29m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg29v.jpg","../assets/images/products/daggers/dg29v2.jpg","../assets/images/products/daggers/dg29v3.jpg","../assets/images/products/daggers/dg29v4.jpg"]' data-lightbox-caption="DG29 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg29m.jpg" alt="Rondel dagger, reference DG29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG29</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Southeast England · 2nd half XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 36 cm. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">279 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG29 -->
+
+        <!-- DG30 -->
+        <article class="catalog-row" data-tags="other" data-search="dg30 panzerstecher dagger germany or netherlands · xvth century exact copy. length: approx. 45 cm. original at deutsches klingenmuseum, solingen, germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg30m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg30v.jpg","../assets/images/products/daggers/dg30v2.jpg","../assets/images/products/daggers/dg30v3.jpg"]' data-lightbox-caption="DG30 — &quot;Panzerstecher&quot; dagger">
+            <img src="../assets/images/products/daggers/dg30m.jpg" alt="&quot;Panzerstecher&quot; dagger, reference DG30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG30</span>
+            <h2 class="product-title">"Panzerstecher" dagger</h2>
+            <p class="product-period">Germany or Netherlands · XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 45 cm. Original at Deutsches Klingenmuseum, Solingen, Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG30 -->
+
+        <!-- DG31 -->
+        <article class="catalog-row" data-tags="other" data-search="dg31 basilard dagger probably switzerland or italy · xivth century exact copy. length: approx. 45.5 cm. original at the royal armouries, leeds, england.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg31m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg31v.jpg","../assets/images/products/daggers/dg31v2.jpg"]' data-lightbox-caption="DG31 — Basilard dagger">
+            <img src="../assets/images/products/daggers/dg31m.jpg" alt="Basilard dagger, reference DG31" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DG31</span>
             <h2 class="product-title">Basilard dagger</h2>
-            <p class="product-period">Germany / Switzerland · XIVth century</p>
-            <p class="product-description">Exact copy. Length: 45.5 cm.</p>
-            <div class="product-footer"><p class="product-price">298 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-period">Probably Switzerland or Italy · XIVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 45.5 cm. Original at the Royal Armouries, Leeds, England.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">298 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DG31 -->
+        <!-- /DG31 -->
 
-        <!-- PRODUCT DR3 -->
-        <article class="product-card" data-tags="left-hand" data-search="dr3 spanish left-hand dagger spain xvi century">
-          <a class="product-image" href="../assets/images/products/daggers/dr3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dr3.jpg"]' data-lightbox-caption="DR3 — Spanish left-hand dagger">
-            <img src="../assets/images/products/daggers/dr3.jpg" alt="Spanish left-hand dagger, reference DR3" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DG32 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg32 rondel dagger france or germany · circa 1450 length: approx. 37 cm. includes wood/leather scabbard. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg32m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg32v.JPG","../assets/images/products/daggers/dg32v2.JPG","../assets/images/products/daggers/dg32v3.jpg"]' data-lightbox-caption="DG32 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg32m.jpg" alt="Rondel dagger, reference DG32" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DG32</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">France or Germany · circa 1450</p>
+            <p class="product-description">Length: approx. 37 cm. Includes wood/leather scabbard. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">289 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG32 -->
+
+        <!-- DG32b -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg32b rondel dagger france or germany · circa 1450 length: approx. 43 cm. includes wood/leather scabbard.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg32bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg32bv.jpg","../assets/images/products/daggers/dg32bv2.jpg","../assets/images/products/daggers/dg32bv3.jpg","../assets/images/products/daggers/dg32v3.jpg"]' data-lightbox-caption="DG32b — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg32bm.jpg" alt="Rondel dagger, reference DG32b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG32b</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">France or Germany · circa 1450</p>
+            <p class="product-description">Length: approx. 43 cm. Includes wood/leather scabbard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">289 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG32b -->
+
+        <!-- DG34 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg34 rondel dagger burgundy · xvth century length: approx. 35 cm. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg34m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg34v.jpg","../assets/images/products/daggers/dg34v2.jpg","../assets/images/products/daggers/dg34v3.jpg"]' data-lightbox-caption="DG34 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg34m.jpg" alt="Rondel dagger, reference DG34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG34</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Burgundy · XVth century</p>
+            <p class="product-description">Length: approx. 35 cm. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG34 -->
+
+        <!-- A56 -->
+        <article class="catalog-row" data-tags="other" data-search="a56 italian knife northern italy trentino · circa 1450 exact copy. length: approx. 40 cm. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/a56m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/a56v.jpg","../assets/images/products/daggers/a56v2.jpg","../assets/images/products/daggers/a56v3.jpg"]' data-lightbox-caption="A56 — Italian knife">
+            <img src="../assets/images/products/daggers/a56m.jpg" alt="Italian knife, reference A56" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A56</span>
+            <h2 class="product-title">Italian knife</h2>
+            <p class="product-period">Northern Italy (Trentino) · circa 1450</p>
+            <p class="product-description">Exact copy. Length: approx. 40 cm. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A56 -->
+
+        <!-- A57 -->
+        <article class="catalog-row" data-tags="other" data-search="a57 italian knife northern italy trentino · circa 1450 copy. length: approx. 40 cm. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/a57m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/a56v3.jpg","../assets/images/products/daggers/a57v.jpg","../assets/images/products/daggers/a57v2.jpg","../assets/images/products/daggers/a57v3.jpg"]' data-lightbox-caption="A57 — Italian knife">
+            <img src="../assets/images/products/daggers/a57m.jpg" alt="Italian knife, reference A57" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A57</span>
+            <h2 class="product-title">Italian knife</h2>
+            <p class="product-period">Northern Italy (Trentino) · circa 1450</p>
+            <p class="product-description">Copy. Length: approx. 40 cm. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /A57 -->
+
+        <!-- DG35 -->
+        <article class="catalog-row" data-tags="other" data-search="dg35 dagger italy, spain · xvth century exact copy. length: approx. 45.5 cm. original at museo de armería de Álava, vitoria-gasteiz, spain.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg35m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg35v.jpg","../assets/images/products/daggers/dg35v2.jpg","../assets/images/products/daggers/dg35v3.jpg","../assets/images/products/daggers/dg35v4.jpg"]' data-lightbox-caption="DG35 — Dagger">
+            <img src="../assets/images/products/daggers/dg35m.jpg" alt="Dagger, reference DG35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG35</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">Italy, Spain · XVth century</p>
+            <p class="product-description">Exact copy. Length: approx. 45.5 cm. Original at Museo de Armería de Álava, Vitoria-Gasteiz, Spain.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">279 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG35 -->
+
+        <!-- DG36 -->
+        <article class="catalog-row" data-tags="other" data-search="dg36 dagger switzerland, germany · xivth century length: approx. 41 cm. described in schneider, wegeli.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg36m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg36v.jpg","../assets/images/products/daggers/dg36v2.jpg","../assets/images/products/daggers/dg36v3.jpg"]' data-lightbox-caption="DG36 — Dagger">
+            <img src="../assets/images/products/daggers/dg36m.jpg" alt="Dagger, reference DG36" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG36</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">Switzerland, Germany · XIVth century</p>
+            <p class="product-description">Length: approx. 41 cm. Described in Schneider, Wegeli.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">288 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG36 -->
+
+        <!-- DG37 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg37 rondel dagger xiv-xvth century exact copy, decorated bone grip. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg37m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg37v.jpg","../assets/images/products/daggers/dg37v2.jpg","../assets/images/products/daggers/dg37v3.jpg"]' data-lightbox-caption="DG37 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg37m.jpg" alt="Rondel dagger, reference DG37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG37</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">XIV-XVth century</p>
+            <p class="product-description">Exact copy, decorated bone grip. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG37 -->
+
+        <!-- DG38 -->
+        <article class="catalog-row" data-tags="other" data-search="dg38 bauernwehr knife large germany, bohemia · late xv-early xvith century length: approx. 62.5 cm. original in the arma bohemia collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg38m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg38v.jpg","../assets/images/products/daggers/dg38v2.jpg","../assets/images/products/daggers/dg38v3.jpg"]' data-lightbox-caption="DG38 — &quot;Bauernwehr&quot; knife (large)">
+            <img src="../assets/images/products/daggers/dg38m.jpg" alt="&quot;Bauernwehr&quot; knife (large), reference DG38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG38</span>
+            <h2 class="product-title">"Bauernwehr" knife (large)</h2>
+            <p class="product-period">Germany, Bohemia · late XV-early XVIth century</p>
+            <p class="product-description">Length: approx. 62.5 cm. Original in the Arma Bohemia collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG38 -->
+
+        <!-- DG39 -->
+        <article class="catalog-row" data-tags="bollock" data-search="dg39 bollock dagger england ? · 1450-1500 length: approx. 42 cm. original at the metropolitan museum of art, new york.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg39m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg39v.jpg","../assets/images/products/daggers/dg39v2.jpg","../assets/images/products/daggers/dg39v3.jpg"]' data-lightbox-caption="DG39 — Bollock dagger">
+            <img src="../assets/images/products/daggers/dg39m.jpg" alt="Bollock dagger, reference DG39" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG39</span>
+            <h2 class="product-title">Bollock dagger</h2>
+            <p class="product-period">England (?) · 1450-1500</p>
+            <p class="product-description">Length: approx. 42 cm. Original at the Metropolitan Museum of Art, New York.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG39 -->
+
+        <!-- DG40 -->
+        <article class="catalog-row" data-tags="rondel" data-search="dg40 rondel dagger germany · early xvth century length: approx. 31 cm. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dg40m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dg40v.jpg","../assets/images/products/daggers/dg40v2.jpg","../assets/images/products/daggers/mm76v3.jpg"]' data-lightbox-caption="DG40 — Rondel dagger">
+            <img src="../assets/images/products/daggers/dg40m.jpg" alt="Rondel dagger, reference DG40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DG40</span>
+            <h2 class="product-title">Rondel dagger</h2>
+            <p class="product-period">Germany · early XVth century</p>
+            <p class="product-description">Length: approx. 31 cm. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">238 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DG40 -->
+
+        <!-- DR2 -->
+        <article class="catalog-row" data-tags="other" data-search="dr2 dagger italy · xvith century length: 59.5 cm, weight approx. 0.57 kg.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/dyk2c3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dyk2d1.jpg"]' data-lightbox-caption="DR2 — Dagger">
+            <img src="../assets/images/products/daggers/dyk2c3.jpg" alt="Dagger, reference DR2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">DR2</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">Italy · XVIth century</p>
+            <p class="product-description">Length: 59.5 cm, weight approx. 0.57 kg.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">229 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DR2 -->
+
+        <!-- DR3 -->
+        <article class="catalog-row" data-tags="left-hand" data-search="dr3 spanish left-hand dagger spain · xvith century length: approx. 60 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/n71m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/n71v.jpg","../assets/images/products/daggers/n71v2.jpg","../assets/images/products/daggers/n71v3.jpg"]' data-lightbox-caption="DR3 — Spanish left-hand dagger">
+            <img src="../assets/images/products/daggers/n71m.jpg" alt="Spanish left-hand dagger, reference DR3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DR3</span>
             <h2 class="product-title">Spanish left-hand dagger</h2>
             <p class="product-period">Spain · XVIth century</p>
-            <p class="product-description">Copy. Length: approx. 60 cm.</p>
-            <div class="product-footer"><p class="product-price">260 €<span class="price-indicative-tag">indicative</span></p></div>
+            <p class="product-description">Length: approx. 60 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">260 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DR3 -->
+        <!-- /DR3 -->
 
-        <!-- PRODUCT DR5 -->
-        <article class="product-card" data-tags="left-hand" data-search="dr5 spanish left-hand dagger xvi xvii century decorated">
-          <a class="product-image" href="../assets/images/products/daggers/dr5.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/dr5.jpg"]' data-lightbox-caption="DR5 — Spanish left-hand dagger, highly decorated">
-            <img src="../assets/images/products/daggers/dr5.jpg" alt="Highly decorated Spanish left-hand dagger, reference DR5" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- DR4 -->
+        <article class="catalog-row" data-tags="other" data-search="dr4 dagger xvi-xviith century length: 35 cm, weight approx. 0.5 kg.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DR4m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DR4vv.jpg"]' data-lightbox-caption="DR4 — Dagger">
+            <img src="../assets/images/products/daggers/DR4m.jpg" alt="Dagger, reference DR4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">DR4</span>
+            <h2 class="product-title">Dagger</h2>
+            <p class="product-period">XVI-XVIIth century</p>
+            <p class="product-description">Length: 35 cm, weight approx. 0.5 kg.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /DR4 -->
+
+        <!-- DR5 -->
+        <article class="catalog-row" data-tags="left-hand" data-search="dr5 spanish left-hand dagger xvi-xviith century highly decorated copy.">
+          <a class="catalog-row__media" href="../assets/images/products/daggers/DAGGENERALm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/daggers/DAGGENERAL.jpg","../assets/images/products/daggers/DR5v2.jpg","../assets/images/products/daggers/DR5v3.jpg"]' data-lightbox-caption="DR5 — Spanish left-hand dagger">
+            <img src="../assets/images/products/daggers/DAGGENERALm.jpg" alt="Spanish left-hand dagger, reference DR5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">DR5</span>
             <h2 class="product-title">Spanish left-hand dagger</h2>
-            <p class="product-period">XVI–XVIIth century</p>
+            <p class="product-period">XVI-XVIIth century</p>
             <p class="product-description">Highly decorated copy.</p>
-            <div class="product-footer"><p class="product-price">1 200 €<span class="price-indicative-tag">indicative</span></p></div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1200 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT DR5 -->
+        <!-- /DR5 -->
 
       </div>
 
