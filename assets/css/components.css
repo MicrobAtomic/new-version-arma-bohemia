@@ -417,6 +417,127 @@ h3 { font-size: var(--fs-h3); }
 }
 
 /* --------------------------------------------------
+   LISTE CATALOGUE (catalog-list / catalog-row)
+   Présentation en liste compacte utilisée par les pages
+   de catégorie du catalogue : une ligne par produit, une
+   petite vignette qui n'agrandit jamais une photo au-delà
+   de sa taille réelle (beaucoup de photos d'origine sont
+   petites — mieux vaut une vignette nette et modeste
+   qu'une photo floue étirée), et un badge indiquant le
+   nombre de photos disponibles pour ce produit.
+-------------------------------------------------- */
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-line);
+}
+
+.catalog-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 0.75rem 0.35rem;
+  border-bottom: 1px solid var(--color-line);
+  transition: background-color var(--transition-fast);
+}
+.catalog-row:hover {
+  background: var(--color-ivory-200);
+}
+
+.catalog-row__media {
+  position: relative;
+  flex: 0 0 auto;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-ivory-200);
+  border: 1px solid var(--color-ivory-300);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+.catalog-row__media img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /* Jamais plus grand que la photo d'origine : évite l'effet
+     "zoomé/flou" sur les petites images héritées de l'ancien site. */
+}
+
+.photo-count-badge {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 1px 5px;
+  background: rgba(23, 22, 26, 0.75);
+  color: #fff;
+  font-size: 0.62rem;
+  line-height: 1.4;
+  border-radius: 999px;
+}
+.photo-count-badge svg {
+  width: 0.62rem;
+  height: 0.62rem;
+  flex-shrink: 0;
+}
+
+.catalog-row__main {
+  flex: 1 1 320px;
+  min-width: 0;
+}
+.catalog-row__main .product-reference {
+  font-size: var(--fs-micro);
+  letter-spacing: 0.09em;
+  color: var(--color-bronze-600);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.catalog-row__main .product-title {
+  font-size: 1rem;
+  margin: 0.1rem 0 0.05rem;
+}
+.catalog-row__main .product-period {
+  font-size: var(--fs-small);
+  color: var(--color-ink-500);
+}
+.catalog-row__main .product-description {
+  font-size: var(--fs-small);
+  color: var(--color-ink-700);
+  margin-top: 0.15rem;
+}
+
+.catalog-row__price {
+  flex: 0 0 auto;
+  margin-left: auto;
+  padding-left: var(--space-sm);
+  text-align: right;
+  white-space: nowrap;
+}
+
+@media (max-width: 639px) {
+  .catalog-row {
+    flex-wrap: wrap;
+  }
+  .catalog-row__media {
+    width: 64px;
+    height: 64px;
+  }
+  .catalog-row__price {
+    flex-basis: 100%;
+    margin-left: calc(64px + var(--space-md));
+    text-align: left;
+    padding-left: 0;
+  }
+}
+
+/* --------------------------------------------------
    LIGHTBOX (galerie photo)
 -------------------------------------------------- */
 
@@ -596,23 +717,69 @@ h3 { font-size: var(--fs-h3); }
   color: var(--color-ink-700);
 }
 
-/* Bloc "citation" fondateurs */
-.founder-quote {
-  border-left: 3px solid var(--color-bronze-500);
-  padding-left: var(--space-md);
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  color: var(--color-ink-700);
-  font-style: italic;
+/* Lettre signée des fondateurs.
+   Sur le site d'origine, tout le texte de présentation
+   (l'historique de l'atelier) est rédigé à la première
+   personne et se termine par la signature manuscrite du
+   cofondateur — ce n'est pas une simple citation isolée,
+   c'est l'ensemble du texte qui est "signé". Ce composant
+   reproduit cette forme : un bloc "lettre", conclu par la
+   signature numérisée d'origine et le nom imprimé. */
+.signed-letter {
+  background: var(--color-ivory-200);
+  border: 1px solid var(--color-ivory-300);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
 }
-.founder-quote cite {
-  display: block;
-  margin-top: var(--space-sm);
+.signed-letter p {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--color-ink-700);
+}
+.signed-letter p + p {
+  margin-top: 1rem;
+}
+.signed-letter .eyebrow {
+  /* L'étiquette "Dans les mots des fondateurs" reste une eyebrow
+     normale (petite, majuscules) : elle ne doit pas hériter du
+     style "lettre" appliqué aux paragraphes ci-dessous. */
   font-family: var(--font-body);
+  font-size: var(--fs-micro);
   font-style: normal;
+}
+.signed-letter__sign {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--color-ivory-300);
+}
+.signed-letter__sign img {
+  height: 2.75rem;
+  width: auto;
+  /* La signature d'origine est un GIF sur fond blanc : le mode
+     "multiply" la fait se fondre dans le fond ivoire du bloc. */
+  mix-blend-mode: multiply;
+}
+.signed-letter__sign figcaption {
   font-size: var(--fs-small);
   color: var(--color-ink-500);
 }
+.signed-letter__sign figcaption strong {
+  display: block;
+  color: var(--color-ink-900);
+  font-weight: 600;
+}
+.section--dark .signed-letter {
+  background: var(--color-charcoal-800);
+  border-color: var(--color-line-dark);
+}
+.section--dark .signed-letter p { color: var(--color-paper-300); }
+.section--dark .signed-letter__sign { border-color: var(--color-line-dark); }
+.section--dark .signed-letter__sign img { mix-blend-mode: screen; }
+.section--dark .signed-letter__sign figcaption strong { color: var(--color-paper-100); }
 
 /* Timeline évènements */
 .event-list {
@@ -654,6 +821,58 @@ h3 { font-size: var(--fs-h3); }
 }
 .icon-card h3 { font-size: 1.05rem; margin-bottom: 0.3rem; }
 .icon-card p { font-size: var(--fs-small); color: var(--color-paper-300); }
+
+/* Séquence "de l'original à la copie" (page Atelier / accueil).
+   Reprend trois photos réelles du site d'origine (page
+   "Technologies") qui montraient déjà cet enchaînement :
+   objet ancien trouvé sur le terrain → pièce forgée à la main →
+   copie finie avec sa garniture. */
+.process-strip {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+@media (min-width: 720px) {
+  .process-strip { grid-template-columns: repeat(3, 1fr); }
+}
+.process-step {
+  background: #fff;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  text-align: center;
+}
+.section--dark .process-step {
+  background: var(--color-charcoal-800);
+  border-color: var(--color-line-dark);
+}
+.process-step__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--color-bronze-600);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-sm);
+}
+.process-step img {
+  display: block;
+  max-width: 100%;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  margin: 0 auto var(--space-sm);
+}
+.process-step p {
+  font-size: var(--fs-small);
+  color: var(--color-ink-700);
+}
+.section--dark .process-step p { color: var(--color-paper-300); }
 
 /* Bandeau CTA de fin de page */
 .cta-band {

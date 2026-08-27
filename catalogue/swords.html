@@ -4,20 +4,26 @@ ARMA BOHEMIA — SWORDS CATALOGUE (English)
 ============================================================
 
 HOW TO ADD A PRODUCT
-1. Copy one whole "PRODUCT" block below (from the opening
-   "PRODUCT xxx" comment to the matching "END PRODUCT xxx"
+1. Copy one whole product block below (from the opening
+   "<!-- REF -->" comment to the matching "<!-- /REF -->"
    comment, <article> included).
 2. Paste it where you want it to appear.
 3. Change the reference, title, period, description and price.
+   The reference appears THREE times: in the two comments and
+   inside <span class="product-reference">.
 4. Put the photo in:
    /assets/images/products/swords/
-   and update the two "src" and the "href" to match its filename.
-5. Optional: give the <article> a "data-tags" value using one of
-   the century codes used by the filter buttons above the grid
-   (xi, xii, xiv, xv, xvi, xvii-xviii) so it can be filtered.
+   and update BOTH the "href" on the <a> and the "src" on the
+   <img> to match its filename.
+5. Optional — several photos: list every extra photo file inside
+   data-lightbox-images, e.g. '["a.jpg","b.jpg","c.jpg"]', and
+   update the number inside the little camera badge to match.
+6. Optional — filtering: give the <article> a "data-tags" value
+   using one of the century codes used by the filter buttons
+   above the list (xi, xii, xiv, xv, xvi, xvii-xviii).
 
 HOW TO REMOVE A PRODUCT
-Delete its whole block, from "PRODUCT xxx" to "END PRODUCT xxx".
+Delete its whole block, from "<!-- REF -->" to "<!-- /REF -->".
 
 HOW TO CHANGE A PRICE
 Find the product's reference (e.g. EP34), then edit the text
@@ -126,7 +132,7 @@ you are doing — the CSS in /assets/css/ depends on them.
     <div class="container">
       <p class="breadcrumbs"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Swords</p>
       <h1>Swords</h1>
-      <p class="lead">One-hand, one-and-a-half-hand and two-handed swords, XIth to XVIIIth century — sharp or blunt on request.</p>
+      <p class="lead">One-hand, one-and-a-half-hand and two-handed swords, XIth to XVIIIth century — sharp or blunt on request. The full range offered by the workshop over the years — 61 pieces.</p>
     </div>
   </div>
 
@@ -155,249 +161,1107 @@ you are doing — the CSS in /assets/css/ depends on them.
         </div>
       </div>
 
-      <p class="catalog-count" data-catalog-count data-template="{n} swords shown">12 swords shown</p>
+      <p class="catalog-count" data-catalog-count data-template="{n} swords shown">61 swords shown</p>
 
-      <div class="product-grid product-grid--wide" data-catalog-grid>
+      <div class="catalog-list" data-catalog-grid>
 
-        <!-- ==================================================
-             PRODUCT EP1
-        ================================================== -->
-        <article class="product-card" data-tags="xi viking england" data-search="ep1 viking one-hand sword england hastings xi century">
-          <a class="product-image" href="../assets/images/products/swords/ep1.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep1.jpg"]' data-lightbox-caption="EP1 — Viking-type one-hand sword">
-            <img src="../assets/images/products/swords/ep1.jpg" alt="Viking-type one-hand sword, reference EP1" loading="lazy" width="100" height="150">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP1 -->
+        <article class="catalog-row" data-tags="xi" data-search="ep1 viking-type one-hand sword england · xith century from the battlefield of hastings. length: 90 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mec7.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mec7_v.jpg","../assets/images/products/swords/mec7_v_I.jpg","../assets/images/products/swords/mec7_v_II.jpg","../assets/images/products/swords/mec7_v_III.jpg"]' data-lightbox-caption="EP1 — Viking-type one-hand sword">
+            <img src="../assets/images/products/swords/mec7.jpg" alt="Viking-type one-hand sword, reference EP1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">EP1</span>
             <h2 class="product-title">Viking-type one-hand sword</h2>
             <p class="product-period">England · XIth century</p>
             <p class="product-description">From the battlefield of Hastings. Length: 90 cm.</p>
-            <div class="product-footer">
-              <p class="product-price">On request<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">On request<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP1 -->
+        <!-- /EP1 -->
 
-        <!-- ==================================================
-             PRODUCT EP42
-        ================================================== -->
-        <article class="product-card" data-tags="xi viking norway" data-search="ep42 viking one-hand sword norway xi century petersen">
-          <a class="product-image" href="../assets/images/products/swords/ep42.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep42.jpg"]' data-lightbox-caption="EP42 — Viking-type one-hand sword">
-            <img src="../assets/images/products/swords/ep42.jpg" alt="Viking-type one-hand sword, reference EP42" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP2 -->
+        <article class="catalog-row" data-tags="xi" data-search="ep2 norman-type one-hand sword england · xith century from the battlefield of hastings. length: 105 cm, weight 1530 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mec7.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mec7_v.jpg","../assets/images/products/swords/mec7_v_I.jpg","../assets/images/products/swords/mec7_v_II.jpg","../assets/images/products/swords/mec7_v_III.jpg"]' data-lightbox-caption="EP2 — Norman-type one-hand sword">
+            <img src="../assets/images/products/swords/mec7.jpg" alt="Norman-type one-hand sword, reference EP2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP2</span>
+            <h2 class="product-title">Norman-type one-hand sword</h2>
+            <p class="product-period">England · XIth century</p>
+            <p class="product-description">From the battlefield of Hastings. Length: 105 cm, weight 1530 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">319 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP2 -->
+
+        <!-- EP42 -->
+        <article class="catalog-row" data-tags="xi" data-search="ep42 viking-type one-hand sword norway · circa 1100 length: approx. 89 cm, weight approx. 1240 g. described in jan petersen's de norske vikingesverd.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep42m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep42v.jpg","../assets/images/products/swords/ep42v3.jpg","../assets/images/products/swords/ep42v4.jpg"]' data-lightbox-caption="EP42 — Viking-type one-hand sword">
+            <img src="../assets/images/products/swords/ep42m.jpg" alt="Viking-type one-hand sword, reference EP42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP42</span>
             <h2 class="product-title">Viking-type one-hand sword</h2>
             <p class="product-period">Norway · circa 1100</p>
             <p class="product-description">Length: approx. 89 cm, weight approx. 1240 g. Described in Jan Petersen's "De Norske Vikingesverd".</p>
-            <div class="product-footer">
-              <p class="product-price">350 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">350 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP42 -->
+        <!-- /EP42 -->
 
-        <!-- ==================================================
-             PRODUCT EP62
-        ================================================== -->
-        <article class="product-card" data-tags="xi norman england" data-search="ep62 norman one-hand sword england xi century">
-          <a class="product-image" href="../assets/images/products/swords/ep62.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep62.jpg"]' data-lightbox-caption="EP62 — Norman-type one-hand sword">
-            <img src="../assets/images/products/swords/ep62.jpg" alt="Norman-type one-hand sword, reference EP62" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP62 -->
+        <article class="catalog-row" data-tags="xi" data-search="ep62 norman-type one-hand sword england · xith century length: approx. 96 cm, weight only 1120 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/m49m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/m49v.jpg","../assets/images/products/swords/m49v2.jpg"]' data-lightbox-caption="EP62 — Norman-type one-hand sword">
+            <img src="../assets/images/products/swords/m49m.jpg" alt="Norman-type one-hand sword, reference EP62" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">EP62</span>
             <h2 class="product-title">Norman-type one-hand sword</h2>
             <p class="product-period">England · XIth century</p>
             <p class="product-description">Length: approx. 96 cm, weight only 1120 g.</p>
-            <div class="product-footer">
-              <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP62 -->
+        <!-- /EP62 -->
 
-        <!-- ==================================================
-             PRODUCT EP3
-        ================================================== -->
-        <article class="product-card" data-tags="xii france" data-search="ep3 broad one-hand sword france xii century viollet le duc">
-          <a class="product-image" href="../assets/images/products/swords/ep3.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep3.jpg"]' data-lightbox-caption="EP3 — Broad one-hand sword">
-            <img src="../assets/images/products/swords/ep3.jpg" alt="Broad one-hand sword, reference EP3" loading="lazy" width="100" height="154">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP3 -->
+        <article class="catalog-row" data-tags="xii" data-search="ep3 broad one-hand sword france · 2nd half xiith century length: 95 cm, very broad blade 8 cm, sharp. described in viollet-le-duc's encyclopédie médiévale.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mec6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mec6_v.jpg","../assets/images/products/swords/mec6_v_I.jpg"]' data-lightbox-caption="EP3 — Broad one-hand sword">
+            <img src="../assets/images/products/swords/mec6.jpg" alt="Broad one-hand sword, reference EP3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">EP3</span>
             <h2 class="product-title">Broad one-hand sword</h2>
             <p class="product-period">France · 2nd half XIIth century</p>
             <p class="product-description">Length: 95 cm, very broad blade (8 cm), sharp. Described in Viollet-le-Duc's "Encyclopédie médiévale".</p>
-            <div class="product-footer">
-              <p class="product-price">460 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">460 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP3 -->
+        <!-- /EP3 -->
 
-        <!-- ==================================================
-             PRODUCT EP70
-        ================================================== -->
-        <article class="product-card" data-tags="xiv germany bohemia" data-search="ep70 one-hand sword germany bohemia xiii xiv century">
-          <a class="product-image" href="../assets/images/products/swords/ep70.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep70.jpg"]' data-lightbox-caption="EP70 — One-hand sword">
-            <img src="../assets/images/products/swords/ep70.jpg" alt="One-hand sword, reference EP70" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP3a -->
+        <article class="catalog-row" data-tags="xii" data-search="ep3a broad one-hand sword, smaller version france · 2nd half xiith century smaller version of ep3. length: 90 cm, blade broad 5 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mec6.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mec6_v.jpg","../assets/images/products/swords/mec6_v_I.jpg"]' data-lightbox-caption="EP3a — Broad one-hand sword, smaller version">
+            <img src="../assets/images/products/swords/mec6.jpg" alt="Broad one-hand sword, smaller version, reference EP3a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP3a</span>
+            <h2 class="product-title">Broad one-hand sword, smaller version</h2>
+            <p class="product-period">France · 2nd half XIIth century</p>
+            <p class="product-description">Smaller version of EP3. Length: 90 cm, blade broad 5 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">308 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP3a -->
+
+        <!-- EP72 -->
+        <article class="catalog-row" data-tags="xii" data-search="ep72 one-hand sword northern europe · xi-xiith century oakeshott type x/xa. length: 90 cm, weight approx. 1220 g. a similar sword is held by the helsinki university collection, finland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep72m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep72v.JPG","../assets/images/products/swords/ep72v2.JPG","../assets/images/products/swords/ep72v3.jpg"]' data-lightbox-caption="EP72 — One-hand sword">
+            <img src="../assets/images/products/swords/ep72m.jpg" alt="One-hand sword, reference EP72" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP72</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Northern Europe · XI-XIIth century</p>
+            <p class="product-description">Oakeshott type X/Xa. Length: 90 cm, weight approx. 1220 g. A similar sword is held by the Helsinki University Collection, Finland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP72 -->
+
+        <!-- EP70 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep70 one-hand sword germany / bohemia · xiii-xivth century length: 90.5 cm, weight approx. 1485 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep70m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep70v.JPG","../assets/images/products/swords/ep70v2.JPG"]' data-lightbox-caption="EP70 — One-hand sword">
+            <img src="../assets/images/products/swords/ep70m.jpg" alt="One-hand sword, reference EP70" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP70</span>
             <h2 class="product-title">One-hand sword</h2>
-            <p class="product-period">Germany / Bohemia · XIII–XIVth century</p>
+            <p class="product-period">Germany / Bohemia · XIII-XIVth century</p>
             <p class="product-description">Length: 90.5 cm, weight approx. 1485 g.</p>
-            <div class="product-footer">
-              <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP70 -->
+        <!-- /EP70 -->
 
-        <!-- ==================================================
-             PRODUCT EP82
-        ================================================== -->
-        <article class="product-card" data-tags="xiv germany greatsword" data-search="ep82 greatsword germany xiv century private collection">
-          <a class="product-image" href="../assets/images/products/swords/ep82.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep82.jpg"]' data-lightbox-caption="EP82 — Greatsword">
-            <img src="../assets/images/products/swords/ep82.jpg" alt="Greatsword, reference EP82" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP19 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep19 basic one-hand sword xiv-xvth century length: approx. 95 cm, weight approx. 1100 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mun1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mun1v.jpg","../assets/images/products/swords/nn39v2.jpg"]' data-lightbox-caption="EP19 — Basic one-hand sword">
+            <img src="../assets/images/products/swords/mun1m.jpg" alt="Basic one-hand sword, reference EP19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP19</span>
+            <h2 class="product-title">Basic one-hand sword</h2>
+            <p class="product-period">XIV-XVth century</p>
+            <p class="product-description">Length: approx. 95 cm, weight approx. 1100 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP19 -->
+
+        <!-- EP82 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep82 greatsword germany · xivth century length: approx. 119 cm, weight approx. 1770 g, blade width 55 mm. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ms93m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ms93v.JPG","../assets/images/products/swords/ms93v2.JPG","../assets/images/products/swords/ms93v3.JPG","../assets/images/products/swords/ms93v4.jpg"]' data-lightbox-caption="EP82 — Greatsword">
+            <img src="../assets/images/products/swords/ms93m.jpg" alt="Greatsword, reference EP82" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP82</span>
             <h2 class="product-title">Greatsword</h2>
             <p class="product-period">Germany · XIVth century</p>
             <p class="product-description">Length: approx. 119 cm, weight approx. 1770 g, blade width 55 mm. From a private collection.</p>
-            <div class="product-footer">
-              <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP82 -->
+        <!-- /EP82 -->
 
-        <!-- ==================================================
-             PRODUCT EP39
-        ================================================== -->
-        <article class="product-card" data-tags="xiv" data-search="ep39 one-and-a-half-hand sword xiv century">
-          <a class="product-image" href="../assets/images/products/swords/ep39.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep39.jpg"]' data-lightbox-caption="EP39 — One-and-a-half-hand sword">
-            <img src="../assets/images/products/swords/ep39.jpg" alt="One-and-a-half-hand sword, reference EP39" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP73 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep73 great sword austria / germany · xiii-xivth century length: approx. 120 cm, weight approx. 1720 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep73m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep73v.JPG","../assets/images/products/swords/ep73v2.JPG"]' data-lightbox-caption="EP73 — Great sword">
+            <img src="../assets/images/products/swords/ep73m.jpg" alt="Great sword, reference EP73" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP73</span>
+            <h2 class="product-title">Great sword</h2>
+            <p class="product-period">Austria / Germany · XIII-XIVth century</p>
+            <p class="product-description">Length: approx. 120 cm, weight approx. 1720 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">249 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP73 -->
+
+        <!-- EP39 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep39 one-and-a-half-hand sword xivth century length: 120 cm, weight approx. 1845 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep39m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep39v.jpg","../assets/images/products/swords/ep39v2.jpg"]' data-lightbox-caption="EP39 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep39m.jpg" alt="One-and-a-half-hand sword, reference EP39" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP39</span>
             <h2 class="product-title">One-and-a-half-hand sword</h2>
             <p class="product-period">XIVth century</p>
-            <p class="product-description">Length: approx. 120 cm, weight approx. 1845 g.</p>
-            <div class="product-footer">
-              <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+            <p class="product-description">Length: 120 cm, weight approx. 1845 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP39 -->
+        <!-- /EP39 -->
 
-        <!-- ==================================================
-             PRODUCT EP81
-        ================================================== -->
-        <article class="product-card" data-tags="xiv england falchion" data-search="ep81 falchion england xiv century private collection">
-          <a class="product-image" href="../assets/images/products/swords/ep81.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep81.jpg"]' data-lightbox-caption="EP81 — Falchion">
-            <img src="../assets/images/products/swords/ep81.jpg" alt="Falchion, reference EP81" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP49 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep49 one-hand sword exact copy france · xivth century length: 95 cm, weight approx. 1300 g. original at château castelnaud, france.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/pt14m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/pt14v.jpg","../assets/images/products/swords/pt14v2.jpg","../assets/images/products/swords/pt14v3.jpg"]' data-lightbox-caption="EP49 — One-hand sword (exact copy)">
+            <img src="../assets/images/products/swords/pt14m.jpg" alt="One-hand sword (exact copy), reference EP49" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP49</span>
+            <h2 class="product-title">One-hand sword (exact copy)</h2>
+            <p class="product-period">France · XIVth century</p>
+            <p class="product-description">Length: 95 cm, weight approx. 1300 g. Original at Château Castelnaud, France.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">340 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP49 -->
+
+        <!-- EP81 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep81 falchion england · xivth century length: approx. 91.5 cm, weight 1630 g. very broad blade 6 cm with inscription. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep81m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep81v.JPG","../assets/images/products/swords/ep81v2.JPG","../assets/images/products/swords/ep81v3.JPG","../assets/images/products/swords/ep81v4.jpg"]' data-lightbox-caption="EP81 — Falchion">
+            <img src="../assets/images/products/swords/ep81m.jpg" alt="Falchion, reference EP81" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP81</span>
             <h2 class="product-title">Falchion</h2>
             <p class="product-period">England · XIVth century</p>
             <p class="product-description">Length: approx. 91.5 cm, weight 1630 g. Very broad blade (6 cm) with inscription. From a private collection.</p>
-            <div class="product-footer">
-              <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP81 -->
+        <!-- /EP81 -->
 
-        <!-- ==================================================
-             PRODUCT EP38
-        ================================================== -->
-        <article class="product-card" data-tags="xv" data-search="ep38 one-and-a-half-hand sword xv century private collection">
-          <a class="product-image" href="../assets/images/products/swords/ep38.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep38.jpg"]' data-lightbox-caption="EP38 — One-and-a-half-hand sword">
-            <img src="../assets/images/products/swords/ep38.jpg" alt="One-and-a-half-hand sword, reference EP38" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP58 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep58 malchus middle europe · circa 1300 length: approx. 76 cm, weight 1370 g. sharp blade. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep58m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep58v.jpg","../assets/images/products/swords/ep58v2.jpg","../assets/images/products/swords/ep58v3.jpg"]' data-lightbox-caption="EP58 — Malchus">
+            <img src="../assets/images/products/swords/ep58m.jpg" alt="Malchus, reference EP58" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP58</span>
+            <h2 class="product-title">Malchus</h2>
+            <p class="product-period">Middle Europe · circa 1300</p>
+            <p class="product-description">Length: approx. 76 cm, weight 1370 g. Sharp blade. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">390 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP58 -->
+
+        <!-- EP59 -->
+        <article class="catalog-row" data-tags="xiv" data-search="ep59 falchion flemish ? · late xivth century length: approx. 76 cm, weight 1620 g. original at musée de l'armée, paris, france.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep59m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep59v.jpg","../assets/images/products/swords/ep59v2.JPG","../assets/images/products/swords/ep59v3.jpg"]' data-lightbox-caption="EP59 — Falchion">
+            <img src="../assets/images/products/swords/ep59m.jpg" alt="Falchion, reference EP59" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP59</span>
+            <h2 class="product-title">Falchion</h2>
+            <p class="product-period">Flemish (?) · late XIVth century</p>
+            <p class="product-description">Length: approx. 76 cm, weight 1620 g. Original at Musée de l'Armée, Paris, France.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">315 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP59 -->
+
+        <!-- EP38 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep38 one-and-a-half-hand sword xvth century length: 105 cm, weight approx. 1300 g. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep38m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep38v.jpg","../assets/images/products/swords/ep38v2.jpg","../assets/images/products/swords/ep38v3.jpg"]' data-lightbox-caption="EP38 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep38m.jpg" alt="One-and-a-half-hand sword, reference EP38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP38</span>
             <h2 class="product-title">One-and-a-half-hand sword</h2>
             <p class="product-period">XVth century</p>
             <p class="product-description">Length: 105 cm, weight approx. 1300 g. From a private collection.</p>
-            <div class="product-footer">
-              <p class="product-price">370 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">370 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP38 -->
+        <!-- /EP38 -->
 
-        <!-- ==================================================
-             PRODUCT EP50
-        ================================================== -->
-        <article class="product-card" data-tags="xv france england two-handed" data-search="ep50 two-handed sword france england xv century castillon dordogne">
-          <a class="product-image" href="../assets/images/products/swords/ep50.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep50.jpg"]' data-lightbox-caption="EP50 — Two-handed sword">
-            <img src="../assets/images/products/swords/ep50.jpg" alt="Two-handed sword, reference EP50" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP40 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep40 one-and-a-half-hand sword xvth century length: approx. 115 cm. original at the bernese historical museum, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep40m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep40v.jpg","../assets/images/products/swords/ep40v2.jpg","../assets/images/products/swords/ep40v3.jpg"]' data-lightbox-caption="EP40 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep40m.jpg" alt="One-and-a-half-hand sword, reference EP40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP40</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">XVth century</p>
+            <p class="product-description">Length: approx. 115 cm. Original at the Bernese Historical Museum, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">288 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP40 -->
+
+        <!-- EP54 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep54 one-and-a-half-hand sword germany · xvth century length: approx. 120 cm, weight 1620 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep54m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep54v.jpg","../assets/images/products/swords/ep54v2.jpg"]' data-lightbox-caption="EP54 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep54m.jpg" alt="One-and-a-half-hand sword, reference EP54" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP54</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Germany · XVth century</p>
+            <p class="product-description">Length: approx. 120 cm, weight 1620 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP54 -->
+
+        <!-- EP46 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep46 one-and-a-half-hand sword france · xvth century length: approx. 126 cm, weight 1730 g. described in viollet-le-duc's encyclopédie médiévale.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep46m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep46v.JPG","../assets/images/products/swords/ep46v2.JPG","../assets/images/products/swords/ep46v3.jpg"]' data-lightbox-caption="EP46 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep46m.jpg" alt="One-and-a-half-hand sword, reference EP46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP46</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">France · XVth century</p>
+            <p class="product-description">Length: approx. 126 cm, weight 1730 g. Described in Viollet-le-Duc's "Encyclopédie médiévale".</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">395 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP46 -->
+
+        <!-- EP55 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep55 one-hand sword france / england · xvth century length: approx. 92 cm, weight 1240 g. provenance: dordogne, near castillon-la-bataille — battle of castillon, 1453.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep55m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep55v.jpg","../assets/images/products/swords/ep55v2.jpg","../assets/images/products/swords/ep55v3.jpg","../assets/images/products/swords/ep55v4.jpg"]' data-lightbox-caption="EP55 — One-hand sword">
+            <img src="../assets/images/products/swords/ep55m.jpg" alt="One-hand sword, reference EP55" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP55</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">France / England · XVth century</p>
+            <p class="product-description">Length: approx. 92 cm, weight 1240 g. Provenance: Dordogne, near Castillon-la-Bataille — Battle of Castillon, 1453.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP55 -->
+
+        <!-- EP50 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep50 two-handed sword france / england · xvth century length: approx. 146 cm, weight 2150 g. provenance: dordogne, near castillon-la-bataille — battle of castillon, 1453.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/n45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/n45v.jpg","../assets/images/products/swords/n45v2.jpg","../assets/images/products/swords/n45v3.jpg"]' data-lightbox-caption="EP50 — Two-handed sword">
+            <img src="../assets/images/products/swords/n45m.jpg" alt="Two-handed sword, reference EP50" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP50</span>
             <h2 class="product-title">Two-handed sword</h2>
             <p class="product-period">France / England · XVth century</p>
-            <p class="product-description">Length: approx. 146 cm, weight 2150 g. Provenance: Dordogne area, Battle of Castillon 1453.</p>
-            <div class="product-footer">
-              <p class="product-price">360 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+            <p class="product-description">Length: approx. 146 cm, weight 2150 g. Provenance: Dordogne, near Castillon-la-Bataille — Battle of Castillon, 1453.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">360 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP50 -->
+        <!-- /EP50 -->
 
-        <!-- ==================================================
-             PRODUCT EP34
-        ================================================== -->
-        <article class="product-card" data-tags="xvi germany katzbalger" data-search="ep34 landsknecht katzbalger sword southern germany xvi century decorated">
-          <a class="product-image" href="../assets/images/products/swords/ep34.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep34.jpg"]' data-lightbox-caption="EP34 — Landsknecht &quot;Katzbalger&quot; sword">
-            <img src="../assets/images/products/swords/ep34.jpg" alt="Landsknecht Katzbalger sword, reference EP34" loading="lazy" width="133" height="100">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP27 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep27 one-hand sword central europe · half of xvth century length: approx. 106 cm. original at the museum of château de grandson, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP27m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP27v.jpg","../assets/images/products/swords/EP27v2.jpg","../assets/images/products/swords/EP27v5.jpg"]' data-lightbox-caption="EP27 — One-hand sword">
+            <img src="../assets/images/products/swords/EP27m.jpg" alt="One-hand sword, reference EP27" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
+            <span class="product-reference">EP27</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Central Europe · half of XVth century</p>
+            <p class="product-description">Length: approx. 106 cm. Original at the museum of Château de Grandson, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">267 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP27 -->
+
+        <!-- EP79 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep79 one-hand sword germany · circa 1450 length: approx. 103 cm, weight 1369 g. original at reichstadtmuseum rothenburg o.d.t., germany.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep79m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep79v.JPG","../assets/images/products/swords/ep79v2.JPG","../assets/images/products/swords/ep79v3.jpg"]' data-lightbox-caption="EP79 — One-hand sword">
+            <img src="../assets/images/products/swords/ep79m.jpg" alt="One-hand sword, reference EP79" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP79</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Germany · circa 1450</p>
+            <p class="product-description">Length: approx. 103 cm, weight 1369 g. Original at Reichstadtmuseum Rothenburg o.d.T., Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP79 -->
+
+        <!-- EP66 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep66 one-hand sword italy · 2nd half xvth century length: approx. 99 cm, weight 1100 g. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mm42m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mm42v.jpg","../assets/images/products/swords/mm42v2.jpg"]' data-lightbox-caption="EP66 — One-hand sword">
+            <img src="../assets/images/products/swords/mm42m.jpg" alt="One-hand sword, reference EP66" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP66</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Italy · 2nd half XVth century</p>
+            <p class="product-description">Length: approx. 99 cm, weight 1100 g. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP66 -->
+
+        <!-- EP48 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep48 one-hand sword italy · 2nd half xvth century length: approx. 101 cm, weight 1260 g. horn grip. original at the museum of cluny, paris, france.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep48m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep48v.jpg","../assets/images/products/swords/ep48v2.jpg","../assets/images/products/swords/ep48v3.jpg","../assets/images/products/swords/ep48v4.jpg","../assets/images/products/swords/n31v5.jpg"]' data-lightbox-caption="EP48 — One-hand sword">
+            <img src="../assets/images/products/swords/ep48m.jpg" alt="One-hand sword, reference EP48" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP48</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Italy · 2nd half XVth century</p>
+            <p class="product-description">Length: approx. 101 cm, weight 1260 g. Horn grip. Original at the museum of Cluny, Paris, France.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">449 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP48 -->
+
+        <!-- EP25 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep25 one-and-a-half-hand sword 2nd half xvth century length: approx. 113 cm. original at the museum of château de grandson, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP25m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP25v.jpg","../assets/images/products/swords/EP25v2.jpg","../assets/images/products/swords/EP25v3.jpg"]' data-lightbox-caption="EP25 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/EP25m.jpg" alt="One-and-a-half-hand sword, reference EP25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP25</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Length: approx. 113 cm. Original at the museum of Château de Grandson, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">327 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP25 -->
+
+        <!-- EP26 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep26 one-and-a-half-hand sword 2nd half xvth century length: approx. 116 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP26m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP26v.jpg","../assets/images/products/swords/EP26v2.jpg","../assets/images/products/swords/EP26v3.jpg"]' data-lightbox-caption="EP26 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/EP26m.jpg" alt="One-and-a-half-hand sword, reference EP26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP26</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Length: approx. 116 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">297 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP26 -->
+
+        <!-- EP56 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep56 historical one-hand training sword 2nd half xvth century special blade profile 3 fullers, blunt point. length: approx. 101 cm, weight 1070 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep56bm.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep56bv.jpg","../assets/images/products/swords/ep56bv2.jpg"]' data-lightbox-caption="EP56 — Historical one-hand training sword">
+            <img src="../assets/images/products/swords/ep56bm.jpg" alt="Historical one-hand training sword, reference EP56" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP56</span>
+            <h2 class="product-title">Historical one-hand training sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Special blade profile (3 fullers), blunt point. Length: approx. 101 cm, weight 1070 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">559 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP56 -->
+
+        <!-- EP16 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep16 historical one-and-a-half-hand training sword 2nd half xvth century special blade profile 3 fullers, blunt point.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/Ep16m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/Ep16v.jpg"]' data-lightbox-caption="EP16 — Historical one-and-a-half-hand training sword">
+            <img src="../assets/images/products/swords/Ep16m.jpg" alt="Historical one-and-a-half-hand training sword, reference EP16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP16</span>
+            <h2 class="product-title">Historical one-and-a-half-hand training sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Special blade profile (3 fullers), blunt point.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">559 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP16 -->
+
+        <!-- EP18 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep18 historical one-and-a-half-hand training sword 2nd half xvth century special blade profile 3 fullers, blunt point.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/Training1m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/Dtraining1.jpg","../assets/images/products/swords/Dtraining2.jpg","../assets/images/products/swords/Training1.jpg"]' data-lightbox-caption="EP18 — Historical one-and-a-half-hand training sword">
+            <img src="../assets/images/products/swords/Training1m.jpg" alt="Historical one-and-a-half-hand training sword, reference EP18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP18</span>
+            <h2 class="product-title">Historical one-and-a-half-hand training sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Special blade profile (3 fullers), blunt point.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">559 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP18 -->
+
+        <!-- EP43 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep43 historical one-and-a-half-hand training sword 2nd half xvth century special blade profile 3 fullers, blunt point. length: approx. 121 cm, weight 1770 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep43m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep43v.jpg","../assets/images/products/swords/ep43v2.jpg"]' data-lightbox-caption="EP43 — Historical one-and-a-half-hand training sword">
+            <img src="../assets/images/products/swords/ep43m.jpg" alt="Historical one-and-a-half-hand training sword, reference EP43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP43</span>
+            <h2 class="product-title">Historical one-and-a-half-hand training sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Special blade profile (3 fullers), blunt point. Length: approx. 121 cm, weight 1770 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">570 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP43 -->
+
+        <!-- EP68 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep68 historical one-and-a-half-hand training sword 2nd half xvth century special blade profile 3 fullers, blunt point. length: approx. 130 cm, weight approx. 1700 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep68m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep68v.JPG","../assets/images/products/swords/ep68v2.JPG","../assets/images/products/swords/pt19v6.jpg"]' data-lightbox-caption="EP68 — Historical one-and-a-half-hand training sword">
+            <img src="../assets/images/products/swords/ep68m.jpg" alt="Historical one-and-a-half-hand training sword, reference EP68" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP68</span>
+            <h2 class="product-title">Historical one-and-a-half-hand training sword</h2>
+            <p class="product-period">2nd half XVth century</p>
+            <p class="product-description">Special blade profile (3 fullers), blunt point. Length: approx. 130 cm, weight approx. 1700 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">589 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP68 -->
+
+        <!-- EP51 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep51 swiss degen switzerland · xvth century length: approx. 68 cm, weight approx. 560 g. includes wooden scabbard. original at the historisches museum, bern, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep51m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep51v.jpg","../assets/images/products/swords/ep51v2.jpg","../assets/images/products/swords/ep51v3.jpg","../assets/images/products/swords/ep51v4.jpg"]' data-lightbox-caption="EP51 — Swiss &quot;degen&quot;">
+            <img src="../assets/images/products/swords/ep51m.jpg" alt="Swiss &quot;degen&quot;, reference EP51" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP51</span>
+            <h2 class="product-title">Swiss "degen"</h2>
+            <p class="product-period">Switzerland · XVth century</p>
+            <p class="product-description">Length: approx. 68 cm, weight approx. 560 g. Includes wooden scabbard. Original at the Historisches Museum, Bern, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">389 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP51 -->
+
+        <!-- EP75 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep75 swiss degen switzerland · 2nd half xvth century length: approx. 68 cm, weight approx. 600 g. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep75m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP33v3.jpg","../assets/images/products/swords/ep75v.JPG","../assets/images/products/swords/ep75v2.JPG","../assets/images/products/swords/ep75v3.JPG"]' data-lightbox-caption="EP75 — Swiss &quot;degen&quot;">
+            <img src="../assets/images/products/swords/ep75m.jpg" alt="Swiss &quot;degen&quot;, reference EP75" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP75</span>
+            <h2 class="product-title">Swiss "degen"</h2>
+            <p class="product-period">Switzerland · 2nd half XVth century</p>
+            <p class="product-description">Length: approx. 68 cm, weight approx. 600 g. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">279 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP75 -->
+
+        <!-- EP47 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep47 swiss degen switzerland · 2nd half xvth century length: approx. 95 cm, weight approx. 850 g. original at the schweizerische landesmuseum, bern, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep47m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep47v.jpg","../assets/images/products/swords/ep47v2.jpg","../assets/images/products/swords/ep47v3.jpg"]' data-lightbox-caption="EP47 — Swiss &quot;degen&quot;">
+            <img src="../assets/images/products/swords/ep47m.jpg" alt="Swiss &quot;degen&quot;, reference EP47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP47</span>
+            <h2 class="product-title">Swiss "degen"</h2>
+            <p class="product-period">Switzerland · 2nd half XVth century</p>
+            <p class="product-description">Length: approx. 95 cm, weight approx. 850 g. Original at the Schweizerische Landesmuseum, Bern, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP47 -->
+
+        <!-- EP76 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep76 swiss degen exact copy switzerland · 2nd half xvth century length: approx. 77 cm, weight approx. 700 g. lilac handle. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mr98m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mr98v.JPG","../assets/images/products/swords/mr98v2.JPG","../assets/images/products/swords/mr98v3.JPG","../assets/images/products/swords/mr98v4.JPG","../assets/images/products/swords/mr98v5.jpg"]' data-lightbox-caption="EP76 — Swiss &quot;degen&quot; (exact copy)">
+            <img src="../assets/images/products/swords/mr98m.jpg" alt="Swiss &quot;degen&quot; (exact copy), reference EP76" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP76</span>
+            <h2 class="product-title">Swiss "degen" (exact copy)</h2>
+            <p class="product-period">Switzerland · 2nd half XVth century</p>
+            <p class="product-description">Length: approx. 77 cm, weight approx. 700 g. Lilac handle. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">279 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP76 -->
+
+        <!-- EP30 -->
+        <article class="catalog-row" data-tags="xv" data-search="ep30 swiss degen switzerland · end of xvth-xvith century length: approx. 95 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP30m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP30v.jpg","../assets/images/products/swords/EP30v2.jpg","../assets/images/products/swords/EP30v3.jpg"]' data-lightbox-caption="EP30 — Swiss &quot;degen&quot;">
+            <img src="../assets/images/products/swords/EP30m.jpg" alt="Swiss &quot;degen&quot;, reference EP30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP30</span>
+            <h2 class="product-title">Swiss "degen"</h2>
+            <p class="product-period">Switzerland · end of XVth-XVIth century</p>
+            <p class="product-description">Length: approx. 95 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP30 -->
+
+        <!-- EP30b -->
+        <article class="catalog-row" data-tags="xv" data-search="ep30b wooden scabbard with knife or pricker switzerland · end of xvth-xvith century accompanies ep30.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP30m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP30v.jpg","../assets/images/products/swords/EP30v2.jpg","../assets/images/products/swords/EP30v3.jpg"]' data-lightbox-caption="EP30b — Wooden scabbard with knife or pricker">
+            <img src="../assets/images/products/swords/EP30m.jpg" alt="Wooden scabbard with knife or pricker, reference EP30b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP30b</span>
+            <h2 class="product-title">Wooden scabbard with knife or pricker</h2>
+            <p class="product-period">Switzerland · end of XVth-XVIth century</p>
+            <p class="product-description">Accompanies EP30.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">169 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP30b -->
+
+        <!-- EP23 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep23 one-and-a-half-hand sword late xvth century length: approx. 122 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP23am.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP23a.jpg","../assets/images/products/swords/EP23b.jpg"]' data-lightbox-caption="EP23 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/EP23am.jpg" alt="One-and-a-half-hand sword, reference EP23" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP23</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Length: approx. 122 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">429 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP23 -->
+
+        <!-- EP35 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep35 one-hand sword late xvth century length: 110 cm, weight 1420 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep35m2.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep35v3.JPG","../assets/images/products/swords/ep35v4.JPG","../assets/images/products/swords/ep35v5.JPG"]' data-lightbox-caption="EP35 — One-hand sword">
+            <img src="../assets/images/products/swords/ep35m2.jpg" alt="One-hand sword, reference EP35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP35</span>
+            <h2 class="product-title">One-hand sword</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Length: 110 cm, weight 1420 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP35 -->
+
+        <!-- EP44 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep44 one-and-a-half-hand sword germany · late xvth century length: approx. 126 cm, weight 1720 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep44m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep44v.jpg","../assets/images/products/swords/ep44v2.jpg","../assets/images/products/swords/ep44v3.jpg"]' data-lightbox-caption="EP44 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep44m.jpg" alt="One-and-a-half-hand sword, reference EP44" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP44</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Germany · late XVth century</p>
+            <p class="product-description">Length: approx. 126 cm, weight 1720 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">399 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP44 -->
+
+        <!-- EP20 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep20 archers' cutlass late xvth century length: 95 cm, weight 1320 g. grip made from wood or antler.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep20m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep20v.JPG","../assets/images/products/swords/ep20v2.JPG","../assets/images/products/swords/ep20v3.jpg","../assets/images/products/swords/ep20v4.JPG"]' data-lightbox-caption="EP20 — Archers' cutlass">
+            <img src="../assets/images/products/swords/ep20m.jpg" alt="Archers' cutlass, reference EP20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP20</span>
+            <h2 class="product-title">Archers' cutlass</h2>
+            <p class="product-period">Late XVth century</p>
+            <p class="product-description">Length: 95 cm, weight 1320 g. Grip made from wood or antler.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">295 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP20 -->
+
+        <!-- EP28 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep28 one-and-a-half-hand sword italy or germany · end of xvth century length: approx. 125 cm. original at the museum of cluny, paris, france.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP28m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP28v.jpg","../assets/images/products/swords/EP28v2.jpg","../assets/images/products/swords/EP28v3.jpg"]' data-lightbox-caption="EP28 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/EP28m.jpg" alt="One-and-a-half-hand sword, reference EP28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP28</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Italy or Germany · end of XVth century</p>
+            <p class="product-description">Length: approx. 125 cm. Original at the museum of Cluny, Paris, France.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">462 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP28 -->
+
+        <!-- EP45 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep45 one-and-a-half-hand sword italy, southern germany · end of xvth century length: approx. 121 cm, weight 1650 g. a similar sword is held by the schweizerisches landesmuseum, zurich, switzerland.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP31v3.jpg","../assets/images/products/swords/ep45v.jpg","../assets/images/products/swords/ep45v2.jpg"]' data-lightbox-caption="EP45 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep45m.jpg" alt="One-and-a-half-hand sword, reference EP45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP45</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Italy, southern Germany · end of XVth century</p>
+            <p class="product-description">Length: approx. 121 cm, weight 1650 g. A similar sword is held by the Schweizerisches Landesmuseum, Zurich, Switzerland.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">399 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP45 -->
+
+        <!-- EP74 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep74 langmesser germany · late xvth century length: approx. 95 cm, weight approx. 1300 g. a similar weapon is held by the regional museum, kolín, czech republic.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep74m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep74v.jpg","../assets/images/products/swords/ep74v2.jpg","../assets/images/products/swords/ep74v3.jpg"]' data-lightbox-caption="EP74 — &quot;Langmesser&quot;">
+            <img src="../assets/images/products/swords/ep74m.jpg" alt="&quot;Langmesser&quot;, reference EP74" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP74</span>
+            <h2 class="product-title">"Langmesser"</h2>
+            <p class="product-period">Germany · late XVth century</p>
+            <p class="product-description">Length: approx. 95 cm, weight approx. 1300 g. A similar weapon is held by the Regional Museum, Kolín, Czech Republic.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">379 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP74 -->
+
+        <!-- EP36 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep36 one-and-a-half-hand panzerstecher sword late xvth-xvith century length: 122 cm, weight only 1350 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep36m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep36v.jpg","../assets/images/products/swords/ep36v2.jpg","../assets/images/products/swords/ep36v3.jpg"]' data-lightbox-caption="EP36 — One-and-a-half-hand &quot;Panzerstecher&quot; sword">
+            <img src="../assets/images/products/swords/ep36m.jpg" alt="One-and-a-half-hand &quot;Panzerstecher&quot; sword, reference EP36" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP36</span>
+            <h2 class="product-title">One-and-a-half-hand "Panzerstecher" sword</h2>
+            <p class="product-period">Late XVth-XVIth century</p>
+            <p class="product-description">Length: 122 cm, weight only 1350 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">290 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP36 -->
+
+        <!-- EP41 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep41 one-and-a-half-hand sword late xvth-early xvith century length: approx. 120 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep41m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep41v.jpg","../assets/images/products/swords/ep41v2.jpg"]' data-lightbox-caption="EP41 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep41m.jpg" alt="One-and-a-half-hand sword, reference EP41" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP41</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">Late XVth-early XVIth century</p>
+            <p class="product-description">Length: approx. 120 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">320 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP41 -->
+
+        <!-- EP29 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep29 falchion / grossmesser germany · end of xvth-xvith century length: approx. 76 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP29m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP29v.jpg","../assets/images/products/swords/EP29v2.jpg"]' data-lightbox-caption="EP29 — Falchion / Grossmesser">
+            <img src="../assets/images/products/swords/EP29m.jpg" alt="Falchion / Grossmesser, reference EP29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP29</span>
+            <h2 class="product-title">Falchion / Grossmesser</h2>
+            <p class="product-period">Germany · end of XVth-XVIth century</p>
+            <p class="product-description">Length: approx. 76 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">399 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP29 -->
+
+        <!-- EP57 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep57 falchion germany · around 1500 length: approx. 82 cm, weight 1490 g. sharp. original at the deutsches klingenmuseum, solingen, germany.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep57m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep57v.JPG","../assets/images/products/swords/ep57v2.JPG","../assets/images/products/swords/ep57v3.jpg"]' data-lightbox-caption="EP57 — Falchion">
+            <img src="../assets/images/products/swords/ep57m.jpg" alt="Falchion, reference EP57" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP57</span>
+            <h2 class="product-title">Falchion</h2>
+            <p class="product-period">Germany · around 1500</p>
+            <p class="product-description">Length: approx. 82 cm, weight 1490 g. Sharp. Original at the Deutsches Klingenmuseum, Solingen, Germany.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">479 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP57 -->
+
+        <!-- EP53 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep53 two-handed sword germany · end of xvth-early xvith century length: approx. 139 cm, weight 2000 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep53m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep53v.jpg","../assets/images/products/swords/ep53v2.jpg"]' data-lightbox-caption="EP53 — Two-handed sword">
+            <img src="../assets/images/products/swords/ep53m.jpg" alt="Two-handed sword, reference EP53" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP53</span>
+            <h2 class="product-title">Two-handed sword</h2>
+            <p class="product-period">Germany · end of XVth-early XVIth century</p>
+            <p class="product-description">Length: approx. 139 cm, weight 2000 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">430 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP53 -->
+
+        <!-- EP21 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep21 two-handed flamberg sword germany · late xvth-xvith century length: approx. 170 cm, decorated.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP21m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP21v.jpg","../assets/images/products/swords/EP21v2.jpg","../assets/images/products/swords/EP21v3.jpg"]' data-lightbox-caption="EP21 — Two-handed Flamberg sword">
+            <img src="../assets/images/products/swords/EP21m.jpg" alt="Two-handed Flamberg sword, reference EP21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP21</span>
+            <h2 class="product-title">Two-handed Flamberg sword</h2>
+            <p class="product-period">Germany · late XVth-XVIth century</p>
+            <p class="product-description">Length: approx. 170 cm, decorated.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">590 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP21 -->
+
+        <!-- EP22 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep22 two-handed sword germany · late xvth-xvith century length: approx. 170 cm.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/EP22m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP22v.jpg"]' data-lightbox-caption="EP22 — Two-handed sword">
+            <img src="../assets/images/products/swords/EP22m.jpg" alt="Two-handed sword, reference EP22" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP22</span>
+            <h2 class="product-title">Two-handed sword</h2>
+            <p class="product-period">Germany · late XVth-XVIth century</p>
+            <p class="product-description">Length: approx. 170 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">520 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP22 -->
+
+        <!-- EP64 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep64 feder training sword germany · end of xvth century length: approx. 143 cm, weight approx. 1930 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mm44m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mm44v.jpg","../assets/images/products/swords/mm44v2.jpg"]' data-lightbox-caption="EP64 — &quot;Feder&quot; training sword">
+            <img src="../assets/images/products/swords/mm44m.jpg" alt="&quot;Feder&quot; training sword, reference EP64" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP64</span>
+            <h2 class="product-title">"Feder" training sword</h2>
+            <p class="product-period">Germany · end of XVth century</p>
+            <p class="product-description">Length: approx. 143 cm, weight approx. 1930 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">425 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP64 -->
+
+        <!-- EP65 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep65 feder training sword germany · xvith century length: approx. 141 cm, weight approx. 1830 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mm45m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/mm45v.jpg","../assets/images/products/swords/mm45v2.jpg"]' data-lightbox-caption="EP65 — &quot;Feder&quot; training sword">
+            <img src="../assets/images/products/swords/mm45m.jpg" alt="&quot;Feder&quot; training sword, reference EP65" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP65</span>
+            <h2 class="product-title">"Feder" training sword</h2>
+            <p class="product-period">Germany · XVIth century</p>
+            <p class="product-description">Length: approx. 141 cm, weight approx. 1830 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">445 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP65 -->
+
+        <!-- EP52 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep52 fechtschwert training sword germany · xvith century length: approx. 132 cm, weight approx. 1510 g.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep52m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep52v.jpg","../assets/images/products/swords/ep52v2.jpg","../assets/images/products/swords/ep52v3.jpg"]' data-lightbox-caption="EP52 — &quot;Fechtschwert&quot; training sword">
+            <img src="../assets/images/products/swords/ep52m.jpg" alt="&quot;Fechtschwert&quot; training sword, reference EP52" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP52</span>
+            <h2 class="product-title">"Fechtschwert" training sword</h2>
+            <p class="product-period">Germany · XVIth century</p>
+            <p class="product-description">Length: approx. 132 cm, weight approx. 1510 g.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP52 -->
+
+        <!-- EP63 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep63 kriegsmesser, swiss sabre switzerland / germany · early xvith century length: approx. 117 cm, weight approx. 1380 g. special blade profile. from a private collection.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/mm43m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep63v2.jpg","../assets/images/products/swords/mm43v.jpg","../assets/images/products/swords/mm43v2.jpg"]' data-lightbox-caption="EP63 — Kriegsmesser, Swiss sabre">
+            <img src="../assets/images/products/swords/mm43m.jpg" alt="Kriegsmesser, Swiss sabre, reference EP63" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP63</span>
+            <h2 class="product-title">Kriegsmesser, Swiss sabre</h2>
+            <p class="product-period">Switzerland / Germany · early XVIth century</p>
+            <p class="product-description">Length: approx. 117 cm, weight approx. 1380 g. Special blade profile. From a private collection.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">559 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP63 -->
+
+        <!-- EP80 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep80 one-and-a-half-hand sword south germany · 1500-1550 length: approx. 108 cm, weight 1409 g. from a private collection originally the collection of duke anhalt-dessau.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep80m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep80v.JPG","../assets/images/products/swords/ep80v2.JPG","../assets/images/products/swords/ep80v3.JPG","../assets/images/products/swords/ep80v4.jpg"]' data-lightbox-caption="EP80 — One-and-a-half-hand sword">
+            <img src="../assets/images/products/swords/ep80m.jpg" alt="One-and-a-half-hand sword, reference EP80" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP80</span>
+            <h2 class="product-title">One-and-a-half-hand sword</h2>
+            <p class="product-period">South Germany · 1500-1550</p>
+            <p class="product-description">Length: approx. 108 cm, weight 1409 g. From a private collection (originally the collection of Duke Anhalt-Dessau).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP80 -->
+
+        <!-- EP34 -->
+        <article class="catalog-row" data-tags="xvi" data-search="ep34 landsknecht katzbalger sword southern germany · early xvith century length: approx. 81 cm, weight approx. 1350 g. sharp or blunt blade on request, decorated.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/m54m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/EP34v2.jpg","../assets/images/products/swords/EP34v3.jpg","../assets/images/products/swords/m54v.jpg","../assets/images/products/swords/m54v2.jpg"]' data-lightbox-caption="EP34 — Landsknecht &quot;Katzbalger&quot; sword">
+            <img src="../assets/images/products/swords/m54m.jpg" alt="Landsknecht &quot;Katzbalger&quot; sword, reference EP34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
             <span class="product-reference">EP34</span>
             <h2 class="product-title">Landsknecht "Katzbalger" sword</h2>
             <p class="product-period">Southern Germany · early XVIth century</p>
             <p class="product-description">Length: approx. 81 cm, weight approx. 1350 g. Sharp or blunt blade on request, decorated.</p>
-            <div class="product-footer">
-              <p class="product-price">729 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">729 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP34 -->
+        <!-- /EP34 -->
 
-        <!-- ==================================================
-             PRODUCT EP77
-        ================================================== -->
-        <article class="product-card" data-tags="xvii-xviii smallsword" data-search="ep77 noble smallsword xvii xviii century decorated">
-          <a class="product-image" href="../assets/images/products/swords/ep77.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep77.jpg"]' data-lightbox-caption="EP77 — Noble smallsword">
-            <img src="../assets/images/products/swords/ep77.jpg" alt="Noble smallsword, reference EP77" loading="lazy" width="100" height="133">
-            <span class="product-image__zoom" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6M8 11h6"/></svg></span>
+        <!-- EP77 -->
+        <article class="catalog-row" data-tags="xvii-xviii" data-search="ep77 noble smallsword xvii-xviiith century length: approx. 100 cm, weight approx. 600 g. slightly decorated.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep77m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep77v.JPG","../assets/images/products/swords/ep77v2.JPG","../assets/images/products/swords/ep77v3.JPG","../assets/images/products/swords/ep77v4.JPG","../assets/images/products/swords/ep77v5.JPG"]' data-lightbox-caption="EP77 — Noble smallsword">
+            <img src="../assets/images/products/swords/ep77m.jpg" alt="Noble smallsword, reference EP77" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
           </a>
-          <div class="product-content">
+          <div class="catalog-row__main">
             <span class="product-reference">EP77</span>
             <h2 class="product-title">Noble smallsword</h2>
-            <p class="product-period">XVII–XVIIIth century</p>
+            <p class="product-period">XVII-XVIIIth century</p>
             <p class="product-description">Length: approx. 100 cm, weight approx. 600 g. Slightly decorated.</p>
-            <div class="product-footer">
-              <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
-            </div>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicative</span></p>
           </div>
         </article>
-        <!-- END PRODUCT EP77 -->
+        <!-- /EP77 -->
+
+        <!-- EP78 -->
+        <article class="catalog-row" data-tags="xvii-xviii" data-search="ep78 noble smallsword xvii-xviiith century length: approx. 100 cm, weight approx. 600 g. decorated and simply gilded.">
+          <a class="catalog-row__media" href="../assets/images/products/swords/ep78m.jpg" data-lightbox="1" data-lightbox-images='["../assets/images/products/swords/ep78v.JPG","../assets/images/products/swords/ep78v2.JPG"]' data-lightbox-caption="EP78 — Noble smallsword">
+            <img src="../assets/images/products/swords/ep78m.jpg" alt="Noble smallsword, reference EP78" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">EP78</span>
+            <h2 class="product-title">Noble smallsword</h2>
+            <p class="product-period">XVII-XVIIIth century</p>
+            <p class="product-description">Length: approx. 100 cm, weight approx. 600 g. Decorated and simply gilded.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">339 €<span class="price-indicative-tag">indicative</span></p>
+          </div>
+        </article>
+        <!-- /EP78 -->
 
       </div>
 

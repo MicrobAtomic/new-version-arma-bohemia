@@ -4,8 +4,9 @@
    catalogue (ex: FR/catalogue/swords.html).
 
    Fonctionnement :
-   - Chaque carte produit (.product-card) porte deux
-     attributs optionnels :
+   - Chaque fiche produit (chaque enfant direct du conteneur
+     marqué [data-catalog-grid], carte ou ligne de liste) porte
+     deux attributs optionnels :
        data-search  -> texte utilisé par la recherche
        data-tags    -> mots-clés séparés par des espaces,
                        utilisés par les filtres (ex: chips)
@@ -27,7 +28,9 @@
 
   var searchInput = toolbar.querySelector("[data-catalog-search]");
   var chips = Array.prototype.slice.call(toolbar.querySelectorAll(".filter-chip"));
-  var cards = Array.prototype.slice.call(grid.querySelectorAll(".product-card"));
+  // Chaque enfant direct du conteneur [data-catalog-grid] est une fiche
+  // filtrable, quelle que soit sa classe (carte ou ligne de liste).
+  var cards = Array.prototype.slice.call(grid.children);
   var countEl = document.querySelector("[data-catalog-count]");
   var emptyEl = document.querySelector("[data-catalog-empty]");
 
