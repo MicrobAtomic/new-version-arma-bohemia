@@ -223,9 +223,10 @@ double (ou triple), et il faut modifier chaque version séparément.
 **Catégories déjà traduites dans les trois langues :** épées, dagues,
 casques (`swords.html`, `daggers.html`, `helmets.html`), ainsi que les
 pages contact et conditions. Ces pages utilisent la même mise en page en
-liste, avec galeries photo, que la version anglaise — mais avec une
-sélection de produits plus courte (12 épées, 10 dagues, 10 casques,
-contre 61/43/26 en anglais) : voir section 9.
+liste, avec galeries photo, que la version anglaise. Les épées sont
+désormais traduites en intégralité (61/61, comme en anglais) ; dagues et
+casques ont encore une sélection plus courte (10 dagues, 10 casques,
+contre 43/26 en anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
 boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
@@ -273,17 +274,17 @@ section 4). Le détail par catégorie :
 
 **Ce qui reste malgré tout à faire :**
 
-- **Traduction française et allemande complète.** Le français et
-  l'allemand ont pour l'instant les mêmes catégories « vedettes » qu'avant
-  (épées, dagues, casques), avec la même sélection réduite (12/10/10
-  pièces) plutôt que les listes complètes 61/43/26 de la version anglaise.
-  Les 9 autres catégories (armures, boucliers, armes d'hast, maroquinerie,
-  vie de camp, vaisselle, rapières, armes à feu & arbalètes, habillement)
-  restent uniquement en anglais. La méthode est directe : le texte source
-  existe déjà sur `armabohemia.cz/FR/` et `armabohemia.cz/DE/` pour la
-  quasi-totalité des produits — il s'agit de reprendre le même procédé
-  que pour l'anglais (voir la partie développeur ci-dessous), catégorie
-  par catégorie. **C'est le prochain chantier prioritaire.**
+- **Traduction française et allemande complète.** Les épées sont
+  maintenant traduites en intégralité (61/61) en français et en allemand,
+  à partir du texte réel des pages `armabohemia.cz/FR/` et
+  `armabohemia.cz/DE/` (et non retraduit depuis l'anglais). Dagues et
+  casques ont encore une sélection réduite (10/10 pièces au lieu de
+  43/26). Les 9 autres catégories (armures, boucliers, armes d'hast,
+  maroquinerie, vie de camp, vaisselle, rapières, armes à feu &
+  arbalètes, habillement) restent uniquement en anglais. La méthode est
+  directe : reprendre le même procédé que pour les épées (voir la partie
+  développeur ci-dessous), catégorie par catégorie. **C'est le chantier
+  en cours.**
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
   Occasion (« Secondhand »), et le détail complet de « Nouveautés »
   (pièces uniques/sur mesure présentées ponctuellement).

@@ -5,7 +5,7 @@
 > contenu pendant le développement. Le site fonctionne sans lui.
 
 Ce dossier conserve les données et les scripts qui ont servi à migrer les
-305 produits depuis l'ancien site `armabohemia.cz`. Il est versionné pour
+346 produits depuis l'ancien site `armabohemia.cz`. Il est versionné pour
 que le travail puisse reprendre sur une autre machine sans tout refaire.
 
 ---
@@ -16,9 +16,9 @@ que le travail puisse reprendre sur une autre machine sans tout refaire.
 |---|---|
 | `data/<catégorie>.psv` | Le contenu texte de chaque catégorie, un produit par ligne |
 | `data/fr-*.psv`, `data/de-*.psv` | Les sous-ensembles traduits (français / allemand) |
-| `data/groups.psv` | Les 20 lignes qui regroupent plusieurs articles sur une même photo |
+| `data/groups.psv` | Les 21 lignes qui regroupent plusieurs articles sur une même photo |
 | `gen_rows_en.sh` | Génère les blocs HTML des pages anglaises (`../assets/...`) |
-| `gen_rows_translated.sh` | Idem, avec préfixe de chemin paramétrable (pour `fr/` et `de/`, en `../../assets/...`) |
+| `gen_rows_translated.sh` | Idem, avec préfixe de chemin paramétrable (pour `fr/` et `de/`, en `../../assets/...`) et un 5e argument `fr`/`de` (défaut `fr`) qui choisit le texte fixe « référence/indicatif » ou « Referenz/unverbindlich » |
 | `regroup.pl` | Fusionne des lignes existantes en une ligne groupée (photo partagée) |
 | `addcount.pl` | Recalcule `data-count` sur les lignes groupées (compteur « N pièces ») |
 | `addnav.pl` | Insère un lien de catégorie dans le menu (desktop + mobile) de toutes les pages du site, en respectant la profondeur de chemin et la langue |
@@ -62,9 +62,13 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
    fait : `catalogue/firearms.html` (16 fiches, `data/firearms.psv`).
 3. ~~**Habillement** (série SN/BT, ~14 réfs) — source : `Novestr/dresswin.htm`~~ ✅
    fait : `catalogue/dress-accessories.html` (14 fiches, `data/dress-accessories.psv`).
-4. **Parité FR/DE** : porter les sous-ensembles au niveau du catalogue anglais
-   — reste à faire pour toutes les catégories (les 3 ci-dessus incluses :
-   elles n'existent qu'en anglais, avec un lien « (EN) » dans les menus FR/DE).
+4. **Parité FR/DE** : porter les sous-ensembles au niveau du catalogue anglais.
+   ~~Épées~~ ✅ fait (61/61 en FR et DE, texte repris de `armabohemia.cz/FR/`
+   et `/DE/`, voir `data/fr-swords.psv` et `data/de-swords.psv`). Reste à
+   faire : dagues et casques (encore 10/10 au lieu de 43/26), et les 9
+   autres catégories qui n'existent qu'en anglais pour l'instant (armures,
+   boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
+   armes à feu & arbalètes, habillement — lien « (EN) » dans les menus FR/DE).
 
 La méthode complète (découpage des pages d'origine, extraction des
 photos, vérification) est décrite dans la partie développeur du
