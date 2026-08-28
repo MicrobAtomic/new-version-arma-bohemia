@@ -228,9 +228,10 @@ sélection de produits plus courte (12 épées, 10 dagues, 10 casques,
 contre 61/43/26 en anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
-boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle. Les pages
-`fr/catalogue/index.html` et `de/catalogue/index.html` renvoient vers la
-version anglaise pour ces catégories, avec une mention claire « (EN) ».
+boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
+armes à feu & arbalètes, habillement. Les pages `fr/catalogue/index.html`
+et `de/catalogue/index.html` renvoient vers la version anglaise pour ces
+catégories, avec une mention claire « (EN) ».
 
 **Pour ajouter un produit dans plusieurs langues :** ajoutez-le d'abord
 dans le fichier anglais (voir section 4), puis répétez l'opération dans
@@ -242,16 +243,17 @@ restent identiques dans les trois langues.
 
 ## 9. Ce qu'il reste à migrer depuis l'ancien site
 
-Le catalogue anglais est maintenant **complet** : les 9 catégories
+Le catalogue anglais est maintenant **complet** : les 12 catégories
 (épées, dagues, casques, armures, boucliers, armes d'hast, maroquinerie,
-vie de camp, vaisselle) reprennent la **totalité** des références encore
-listées sur le site actuel — **305 produits réels**, chacun avec sa
-référence, son prix, sa description et ses vraies photos (souvent
-plusieurs par pièce, avec zoom et galerie).
+vie de camp, vaisselle, rapières, armes à feu & arbalètes, habillement)
+reprennent la **totalité** des références encore listées sur le site
+actuel — **346 produits réels**, chacun avec sa référence, son prix, sa
+description et ses vraies photos (souvent plusieurs par pièce, avec zoom
+et galerie).
 
-Ces 305 produits sont présentés sur **279 lignes** : 20 lignes regroupent
-plusieurs articles qui partagent une même photo (voir section 4). Le
-détail par catégorie :
+Ces 346 produits sont présentés sur **319 lignes** : certaines lignes
+regroupent plusieurs articles qui partagent une même photo (voir
+section 4). Le détail par catégorie :
 
 | Catégorie | Produits migrés |
 |---|---|
@@ -264,7 +266,10 @@ détail par catégorie :
 | Maroquinerie & fourreaux | 67 / 67 |
 | Vie de camp | 21 / 21 |
 | Vaisselle & couverts | 44 / 44 |
-| **Total** | **305** |
+| Rapières | 11 / 11 |
+| Armes à feu & arbalètes | 16 / 16 |
+| Habillement (boutons, enseignes, aiguillettes) | 14 / 14 |
+| **Total** | **346** |
 
 **Ce qui reste malgré tout à faire :**
 
@@ -272,11 +277,13 @@ détail par catégorie :
   l'allemand ont pour l'instant les mêmes catégories « vedettes » qu'avant
   (épées, dagues, casques), avec la même sélection réduite (12/10/10
   pièces) plutôt que les listes complètes 61/43/26 de la version anglaise.
-  Les 6 autres catégories restent uniquement en anglais. La méthode est
-  directe : le texte source existe déjà sur `armabohemia.cz/FR/` et
-  `armabohemia.cz/DE/` pour la quasi-totalité des produits — il s'agit de
-  reprendre le même procédé que pour l'anglais (voir la partie
-  développeur ci-dessous), catégorie par catégorie.
+  Les 9 autres catégories (armures, boucliers, armes d'hast, maroquinerie,
+  vie de camp, vaisselle, rapières, armes à feu & arbalètes, habillement)
+  restent uniquement en anglais. La méthode est directe : le texte source
+  existe déjà sur `armabohemia.cz/FR/` et `armabohemia.cz/DE/` pour la
+  quasi-totalité des produits — il s'agit de reprendre le même procédé
+  que pour l'anglais (voir la partie développeur ci-dessous), catégorie
+  par catégorie. **C'est le prochain chantier prioritaire.**
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
   Occasion (« Secondhand »), et le détail complet de « Nouveautés »
   (pièces uniques/sur mesure présentées ponctuellement).
@@ -288,14 +295,6 @@ détail par catégorie :
   serveur) — une poignée de cas isolés, sans impact sur le nombre de
   produits migrés : le badge photo de chaque fiche affiche uniquement les
   images réellement récupérées.
-- **Deux catégories de l'ancien site n'ont pas encore été migrées** et
-  représentent de vrais produits, dont les plus chers du catalogue :
-  les **rapières** (série RE, ~14 pièces, 500–990 €) et les **armes à
-  feu** (série GN, ~16 pièces, 399–1 390 € — arquebuses à main, « pistala »
-  hussite, bandoulière de mousquetaire, avec certification du banc
-  d'épreuve tchèque). S'y ajoute l'**habillement** (série SN/BT :
-  boutons d'étain, enseignes de pèlerin, aiguillettes, ~14 réfs).
-  Ce sont les prochains chantiers prioritaires.
 
 **À propos du logo :** le logo historique (`assets/images/branding/logo.jpg`,
 style gothique doré sur fond noir) a été conservé dans le dossier comme
@@ -374,7 +373,7 @@ aucun framework, aucun CDN.
 ```
 /
 ├── index.html, about.html, contact.html, conditions.html, events.html   (EN, racine)
-├── catalogue/            9 pages catégorie + index.html (hub)
+├── catalogue/            12 pages catégorie + index.html (hub)
 ├── fr/                   même structure, contenu réellement traduit
 ├── de/                   même structure (couverture partielle)
 ├── assets/
@@ -414,7 +413,7 @@ aucun framework, aucun CDN.
   duplication du header/footer entre pages (assumé, cf. contrainte de
   simplicité de maintenance).
 - **Liste plutôt que grille de cartes** (`catalog-list` / `catalog-row`) :
-  avec 305 produits au total, une grille de grandes cartes aurait rendu
+  avec 346 produits au total, une grille de grandes cartes aurait rendu
   le parcours du catalogue pénible sur les catégories les plus fournies
   (67 pièces de maroquinerie, 61 épées...). Chaque ligne reste compacte,
   la vignette n'agrandit jamais une photo au-delà de sa taille réelle
@@ -429,7 +428,7 @@ aucun framework, aucun CDN.
 
 ### Comment le catalogue a été migré (pour aller plus loin)
 
-Migrer 305 fiches produit à la main, une par une, n'aurait pas été
+Migrer 346 fiches produit à la main, une par une, n'aurait pas été
 raisonnable. La méthode utilisée — et qui reste la bonne façon de
 poursuivre la traduction FR/DE (section 9) — a été :
 
@@ -455,7 +454,7 @@ poursuivre la traduction FR/DE (section 9) — a été :
 
 Cette méthode n'est pas un outil réutilisable en un clic (elle suppose de
 relire le texte source à chaque catégorie), mais elle rend la suite du
-travail — traduire les 6 catégories encore en anglais, ou porter les
+travail — traduire les 9 catégories encore en anglais, ou porter les
 listes FR/DE au complet — nettement plus rapide qu'une saisie manuelle
 intégrale.
 
