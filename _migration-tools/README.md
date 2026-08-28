@@ -65,22 +65,23 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
 4. **Parité FR/DE** : porter les sous-ensembles au niveau du catalogue anglais,
    ou créer la page FR/DE quand elle n'existe pas encore.
    ~~Épées~~ ✅, ~~dagues~~ ✅, ~~casques~~ ✅, ~~boucliers~~ ✅,
-   ~~rapières~~ ✅ et ~~habillement~~ ✅ faits (61/61, 43/43, 26/26, 3/3,
-   11/11, 14/14 en FR et DE, texte repris de `armabohemia.cz/FR/` et
-   `/DE/`, voir `data/fr-*.psv`/`data/de-*.psv` pour `swords`, `daggers`,
-   `helmets`, `shields`, `rapiers`, `dress-accessories`). Boucliers,
-   rapières et habillement sont les trois premières catégories créées de
-   zéro en FR/DE (`fr/catalogue/shields.html`, `de/catalogue/rapiers.html`,
-   etc. n'existaient pas avant) — au passage, `delocalize_nav.pl` (dans le
+   ~~rapières~~ ✅, ~~habillement~~ ✅ et ~~armes d'hast~~ ✅ faits (61/61,
+   43/43, 26/26, 3/3, 11/11, 14/14, 16/16 en FR et DE, texte repris de
+   `armabohemia.cz/FR/` et `/DE/`, voir `data/fr-*.psv`/`data/de-*.psv`
+   pour `swords`, `daggers`, `helmets`, `shields`, `rapiers`,
+   `dress-accessories`, `polearms`). Boucliers, rapières, habillement et
+   armes d'hast sont les quatre premières catégories créées de zéro en
+   FR/DE (`fr/catalogue/shields.html`, `de/catalogue/rapiers.html`, etc.
+   n'existaient pas avant) — au passage, `delocalize_nav.pl` (dans le
    scratch, pattern documenté ici) a été écrit pour réécrire en masse tous
    les liens de menu « Catégorie (EN) » du site vers la page locale
    nouvellement créée, et les cartes de catégorie manquantes sur
    `fr/catalogue/index.html`/`de/catalogue/index.html` (rapières, armes à
    feu, habillement n'y apparaissaient pas du tout) ont été ajoutées à
-   cette occasion. Reste à faire : les 6 autres catégories qui n'existent
-   qu'en anglais pour l'instant (armures, armes d'hast, maroquinerie, vie
-   de camp, vaisselle, armes à feu & arbalètes — lien « (EN) » dans les
-   menus FR/DE).
+   cette occasion. Reste à faire : les 5 autres catégories qui n'existent
+   qu'en anglais pour l'instant (armures, maroquinerie, vie de camp,
+   vaisselle, armes à feu & arbalètes — lien « (EN) » dans les menus
+   FR/DE).
 
 La méthode complète (découpage des pages d'origine, extraction des
 photos, vérification) est décrite dans la partie développeur du

@@ -1,0 +1,469 @@
+<!--
+============================================================
+ARMA BOHEMIA — CATALOGUE ARMES D'HAST (Français)
+============================================================
+AJOUTER UN PRODUIT : copier un bloc "PRODUIT" complet (de
+l'ouverture à "FIN PRODUIT"), le coller, modifier référence/
+titre/époque/texte/prix, et ajouter l'image dans
+/assets/images/products/polearms/ (mettre à jour "src" et "href").
+
+SUPPRIMER UN PRODUIT : supprimer tout le bloc.
+MODIFIER UN PRIX : rechercher la référence, modifier son
+<p class="product-price">.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armes d'hast &amp; masses — Catalogue Arma Bohemia</title>
+<meta name="description" content="Copies fabriquées à la main d'armes d'hast et de masses historiques : lances, hallebardes, haches d'armes, glaives, haches de bataille, XIe au XVIe siècle, par Arma Bohemia.">
+<link rel="canonical" href="https://www.armabohemia.cz/fr/catalogue/polearms.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/polearms.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/polearms.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/polearms.html">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Atelier historique, fondé en 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Accueil</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Épées</a>
+            <a href="rapiers.html">Rapières</a>
+            <a href="daggers.html">Dagues &amp; couteaux</a>
+            <a href="helmets.html">Casques</a>
+            <a href="../../catalogue/armour.html">Armures (EN)</a>
+            <a href="shields.html">Boucliers</a>
+            <a href="polearms.html" aria-current="page">Armes d'hast</a>
+            <a href="../../catalogue/firearms.html">Armes à feu (EN)</a>
+            <a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a>
+            <a href="dress-accessories.html">Habillement</a>
+            <a href="../../catalogue/camp-life.html">Vie de camp (EN)</a>
+            <a href="../../catalogue/tableware.html">Vaisselle (EN)</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Atelier</a></li>
+        <li><a class="main-nav__link" href="../events.html">Événements</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="../../catalogue/polearms.html">EN</a></li>
+          <li><a class="lang-switch__link" href="polearms.html" aria-current="true">FR</a></li>
+          <li><a class="lang-switch__link" href="../../de/catalogue/polearms.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Ouvrir le menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Navigation mobile">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Épées</a></li>
+                  <li><a href="rapiers.html">Rapières</a></li>
+                  <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+                  <li><a href="helmets.html">Casques</a></li>
+                  <li><a href="../../catalogue/armour.html">Armures (EN)</a></li>
+                  <li><a href="shields.html">Boucliers</a></li>
+                  <li><a href="polearms.html">Armes d'hast</a></li>
+                  <li><a href="../../catalogue/firearms.html">Armes à feu (EN)</a></li>
+                  <li><a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a></li>
+                  <li><a href="dress-accessories.html">Habillement</a></li>
+                  <li><a href="../../catalogue/camp-life.html">Vie de camp (EN)</a></li>
+                  <li><a href="../../catalogue/tableware.html">Vaisselle (EN)</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Atelier</a></li>
+            <li><a href="../events.html">Événements</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="../../catalogue/polearms.html">EN</a>
+            <a class="lang-switch__link" href="polearms.html" aria-current="true">FR</a>
+            <a class="lang-switch__link" href="../../de/catalogue/polearms.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Armes d'hast &amp; masses</p>
+      <h1>Armes d'hast &amp; masses</h1>
+      <p class="lead">Lances, hallebardes, haches d'armes, glaives et haches de bataille — du XIe au XVIe siècle.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>En raison de coûts d'entrée très instables, tous les prix ont une valeur purement informative et peuvent faire l'objet de modifications mineures. Veuillez demander la situation actuelle des prix avec chaque commande — voir <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-list">
+
+        <!-- B31 -->
+        <article class="catalog-row" data-tags="spear" data-search="b31 lance de sanglier saxe, allemagne · xvie–xviie siècle longueur : environ 228 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/b31m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b31v.jpg"]' data-lightbox-caption="B31 — Lance de sanglier">
+            <img src="../../assets/images/products/polearms/b31m.jpg" alt="Lance de sanglier, référence B31" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B31</span>
+            <h2 class="product-title">Lance de sanglier</h2>
+            <p class="product-period">Saxe, Allemagne · XVIe–XVIIe siècle</p>
+            <p class="product-description">Longueur : environ 228 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">179 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B31 -->
+
+        <!-- B19 -->
+        <article class="catalog-row" data-tags="lance" data-search="b19 lance xive–xve siècle longueur : 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/LanceAm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/LanceA.jpg"]' data-lightbox-caption="B19 — Lance">
+            <img src="../../assets/images/products/polearms/LanceAm.jpg" alt="Lance, référence B19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B19</span>
+            <h2 class="product-title">Lance</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Longueur : 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">149 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B19 -->
+
+        <!-- B20 -->
+        <article class="catalog-row" data-tags="lance" data-search="b20 lance xie–xve siècle longueur : 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/LanceBm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/LanceB.jpg"]' data-lightbox-caption="B20 — Lance">
+            <img src="../../assets/images/products/polearms/LanceBm.jpg" alt="Lance, référence B20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B20</span>
+            <h2 class="product-title">Lance</h2>
+            <p class="product-period">XIe–XVe siècle</p>
+            <p class="product-description">Longueur : 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">149 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B20 -->
+
+        <!-- B21 -->
+        <article class="catalog-row" data-tags="lance" data-search="b21 lance xie–xve siècle longueur : 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/LanceCm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/LanceC.jpg"]' data-lightbox-caption="B21 — Lance">
+            <img src="../../assets/images/products/polearms/LanceCm.jpg" alt="Lance, référence B21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B21</span>
+            <h2 class="product-title">Lance</h2>
+            <p class="product-period">XIe–XVe siècle</p>
+            <p class="product-description">Longueur : 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">149 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B21 -->
+
+        <!-- B22 -->
+        <article class="catalog-row" data-tags="lance" data-search="b22 lance xie–xve siècle copie d'une lance d'origine de la collection de l'atelier. longueur : 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/lance2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b22v3.jpg","../../assets/images/products/polearms/lance1v.jpg","../../assets/images/products/polearms/lance3.jpg"]' data-lightbox-caption="B22 — Lance">
+            <img src="../../assets/images/products/polearms/lance2m.jpg" alt="Lance, référence B22" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B22</span>
+            <h2 class="product-title">Lance</h2>
+            <p class="product-period">XIe–XVe siècle</p>
+            <p class="product-description">Copie d'une lance d'origine de la collection de l'atelier. Longueur : 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">269 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B22 -->
+
+        <!-- B24 -->
+        <article class="catalog-row" data-tags="halberd" data-search="b24 hallebarde xive–xve siècle longueur : environ 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/halp2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/halp2v.jpg"]' data-lightbox-caption="B24 — Hallebarde">
+            <img src="../../assets/images/products/polearms/halp2m.jpg" alt="Hallebarde, référence B24" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B24</span>
+            <h2 class="product-title">Hallebarde</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Longueur : environ 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">290 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B24 -->
+
+        <!-- B25 -->
+        <article class="catalog-row" data-tags="axe" data-search="b25 hache d'armes europe de l'ouest, peut-être france ou angleterre · 2e moitié du xve siècle longueur : environ 1,8 m. l'original se trouve dans la wallace collection, londres, angleterre.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/m47m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b25v3.jpg","../../assets/images/products/polearms/b25v4.JPG","../../assets/images/products/polearms/m47v.jpg","../../assets/images/products/polearms/m47v2.jpg"]' data-lightbox-caption="B25 — Hache d'armes">
+            <img src="../../assets/images/products/polearms/m47m.jpg" alt="Hache d'armes, référence B25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B25</span>
+            <h2 class="product-title">Hache d'armes</h2>
+            <p class="product-period">Europe de l'ouest, peut-être France ou Angleterre · 2e moitié du XVe siècle</p>
+            <p class="product-description">Longueur : environ 1,8 m. L'original se trouve dans la Wallace Collection, Londres, Angleterre.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">519 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B25 -->
+
+        <!-- B26 -->
+        <article class="catalog-row" data-tags="glaive" data-search="b26 glaive « kuse » xve siècle longueur : environ 2,3 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/kuse2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/kuse2v.jpg","../../assets/images/products/polearms/kuse2v2.jpg","../../assets/images/products/polearms/kuse2v3.jpg"]' data-lightbox-caption="B26 — Glaive (« Kuse »)">
+            <img src="../../assets/images/products/polearms/kuse2m.jpg" alt="Glaive (« Kuse »), référence B26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B26</span>
+            <h2 class="product-title">Glaive (« Kuse »)</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur : environ 2,3 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">407 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B26 -->
+
+        <!-- B27 -->
+        <article class="catalog-row" data-tags="halberd" data-search="b27 hallebarde xve–xvie siècle longueur : environ 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/b27m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b27v.jpg"]' data-lightbox-caption="B27 — Hallebarde">
+            <img src="../../assets/images/products/polearms/b27m.jpg" alt="Hallebarde, référence B27" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B27</span>
+            <h2 class="product-title">Hallebarde</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Longueur : environ 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">319 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B27 -->
+
+        <!-- B28 -->
+        <article class="catalog-row" data-tags="halberd" data-search="b28 hallebarde xve–xvie siècle longueur : environ 2,4 m.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/b28m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b28v.jpg"]' data-lightbox-caption="B28 — Hallebarde">
+            <img src="../../assets/images/products/polearms/b28m.jpg" alt="Hallebarde, référence B28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B28</span>
+            <h2 class="product-title">Hallebarde</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Longueur : environ 2,4 m.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">319 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B28 -->
+
+        <!-- B29 -->
+        <article class="catalog-row" data-tags="axe" data-search="b29 hache de bataille hussite bohême · xve siècle longueur : environ 200 cm, poids : 1860 g. décoration gravée à l'eau-forte : un calice et la devise tchèque « buh s nami » dieu avec nous. l'original se trouve au deutsches historisches museum, berlin, allemagne.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/b29m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b29v.jpg","../../assets/images/products/polearms/b29v2.jpg","../../assets/images/products/polearms/b29v3.jpg","../../assets/images/products/polearms/b29v4.jpg"]' data-lightbox-caption="B29 — Hache de bataille hussite">
+            <img src="../../assets/images/products/polearms/b29m.jpg" alt="Hache de bataille hussite, référence B29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B29</span>
+            <h2 class="product-title">Hache de bataille hussite</h2>
+            <p class="product-period">Bohême · XVe siècle</p>
+            <p class="product-description">Longueur : environ 200 cm, poids : 1860 g. Décoration gravée à l'eau-forte : un calice et la devise tchèque « BUH S NAMI » (Dieu avec nous). L'original se trouve au Deutsches Historisches Museum, Berlin, Allemagne.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">310 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B29 -->
+
+        <!-- B30 -->
+        <article class="catalog-row" data-tags="halberd" data-search="b30 hallebarde suisse · xve siècle longueur : environ 249 cm, poids : 2240 g. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/b30m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/b30v.jpg","../../assets/images/products/polearms/b30v2.jpg","../../assets/images/products/polearms/b30v3.jpg"]' data-lightbox-caption="B30 — Hallebarde">
+            <img src="../../assets/images/products/polearms/b30m.jpg" alt="Hallebarde, référence B30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">B30</span>
+            <h2 class="product-title">Hallebarde</h2>
+            <p class="product-period">Suisse · XVe siècle</p>
+            <p class="product-description">Longueur : environ 249 cm, poids : 2240 g. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">290 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /B30 -->
+
+        <!-- GROUP HA1 -->
+        <article class="catalog-row catalog-row--group" data-tags="axe" data-search="ha1 hache de bataille à deux mains, type danois angleterre · xie siècle copie du champ de bataille d'hastings. ha2 hache de bataille à une main angleterre · xie siècle copie du champ de bataille d'hastings." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/sekerky1.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/sekerky1_v.jpg"]' data-lightbox-caption="HA1 &amp; HA2">
+            <img src="../../assets/images/products/polearms/sekerky1.jpg" alt="HA1, HA2 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux haches sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">HA1</span>
+                  <h2 class="product-title">Hache de bataille à deux mains, type danois</h2>
+                  <p class="product-period">Angleterre · XIe siècle</p>
+                  <p class="product-description">Copie du champ de bataille d'Hastings.</p>
+                </div>
+                <p class="product-price">204 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">HA2</span>
+                  <h2 class="product-title">Hache de bataille à une main</h2>
+                  <p class="product-period">Angleterre · XIe siècle</p>
+                  <p class="product-description">Copie du champ de bataille d'Hastings.</p>
+                </div>
+                <p class="product-price">165 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP HA1 -->
+
+        <!-- C20 -->
+        <article class="catalog-row" data-tags="other" data-search="c20 chausse-trappes en fer xve siècle fer, hauteur : environ 7 cm. les originaux sont exposés au musée du château de morges, suisse.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/jezci.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/c20v2.jpg","../../assets/images/products/polearms/jezciv.jpg"]' data-lightbox-caption="C20 — Chausse-trappes en fer">
+            <img src="../../assets/images/products/polearms/jezci.jpg" alt="Chausse-trappes en fer, référence C20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C20</span>
+            <h2 class="product-title">Chausse-trappes en fer</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Fer, hauteur : environ 7 cm. Les originaux sont exposés au musée du château de Morges, Suisse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">6 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /C20 -->
+
+        <!-- C21 -->
+        <article class="catalog-row" data-tags="other" data-search="c21 chausse-trappes « de sécurité » lot de 5 xve siècle maquette en caoutchouc pour usage théâtral, hauteur : environ 6 cm. les originaux sont exposés au musée du château de morges, suisse.">
+          <a class="catalog-row__media" href="../../assets/images/products/polearms/c21m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/polearms/c20v2.jpg","../../assets/images/products/polearms/c21v.jpg","../../assets/images/products/polearms/c21v2.JPG"]' data-lightbox-caption="C21 — Chausse-trappes « de sécurité » (lot de 5)">
+            <img src="../../assets/images/products/polearms/c21m.jpg" alt="Chausse-trappes « de sécurité » (lot de 5), référence C21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">C21</span>
+            <h2 class="product-title">Chausse-trappes « de sécurité » (lot de 5)</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Maquette en caoutchouc pour usage théâtral, hauteur : environ 6 cm. Les originaux sont exposés au musée du château de Morges, Suisse.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">20 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /C21 -->
+
+
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Atelier historique de reconstitution, fondé en 1995. Reproductions artisanales d'armes, d'armures et d'objets du Moyen Âge et de la Renaissance, réalisées par un réseau d'artisans tchèques.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Épées</a></li>
+        <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+        <li><a href="helmets.html">Casques</a></li>
+        <li><a href="index.html">Catalogue complet →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Atelier</h3>
+      <ul>
+        <li><a href="../about.html">À propos d'Arma Bohemia</a></li>
+        <li><a href="../events.html">Événements</a></li>
+        <li><a href="../conditions.html">Commande &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, République tchèque</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo du produit agrandie">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/gallery.js"></script>
+</body>
+</html>
