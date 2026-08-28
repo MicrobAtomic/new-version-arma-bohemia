@@ -220,20 +220,16 @@ Chaque langue est un dossier séparé, avec ses propres fichiers HTML. Il
 n'y a **aucune magie de traduction automatique** : chaque page existe en
 double (ou triple), et il faut modifier chaque version séparément.
 
-**Catégories déjà traduites dans les trois langues :** épées, dagues,
-casques, boucliers, rapières, habillement, armes d'hast, armes à feu,
-vie de camp, armures et vaisselle (`swords.html`, `daggers.html`,
-`helmets.html`, `shields.html`, `rapiers.html`, `dress-accessories.html`,
+**Toutes les catégories sont maintenant traduites dans les trois
+langues :** épées, dagues, casques, boucliers, rapières, habillement,
+armes d'hast, armes à feu, vie de camp, armures, vaisselle et
+maroquinerie (`swords.html`, `daggers.html`, `helmets.html`,
+`shields.html`, `rapiers.html`, `dress-accessories.html`,
 `polearms.html`, `firearms.html`, `camp-life.html`, `armour.html`,
-`tableware.html`), ainsi que les pages contact et conditions. Ces onze
-catégories de produits sont traduites en intégralité (61/61, 43/43, 26/26, 3/3,
-11/11, 14/14, 16/16, 16/16, 21/21, 24/24, 44/44, comme en anglais) : voir
-section 9.
-
-**Catégorie disponible seulement en anglais pour l'instant :**
-maroquinerie. La page `fr/catalogue/index.html` et
-`de/catalogue/index.html` renvoient vers la version anglaise pour cette
-dernière catégorie, avec une mention claire « (EN) ».
+`tableware.html`, `leather-goods.html`), ainsi que les pages contact et
+conditions. Les douze catégories de produits sont traduites en
+intégralité (61/61, 43/43, 26/26, 3/3, 11/11, 14/14, 16/16, 16/16,
+21/21, 24/24, 44/44, 67/67, comme en anglais) : voir section 9.
 
 **Pour ajouter un produit dans plusieurs langues :** ajoutez-le d'abord
 dans le fichier anglais (voir section 4), puis répétez l'opération dans
@@ -275,29 +271,28 @@ section 4). Le détail par catégorie :
 
 **Ce qui reste malgré tout à faire :**
 
-- **Traduction française et allemande complète.** Onze catégories sont
-  maintenant traduites en intégralité (épées 61/61, dagues 43/43, casques
-  26/26, boucliers 3/3, rapières 11/11, habillement 14/14, armes d'hast
-  16/16, armes à feu 16/16, vie de camp 21/21, armures 24/24, vaisselle
-  44/44) en français et en allemand, à partir du texte réel des pages
-  `armabohemia.cz/FR/` et `armabohemia.cz/DE/` (et non retraduit depuis
-  l'anglais) ; boucliers, rapières, habillement, armes d'hast, armes à
-  feu, vie de camp, armures et vaisselle sont les huit premières
-  catégories créées de toutes pièces en FR/DE (elles n'avaient pas de
-  page `fr/`/`de/` du tout, contrairement aux trois premières qui
-  existaient déjà avec une sélection réduite). Les armures combinent deux
-  jeux de données distincts de l'ancien site (suites complètes vs pièces
-  séparées, dans des sous-dossiers d'images différents) fusionnés dans
-  une seule page, comme en anglais — y compris une référence « ZB4 » qui
-  désigne deux produits différents selon la série d'origine. La vaisselle
-  regroupe six ensembles de produits partageant une même photo (dont un
-  groupe à quatre pièces). Reste à traiter la dernière catégorie qui
-  n'existe qu'en anglais pour l'instant (maroquinerie). La
-  méthode est directe :
-  reprendre le même procédé (voir
-  la partie
-  développeur
-  ci-dessous). **C'est le chantier en cours.**
+- **Traduction française et allemande complète.** Les douze catégories
+  sont maintenant traduites en intégralité (épées 61/61, dagues 43/43,
+  casques 26/26, boucliers 3/3, rapières 11/11, habillement 14/14, armes
+  d'hast 16/16, armes à feu 16/16, vie de camp 21/21, armures 24/24,
+  vaisselle 44/44, maroquinerie 67/67) en français et en allemand, à
+  partir du texte réel des pages `armabohemia.cz/FR/` et
+  `armabohemia.cz/DE/` (et non retraduit depuis l'anglais) ; boucliers,
+  rapières, habillement, armes d'hast, armes à feu, vie de camp, armures,
+  vaisselle et maroquinerie sont les neuf catégories créées de toutes
+  pièces en FR/DE (elles n'avaient pas de page `fr/`/`de/` du tout,
+  contrairement aux trois premières qui existaient déjà avec une
+  sélection réduite). Les armures combinent deux jeux de données
+  distincts de l'ancien site (suites complètes vs pièces séparées, dans
+  des sous-dossiers d'images différents) fusionnés dans une seule page,
+  comme en anglais — y compris une référence « ZB4 » qui désigne deux
+  produits différents selon la série d'origine. La vaisselle regroupe six
+  ensembles de produits partageant une même photo (dont un groupe à
+  quatre pièces) ; la maroquinerie en regroupe sept (dont trois bourses
+  photographiées ensemble). La traduction de la maroquinerie combine
+  elle-même deux pages sources par langue (`scabbardswin.htm` et
+  `leatherwin.htm`), comme en anglais. **Les douze catégories sont
+  maintenant à parité complète FR/DE/EN — ce chantier est achevé.**
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
   Occasion (« Secondhand »), et le détail complet de « Nouveautés »
   (pièces uniques/sur mesure présentées ponctuellement).

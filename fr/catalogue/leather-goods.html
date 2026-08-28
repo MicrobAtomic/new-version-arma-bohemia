@@ -1,0 +1,1358 @@
+<!--
+============================================================
+ARMA BOHEMIA — CATALOGUE MAROQUINERIE (Français)
+============================================================
+AJOUTER UN PRODUIT
+1. Copier un bloc "PRODUIT" complet (du commentaire d'ouverture
+   au commentaire "FIN PRODUIT", <article> compris).
+2. Le coller à l'endroit souhaité.
+3. Modifier référence, titre, époque, texte et prix.
+4. Ajouter l'image dans /assets/images/products/leather-scabbards/
+   et mettre à jour les attributs "src" et "href".
+
+SUPPRIMER UN PRODUIT
+Supprimer tout le bloc, du commentaire "PRODUIT xxx" à "FIN
+PRODUIT xxx".
+
+MODIFIER UN PRIX
+Rechercher la référence (ex: EP34), modifier son
+<p class="product-price">.
+
+Ne pas modifier les noms "class=..." sauf en connaissance de
+cause — le CSS dans /assets/css/ en dépend.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maroquinerie &amp; fourreaux — Catalogue Arma Bohemia</title>
+<meta name="description" content="Fourreaux, bourses, ceintures et ferrures en laiton fabriqués à la main par Arma Bohemia, République tchèque — maroquinerie pour épées, dagues et tenue médiévale quotidienne.">
+<link rel="canonical" href="https://www.armabohemia.cz/fr/catalogue/leather-goods.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/leather-goods.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/leather-goods.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/leather-goods.html">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Atelier historique, fondé en 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Accueil</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Épées</a>
+            <a href="rapiers.html">Rapières</a>
+            <a href="daggers.html">Dagues &amp; couteaux</a>
+            <a href="helmets.html">Casques</a>
+            <a href="armour.html">Armures</a>
+            <a href="shields.html">Boucliers</a>
+            <a href="polearms.html">Armes d'hast</a>
+            <a href="firearms.html">Armes à feu</a>
+            <a href="leather-goods.html" aria-current="page">Maroquinerie</a>
+            <a href="dress-accessories.html">Habillement</a>
+            <a href="camp-life.html">Vie de camp</a>
+            <a href="tableware.html">Vaisselle</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Atelier</a></li>
+        <li><a class="main-nav__link" href="../events.html">Événements</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="../../catalogue/leather-goods.html">EN</a></li>
+          <li><a class="lang-switch__link" href="leather-goods.html" aria-current="true">FR</a></li>
+          <li><a class="lang-switch__link" href="../../de/catalogue/leather-goods.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Ouvrir le menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Navigation mobile">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Épées</a></li>
+                  <li><a href="rapiers.html">Rapières</a></li>
+                  <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+                  <li><a href="helmets.html">Casques</a></li>
+                  <li><a href="armour.html">Armures</a></li>
+                  <li><a href="shields.html">Boucliers</a></li>
+                  <li><a href="polearms.html">Armes d'hast</a></li>
+                  <li><a href="firearms.html">Armes à feu</a></li>
+                  <li><a href="leather-goods.html">Maroquinerie</a></li>
+                  <li><a href="dress-accessories.html">Habillement</a></li>
+                  <li><a href="camp-life.html">Vie de camp</a></li>
+                  <li><a href="tableware.html">Vaisselle</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Atelier</a></li>
+            <li><a href="../events.html">Événements</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="../../catalogue/leather-goods.html">EN</a>
+            <a class="lang-switch__link" href="leather-goods.html" aria-current="true">FR</a>
+            <a class="lang-switch__link" href="../../de/catalogue/leather-goods.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Maroquinerie &amp; fourreaux</p>
+      <h1>Maroquinerie &amp; fourreaux</h1>
+      <p class="lead">Fourreaux, bourses, ceintures et ferrures en laiton — pour épées et dagues, ou pour la tenue médiévale quotidienne. L'ensemble de la gamme proposée par l'atelier au fil des années — 67 pièces.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>En raison de coûts d'entrée très instables, tous les prix ont une valeur purement informative et peuvent faire l'objet de modifications mineures. Veuillez demander la situation actuelle des prix avec chaque commande — voir <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="leather-search">Rechercher un article de maroquinerie</label>
+          <input type="search" id="leather-search" data-catalog-search placeholder="Rechercher par référence, nom ou siècle…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filtrer par type">
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all" aria-pressed="true">Tous les types</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="scabbard">Fourreaux</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="purse">Bourses</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="belt">Ceintures</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="fitting">Boucles &amp; ferrures</button>
+        </div>
+      </div>
+
+      <p class="catalog-count" data-catalog-count data-template="{n} pièces affichées">67 pièces affichées</p>
+
+      <div class="catalog-list" data-catalog-grid>
+
+        <!-- SR21a -->
+        <article class="catalog-row" data-tags="fitting" data-search="sr21a bouterolle en fer, petite — convient à un poignard ou un couteau à manger. longueur 5 cm, largeur 1,6 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sr21am.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sr21av.jpg","../../assets/images/products/leather-scabbards/sr21av3.jpg"]' data-lightbox-caption="SR21a — Bouterolle en fer, petite">
+            <img src="../../assets/images/products/leather-scabbards/sr21am.jpg" alt="Bouterolle en fer, petite, référence SR21a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SR21a</span>
+            <h2 class="product-title">Bouterolle en fer, petite</h2>
+            <p class="product-description">Convient à un poignard ou un couteau à manger. Longueur 5 cm, largeur 1,6 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SR21a -->
+
+        <!-- SP21b -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp21b bouterolle en fer, moyenne — convient à une épée d'estoc, un poignard ou une rapière. longueur 7 cm, largeur 2,3 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp21m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp21v2.jpg","../../assets/images/products/leather-scabbards/sp21v3.jpg"]' data-lightbox-caption="SP21b — Bouterolle en fer, moyenne">
+            <img src="../../assets/images/products/leather-scabbards/sp21m.jpg" alt="Bouterolle en fer, moyenne, référence SP21b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP21b</span>
+            <h2 class="product-title">Bouterolle en fer, moyenne</h2>
+            <p class="product-description">Convient à une épée d'estoc, un poignard ou une rapière. Longueur 7 cm, largeur 2,3 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP21b -->
+
+        <!-- SR21c -->
+        <article class="catalog-row" data-tags="fitting" data-search="sr21c bouterolle en fer, grande — convient à une épée ou un poignard large. longueur 9 cm, largeur 3,8 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sr21cm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sr21cv.jpg","../../assets/images/products/leather-scabbards/sr21cv3.jpg"]' data-lightbox-caption="SR21c — Bouterolle en fer, grande">
+            <img src="../../assets/images/products/leather-scabbards/sr21cm.jpg" alt="Bouterolle en fer, grande, référence SR21c" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SR21c</span>
+            <h2 class="product-title">Bouterolle en fer, grande</h2>
+            <p class="product-description">Convient à une épée ou un poignard large. Longueur 9 cm, largeur 3,8 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SR21c -->
+
+        <!-- E36 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e36 fourreau de dague d'époque — noyau en bois recouvert de cuir fin.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E36m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E36v.jpg"]' data-lightbox-caption="E36 — Fourreau de dague d'époque">
+            <img src="../../assets/images/products/leather-scabbards/E36m.jpg" alt="Fourreau de dague d'époque, référence E36" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E36</span>
+            <h2 class="product-title">Fourreau de dague d'époque</h2>
+            <p class="product-description">Noyau en bois recouvert de cuir fin.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">79 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E36 -->
+
+        <!-- E37 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e37 fourreau de dague complet — avec a29 et a30. noyau en bois recouvert de cuir fin, comprend le couteau et le pic à viande.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E37m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E37v.jpg"]' data-lightbox-caption="E37 — Fourreau de dague complet">
+            <img src="../../assets/images/products/leather-scabbards/E37m.jpg" alt="Fourreau de dague complet, référence E37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E37</span>
+            <h2 class="product-title">Fourreau de dague complet</h2>
+            <p class="product-description">Avec A29 et A30. Noyau en bois recouvert de cuir fin, comprend le couteau et le pic à viande.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">180 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E37 -->
+
+        <!-- E40 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e40 fourreau de couteau décoré xive–xve siècle cuir décoré de motifs géométriques ou floraux.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e40m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e40v.jpg"]' data-lightbox-caption="E40 — Fourreau de couteau décoré">
+            <img src="../../assets/images/products/leather-scabbards/e40m.jpg" alt="Fourreau de couteau décoré, référence E40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E40</span>
+            <h2 class="product-title">Fourreau de couteau décoré</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Cuir décoré de motifs géométriques ou floraux.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E40 -->
+
+        <!-- E47 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e47 fourreau de dague décoré xvie–xve siècle deux couches de cuir fin avec un placage de bois entre les deux, décoré de motifs géométriques ou floraux. pour poignards courts, couteaux, etc. lame inférieure à 33 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e47m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e47v.JPG","../../assets/images/products/leather-scabbards/e47v2.JPG","../../assets/images/products/leather-scabbards/e47v3.jpg","../../assets/images/products/leather-scabbards/e47v4.JPG","../../assets/images/products/leather-scabbards/e47v5.JPG"]' data-lightbox-caption="E47 — Fourreau de dague décoré">
+            <img src="../../assets/images/products/leather-scabbards/e47m.jpg" alt="Fourreau de dague décoré, référence E47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E47</span>
+            <h2 class="product-title">Fourreau de dague décoré</h2>
+            <p class="product-period">XVIe–XVe siècle</p>
+            <p class="product-description">Deux couches de cuir fin avec un placage de bois entre les deux, décoré de motifs géométriques ou floraux. Pour poignards courts, couteaux, etc. (lame inférieure à 33 cm).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">169 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E47 -->
+
+        <!-- E41 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e41 fourreau de dague/messer/degen décoré xive–xve siècle noyau en bois recouvert de cuir, décoré de motifs géométriques ou floraux, pour dagues, messers, degen suisses, etc.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e41m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e41v.JPG"]' data-lightbox-caption="E41 — Fourreau de dague/messer/degen décoré">
+            <img src="../../assets/images/products/leather-scabbards/e41m.jpg" alt="Fourreau de dague/messer/degen décoré, référence E41" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E41</span>
+            <h2 class="product-title">Fourreau de dague/messer/degen décoré</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Noyau en bois recouvert de cuir, décoré de motifs géométriques ou floraux, pour dagues, messers, degen suisses, etc.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">195 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E41 -->
+
+        <!-- E42 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e42 fourreau de messer complexe décoré xve–xvie siècle noyau en bois recouvert de cuir, décoré de motifs géométriques ou floraux ; comprend 2 petits fourreaux avant pour le couteau et le pic à viande, et le baudrier.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e42m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e42v.JPG","../../assets/images/products/leather-scabbards/e42v2.JPG"]' data-lightbox-caption="E42 — Fourreau de messer complexe décoré">
+            <img src="../../assets/images/products/leather-scabbards/e42m.jpg" alt="Fourreau de messer complexe décoré, référence E42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E42</span>
+            <h2 class="product-title">Fourreau de messer complexe décoré</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Noyau en bois recouvert de cuir, décoré de motifs géométriques ou floraux ; comprend 2 petits fourreaux avant pour le couteau et le pic à viande, et le baudrier.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">275 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E42 -->
+
+        <!-- E38 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e38 fourreau d'époque pour épée courte — noyau en bois recouvert de cuir fin.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e38m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e38v.jpg"]' data-lightbox-caption="E38 — Fourreau d'époque pour épée courte">
+            <img src="../../assets/images/products/leather-scabbards/e38m.jpg" alt="Fourreau d'époque pour épée courte, référence E38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E38</span>
+            <h2 class="product-title">Fourreau d'époque pour épée courte</h2>
+            <p class="product-description">Noyau en bois recouvert de cuir fin.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">130 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E38 -->
+
+        <!-- E34 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e34 fourreau d'époque pour épée longue — noyau en bois recouvert de cuir fin, pour lames de plus de 80 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E34m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E34v.jpg"]' data-lightbox-caption="E34 — Fourreau d'époque pour épée longue">
+            <img src="../../assets/images/products/leather-scabbards/E34m.jpg" alt="Fourreau d'époque pour épée longue, référence E34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E34</span>
+            <h2 class="product-title">Fourreau d'époque pour épée longue</h2>
+            <p class="product-description">Noyau en bois recouvert de cuir fin, pour lames de plus de 80 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">159 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E34 -->
+
+        <!-- GROUP E35 -->
+        <article class="catalog-row catalog-row--group" data-tags="scabbard" data-search="e35 ensemble fourreau e34 + bandoulière  combine le fourreau e34 avec un système de bandoulière d'époque. e35b bandoulière seule  système de bandoulière seul." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E35m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E35v.jpg"]' data-lightbox-caption="E35, E35b">
+            <img src="../../assets/images/products/leather-scabbards/E35m.jpg" alt="E35, E35b photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Le fourreau et la bandoulière sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E35</span>
+                  <h2 class="product-title">Ensemble fourreau E34 + bandoulière</h2>
+                  <p class="product-description">Combine le fourreau E34 avec un système de bandoulière d'époque.</p>
+                </div>
+                <p class="product-price">189 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E35b</span>
+                  <h2 class="product-title">Bandoulière seule</h2>
+                  <p class="product-description">Système de bandoulière seul.</p>
+                </div>
+                <p class="product-price">45 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E35 -->
+
+        <!-- E45 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e45 fourreau décoré « deluxe », par p. moc xive–xve siècle noyau en bois recouvert de cuir, décoré d'inscriptions latines, avec bandoulière. pour épée à une main : ep56, ep66 ou ep74.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e45m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e45v.jpg","../../assets/images/products/leather-scabbards/e45v2.jpg","../../assets/images/products/leather-scabbards/mt43v3.jpg"]' data-lightbox-caption="E45 — Fourreau décoré « DeLuxe », par P. Moc">
+            <img src="../../assets/images/products/leather-scabbards/e45m.jpg" alt="Fourreau décoré « DeLuxe », par P. Moc, référence E45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E45</span>
+            <h2 class="product-title">Fourreau décoré « DeLuxe », par P. Moc</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Noyau en bois recouvert de cuir, décoré d'inscriptions latines, avec bandoulière. Pour épée à une main : EP56, EP66 ou EP74.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E45 -->
+
+        <!-- E46 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e46 fourreau décoré « deluxe », par p. moc xive–xve siècle noyau en bois recouvert de cuir, décoré d'inscriptions latines, avec bandoulière. pour épée à une main et demie : ep16, ep18, ep43, ep44, ep45, ep46, ep54, ep68.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e46m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e46v.jpg","../../assets/images/products/leather-scabbards/e46v2.jpg"]' data-lightbox-caption="E46 — Fourreau décoré « DeLuxe », par P. Moc">
+            <img src="../../assets/images/products/leather-scabbards/e46m.jpg" alt="Fourreau décoré « DeLuxe », par P. Moc, référence E46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E46</span>
+            <h2 class="product-title">Fourreau décoré « DeLuxe », par P. Moc</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Noyau en bois recouvert de cuir, décoré d'inscriptions latines, avec bandoulière. Pour épée à une main et demie : EP16, EP18, EP43, EP44, EP45, EP46, EP54, EP68.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">330 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E46 -->
+
+        <!-- E21 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e21 fourreau en cuir avec bouterolle xie–xiie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva1m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva1m.jpg"]' data-lightbox-caption="E21 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva1m.jpg" alt="Fourreau en cuir avec bouterolle, référence E21" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E21</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XIe–XIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">185 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E21 -->
+
+        <!-- E22 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e22 fourreau en cuir avec bouterolle xiie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva2m.jpg"]' data-lightbox-caption="E22 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva2m.jpg" alt="Fourreau en cuir avec bouterolle, référence E22" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E22</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E22 -->
+
+        <!-- E23 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e23 fourreau en cuir avec bouterolle première moitié du xiiie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva3m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva3m.jpg"]' data-lightbox-caption="E23 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva3m.jpg" alt="Fourreau en cuir avec bouterolle, référence E23" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E23</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">Première moitié du XIIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E23 -->
+
+        <!-- E24 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e24 fourreau en cuir avec bouterolle xiiie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva4m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva4m.jpg"]' data-lightbox-caption="E24 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva4m.jpg" alt="Fourreau en cuir avec bouterolle, référence E24" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E24</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XIIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">265 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E24 -->
+
+        <!-- E25 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e25 fourreau en cuir avec bouterolle xive siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva5m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva5m.jpg"]' data-lightbox-caption="E25 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva5m.jpg" alt="Fourreau en cuir avec bouterolle, référence E25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E25</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XIVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">265 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E25 -->
+
+        <!-- E26 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e26 fourreau en cuir avec bouterolle xive siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva6m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva6m.jpg"]' data-lightbox-caption="E26 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva6m.jpg" alt="Fourreau en cuir avec bouterolle, référence E26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E26</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XIVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">189 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E26 -->
+
+        <!-- E28 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e28 fourreau en cuir avec bouterolle xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva8m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva8m.jpg"]' data-lightbox-caption="E28 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva8m.jpg" alt="Fourreau en cuir avec bouterolle, référence E28" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E28</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">185 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E28 -->
+
+        <!-- E29 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e29 fourreau en cuir avec bouterolle allemagne · xvie–xviie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva9m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva9m.jpg"]' data-lightbox-caption="E29 — Fourreau en cuir avec bouterolle">
+            <img src="../../assets/images/products/leather-scabbards/pochva9m.jpg" alt="Fourreau en cuir avec bouterolle, référence E29" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E29</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle</h2>
+            <p class="product-period">Allemagne · XVIe–XVIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">229 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E29 -->
+
+        <!-- E30 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e30 fourreau en cuir avec bouterolle en fer ou en laiton france · xvie–xviie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/pochva10m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/pochva10m.jpg"]' data-lightbox-caption="E30 — Fourreau en cuir avec bouterolle en fer ou en laiton">
+            <img src="../../assets/images/products/leather-scabbards/pochva10m.jpg" alt="Fourreau en cuir avec bouterolle en fer ou en laiton, référence E30" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E30</span>
+            <h2 class="product-title">Fourreau en cuir avec bouterolle en fer ou en laiton</h2>
+            <p class="product-period">France · XVIe–XVIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">175 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E30 -->
+
+        <!-- E48 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e48 fourreau en cuir avec bandoulière xviie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e48m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e48v.jpg","../../assets/images/products/leather-scabbards/e48v2.JPG"]' data-lightbox-caption="E48 — Fourreau en cuir avec bandoulière">
+            <img src="../../assets/images/products/leather-scabbards/e48m.jpg" alt="Fourreau en cuir avec bandoulière, référence E48" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E48</span>
+            <h2 class="product-title">Fourreau en cuir avec bandoulière</h2>
+            <p class="product-period">XVIIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">259 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E48 -->
+
+        <!-- E31 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e31 ensemble en cuir pour rapière et dague xvie–xviie siècle type e29. boucles et crochet faits main, argentés, très décorés.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/Baudrierbestm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/Baudrier.jpg","../../assets/images/products/leather-scabbards/Baudrierbest.jpg","../../assets/images/products/leather-scabbards/Fourreau1.jpg"]' data-lightbox-caption="E31 — Ensemble en cuir pour rapière et dague">
+            <img src="../../assets/images/products/leather-scabbards/Baudrierbestm.jpg" alt="Ensemble en cuir pour rapière et dague, référence E31" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E31</span>
+            <h2 class="product-title">Ensemble en cuir pour rapière et dague</h2>
+            <p class="product-period">XVIe–XVIIe siècle</p>
+            <p class="product-description">Type E29. Boucles et crochet faits main, argentés, très décorés.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">679 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E31 -->
+
+        <!-- E32 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e32 fourreau en cuir pour katzbalger xve–xvie siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E32m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E32v.jpg"]' data-lightbox-caption="E32 — Fourreau en cuir pour Katzbalger">
+            <img src="../../assets/images/products/leather-scabbards/E32m.jpg" alt="Fourreau en cuir pour Katzbalger, référence E32" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E32</span>
+            <h2 class="product-title">Fourreau en cuir pour Katzbalger</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">235 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E32 -->
+
+        <!-- E33 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e33 fourreau de dague supplémentaire xvie–xviie siècle pour le système e29 ceinture non incluse.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/E33m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/E33v.jpg"]' data-lightbox-caption="E33 — Fourreau de dague supplémentaire">
+            <img src="../../assets/images/products/leather-scabbards/E33m.jpg" alt="Fourreau de dague supplémentaire, référence E33" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E33</span>
+            <h2 class="product-title">Fourreau de dague supplémentaire</h2>
+            <p class="product-period">XVIe–XVIIe siècle</p>
+            <p class="product-description">Pour le système E29 (ceinture non incluse).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">80 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E33 -->
+
+        <!-- E33b -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e33b fourreau de dague supplémentaire avec fixation xvie–xviie siècle pour le système e29, fourreau détachable ceinture non incluse.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e33bm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e33bv.jpg","../../assets/images/products/leather-scabbards/e33bv2.jpg"]' data-lightbox-caption="E33b — Fourreau de dague supplémentaire avec fixation">
+            <img src="../../assets/images/products/leather-scabbards/e33bm.jpg" alt="Fourreau de dague supplémentaire avec fixation, référence E33b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E33b</span>
+            <h2 class="product-title">Fourreau de dague supplémentaire avec fixation</h2>
+            <p class="product-period">XVIe–XVIIe siècle</p>
+            <p class="product-description">Pour le système E29, fourreau détachable (ceinture non incluse).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">105 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E33b -->
+
+        <!-- E43 -->
+        <article class="catalog-row" data-tags="fitting" data-search="e43 cintre pour épée de cour xviiie siècle acier, 9 × 7 cm. le cintre original appartenait à la collection william h. guthman.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e43m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e43v.JPG","../../assets/images/products/leather-scabbards/e43v2.JPG","../../assets/images/products/leather-scabbards/e43v3.jpg","../../assets/images/products/leather-scabbards/e44v.JPG"]' data-lightbox-caption="E43 — Cintre pour épée de cour">
+            <img src="../../assets/images/products/leather-scabbards/e43m.jpg" alt="Cintre pour épée de cour, référence E43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E43</span>
+            <h2 class="product-title">Cintre pour épée de cour</h2>
+            <p class="product-period">XVIIIe siècle</p>
+            <p class="product-description">Acier, 9 × 7 cm. Le cintre original appartenait à la collection William H. Guthman.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">19 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E43 -->
+
+        <!-- E44 -->
+        <article class="catalog-row" data-tags="scabbard" data-search="e44 fourreau d'épée de cour avec cintre xviiie siècle fourreau en cuir avec cintre en acier e43. le cintre original appartenait à la collection william h. guthman.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e44m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e43v3.jpg","../../assets/images/products/leather-scabbards/e44v.JPG","../../assets/images/products/leather-scabbards/e44v2.JPG","../../assets/images/products/leather-scabbards/e44v3.JPG"]' data-lightbox-caption="E44 — Fourreau d'épée de cour avec cintre">
+            <img src="../../assets/images/products/leather-scabbards/e44m.jpg" alt="Fourreau d'épée de cour avec cintre, référence E44" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E44</span>
+            <h2 class="product-title">Fourreau d'épée de cour avec cintre</h2>
+            <p class="product-period">XVIIIe siècle</p>
+            <p class="product-description">Fourreau en cuir avec cintre en acier E43. Le cintre original appartenait à la collection William H. Guthman.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">75 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E44 -->
+
+        <!-- M27a -->
+        <article class="catalog-row" data-tags="other" data-search="m27a housse de transport pour épée courte — lin, pointe renforcée, pour épée de 90 à 120 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/m27m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/m27v.jpg"]' data-lightbox-caption="M27a — Housse de transport pour épée courte">
+            <img src="../../assets/images/products/leather-scabbards/m27m.jpg" alt="Housse de transport pour épée courte, référence M27a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">M27a</span>
+            <h2 class="product-title">Housse de transport pour épée courte</h2>
+            <p class="product-description">Lin, pointe renforcée, pour épée de 90 à 120 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">10 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /M27a -->
+
+        <!-- M27b -->
+        <article class="catalog-row" data-tags="other" data-search="m27b housse de transport pour épée longue — lin, pointe renforcée, pour épée de 120 à 135 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/m27m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/m27v.jpg"]' data-lightbox-caption="M27b — Housse de transport pour épée longue">
+            <img src="../../assets/images/products/leather-scabbards/m27m.jpg" alt="Housse de transport pour épée longue, référence M27b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">M27b</span>
+            <h2 class="product-title">Housse de transport pour épée longue</h2>
+            <p class="product-description">Lin, pointe renforcée, pour épée de 120 à 135 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">15 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /M27b -->
+
+        <!-- SP63a -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp63a boucle en laiton xve siècle longueur 6,4 cm, pour ceinture de 18 à 22 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp63am.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp63av.JPG"]' data-lightbox-caption="SP63a — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp63am.jpg" alt="Boucle en laiton, référence SP63a" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP63a</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur 6,4 cm, pour ceinture de 18 à 22 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP63a -->
+
+        <!-- SP63b -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp63b ferret de ceinture en laiton xve siècle longueur 5,6 cm, pour ceinture de 20 mm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp63bm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp63bv.JPG"]' data-lightbox-caption="SP63b — Ferret de ceinture en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp63bm.jpg" alt="Ferret de ceinture en laiton, référence SP63b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP63b</span>
+            <h2 class="product-title">Ferret de ceinture en laiton</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur 5,6 cm, pour ceinture de 20 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">6 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP63b -->
+
+        <!-- SP64 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp64 ferret de ceinture en laiton xve siècle longueur 4 cm, pour ceinture de 12 mm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp64m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp64v.JPG"]' data-lightbox-caption="SP64 — Ferret de ceinture en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp64m.jpg" alt="Ferret de ceinture en laiton, référence SP64" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP64</span>
+            <h2 class="product-title">Ferret de ceinture en laiton</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur 4 cm, pour ceinture de 12 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">5 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP64 -->
+
+        <!-- SP65 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp65 ferret de ceinture en laiton xve siècle longueur 5,8 cm, pour ceinture de 21 mm.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp65m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp65v.JPG"]' data-lightbox-caption="SP65 — Ferret de ceinture en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp65m.jpg" alt="Ferret de ceinture en laiton, référence SP65" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP65</span>
+            <h2 class="product-title">Ferret de ceinture en laiton</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Longueur 5,8 cm, pour ceinture de 21 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP65 -->
+
+        <!-- SP16 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp16 boucle en laiton xive–xvie siècle pour ceinture de 20 à 29 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp16m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp16v2.jpg"]' data-lightbox-caption="SP16 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp16m.jpg" alt="Boucle en laiton, référence SP16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP16</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XIVe–XVIe siècle</p>
+            <p class="product-description">Pour ceinture de 20 à 29 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP16 -->
+
+        <!-- SP18 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp18 boucle en laiton xive–xvie siècle pour ceinture de 12 à 18 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp18m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp18v2.jpg"]' data-lightbox-caption="SP18 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp18m.jpg" alt="Boucle en laiton, référence SP18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP18</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XIVe–XVIe siècle</p>
+            <p class="product-description">Pour ceinture de 12 à 18 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP18 -->
+
+        <!-- SP19 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp19 boucle en laiton xive–xvie siècle pour ceinture de 12 à 17 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp19m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp19v2.jpg"]' data-lightbox-caption="SP19 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp19m.jpg" alt="Boucle en laiton, référence SP19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP19</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XIVe–XVIe siècle</p>
+            <p class="product-description">Pour ceinture de 12 à 17 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP19 -->
+
+        <!-- SP59 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp59 boucle en laiton xive–xvie siècle pour ceinture de 30 à 42 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp59m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp59v.JPG"]' data-lightbox-caption="SP59 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp59m.jpg" alt="Boucle en laiton, référence SP59" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP59</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XIVe–XVIe siècle</p>
+            <p class="product-description">Pour ceinture de 30 à 42 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">7 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP59 -->
+
+        <!-- SP62 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp62 boucle en laiton xvie–xviie siècle pour ceinture de 17 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp62m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp62v.JPG"]' data-lightbox-caption="SP62 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp62m.jpg" alt="Boucle en laiton, référence SP62" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP62</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XVIe–XVIIe siècle</p>
+            <p class="product-description">Pour ceinture de 17 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP62 -->
+
+        <!-- SP47 -->
+        <article class="catalog-row" data-tags="fitting" data-search="sp47 boucle en laiton xve–xvie siècle pour ceinture de 16 à 23 mm de large.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/sp47m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/sp47v.JPG"]' data-lightbox-caption="SP47 — Boucle en laiton">
+            <img src="../../assets/images/products/leather-scabbards/sp47m.jpg" alt="Boucle en laiton, référence SP47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">SP47</span>
+            <h2 class="product-title">Boucle en laiton</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Pour ceinture de 16 à 23 mm de large.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">4 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /SP47 -->
+
+        <!-- BT14 -->
+        <article class="catalog-row" data-tags="fitting" data-search="bt14 armature de bourse grande xve siècle laiton, longueur 14 cm. convient à la bourse e16.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/bt14m3.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/bt14v3.jpg","../../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="BT14 — Armature de bourse (grande)">
+            <img src="../../assets/images/products/leather-scabbards/bt14m3.jpg" alt="Armature de bourse (grande), référence BT14" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">BT14</span>
+            <h2 class="product-title">Armature de bourse (grande)</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Laiton, longueur 14 cm. Convient à la bourse E16.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /BT14 -->
+
+        <!-- BT19 -->
+        <article class="catalog-row" data-tags="fitting" data-search="bt19 armature de bourse petite xve siècle laiton, longueur 9,5 cm. convient à la bourse e16.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/bt19m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/bt19v.jpg","../../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="BT19 — Armature de bourse (petite)">
+            <img src="../../assets/images/products/leather-scabbards/bt19m.jpg" alt="Armature de bourse (petite), référence BT19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">BT19</span>
+            <h2 class="product-title">Armature de bourse (petite)</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Laiton, longueur 9,5 cm. Convient à la bourse E16.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /BT19 -->
+
+        <!-- E20 -->
+        <article class="catalog-row" data-tags="purse" data-search="e20 porte-monnaie de pèlerin en brocart xve siècle anneau en laiton.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e20m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e20v.jpg"]' data-lightbox-caption="E20 — Porte-monnaie de pèlerin en brocart">
+            <img src="../../assets/images/products/leather-scabbards/e20m.jpg" alt="Porte-monnaie de pèlerin en brocart, référence E20" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E20</span>
+            <h2 class="product-title">Porte-monnaie de pèlerin en brocart</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Anneau en laiton.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E20 -->
+
+        <!-- E16 -->
+        <article class="catalog-row" data-tags="purse" data-search="e16 porte-monnaie de pèlerin en brocart xve siècle barre de suspension en laiton.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e16m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e16v.jpg","../../assets/images/products/leather-scabbards/e16v2.jpg"]' data-lightbox-caption="E16 — Porte-monnaie de pèlerin en brocart">
+            <img src="../../assets/images/products/leather-scabbards/e16m.jpg" alt="Porte-monnaie de pèlerin en brocart, référence E16" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E16</span>
+            <h2 class="product-title">Porte-monnaie de pèlerin en brocart</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Barre de suspension en laiton.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">55 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E16 -->
+
+        <!-- E17 -->
+        <article class="catalog-row" data-tags="purse" data-search="e17 porte-monnaie de pèlerin en lin xve siècle anneau en laiton, brodé.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e17m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e17v.jpg","../../assets/images/products/leather-scabbards/e17v2.jpg"]' data-lightbox-caption="E17 — Porte-monnaie de pèlerin en lin">
+            <img src="../../assets/images/products/leather-scabbards/e17m.jpg" alt="Porte-monnaie de pèlerin en lin, référence E17" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E17</span>
+            <h2 class="product-title">Porte-monnaie de pèlerin en lin</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Anneau en laiton, brodé.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">47 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E17 -->
+
+        <!-- E18 -->
+        <article class="catalog-row" data-tags="purse" data-search="e18 porte-monnaie de pèlerin en lin xve siècle anneau en laiton.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e18m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e18v.jpg","../../assets/images/products/leather-scabbards/e18v2.jpg"]' data-lightbox-caption="E18 — Porte-monnaie de pèlerin en lin">
+            <img src="../../assets/images/products/leather-scabbards/e18m.jpg" alt="Porte-monnaie de pèlerin en lin, référence E18" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E18</span>
+            <h2 class="product-title">Porte-monnaie de pèlerin en lin</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Anneau en laiton.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E18 -->
+
+        <!-- E19 -->
+        <article class="catalog-row" data-tags="purse" data-search="e19 porte-monnaie de pèlerin en brocart xve siècle anneau en laiton.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/e19m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/e19v.jpg"]' data-lightbox-caption="E19 — Porte-monnaie de pèlerin en brocart">
+            <img src="../../assets/images/products/leather-scabbards/e19m.jpg" alt="Porte-monnaie de pèlerin en brocart, référence E19" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">E19</span>
+            <h2 class="product-title">Porte-monnaie de pèlerin en brocart</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Anneau en laiton.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">37 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /E19 -->
+
+        <!-- GROUP E11 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e11 petit sac xve siècle sac en cuir. e12 petit sac xive–xve siècle sac en cuir. e13 petit sac xive–xve siècle sac en cuir." data-count="3">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny1.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny1_v.jpg"]' data-lightbox-caption="E11, E12, E13">
+            <img src="../../assets/images/products/leather-scabbards/brasny1.jpg" alt="E11, E12, E13 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les trois sacs sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E11</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">35 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E12</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XIVe–XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">42 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E13</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XIVe–XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">31 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E11 -->
+
+        <!-- GROUP E14 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e14 petit sac xve siècle sac en cuir. e15 ceinture xve siècle boucle d'époque, longueur 150 cm." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny2_v.jpg"]' data-lightbox-caption="E14, E15">
+            <img src="../../assets/images/products/leather-scabbards/brasny2.jpg" alt="E14, E15 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux pièces sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E14</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">35 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E15</span>
+                  <h2 class="product-title">Ceinture</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Boucle d'époque, longueur 150 cm.</p>
+                </div>
+                <p class="product-price">35 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E14 -->
+
+        <!-- GROUP E1 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e1 petit sac en cuir  pochette de rangement compacte. e2 ceinture xve siècle boucle d'époque. e3 petit sac xve siècle sac en cuir haut de gamme." data-count="3">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny3.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny3_v.jpg"]' data-lightbox-caption="E1, E2, E3">
+            <img src="../../assets/images/products/leather-scabbards/brasny3.jpg" alt="E1, E2, E3 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les trois pièces sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E1</span>
+                  <h2 class="product-title">Petit sac en cuir</h2>
+                  <p class="product-description">Pochette de rangement compacte.</p>
+                </div>
+                <p class="product-price">6 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E2</span>
+                  <h2 class="product-title">Ceinture</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Boucle d'époque.</p>
+                </div>
+                <p class="product-price">36 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E3</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir haut de gamme.</p>
+                </div>
+                <p class="product-price">89 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E1 -->
+
+        <!-- GROUP E4 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e4 ceinture xve siècle 150 cm. e5 petit sac xve siècle sac en cuir." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny4.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny4_v.jpg"]' data-lightbox-caption="E4, E5">
+            <img src="../../assets/images/products/leather-scabbards/brasny4.jpg" alt="E4, E5 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux pièces sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E4</span>
+                  <h2 class="product-title">Ceinture</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">150 cm.</p>
+                </div>
+                <p class="product-price">36 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E5</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">79 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E4 -->
+
+        <!-- GROUP E6 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e6 ceinture xve siècle ceinture en cuir. e7 petit sac xve siècle sac en cuir." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny5.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny5_v.jpg"]' data-lightbox-caption="E6, E7">
+            <img src="../../assets/images/products/leather-scabbards/brasny5.jpg" alt="E6, E7 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux pièces sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E6</span>
+                  <h2 class="product-title">Ceinture</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Ceinture en cuir.</p>
+                </div>
+                <p class="product-price">36 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E7</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">59 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E6 -->
+
+        <!-- GROUP E8 -->
+        <article class="catalog-row catalog-row--group" data-tags="purse" data-search="e8 petit sac xve siècle sac en cuir. e9 petit sac xve siècle sac en cuir." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/brasny6.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/brasny6_v.jpg"]' data-lightbox-caption="E8, E9">
+            <img src="../../assets/images/products/leather-scabbards/brasny6.jpg" alt="E8, E9 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux sacs sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E8</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">66 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">E9</span>
+                  <h2 class="product-title">Petit sac</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Sac en cuir.</p>
+                </div>
+                <p class="product-price">29 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP E8 -->
+
+        <!-- CU1 -->
+        <article class="catalog-row" data-tags="other" data-search="cu1 support de lance ou de bannière — pour la cavalerie, boucle d'époque du xve siècle.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/chranic2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/chranic2_v.jpg"]' data-lightbox-caption="CU1 — Support de lance ou de bannière">
+            <img src="../../assets/images/products/leather-scabbards/chranic2.jpg" alt="Support de lance ou de bannière, référence CU1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU1</span>
+            <h2 class="product-title">Support de lance ou de bannière</h2>
+            <p class="product-description">Pour la cavalerie, boucle d'époque du XVe siècle.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">33 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /CU1 -->
+
+        <!-- CU2 -->
+        <article class="catalog-row" data-tags="other" data-search="cu2 protection de poignet simple — pour archers.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/chranic1.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/chranic1_v.jpg"]' data-lightbox-caption="CU2 — Protection de poignet simple">
+            <img src="../../assets/images/products/leather-scabbards/chranic1.jpg" alt="Protection de poignet simple, référence CU2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU2</span>
+            <h2 class="product-title">Protection de poignet simple</h2>
+            <p class="product-description">Pour archers.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">12 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /CU2 -->
+
+        <!-- CU3 -->
+        <article class="catalog-row" data-tags="other" data-search="cu3 protection de poignet décorée — pour archers.">
+          <a class="catalog-row__media" href="../../assets/images/products/leather-scabbards/avemaria.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/leather-scabbards/avemaria_v.jpg"]' data-lightbox-caption="CU3 — Protection de poignet décorée">
+            <img src="../../assets/images/products/leather-scabbards/avemaria.jpg" alt="Protection de poignet décorée, référence CU3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">CU3</span>
+            <h2 class="product-title">Protection de poignet décorée</h2>
+            <p class="product-description">Pour archers.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">52 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /CU3 -->
+
+      <p class="catalog-empty" data-catalog-empty>Aucun objet ne correspond à votre recherche. Essayez une autre référence ou un autre nom, ou <a href="../contact.html">contactez l'atelier</a> directement.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Atelier historique de reconstitution, fondé en 1995. Reproductions artisanales d'armes, d'armures et d'objets du Moyen Âge et de la Renaissance, réalisées par un réseau d'artisans tchèques.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Épées</a></li>
+        <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+        <li><a href="helmets.html">Casques</a></li>
+        <li><a href="index.html">Catalogue complet →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Atelier</h3>
+      <ul>
+        <li><a href="../about.html">À propos d'Arma Bohemia</a></li>
+        <li><a href="../events.html">Événements</a></li>
+        <li><a href="../conditions.html">Commande &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, République tchèque</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo du produit agrandie">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/catalog.js"></script>
+<script src="../../assets/js/gallery.js"></script>
+</body>
+</html>
