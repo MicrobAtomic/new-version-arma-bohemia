@@ -221,16 +221,15 @@ n'y a **aucune magie de traduction automatique** : chaque page existe en
 double (ou triple), et il faut modifier chaque version séparément.
 
 **Catégories déjà traduites dans les trois langues :** épées, dagues,
-casques (`swords.html`, `daggers.html`, `helmets.html`), ainsi que les
-pages contact et conditions. Ces pages utilisent la même mise en page en
-liste, avec galeries photo, que la version anglaise. Les trois sont
-désormais traduites en intégralité (61/61, 43/43, 26/26, comme en
-anglais) : voir section 9.
+casques et boucliers (`swords.html`, `daggers.html`, `helmets.html`,
+`shields.html`), ainsi que les pages contact et conditions. Ces quatre
+catégories de produits sont traduites en intégralité (61/61, 43/43,
+26/26, 3/3, comme en anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
-boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
-armes à feu & arbalètes, habillement. Les pages `fr/catalogue/index.html`
-et `de/catalogue/index.html` renvoient vers la version anglaise pour ces
+armes d'hast, maroquinerie, vie de camp, vaisselle, rapières, armes à
+feu & arbalètes, habillement. Les pages `fr/catalogue/index.html` et
+`de/catalogue/index.html` renvoient vers la version anglaise pour ces
 catégories, avec une mention claire « (EN) ».
 
 **Pour ajouter un produit dans plusieurs langues :** ajoutez-le d'abord
@@ -273,16 +272,18 @@ section 4). Le détail par catégorie :
 
 **Ce qui reste malgré tout à faire :**
 
-- **Traduction française et allemande complète.** Les trois catégories
-  « vedettes » (épées, dagues, casques) sont maintenant traduites en
-  intégralité (61/61, 43/43, 26/26) en français et en allemand, à partir
-  du texte réel des pages `armabohemia.cz/FR/` et `armabohemia.cz/DE/`
-  (et non retraduit depuis l'anglais). Reste à traiter les 9 autres
-  catégories qui n'existent qu'en anglais pour l'instant (armures,
-  boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
-  armes à feu & arbalètes, habillement). La méthode est directe :
-  reprendre le même procédé (voir la partie développeur ci-dessous),
-  catégorie par catégorie. **C'est le chantier en cours.**
+- **Traduction française et allemande complète.** Quatre catégories sont
+  maintenant traduites en intégralité (épées 61/61, dagues 43/43, casques
+  26/26, boucliers 3/3) en français et en allemand, à partir du texte réel
+  des pages `armabohemia.cz/FR/` et `armabohemia.cz/DE/` (et non retraduit
+  depuis l'anglais) ; les boucliers sont la première catégorie à avoir été
+  créée de toutes pièces en FR/DE plutôt qu'étendue depuis une sélection
+  déjà partiellement traduite. Reste à traiter les 8 autres catégories qui
+  n'existent qu'en anglais pour l'instant (armures, armes d'hast,
+  maroquinerie, vie de camp, vaisselle, rapières, armes à feu &
+  arbalètes, habillement). La méthode est directe : reprendre le même
+  procédé (voir la partie développeur ci-dessous), catégorie par
+  catégorie. **C'est le chantier en cours.**
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
   Occasion (« Secondhand »), et le détail complet de « Nouveautés »
   (pièces uniques/sur mesure présentées ponctuellement).
