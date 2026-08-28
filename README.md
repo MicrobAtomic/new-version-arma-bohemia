@@ -223,10 +223,9 @@ double (ou triple), et il faut modifier chaque version séparément.
 **Catégories déjà traduites dans les trois langues :** épées, dagues,
 casques (`swords.html`, `daggers.html`, `helmets.html`), ainsi que les
 pages contact et conditions. Ces pages utilisent la même mise en page en
-liste, avec galeries photo, que la version anglaise. Épées et dagues sont
-désormais traduites en intégralité (61/61 et 43/43, comme en anglais) ;
-les casques ont encore une sélection plus courte (10 casques contre 26
-en anglais) : voir section 9.
+liste, avec galeries photo, que la version anglaise. Les trois sont
+désormais traduites en intégralité (61/61, 43/43, 26/26, comme en
+anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
 boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
@@ -274,17 +273,16 @@ section 4). Le détail par catégorie :
 
 **Ce qui reste malgré tout à faire :**
 
-- **Traduction française et allemande complète.** Épées et dagues sont
-  maintenant traduites en intégralité (61/61 et 43/43) en français et en
-  allemand, à partir du texte réel des pages `armabohemia.cz/FR/` et
-  `armabohemia.cz/DE/` (et non retraduit depuis l'anglais). Les casques
-  ont encore une sélection réduite (10/10 pièces au lieu de 26). Les 9
-  autres catégories (armures, boucliers, armes d'hast, maroquinerie, vie
-  de camp, vaisselle, rapières, armes à feu & arbalètes, habillement)
-  restent uniquement en anglais. La méthode est directe : reprendre le
-  même procédé que pour les épées et les dagues (voir la partie
-  développeur ci-dessous), catégorie par catégorie. **C'est le chantier
-  en cours.**
+- **Traduction française et allemande complète.** Les trois catégories
+  « vedettes » (épées, dagues, casques) sont maintenant traduites en
+  intégralité (61/61, 43/43, 26/26) en français et en allemand, à partir
+  du texte réel des pages `armabohemia.cz/FR/` et `armabohemia.cz/DE/`
+  (et non retraduit depuis l'anglais). Reste à traiter les 9 autres
+  catégories qui n'existent qu'en anglais pour l'instant (armures,
+  boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
+  armes à feu & arbalètes, habillement). La méthode est directe :
+  reprendre le même procédé (voir la partie développeur ci-dessous),
+  catégorie par catégorie. **C'est le chantier en cours.**
 - Les catégories non reprises telles quelles : Antiquités, Livres/CD,
   Occasion (« Secondhand »), et le détail complet de « Nouveautés »
   (pièces uniques/sur mesure présentées ponctuellement).

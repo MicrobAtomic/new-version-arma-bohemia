@@ -63,13 +63,13 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
 3. ~~**Habillement** (série SN/BT, ~14 réfs) — source : `Novestr/dresswin.htm`~~ ✅
    fait : `catalogue/dress-accessories.html` (14 fiches, `data/dress-accessories.psv`).
 4. **Parité FR/DE** : porter les sous-ensembles au niveau du catalogue anglais.
-   ~~Épées~~ ✅ et ~~dagues~~ ✅ faites (61/61 et 43/43 en FR et DE, texte
-   repris de `armabohemia.cz/FR/` et `/DE/`, voir `data/fr-swords.psv`,
-   `data/de-swords.psv`, `data/fr-daggers.psv`, `data/de-daggers.psv`).
-   Reste à faire : casques (encore 10/10 au lieu de 26), et les 9 autres
-   catégories qui n'existent qu'en anglais pour l'instant (armures,
-   boucliers, armes d'hast, maroquinerie, vie de camp, vaisselle, rapières,
-   armes à feu & arbalètes, habillement — lien « (EN) » dans les menus FR/DE).
+   ~~Épées~~ ✅, ~~dagues~~ ✅ et ~~casques~~ ✅ faits (61/61, 43/43, 26/26
+   en FR et DE, texte repris de `armabohemia.cz/FR/` et `/DE/`, voir
+   `data/fr-*.psv`/`data/de-*.psv` pour `swords`, `daggers`, `helmets`).
+   Reste à faire : les 9 autres catégories qui n'existent qu'en anglais
+   pour l'instant (armures, boucliers, armes d'hast, maroquinerie, vie de
+   camp, vaisselle, rapières, armes à feu & arbalètes, habillement — lien
+   « (EN) » dans les menus FR/DE).
 
 La méthode complète (découpage des pages d'origine, extraction des
 photos, vérification) est décrite dans la partie développeur du
