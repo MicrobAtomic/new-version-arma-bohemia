@@ -1,0 +1,923 @@
+<!--
+============================================================
+ARMA BOHEMIA — CATALOGUE VAISSELLE (Français)
+============================================================
+AJOUTER UN PRODUIT
+1. Copier un bloc "PRODUIT" complet (du commentaire d'ouverture
+   au commentaire "FIN PRODUIT", <article> compris).
+2. Le coller à l'endroit souhaité.
+3. Modifier référence, titre, époque, texte et prix.
+4. Ajouter l'image dans /assets/images/products/tableware/
+   et mettre à jour les attributs "src" et "href".
+
+SUPPRIMER UN PRODUIT
+Supprimer tout le bloc, du commentaire "PRODUIT xxx" à "FIN
+PRODUIT xxx".
+
+MODIFIER UN PRIX
+Rechercher la référence (ex: EP34), modifier son
+<p class="product-price">.
+
+Ne pas modifier les noms "class=..." sauf en connaissance de
+cause — le CSS dans /assets/css/ en dépend.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vaisselle &amp; couverts — Catalogue Arma Bohemia</title>
+<meta name="description" content="Copies fabriquées à la main de couteaux, fourchettes et louches médiévaux, XIIIe au XVIe siècle, par Arma Bohemia, République tchèque.">
+<link rel="canonical" href="https://www.armabohemia.cz/fr/catalogue/tableware.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/tableware.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/tableware.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/tableware.html">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Atelier historique, fondé en 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Accueil</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Épées</a>
+            <a href="rapiers.html">Rapières</a>
+            <a href="daggers.html">Dagues &amp; couteaux</a>
+            <a href="helmets.html">Casques</a>
+            <a href="armour.html">Armures</a>
+            <a href="shields.html">Boucliers</a>
+            <a href="polearms.html">Armes d'hast</a>
+            <a href="firearms.html">Armes à feu</a>
+            <a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a>
+            <a href="dress-accessories.html">Habillement</a>
+            <a href="camp-life.html">Vie de camp</a>
+            <a href="tableware.html" aria-current="page">Vaisselle</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Atelier</a></li>
+        <li><a class="main-nav__link" href="../events.html">Événements</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="../../catalogue/tableware.html">EN</a></li>
+          <li><a class="lang-switch__link" href="tableware.html" aria-current="true">FR</a></li>
+          <li><a class="lang-switch__link" href="../../de/catalogue/tableware.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Ouvrir le menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Navigation mobile">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Épées</a></li>
+                  <li><a href="rapiers.html">Rapières</a></li>
+                  <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+                  <li><a href="helmets.html">Casques</a></li>
+                  <li><a href="armour.html">Armures</a></li>
+                  <li><a href="shields.html">Boucliers</a></li>
+                  <li><a href="polearms.html">Armes d'hast</a></li>
+                  <li><a href="firearms.html">Armes à feu</a></li>
+                  <li><a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a></li>
+                  <li><a href="dress-accessories.html">Habillement</a></li>
+                  <li><a href="camp-life.html">Vie de camp</a></li>
+                  <li><a href="tableware.html">Vaisselle</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Atelier</a></li>
+            <li><a href="../events.html">Événements</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="../../catalogue/tableware.html">EN</a>
+            <a class="lang-switch__link" href="tableware.html" aria-current="true">FR</a>
+            <a class="lang-switch__link" href="../../de/catalogue/tableware.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Vaisselle &amp; couverts</p>
+      <h1>Vaisselle &amp; couverts</h1>
+      <p class="lead">Copies fabriquées à la main de couteaux, fourchettes et louches médiévaux, du XIIIe au XVIe siècle. L'ensemble de la gamme proposée par l'atelier au fil des années — 44 pièces.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>En raison de coûts d'entrée très instables, tous les prix ont une valeur purement informative et peuvent faire l'objet de modifications mineures. Veuillez demander la situation actuelle des prix avec chaque commande — voir <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-toolbar" data-catalog-toolbar hidden>
+        <div class="catalog-search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <label class="visually-hidden" for="tableware-search">Rechercher un objet de vaisselle</label>
+          <input type="search" id="tableware-search" data-catalog-search placeholder="Rechercher par référence, nom ou type…">
+        </div>
+        <div class="catalog-filters" role="group" aria-label="Filtrer par type">
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="all" aria-pressed="true">Tous les types</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="knife">Couteaux</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="cutlery">Fourchettes</button>
+          <button class="filter-chip" type="button" data-filter-group="type" data-filter-value="kitchenware">Ustensiles de cuisine</button>
+        </div>
+      </div>
+
+      <p class="catalog-count" data-catalog-count data-template="{n} pièces affichées">44 pièces affichées</p>
+
+      <div class="catalog-list" data-catalog-grid>
+
+        <!-- A68 -->
+        <article class="catalog-row" data-tags="knife" data-search="a68 couteau pays-bas · fin du xiiie–début du xive siècle poignée en os. longueur : environ 22,5 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a68m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a68v.jpg","../../assets/images/products/tableware/a68v2.jpg","../../assets/images/products/tableware/a68v3.jpg"]' data-lightbox-caption="A68 — Couteau">
+            <img src="../../assets/images/products/tableware/a68m.jpg" alt="Couteau, référence A68" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A68</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Pays-Bas · fin du XIIIe–début du XIVe siècle</p>
+            <p class="product-description">Poignée en os. Longueur : environ 22,5 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">115 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A68 -->
+
+        <!-- A69 -->
+        <article class="catalog-row" data-tags="knife" data-search="a69 couteau pays-bas ou allemagne · xive–xve siècle poignée en corne. longueur : environ 19 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a69m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a69v.jpg","../../assets/images/products/tableware/a69v2.jpg"]' data-lightbox-caption="A69 — Couteau">
+            <img src="../../assets/images/products/tableware/a69m.jpg" alt="Couteau, référence A69" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A69</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Pays-Bas ou Allemagne · XIVe–XVe siècle</p>
+            <p class="product-description">Poignée en corne. Longueur : environ 19 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">119 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A69 -->
+
+        <!-- A70 -->
+        <article class="catalog-row" data-tags="knife" data-search="a70 couteau pays-bas · xive siècle poignée en bois. longueur : environ 21 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a70m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a70v.jpg","../../assets/images/products/tableware/a70v2.jpg"]' data-lightbox-caption="A70 — Couteau">
+            <img src="../../assets/images/products/tableware/a70m.jpg" alt="Couteau, référence A70" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A70</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Pays-Bas · XIVe siècle</p>
+            <p class="product-description">Poignée en bois. Longueur : environ 21 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">73 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A70 -->
+
+        <!-- GROUP A11, A12, A13 -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a11, a12, a13 petits couteaux xve siècle longueur : environ 20 cm. prix par couteau. a14 fourreau en cuir  accompagne les petits couteaux a11–a13." data-count="4">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/noze01.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/noze02.jpg"]' data-lightbox-caption="A11, A12, A13, A14">
+            <img src="../../assets/images/products/tableware/noze01.jpg" alt="A11, A12, A13, A14 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les couteaux et le fourreau sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A11, A12, A13</span>
+                  <h2 class="product-title">Petits couteaux</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Longueur : environ 20 cm. Prix par couteau.</p>
+                </div>
+                <p class="product-price">36 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A14</span>
+                  <h2 class="product-title">Fourreau en cuir</h2>
+                  <p class="product-description">Accompagne les petits couteaux A11–A13.</p>
+                </div>
+                <p class="product-price">17 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A11, A12, A13 -->
+
+        <!-- A11b -->
+        <article class="catalog-row" data-tags="knife" data-search="a11b couteau à manger fin du xve siècle poignée en corne ou en os. longueur : environ 21 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a11bm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a11bv.jpg"]' data-lightbox-caption="A11b — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a11bm.jpg" alt="Couteau à manger, référence A11b" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A11b</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Poignée en corne ou en os. Longueur : environ 21 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">50 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A11b -->
+
+        <!-- GROUP A18 -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a18 couteau de cuisine xve siècle modèle standard. a19 couteau de cuisine xve siècle modèle standard. a20 louche en bois xve siècle modèle standard. a21 passoire en bois xve siècle modèle standard." data-count="4">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/kuchyn.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/kuchyn2.jpg"]' data-lightbox-caption="A18, A19, A20, A21">
+            <img src="../../assets/images/products/tableware/kuchyn.jpg" alt="A18, A19, A20, A21 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les quatre pièces sont photographiées ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A18</span>
+                  <h2 class="product-title">Couteau de cuisine</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Modèle standard.</p>
+                </div>
+                <p class="product-price">119 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A19</span>
+                  <h2 class="product-title">Couteau de cuisine</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Modèle standard.</p>
+                </div>
+                <p class="product-price">89 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A20</span>
+                  <h2 class="product-title">Louche en bois</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Modèle standard.</p>
+                </div>
+                <p class="product-price">20 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A21</span>
+                  <h2 class="product-title">Passoire en bois</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Modèle standard.</p>
+                </div>
+                <p class="product-price">22 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A18 -->
+
+        <!-- A25 -->
+        <article class="catalog-row" data-tags="knife" data-search="a25 couteau de cuisine slovaquie · vers 1460–1470 copie exacte. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/nuz1M.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/nuz1V.jpg"]' data-lightbox-caption="A25 — Couteau de cuisine">
+            <img src="../../assets/images/products/tableware/nuz1M.jpg" alt="Couteau de cuisine, référence A25" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A25</span>
+            <h2 class="product-title">Couteau de cuisine</h2>
+            <p class="product-period">Slovaquie · vers 1460–1470</p>
+            <p class="product-description">Copie exacte. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">68 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A25 -->
+
+        <!-- A26 -->
+        <article class="catalog-row" data-tags="knife" data-search="a26 couteau angleterre · 2e moitié du xve siècle copie exacte.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/nuz2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/nuz2V.jpg"]' data-lightbox-caption="A26 — Couteau">
+            <img src="../../assets/images/products/tableware/nuz2m.jpg" alt="Couteau, référence A26" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A26</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Angleterre · 2e moitié du XVe siècle</p>
+            <p class="product-description">Copie exacte.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">46 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A26 -->
+
+        <!-- A27 -->
+        <article class="catalog-row" data-tags="knife" data-search="a27 couteau slovaquie · vers 1460–1470 copie exacte. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/nuz3m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/nuz3v.jpg"]' data-lightbox-caption="A27 — Couteau">
+            <img src="../../assets/images/products/tableware/nuz3m.jpg" alt="Couteau, référence A27" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A27</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Slovaquie · vers 1460–1470</p>
+            <p class="product-description">Copie exacte. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">46 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A27 -->
+
+        <!-- GROUP A28 -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a28 couteau à manger xve siècle poignée en corne ou en os. longueur : environ 23 cm. a14b fourreau en cuir décoré  pour la a28." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/nozikrohm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/nozikrohV.jpg"]' data-lightbox-caption="A28, A14b">
+            <img src="../../assets/images/products/tableware/nozikrohm.jpg" alt="A28, A14b photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Le couteau et son fourreau sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A28</span>
+                  <h2 class="product-title">Couteau à manger</h2>
+                  <p class="product-period">XVe siècle</p>
+                  <p class="product-description">Poignée en corne ou en os. Longueur : environ 23 cm.</p>
+                </div>
+                <p class="product-price">48 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A14b</span>
+                  <h2 class="product-title">Fourreau en cuir décoré</h2>
+                  <p class="product-description">Pour la A28.</p>
+                </div>
+                <p class="product-price">25 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A28 -->
+
+        <!-- GROUP A29 -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a29 couteau à manger fin du xve–début du xvie siècle copie exacte, poignée en os. longueur : environ 14,5 cm. collection arma bohemia. a30 pic à viande fin du xve–début du xvie siècle copie exacte, poignée en os. longueur : environ 13,5 cm. collection arma bohemia." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/body1m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/body1v.jpg","../../assets/images/products/tableware/body3v.jpg"]' data-lightbox-caption="A29, A30">
+            <img src="../../assets/images/products/tableware/body1m.jpg" alt="A29, A30 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Le couteau et le pic à viande sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A29</span>
+                  <h2 class="product-title">Couteau à manger</h2>
+                  <p class="product-period">Fin du XVe–début du XVIe siècle</p>
+                  <p class="product-description">Copie exacte, poignée en os. Longueur : environ 14,5 cm. Collection Arma Bohemia.</p>
+                </div>
+                <p class="product-price">58 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A30</span>
+                  <h2 class="product-title">Pic à viande</h2>
+                  <p class="product-period">Fin du XVe–début du XVIe siècle</p>
+                  <p class="product-description">Copie exacte, poignée en os. Longueur : environ 13,5 cm. Collection Arma Bohemia.</p>
+                </div>
+                <p class="product-price">58 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A29 -->
+
+        <!-- GROUP A29b -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a29b couteau à manger fin du xve–début du xvie siècle copie exacte, poignée en corne. longueur : environ 14,5 cm. collection arma bohemia. a30b pic à viande fin du xve–début du xvie siècle copie exacte, poignée en corne. longueur : environ 13,5 cm. collection arma bohemia." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/n10m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/n10v.jpg"]' data-lightbox-caption="A29b, A30b">
+            <img src="../../assets/images/products/tableware/n10m.jpg" alt="A29b, A30b photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Le couteau et le pic à viande sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A29b</span>
+                  <h2 class="product-title">Couteau à manger</h2>
+                  <p class="product-period">Fin du XVe–début du XVIe siècle</p>
+                  <p class="product-description">Copie exacte, poignée en corne. Longueur : environ 14,5 cm. Collection Arma Bohemia.</p>
+                </div>
+                <p class="product-price">58 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A30b</span>
+                  <h2 class="product-title">Pic à viande</h2>
+                  <p class="product-period">Fin du XVe–début du XVIe siècle</p>
+                  <p class="product-description">Copie exacte, poignée en corne. Longueur : environ 13,5 cm. Collection Arma Bohemia.</p>
+                </div>
+                <p class="product-price">58 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A29b -->
+
+        <!-- GROUP A31 -->
+        <article class="catalog-row catalog-row--group" data-tags="knife" data-search="a31 couteau à manger slovaquie · vers 1460–1470 copie exacte, poignée en os. longueur : environ 19 cm. a32 couteau à manger slovaquie · vers 1460–1470 copie exacte, poignée en os. longueur : environ 18,5 cm. original dans la collection arma bohemia." data-count="2">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/cout1m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/cout1o.jpg","../../assets/images/products/tableware/cout1v.jpg","../../assets/images/products/tableware/cout1vv.jpg","../../assets/images/products/tableware/cout1vvv.jpg"]' data-lightbox-caption="A31, A32">
+            <img src="../../assets/images/products/tableware/cout1m.jpg" alt="A31, A32 photographiées ensemble" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <p class="group-note">Les deux couteaux sont photographiés ensemble.</p>
+            <ul class="variant-list">
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A31</span>
+                  <h2 class="product-title">Couteau à manger</h2>
+                  <p class="product-period">Slovaquie · vers 1460–1470</p>
+                  <p class="product-description">Copie exacte, poignée en os. Longueur : environ 19 cm.</p>
+                </div>
+                <p class="product-price">69 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+              <li class="variant">
+                <div class="variant__text">
+                  <span class="product-reference">A32</span>
+                  <h2 class="product-title">Couteau à manger</h2>
+                  <p class="product-period">Slovaquie · vers 1460–1470</p>
+                  <p class="product-description">Copie exacte, poignée en os. Longueur : environ 18,5 cm. Original dans la collection Arma Bohemia.</p>
+                </div>
+                <p class="product-price">69 €<span class="price-indicative-tag">indicatif</span></p>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <!-- /GROUP A31 -->
+
+        <!-- A33 -->
+        <article class="catalog-row" data-tags="knife" data-search="a33 couteau à manger slovaquie · vers 1460–1470 copie exacte. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/cout2m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/cout2v.jpg"]' data-lightbox-caption="A33 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/cout2m.jpg" alt="Couteau à manger, référence A33" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A33</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Slovaquie · vers 1460–1470</p>
+            <p class="product-description">Copie exacte. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A33 -->
+
+        <!-- A34 -->
+        <article class="catalog-row" data-tags="knife" data-search="a34 couteau à manger slovaquie · vers 1460–1470 copie exacte. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/cout3m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/cout3v.jpg","../../assets/images/products/tableware/cout3vv.jpg"]' data-lightbox-caption="A34 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/cout3m.jpg" alt="Couteau à manger, référence A34" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A34</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Slovaquie · vers 1460–1470</p>
+            <p class="product-description">Copie exacte. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A34 -->
+
+        <!-- A35 -->
+        <article class="catalog-row" data-tags="other" data-search="a35 fourreau en cuir collectif — pour le couteau a29 ou a31, a32 et le pic à viande a30.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/pochvicky1.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/pochvicky.jpg"]' data-lightbox-caption="A35 — Fourreau en cuir collectif">
+            <img src="../../assets/images/products/tableware/pochvicky1.jpg" alt="Fourreau en cuir collectif, référence A35" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A35</span>
+            <h2 class="product-title">Fourreau en cuir collectif</h2>
+            <p class="product-description">Pour le couteau A29 (ou A31, A32) et le pic à viande A30.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">22 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A35 -->
+
+        <!-- A37 -->
+        <article class="catalog-row" data-tags="knife" data-search="a37 couteau à manger xve siècle copie exacte, poignée en os. longueur : environ 20,5 cm. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/cout37m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/cout37v.jpg"]' data-lightbox-caption="A37 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/cout37m.jpg" alt="Couteau à manger, référence A37" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A37</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Copie exacte, poignée en os. Longueur : environ 20,5 cm. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A37 -->
+
+        <!-- A38 -->
+        <article class="catalog-row" data-tags="knife" data-search="a38 couteau à manger xve siècle copie exacte, poignée en os. longueur : environ 15,5 cm. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/cout38m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/cout38v.jpg","../../assets/images/products/tableware/cout38v2.jpg","../../assets/images/products/tableware/cout38v3.jpg","../../assets/images/products/tableware/cout38v4.jpg"]' data-lightbox-caption="A38 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/cout38m.jpg" alt="Couteau à manger, référence A38" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A38</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Copie exacte, poignée en os. Longueur : environ 15,5 cm. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A38 -->
+
+        <!-- A39 -->
+        <article class="catalog-row" data-tags="knife" data-search="a39 couteau à manger fin du xve siècle copie exacte, poignée en os. longueur : environ 14,5 cm. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a39m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a39m.jpg"]' data-lightbox-caption="A39 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a39m.jpg" alt="Couteau à manger, référence A39" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A39</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Copie exacte, poignée en os. Longueur : environ 14,5 cm. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">53 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A39 -->
+
+        <!-- A40 -->
+        <article class="catalog-row" data-tags="knife" data-search="a40 couteau à manger xve siècle copie exacte, poignée en os. longueur : environ 19 cm. original dans la collection arma bohemia.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a40m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a40v.jpg","../../assets/images/products/tableware/a40v2.jpg"]' data-lightbox-caption="A40 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a40m.jpg" alt="Couteau à manger, référence A40" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A40</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Copie exacte, poignée en os. Longueur : environ 19 cm. Original dans la collection Arma Bohemia.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">57 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A40 -->
+
+        <!-- A42 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a42 fourchette xve siècle copie, fer, longueur environ 33 cm avec manche en bois. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a42m2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a42v.jpg","../../assets/images/products/tableware/a42v2.jpg","../../assets/images/products/tableware/a42v3.JPG"]' data-lightbox-caption="A42 — Fourchette">
+            <img src="../../assets/images/products/tableware/a42m2.jpg" alt="Fourchette, référence A42" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A42</span>
+            <h2 class="product-title">Fourchette</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Copie, fer, longueur environ 33 cm avec manche en bois. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">69 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A42 -->
+
+        <!-- A43 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a43 fourchette xve–xvie siècle copie, fer, longueur environ 14,5 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a43m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a43v.jpg","../../assets/images/products/tableware/a43v2.jpg"]' data-lightbox-caption="A43 — Fourchette">
+            <img src="../../assets/images/products/tableware/a43m.jpg" alt="Fourchette, référence A43" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A43</span>
+            <h2 class="product-title">Fourchette</h2>
+            <p class="product-period">XVe–XVIe siècle</p>
+            <p class="product-description">Copie, fer, longueur environ 14,5 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A43 -->
+
+        <!-- A45 -->
+        <article class="catalog-row" data-tags="cutlery" data-search="a45 fourchette xve siècle copie, fer, longueur environ 15,5 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a45m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a45v.jpg","../../assets/images/products/tableware/a45v2.jpg"]' data-lightbox-caption="A45 — Fourchette">
+            <img src="../../assets/images/products/tableware/a45m.jpg" alt="Fourchette, référence A45" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A45</span>
+            <h2 class="product-title">Fourchette</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Copie, fer, longueur environ 15,5 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A45 -->
+
+        <!-- A46 -->
+        <article class="catalog-row" data-tags="knife" data-search="a46 couteau à manger probablement pays-bas · xve siècle copie exacte, acier, longueur environ 20 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a46m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a46v.jpg","../../assets/images/products/tableware/a46v2.jpg"]' data-lightbox-caption="A46 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a46m.jpg" alt="Couteau à manger, référence A46" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A46</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Probablement Pays-Bas · XVe siècle</p>
+            <p class="product-description">Copie exacte, acier, longueur environ 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">40 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A46 -->
+
+        <!-- A47 -->
+        <article class="catalog-row" data-tags="knife" data-search="a47 couteau à manger allemagne du sud · xve–xvie siècle copie exacte, acier, longueur environ 20 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a47m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a47v.jpg","../../assets/images/products/tableware/a47v2.jpg"]' data-lightbox-caption="A47 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a47m.jpg" alt="Couteau à manger, référence A47" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A47</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Allemagne du sud · XVe–XVIe siècle</p>
+            <p class="product-description">Copie exacte, acier, longueur environ 20 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">43 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A47 -->
+
+        <!-- A48 -->
+        <article class="catalog-row" data-tags="knife" data-search="a48 couteau pays-bas · xive–xve siècle copie exacte, longueur : 16 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a48m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a48v.jpg","../../assets/images/products/tableware/a48v2.jpg"]' data-lightbox-caption="A48 — Couteau">
+            <img src="../../assets/images/products/tableware/a48m.jpg" alt="Couteau, référence A48" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A48</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Pays-Bas · XIVe–XVe siècle</p>
+            <p class="product-description">Copie exacte, longueur : 16 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A48 -->
+
+        <!-- A49 -->
+        <article class="catalog-row" data-tags="knife" data-search="a49 couteau pays-bas · xve siècle copie exacte, longueur : 17 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a49m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a49v.jpg","../../assets/images/products/tableware/a49v2.jpg"]' data-lightbox-caption="A49 — Couteau">
+            <img src="../../assets/images/products/tableware/a49m.jpg" alt="Couteau, référence A49" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A49</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Pays-Bas · XVe siècle</p>
+            <p class="product-description">Copie exacte, longueur : 17 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A49 -->
+
+        <!-- A50 -->
+        <article class="catalog-row" data-tags="knife" data-search="a50 couteau allemagne ou flandre · vers 1500 copie exacte, lame en acier plié, poignée en corne. longueur : environ 18 cm.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a50m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a50v.jpg","../../assets/images/products/tableware/a50v2.jpg","../../assets/images/products/tableware/a50v3.jpg"]' data-lightbox-caption="A50 — Couteau">
+            <img src="../../assets/images/products/tableware/a50m.jpg" alt="Couteau, référence A50" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A50</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Allemagne ou Flandre · vers 1500</p>
+            <p class="product-description">Copie exacte, lame en acier plié, poignée en corne. Longueur : environ 18 cm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">83 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A50 -->
+
+        <!-- A51 -->
+        <article class="catalog-row" data-tags="knife" data-search="a51 couteau bohême · xve siècle copie exacte, poignée en corne, environ 19 cm. original dans la collection arma bohemia fourreau non inclus.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a51m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a51v.jpg","../../assets/images/products/tableware/a51v2.jpg"]' data-lightbox-caption="A51 — Couteau">
+            <img src="../../assets/images/products/tableware/a51m.jpg" alt="Couteau, référence A51" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A51</span>
+            <h2 class="product-title">Couteau</h2>
+            <p class="product-period">Bohême · XVe siècle</p>
+            <p class="product-description">Copie exacte, poignée en corne, environ 19 cm. Original dans la collection Arma Bohemia (fourreau non inclus).</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">45 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A51 -->
+
+        <!-- A54 -->
+        <article class="catalog-row" data-tags="knife" data-search="a54 couteau à manger angleterre ? · xve–xvie siècle copie exacte, longueur : environ 21,5 cm. l'original se trouve au deutsches klingenmuseum, solingen, allemagne.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a54m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a54v.jpg","../../assets/images/products/tableware/a54v2.jpg"]' data-lightbox-caption="A54 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a54m.jpg" alt="Couteau à manger, référence A54" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A54</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Angleterre (?) · XVe–XVIe siècle</p>
+            <p class="product-description">Copie exacte, longueur : environ 21,5 cm. L'original se trouve au Deutsches Klingenmuseum, Solingen, Allemagne.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A54 -->
+
+        <!-- A55 -->
+        <article class="catalog-row" data-tags="knife" data-search="a55 couteau à manger xvie siècle copie exacte, longueur : environ 27,5 cm. l'original se trouve au deutsches klingenmuseum, solingen, allemagne.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a55m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a55v.jpg","../../assets/images/products/tableware/a55v2.jpg"]' data-lightbox-caption="A55 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a55m.jpg" alt="Couteau à manger, référence A55" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A55</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">XVIe siècle</p>
+            <p class="product-description">Copie exacte, longueur : environ 27,5 cm. L'original se trouve au Deutsches Klingenmuseum, Solingen, Allemagne.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">59 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A55 -->
+
+        <!-- A63 -->
+        <article class="catalog-row" data-tags="knife" data-search="a63 couteau à manger angleterre · xive siècle copie exacte, longueur : environ 16 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a63m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a63v.jpg","../../assets/images/products/tableware/a63v2.jpg","../../assets/images/products/tableware/a63v3.jpg"]' data-lightbox-caption="A63 — Couteau à manger">
+            <img src="../../assets/images/products/tableware/a63m.jpg" alt="Couteau à manger, référence A63" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A63</span>
+            <h2 class="product-title">Couteau à manger</h2>
+            <p class="product-period">Angleterre · XIVe siècle</p>
+            <p class="product-description">Copie exacte, longueur : environ 16 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">39 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A63 -->
+
+        <!-- A64 -->
+        <article class="catalog-row" data-tags="knife" data-search="a64 couteau de cuisine angleterre · xive siècle copie, version plus grande de la a63. environ 26,5 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a64m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a63v.jpg","../../assets/images/products/tableware/a63v2.jpg","../../assets/images/products/tableware/a63v3.jpg"]' data-lightbox-caption="A64 — Couteau de cuisine">
+            <img src="../../assets/images/products/tableware/a64m.jpg" alt="Couteau de cuisine, référence A64" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A64</span>
+            <h2 class="product-title">Couteau de cuisine</h2>
+            <p class="product-period">Angleterre · XIVe siècle</p>
+            <p class="product-description">Copie, version plus grande de la A63. Environ 26,5 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">76 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A64 -->
+
+        <!-- A67 -->
+        <article class="catalog-row" data-tags="knife" data-search="a67 rasoir médiéval / couteau à fermoir allemagne · xive–xve siècle copie, environ 22,5 cm. collection privée.">
+          <a class="catalog-row__media" href="../../assets/images/products/tableware/a67m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/tableware/a67v.jpg","../../assets/images/products/tableware/a67v2.jpg","../../assets/images/products/tableware/a67v3.jpg","../../assets/images/products/tableware/a67v4.jpg"]' data-lightbox-caption="A67 — Rasoir médiéval / couteau à fermoir">
+            <img src="../../assets/images/products/tableware/a67m.jpg" alt="Rasoir médiéval / couteau à fermoir, référence A67" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">A67</span>
+            <h2 class="product-title">Rasoir médiéval / couteau à fermoir</h2>
+            <p class="product-period">Allemagne · XIVe–XVe siècle</p>
+            <p class="product-description">Copie, environ 22,5 cm. Collection privée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">49 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /A67 -->
+
+      <p class="catalog-empty" data-catalog-empty>Aucun objet ne correspond à votre recherche. Essayez une autre référence ou un autre nom, ou <a href="../contact.html">contactez l'atelier</a> directement.</p>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Atelier historique de reconstitution, fondé en 1995. Reproductions artisanales d'armes, d'armures et d'objets du Moyen Âge et de la Renaissance, réalisées par un réseau d'artisans tchèques.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Épées</a></li>
+        <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+        <li><a href="helmets.html">Casques</a></li>
+        <li><a href="index.html">Catalogue complet →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Atelier</h3>
+      <ul>
+        <li><a href="../about.html">À propos d'Arma Bohemia</a></li>
+        <li><a href="../events.html">Événements</a></li>
+        <li><a href="../conditions.html">Commande &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, République tchèque</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo du produit agrandie">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/catalog.js"></script>
+<script src="../../assets/js/gallery.js"></script>
+</body>
+</html>

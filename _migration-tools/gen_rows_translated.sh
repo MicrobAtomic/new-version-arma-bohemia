@@ -29,6 +29,11 @@ while IFS='|' read -r ref title period desc price tag thumb count gallery; do
   else
     price_html="${price} €"
   fi
+  if [ "$period" = "—" ] || [ -z "$period" ]; then
+    period_html=""
+  else
+    period_html="            <p class=\"product-period\">$period</p>"
+  fi
   {
     echo "        <!-- $ref -->"
     echo "        <article class=\"catalog-row\" data-tags=\"$tag\" data-search=\"$search_text\">"
@@ -39,7 +44,7 @@ while IFS='|' read -r ref title period desc price tag thumb count gallery; do
     echo "          <div class=\"catalog-row__main\">"
     echo "            <span class=\"product-reference\">$ref</span>"
     echo "            <h2 class=\"product-title\">$title</h2>"
-    echo "            <p class=\"product-period\">$period</p>"
+    [ -n "$period_html" ] && echo "$period_html"
     echo "            <p class=\"product-description\">$desc</p>"
     echo "          </div>"
     echo "          <div class=\"catalog-row__price\">"

@@ -66,14 +66,14 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
    ou créer la page FR/DE quand elle n'existe pas encore.
    ~~Épées~~ ✅, ~~dagues~~ ✅, ~~casques~~ ✅, ~~boucliers~~ ✅,
    ~~rapières~~ ✅, ~~habillement~~ ✅, ~~armes d'hast~~ ✅, ~~armes à
-   feu~~ ✅, ~~vie de camp~~ ✅ et ~~armures~~ ✅ faits (61/61, 43/43,
-   26/26, 3/3, 11/11, 14/14, 16/16, 16/16, 21/21, 24/24 en FR et DE,
-   texte repris de `armabohemia.cz/FR/` et `/DE/`, voir
+   feu~~ ✅, ~~vie de camp~~ ✅, ~~armures~~ ✅ et ~~vaisselle~~ ✅ faits
+   (61/61, 43/43, 26/26, 3/3, 11/11, 14/14, 16/16, 16/16, 21/21, 24/24,
+   44/44 en FR et DE, texte repris de `armabohemia.cz/FR/` et `/DE/`, voir
    `data/fr-*.psv`/`data/de-*.psv` pour `swords`, `daggers`, `helmets`,
    `shields`, `rapiers`, `dress-accessories`, `polearms`, `firearms`,
-   `camp-life`, `armour-suits`/`armour-pieces`). Boucliers, rapières,
-   habillement, armes d'hast, armes à feu, vie de camp et armures sont
-   les sept premières catégories créées de zéro en FR/DE
+   `camp-life`, `armour-suits`/`armour-pieces`, `tableware`). Boucliers,
+   rapières, habillement, armes d'hast, armes à feu, vie de camp, armures
+   et vaisselle sont les huit premières catégories créées de zéro en FR/DE
    (`fr/catalogue/shields.html`, `de/catalogue/rapiers.html`, etc.
    n'existaient pas avant) — au passage, `delocalize_nav.pl` (dans le
    scratch, pattern documenté ici) a été écrit pour réécrire en masse tous
@@ -87,9 +87,15 @@ bash gen_rows_en.sh data/swords.psv swords /tmp/rows.html
    pour les pièces séparées, dossier `armour-pieces/`) — les deux ont dû
    être traduits et générés séparément puis concaténés dans le bon ordre
    avant d'être collés dans la page, `gen_rows_translated.sh` ne prenant
-   qu'un seul dossier d'images à la fois. Reste à faire : les 2 autres
-   catégories qui n'existent qu'en anglais pour l'instant (maroquinerie,
-   vaisselle —
+   qu'un seul dossier d'images à la fois. Vaisselle est la catégorie avec
+   le plus de regroupements photo (6 groupes, dont un à 4 pièces
+   A18/A19/A20/A21) — `merge_group_n.pl` (scratch, version N-aire de
+   `merge_group.pl`) a été écrit pour ce cas, avec un préfixe optionnel
+   `COUNT:<n>|` sur la note pour surcharger le `data-count` quand une
+   variante `<li>` représente plusieurs références collapsées (ex. « A11,
+   A12, A13 » comptées comme 3 produits dans un seul variant). Reste à
+   faire : la dernière catégorie qui n'existe qu'en anglais pour l'instant
+   (maroquinerie —
    lien « (EN) » dans les menus
    FR/DE).
 
