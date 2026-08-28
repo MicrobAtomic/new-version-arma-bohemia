@@ -1,0 +1,618 @@
+<!--
+============================================================
+ARMA BOHEMIA — CATALOGUE ARMURES (Français)
+============================================================
+AJOUTER UN PRODUIT : copier un bloc "PRODUIT" complet (de
+l'ouverture à "FIN PRODUIT"), le coller, modifier référence/
+titre/époque/texte/prix, et ajouter l'image dans
+/assets/images/products/armour/ ou /assets/images/products/armour-pieces/
+selon le cas (mettre à jour "src" et "href").
+
+SUPPRIMER UN PRODUIT : supprimer tout le bloc.
+MODIFIER UN PRIX : rechercher la référence, modifier son
+<p class="product-price">.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armures — Catalogue Arma Bohemia</title>
+<meta name="description" content="Copies fabriquées à la main d'armures complètes et de pièces d'armure séparées — cuirasses, gantelets, protections de bras et de jambes — par Arma Bohemia, République tchèque.">
+<link rel="canonical" href="https://www.armabohemia.cz/fr/catalogue/armour.html">
+<link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/armour.html">
+<link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/armour.html">
+<link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/armour.html">
+<link rel="stylesheet" href="../../assets/css/reset.css">
+<link rel="stylesheet" href="../../assets/css/variables.css">
+<link rel="stylesheet" href="../../assets/css/layout.css">
+<link rel="stylesheet" href="../../assets/css/components.css">
+<link rel="stylesheet" href="../../assets/css/responsive.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu principal</a>
+
+<header class="site-header">
+  <div class="container site-header__bar">
+    <a class="brand" href="../index.html">
+      <span class="brand__mark" aria-hidden="true">⚔</span>
+      <span>Arma Bohemia<span class="brand__sub">Atelier historique, fondé en 1995</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="../index.html">Accueil</a></li>
+        <li class="nav-dropdown">
+          <a class="nav-dropdown__toggle" href="index.html">Catalogue <span class="chevron" aria-hidden="true"></span></a>
+          <div class="nav-dropdown__panel">
+            <a href="swords.html">Épées</a>
+            <a href="rapiers.html">Rapières</a>
+            <a href="daggers.html">Dagues &amp; couteaux</a>
+            <a href="helmets.html">Casques</a>
+            <a href="armour.html" aria-current="page">Armures</a>
+            <a href="shields.html">Boucliers</a>
+            <a href="polearms.html">Armes d'hast</a>
+            <a href="firearms.html">Armes à feu</a>
+            <a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a>
+            <a href="dress-accessories.html">Habillement</a>
+            <a href="camp-life.html">Vie de camp</a>
+            <a href="../../catalogue/tableware.html">Vaisselle (EN)</a>
+          </div>
+        </li>
+        <li><a class="main-nav__link" href="../about.html">Atelier</a></li>
+        <li><a class="main-nav__link" href="../events.html">Événements</a></li>
+        <li><a class="main-nav__link" href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+      <div class="lang-switch">
+        <ul class="lang-switch__list">
+          <li><a class="lang-switch__link" href="../../catalogue/armour.html">EN</a></li>
+          <li><a class="lang-switch__link" href="armour.html" aria-current="true">FR</a></li>
+          <li><a class="lang-switch__link" href="../../de/catalogue/armour.html">DE</a></li>
+        </ul>
+      </div>
+      <details class="mobile-menu">
+        <summary class="mobile-menu__summary" aria-label="Ouvrir le menu"><span></span><span></span><span></span></summary>
+        <nav aria-label="Navigation mobile">
+          <ul class="mobile-menu__panel">
+            <li><a href="../index.html">Accueil</a></li>
+            <li>
+              <details class="mobile-submenu" open>
+                <summary>Catalogue <span class="chevron" aria-hidden="true"></span></summary>
+                <ul class="mobile-submenu__list">
+                  <li><a href="swords.html">Épées</a></li>
+                  <li><a href="rapiers.html">Rapières</a></li>
+                  <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+                  <li><a href="helmets.html">Casques</a></li>
+                  <li><a href="armour.html">Armures</a></li>
+                  <li><a href="shields.html">Boucliers</a></li>
+                  <li><a href="polearms.html">Armes d'hast</a></li>
+                  <li><a href="firearms.html">Armes à feu</a></li>
+                  <li><a href="../../catalogue/leather-goods.html">Maroquinerie (EN)</a></li>
+                  <li><a href="dress-accessories.html">Habillement</a></li>
+                  <li><a href="camp-life.html">Vie de camp</a></li>
+                  <li><a href="../../catalogue/tableware.html">Vaisselle (EN)</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="../about.html">Atelier</a></li>
+            <li><a href="../events.html">Événements</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+          <div class="mobile-menu__langs">
+            <a class="lang-switch__link" href="../../catalogue/armour.html">EN</a>
+            <a class="lang-switch__link" href="armour.html" aria-current="true">FR</a>
+            <a class="lang-switch__link" href="../../de/catalogue/armour.html">DE</a>
+          </div>
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="page-intro">
+    <div class="container">
+      <p class="breadcrumbs"><a href="../index.html">Accueil</a><span aria-hidden="true">/</span><a href="index.html">Catalogue</a><span aria-hidden="true">/</span>Armures</p>
+      <h1>Armures</h1>
+      <p class="lead">Suites d'armure complètes et pièces séparées — cuirasses, gantelets, protections de bras et de jambes — de la fin du XIVe au début du XVIe siècle.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+
+      <p class="price-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8v5"/><path d="M12 16h.01"/></svg>
+        <span>En raison de coûts d'entrée très instables, tous les prix ont une valeur purement informative et peuvent faire l'objet de modifications mineures. Veuillez demander la situation actuelle des prix avec chaque commande — voir <a href="../contact.html">Contact</a>.</span>
+      </p>
+
+      <div class="catalog-list">
+
+        <!-- ZB6 -->
+        <article class="catalog-row" data-tags="full" data-search="zb6 armure complète tardive fin du xve siècle largement décorée, poli miroir.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour/ZB6am.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour/ZB6a.jpg","../../assets/images/products/armour/ZB6b.jpg","../../assets/images/products/armour/ZB6c.jpg","../../assets/images/products/armour/ZB6d.jpg","../../assets/images/products/armour/ZB6f.jpg","../../assets/images/products/armour/ZB6h.jpg"]' data-lightbox-caption="ZB6 — Armure complète tardive">
+            <img src="../../assets/images/products/armour/ZB6am.jpg" alt="Armure complète tardive, référence ZB6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>6</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB6</span>
+            <h2 class="product-title">Armure complète tardive</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Largement décorée, poli miroir.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">9900 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB6 -->
+
+        <!-- ZB1 -->
+        <article class="catalog-row" data-tags="full" data-search="zb1 armure complète tardive allemagne · fin du xve siècle largement décorée, poli miroir.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour/JF1M.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour/JF1.jpg","../../assets/images/products/armour/JF3.jpg","../../assets/images/products/armour/JF4.jpg","../../assets/images/products/armour/JF5.jpg","../../assets/images/products/armour/JF7.jpg","../../assets/images/products/armour/JF8.jpg"]' data-lightbox-caption="ZB1 — Armure complète tardive">
+            <img src="../../assets/images/products/armour/JF1M.jpg" alt="Armure complète tardive, référence ZB1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>6</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB1</span>
+            <h2 class="product-title">Armure complète tardive</h2>
+            <p class="product-period">Allemagne · fin du XVe siècle</p>
+            <p class="product-description">Largement décorée, poli miroir.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">Environ 11000<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB1 -->
+
+        <!-- ZB3 -->
+        <article class="catalog-row" data-tags="full" data-search="zb3 armure simple d'officier fin du xve siècle salade, protection du corps, bras jusqu'aux coudes, jambes jusqu'aux genoux et gantelets articulés, légèrement rainurée.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour/Soldat.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour/Rose.jpg","../../assets/images/products/armour/SoldatV.jpg"]' data-lightbox-caption="ZB3 — Armure simple d'officier">
+            <img src="../../assets/images/products/armour/Soldat.jpg" alt="Armure simple d'officier, référence ZB3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB3</span>
+            <h2 class="product-title">Armure simple d'officier</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Salade, protection du corps, bras jusqu'aux coudes, jambes jusqu'aux genoux et gantelets articulés, légèrement rainurée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">3500 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB3 -->
+
+        <!-- ZB4 -->
+        <article class="catalog-row" data-tags="full" data-search="zb4 armure d'officier fin du xve siècle casque, protection du corps, bras complets, jambes complètes et gantelets-mitaines, légèrement rainurée.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour/vincm.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour/102a.jpg","../../assets/images/products/armour/vincv.jpg","../../assets/images/products/armour/vincv2.jpg"]' data-lightbox-caption="ZB4 — Armure d'officier">
+            <img src="../../assets/images/products/armour/vincm.jpg" alt="Armure d'officier, référence ZB4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB4</span>
+            <h2 class="product-title">Armure d'officier</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Casque, protection du corps, bras complets, jambes complètes et gantelets-mitaines, légèrement rainurée.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">5900 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB4 -->
+
+        <!-- ZB5 -->
+        <article class="catalog-row" data-tags="full" data-search="zb5 armure de cavalier début du xvie siècle col, protection complète du corps, des bras et des jambes avec bottes incluses, gantelets articulés, très polie.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour/Armurejm2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour/Armurejv.jpg","../../assets/images/products/armour/Armurejv2.jpg","../../assets/images/products/armour/Armurejv3.jpg"]' data-lightbox-caption="ZB5 — Armure de cavalier">
+            <img src="../../assets/images/products/armour/Armurejm2.jpg" alt="Armure de cavalier, référence ZB5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB5</span>
+            <h2 class="product-title">Armure de cavalier</h2>
+            <p class="product-period">Début du XVIe siècle</p>
+            <p class="product-description">Col, protection complète du corps, des bras et des jambes avec bottes incluses, gantelets articulés, très polie.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">8400 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB5 -->
+
+        <!-- ZB4 -->
+        <article class="catalog-row" data-tags="other" data-search="zb4 collier de mailles rivetées 6 mm xive–xvie siècle 18g. anneaux rivetés Ø 6 mm alternant avec des anneaux pleins plats de 6 mm.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/zb4m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/zb4v.JPG","../../assets/images/products/armour-pieces/zb4v2.JPG"]' data-lightbox-caption="ZB4 — Collier de mailles rivetées (6 mm)">
+            <img src="../../assets/images/products/armour-pieces/zb4m.jpg" alt="Collier de mailles rivetées (6 mm), référence ZB4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">ZB4</span>
+            <h2 class="product-title">Collier de mailles rivetées (6 mm)</h2>
+            <p class="product-period">XIVe–XVIe siècle</p>
+            <p class="product-description">18g. Anneaux rivetés Ø 6 mm alternant avec des anneaux pleins plats de 6 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">155 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /ZB4 -->
+
+        <!-- GA1 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga1 gantelets-mitaines simples xive–xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/rukavice.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/palcv.jpg"]' data-lightbox-caption="GA1 — Gantelets-mitaines simples">
+            <img src="../../assets/images/products/armour-pieces/rukavice.jpg" alt="Gantelets-mitaines simples, référence GA1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA1</span>
+            <h2 class="product-title">Gantelets-mitaines simples</h2>
+            <p class="product-period">XIVe–XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">253 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA1 -->
+
+        <!-- GA2 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga2 gantelets articulés de la fin du moyen Âge 2e moitié du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/rukavice2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/rukavice2_v.jpg"]' data-lightbox-caption="GA2 — Gantelets articulés de la fin du Moyen Âge">
+            <img src="../../assets/images/products/armour-pieces/rukavice2.jpg" alt="Gantelets articulés de la fin du Moyen Âge, référence GA2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA2</span>
+            <h2 class="product-title">Gantelets articulés de la fin du Moyen Âge</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">440 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA2 -->
+
+        <!-- GA4 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga4 gantelets articulés de la fin du moyen Âge italiens 2e moitié du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/gantelet4m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/gantelet4v.jpg","../../assets/images/products/armour-pieces/gantelet4v2.jpg"]' data-lightbox-caption="GA4 — Gantelets articulés de la fin du Moyen Âge (italiens)">
+            <img src="../../assets/images/products/armour-pieces/gantelet4m.jpg" alt="Gantelets articulés de la fin du Moyen Âge (italiens), référence GA4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA4</span>
+            <h2 class="product-title">Gantelets articulés de la fin du Moyen Âge (italiens)</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">485 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA4 -->
+
+        <!-- GA6 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga6 gantelets articulés très décorés 2e moitié du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/gantelet6m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/gantelet6v.jpg","../../assets/images/products/armour-pieces/gantelet6va.jpg","../../assets/images/products/armour-pieces/gantelet6vb.jpg","../../assets/images/products/armour-pieces/gantelet6vc.jpg"]' data-lightbox-caption="GA6 — Gantelets articulés très décorés">
+            <img src="../../assets/images/products/armour-pieces/gantelet6m.jpg" alt="Gantelets articulés très décorés, référence GA6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA6</span>
+            <h2 class="product-title">Gantelets articulés très décorés</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1090 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA6 -->
+
+        <!-- GA7 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga7 gantelets-mitaines décorés allemands 2e moitié du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ga7m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ga7.jpg","../../assets/images/products/armour-pieces/ga7v1.jpg","../../assets/images/products/armour-pieces/ga7v2.jpg","../../assets/images/products/armour-pieces/ga7v4.jpg"]' data-lightbox-caption="GA7 — Gantelets-mitaines décorés (allemands)">
+            <img src="../../assets/images/products/armour-pieces/ga7m.jpg" alt="Gantelets-mitaines décorés (allemands), référence GA7" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA7</span>
+            <h2 class="product-title">Gantelets-mitaines décorés (allemands)</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1045 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA7 -->
+
+        <!-- GA8 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga8 gantelets-mitaines simples xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/GA8m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/GA8v.jpg"]' data-lightbox-caption="GA8 — Gantelets-mitaines simples">
+            <img src="../../assets/images/products/armour-pieces/GA8m.jpg" alt="Gantelets-mitaines simples, référence GA8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA8</span>
+            <h2 class="product-title">Gantelets-mitaines simples</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">299 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA8 -->
+
+        <!-- GA9 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga9 gantelets-mitaines articulés xve siècle acier à ressort trempé. l'original se trouve au bayerisches armeemuseum, ingolstadt, allemagne.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ga9m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ga9v.jpg","../../assets/images/products/armour-pieces/ga9v2.jpg"]' data-lightbox-caption="GA9 — Gantelets-mitaines articulés">
+            <img src="../../assets/images/products/armour-pieces/ga9m.jpg" alt="Gantelets-mitaines articulés, référence GA9" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA9</span>
+            <h2 class="product-title">Gantelets-mitaines articulés</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Acier à ressort trempé. L'original se trouve au Bayerisches Armeemuseum, Ingolstadt, Allemagne.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">649 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA9 -->
+
+        <!-- GA10 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga10 gantelets simples xive siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ga10m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ga10v.jpg"]' data-lightbox-caption="GA10 — Gantelets simples">
+            <img src="../../assets/images/products/armour-pieces/ga10m.jpg" alt="Gantelets simples, référence GA10" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA10</span>
+            <h2 class="product-title">Gantelets simples</h2>
+            <p class="product-period">XIVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">220 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA10 -->
+
+        <!-- GA11 -->
+        <article class="catalog-row" data-tags="gauntlets" data-search="ga11 gantelets-mitaines articulés allemands 2e moitié du xve siècle copie exacte. l'original se trouve au cleveland museum of art, cleveland, États-unis.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ga11m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ga11v.JPG","../../assets/images/products/armour-pieces/ga11v2.JPG","../../assets/images/products/armour-pieces/ga11v3.jpg"]' data-lightbox-caption="GA11 — Gantelets-mitaines articulés (allemands)">
+            <img src="../../assets/images/products/armour-pieces/ga11m.jpg" alt="Gantelets-mitaines articulés (allemands), référence GA11" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>3</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">GA11</span>
+            <h2 class="product-title">Gantelets-mitaines articulés (allemands)</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Copie exacte. L'original se trouve au Cleveland Museum of Art, Cleveland, États-Unis.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">420 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /GA11 -->
+
+        <!-- AR5 -->
+        <article class="catalog-row" data-tags="body" data-search="ar5 cuirasse plastron et dossière allemagne · 2e moitié du xve siècle copie exacte. l'original du plastron se trouve au deutsches historisches museum, berlin, et celui de la dossière au bayerisches armeemuseum, ingolstadt, allemagne.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar5m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar5v.jpg","../../assets/images/products/armour-pieces/ar5v2.jpg","../../assets/images/products/armour-pieces/ar5v3.jpg","../../assets/images/products/armour-pieces/ar5v4.jpg","../../assets/images/products/armour-pieces/ar5v5.jpg"]' data-lightbox-caption="AR5 — Cuirasse (plastron et dossière)">
+            <img src="../../assets/images/products/armour-pieces/ar5m.jpg" alt="Cuirasse (plastron et dossière), référence AR5" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>5</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR5</span>
+            <h2 class="product-title">Cuirasse (plastron et dossière)</h2>
+            <p class="product-period">Allemagne · 2e moitié du XVe siècle</p>
+            <p class="product-description">Copie exacte. L'original du plastron se trouve au Deutsches Historisches Museum, Berlin, et celui de la dossière au Bayerisches Armeemuseum, Ingolstadt, Allemagne.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">2285 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR5 -->
+
+        <!-- AR6 -->
+        <article class="catalog-row" data-tags="body" data-search="ar6 plastron xve siècle acier doux, 1,5 mm.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar6m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar6v.jpg","../../assets/images/products/armour-pieces/ar6v2.jpg","../../assets/images/products/armour-pieces/ar6v3a.jpg","../../assets/images/products/armour-pieces/ar6v4.jpg"]' data-lightbox-caption="AR6 — Plastron">
+            <img src="../../assets/images/products/armour-pieces/ar6m.jpg" alt="Plastron, référence AR6" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR6</span>
+            <h2 class="product-title">Plastron</h2>
+            <p class="product-period">XVe siècle</p>
+            <p class="product-description">Acier doux, 1,5 mm.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">499 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR6 -->
+
+        <!-- AR7 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar7 Épaulières avec coudières et avant-bras fin du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar7m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar7v.jpg","../../assets/images/products/armour-pieces/ar7v2.jpg"]' data-lightbox-caption="AR7 — Épaulières avec coudières et avant-bras">
+            <img src="../../assets/images/products/armour-pieces/ar7m.jpg" alt="Épaulières avec coudières et avant-bras, référence AR7" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR7</span>
+            <h2 class="product-title">Épaulières avec coudières et avant-bras</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">530 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR7 -->
+
+        <!-- AR8 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar8 Épaulières et bras fin du xive–début du xve siècle des pièces similaires se trouvent au metropolitan museum of art, new york, États-unis.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar8m.JPG" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar8v.JPG","../../assets/images/products/armour-pieces/ar8v2.jpg"]' data-lightbox-caption="AR8 — Épaulières et bras">
+            <img src="../../assets/images/products/armour-pieces/ar8m.JPG" alt="Épaulières et bras, référence AR8" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR8</span>
+            <h2 class="product-title">Épaulières et bras</h2>
+            <p class="product-period">Fin du XIVe–début du XVe siècle</p>
+            <p class="product-description">Des pièces similaires se trouvent au Metropolitan Museum of Art, New York, États-Unis.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">530 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR8 -->
+
+        <!-- AR9 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar9 cuissards fin du xive–début du xve siècle des pièces similaires se trouvent au metropolitan museum of art, new york, États-unis.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar9m.JPG" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar9v.JPG","../../assets/images/products/armour-pieces/ar9v2.JPG"]' data-lightbox-caption="AR9 — Cuissards">
+            <img src="../../assets/images/products/armour-pieces/ar9m.JPG" alt="Cuissards, référence AR9" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR9</span>
+            <h2 class="product-title">Cuissards</h2>
+            <p class="product-period">Fin du XIVe–début du XVe siècle</p>
+            <p class="product-description">Des pièces similaires se trouvent au Metropolitan Museum of Art, New York, États-Unis.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">520 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR9 -->
+
+        <!-- AR1 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar1 Épaulières avec coudières fin du xve siècle fer. modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/Bras.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/BrasV.jpg","../../assets/images/products/armour-pieces/bras2.jpg"]' data-lightbox-caption="AR1 — Épaulières avec coudières">
+            <img src="../../assets/images/products/armour-pieces/Bras.jpg" alt="Épaulières avec coudières, référence AR1" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>2</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR1</span>
+            <h2 class="product-title">Épaulières avec coudières</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Fer. Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">462 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR1 -->
+
+        <!-- AR2 -->
+        <article class="catalog-row" data-tags="arms" data-search="ar2 Épaulières sans coudières fin du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ramena2.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ramena2_v.jpg"]' data-lightbox-caption="AR2 — Épaulières sans coudières">
+            <img src="../../assets/images/products/armour-pieces/ramena2.jpg" alt="Épaulières sans coudières, référence AR2" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR2</span>
+            <h2 class="product-title">Épaulières sans coudières</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">363 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR2 -->
+
+        <!-- AR4 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar4 cuissards 2e moitié du xve siècle modèle standard.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/ar4m.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/ar4v.jpg","../../assets/images/products/armour-pieces/ar4v2.jpg","../../assets/images/products/armour-pieces/ar4v3.jpg","../../assets/images/products/armour-pieces/ar4v4.jpg"]' data-lightbox-caption="AR4 — Cuissards">
+            <img src="../../assets/images/products/armour-pieces/ar4m.jpg" alt="Cuissards, référence AR4" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>4</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR4</span>
+            <h2 class="product-title">Cuissards</h2>
+            <p class="product-period">2e moitié du XVe siècle</p>
+            <p class="product-description">Modèle standard.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">1289 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR4 -->
+
+        <!-- AR3 -->
+        <article class="catalog-row" data-tags="legs" data-search="ar3 protège-jambes en fer fin du xve siècle prix incluant la protection tibiale.">
+          <a class="catalog-row__media" href="../../assets/images/products/armour-pieces/Jambem.jpg" data-lightbox="1" data-lightbox-images='["../../assets/images/products/armour-pieces/Jambe.jpg"]' data-lightbox-caption="AR3 — Protège-jambes en fer">
+            <img src="../../assets/images/products/armour-pieces/Jambem.jpg" alt="Protège-jambes en fer, référence AR3" loading="lazy">
+            <span class="photo-count-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="12" cy="14" r="3.5"/><path d="M8 7l1.5-3h5L16 7"/></svg><span>1</span></span>
+          </a>
+          <div class="catalog-row__main">
+            <span class="product-reference">AR3</span>
+            <h2 class="product-title">Protège-jambes en fer</h2>
+            <p class="product-period">Fin du XVe siècle</p>
+            <p class="product-description">Prix incluant la protection tibiale.</p>
+          </div>
+          <div class="catalog-row__price">
+            <p class="product-price">913 €<span class="price-indicative-tag">indicatif</span></p>
+          </div>
+        </article>
+        <!-- /AR3 -->
+
+
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <p class="footer-brand__title">Arma Bohemia</p>
+      <p>Atelier historique de reconstitution, fondé en 1995. Reproductions artisanales d'armes, d'armures et d'objets du Moyen Âge et de la Renaissance, réalisées par un réseau d'artisans tchèques.</p>
+    </div>
+    <div class="footer-col">
+      <h3>Catalogue</h3>
+      <ul>
+        <li><a href="swords.html">Épées</a></li>
+        <li><a href="daggers.html">Dagues &amp; couteaux</a></li>
+        <li><a href="helmets.html">Casques</a></li>
+        <li><a href="index.html">Catalogue complet →</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Atelier</h3>
+      <ul>
+        <li><a href="../about.html">À propos d'Arma Bohemia</a></li>
+        <li><a href="../events.html">Événements</a></li>
+        <li><a href="../conditions.html">Commande &amp; conditions</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 1995–2026 Arma Bohemia · Vaclava Klementa 780, 273 24 Velvary, République tchèque</p>
+    <p><a href="mailto:info@armabohemia.cz">info@armabohemia.cz</a> · <a href="tel:+420603830522">+420 603 830 522</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Photo du produit agrandie">
+  <figure class="lightbox__figure">
+    <button class="lightbox__prev" type="button" aria-label="Photo précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+    <img class="lightbox__img" src="" alt="">
+    <button class="lightbox__next" type="button" aria-label="Photo suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+    <button class="lightbox__close" type="button" aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+</div>
+
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/gallery.js"></script>
+</body>
+</html>
