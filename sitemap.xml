@@ -52,7 +52,12 @@
   <url><loc>https://www.armabohemia.cz/catalogue/polearms.html</loc></url>
   <url><loc>https://www.armabohemia.cz/catalogue/firearms.html</loc></url>
   <url><loc>https://www.armabohemia.cz/catalogue/leather-goods.html</loc></url>
-  <url><loc>https://www.armabohemia.cz/catalogue/dress-accessories.html</loc></url>
+  <url>
+    <loc>https://www.armabohemia.cz/catalogue/dress-accessories.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.armabohemia.cz/catalogue/dress-accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.armabohemia.cz/fr/catalogue/dress-accessories.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.armabohemia.cz/de/catalogue/dress-accessories.html"/>
+  </url>
   <url><loc>https://www.armabohemia.cz/catalogue/camp-life.html</loc></url>
   <url><loc>https://www.armabohemia.cz/catalogue/tableware.html</loc></url>
 
@@ -62,6 +67,7 @@
   <url><loc>https://www.armabohemia.cz/fr/catalogue/helmets.html</loc></url>
   <url><loc>https://www.armabohemia.cz/fr/catalogue/shields.html</loc></url>
   <url><loc>https://www.armabohemia.cz/fr/catalogue/rapiers.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/fr/catalogue/dress-accessories.html</loc></url>
 
   <!-- Catalogue — German -->
   <url><loc>https://www.armabohemia.cz/de/catalogue/swords.html</loc></url>
@@ -69,6 +75,7 @@
   <url><loc>https://www.armabohemia.cz/de/catalogue/helmets.html</loc></url>
   <url><loc>https://www.armabohemia.cz/de/catalogue/shields.html</loc></url>
   <url><loc>https://www.armabohemia.cz/de/catalogue/rapiers.html</loc></url>
+  <url><loc>https://www.armabohemia.cz/de/catalogue/dress-accessories.html</loc></url>
 
   <!-- Pages structurantes — English -->
   <url><loc>https://www.armabohemia.cz/about.html</loc></url>
