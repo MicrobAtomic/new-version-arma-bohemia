@@ -221,17 +221,17 @@ n'y a **aucune magie de traduction automatique** : chaque page existe en
 double (ou triple), et il faut modifier chaque version séparément.
 
 **Catégories déjà traduites dans les trois langues :** épées, dagues,
-casques, boucliers, rapières, habillement, armes d'hast et armes à feu
-(`swords.html`, `daggers.html`, `helmets.html`, `shields.html`,
-`rapiers.html`, `dress-accessories.html`, `polearms.html`,
-`firearms.html`), ainsi que les pages contact et conditions. Ces huit
-catégories de produits sont traduites en intégralité (61/61, 43/43,
-26/26, 3/3, 11/11, 14/14, 16/16, 16/16, comme en anglais) : voir
-section 9.
+casques, boucliers, rapières, habillement, armes d'hast, armes à feu et
+vie de camp (`swords.html`, `daggers.html`, `helmets.html`,
+`shields.html`, `rapiers.html`, `dress-accessories.html`,
+`polearms.html`, `firearms.html`, `camp-life.html`), ainsi que les pages
+contact et conditions. Ces neuf catégories de produits sont traduites
+en intégralité (61/61, 43/43, 26/26, 3/3, 11/11, 14/14, 16/16, 16/16,
+21/21, comme en anglais) : voir section 9.
 
 **Catégories disponibles seulement en anglais pour l'instant :** armures,
-maroquinerie, vie de camp, vaisselle. Les pages `fr/catalogue/index.html`
-et `de/catalogue/index.html` renvoient vers la version anglaise pour ces
+maroquinerie, vaisselle. Les pages `fr/catalogue/index.html` et
+`de/catalogue/index.html` renvoient vers la version anglaise pour ces
 catégories, avec une mention claire « (EN) ».
 
 **Pour ajouter un produit dans plusieurs langues :** ajoutez-le d'abord
@@ -274,19 +274,19 @@ section 4). Le détail par catégorie :
 
 **Ce qui reste malgré tout à faire :**
 
-- **Traduction française et allemande complète.** Huit catégories sont
+- **Traduction française et allemande complète.** Neuf catégories sont
   maintenant traduites en intégralité (épées 61/61, dagues 43/43, casques
   26/26, boucliers 3/3, rapières 11/11, habillement 14/14, armes d'hast
-  16/16, armes à feu 16/16) en français et en allemand, à partir du
-  texte réel des pages `armabohemia.cz/FR/` et `armabohemia.cz/DE/` (et
-  non retraduit depuis l'anglais) ; boucliers, rapières, habillement,
-  armes d'hast et armes à feu sont les cinq premières catégories créées
-  de toutes pièces en FR/DE (elles n'avaient pas de page `fr/`/`de/` du
-  tout, contrairement aux trois premières qui existaient déjà avec une
-  sélection réduite). Reste à traiter les 4 autres catégories qui
-  n'existent qu'en anglais pour l'instant (armures, maroquinerie, vie de
-  camp, vaisselle). La méthode est directe : reprendre le même procédé
-  (voir
+  16/16, armes à feu 16/16, vie de camp 21/21) en français et en
+  allemand, à partir du texte réel des pages `armabohemia.cz/FR/` et
+  `armabohemia.cz/DE/` (et non retraduit depuis l'anglais) ; boucliers,
+  rapières, habillement, armes d'hast, armes à feu et vie de camp sont
+  les six premières catégories créées de toutes pièces en FR/DE (elles
+  n'avaient pas de page `fr/`/`de/` du tout, contrairement aux trois
+  premières qui existaient déjà avec une sélection réduite). Reste à
+  traiter les 3 autres catégories qui n'existent qu'en anglais pour
+  l'instant (armures, maroquinerie, vaisselle). La méthode est directe :
+  reprendre le même procédé (voir
   la partie
   développeur
   ci-dessous), catégorie par catégorie. **C'est le chantier en cours.**
